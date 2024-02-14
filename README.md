@@ -1,4 +1,4 @@
-# Bachelar 
+# Bachelor 
 
 ## Practical side
 
