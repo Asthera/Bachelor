@@ -1,0 +1,14 @@
+Count of dataframes train, val, test
+491
+123
+535
+Epoch 0/10 Train Accuracy: 77.39% Val Accuracy: 79.67%
+Epoch 1/10 Train Accuracy: 89.00% Val Accuracy: 82.11%
+Epoch 2/10 Train Accuracy: 95.72% Val Accuracy: 78.05%
+Epoch 3/10 Train Accuracy: 94.50% Val Accuracy: 93.50%
+Epoch 4/10 Train Accuracy: 96.74% Val Accuracy: 95.12%
+Epoch 5/10 Train Accuracy: 95.32% Val Accuracy: 89.43%
+Epoch 6/10 Train Accuracy: 97.56% Val Accuracy: 93.50%
+Epoch 7/10 Train Accuracy: 97.56% Val Accuracy: 93.50%
+Epoch 8/10 Train Accuracy: 96.74% Val Accuracy: 91.06%
+Epoch 9/10 Train Accuracy: 98.98% Val Accuracy: 94.31%

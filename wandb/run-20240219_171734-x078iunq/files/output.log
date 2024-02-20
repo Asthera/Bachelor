@@ -1,0 +1,14 @@
+Count of dataframes train, val, test
+491
+123
+535
+Epoch time:  37.14008617401123
+Epoch 1/4 Train Accuracy: 78.00% Val Accuracy: 58.54%
+Epoch time:  37.305264949798584
+Epoch 2/4 Train Accuracy: 87.98% Val Accuracy: 78.05%
+Epoch time:  37.58926701545715
+Epoch 3/4 Train Accuracy: 90.84% Val Accuracy: 90.24%
+Epoch time:  38.03899788856506
+Epoch 4/4 Train Accuracy: 96.33% Val Accuracy: 93.50%
+Average time:  37.51840400695801
+Total time:  150.07361602783203

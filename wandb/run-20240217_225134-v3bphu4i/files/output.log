@@ -1,0 +1,12 @@
+535
+535
+Epoch 0/10 Train Accuracy: 85.51% Val Accuracy: 84.11%
+Epoch 1/10 Train Accuracy: 89.49% Val Accuracy: 89.72%
+Epoch 2/10 Train Accuracy: 94.63% Val Accuracy: 71.96%
+Epoch 3/10 Train Accuracy: 95.56% Val Accuracy: 87.85%
+Epoch 4/10 Train Accuracy: 97.43% Val Accuracy: 63.55%
+Epoch 5/10 Train Accuracy: 96.26% Val Accuracy: 90.65%
+Epoch 6/10 Train Accuracy: 98.13% Val Accuracy: 43.93%
+Epoch 7/10 Train Accuracy: 97.43% Val Accuracy: 92.52%
+Epoch 8/10 Train Accuracy: 97.66% Val Accuracy: 92.52%
+Epoch 9/10 Train Accuracy: 98.83% Val Accuracy: 84.11%

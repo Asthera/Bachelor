@@ -1,0 +1,24 @@
+With start Resnet18 model, all defaults
+
+cpu:
+
+Epoch time:  37.14008617401123
+Epoch time:  37.305264949798584
+Epoch time:  37.58926701545715
+Epoch time:  38.03899788856506
+
+Average time:  37.51840400695801
+Total time:  150.07361602783203
+
+mps:
+
+Epoch time:  14.775023221969604
+Epoch time:  8.75455093383789
+Epoch time:  8.64076280593872
+Epoch time:  8.644930839538574
+
+Average time:  10.203816950321198
+Total time:  40.81526780128479
+
+
+So the mps is 3.68 times faster than cpuss

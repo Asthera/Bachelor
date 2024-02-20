@@ -1,0 +1,96 @@
+2024-02-19 15:55:12,460 INFO    StreamThr :5251 [internal.py:wandb_internal():86] W&B internal server running at pid: 5251, started at: 2024-02-19 15:55:12.460133
+2024-02-19 15:55:12,461 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status
+2024-02-19 15:55:12,466 INFO    WriterThread:5251 [datastore.py:open_for_write():87] open: /Users/volodimir/Desktop/Bachelor/wandb/run-20240219_155512-kn6twfq0/run-kn6twfq0.wandb
+2024-02-19 15:55:12,466 DEBUG   SenderThread:5251 [sender.py:send():382] send: header
+2024-02-19 15:55:12,484 DEBUG   SenderThread:5251 [sender.py:send():382] send: run
+2024-02-19 15:55:12,954 INFO    SenderThread:5251 [dir_watcher.py:__init__():211] watching files in: /Users/volodimir/Desktop/Bachelor/wandb/run-20240219_155512-kn6twfq0/files
+2024-02-19 15:55:12,954 INFO    SenderThread:5251 [sender.py:_start_run_threads():1136] run started: kn6twfq0 with start time 1708354512.460883
+2024-02-19 15:55:12,965 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: check_version
+2024-02-19 15:55:12,965 DEBUG   SenderThread:5251 [sender.py:send_request():409] send_request: check_version
+2024-02-19 15:55:13,073 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: run_start
+2024-02-19 15:55:13,081 DEBUG   HandlerThread:5251 [system_info.py:__init__():27] System info init
+2024-02-19 15:55:13,081 DEBUG   HandlerThread:5251 [system_info.py:__init__():42] System info init done
+2024-02-19 15:55:13,081 INFO    HandlerThread:5251 [system_monitor.py:start():194] Starting system monitor
+2024-02-19 15:55:13,081 INFO    SystemMonitor:5251 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-02-19 15:55:13,081 INFO    HandlerThread:5251 [system_monitor.py:probe():214] Collecting system info
+2024-02-19 15:55:13,082 INFO    SystemMonitor:5251 [interfaces.py:start():190] Started cpu monitoring
+2024-02-19 15:55:13,082 DEBUG   HandlerThread:5251 [system_info.py:probe():151] Probing system
+2024-02-19 15:55:13,082 INFO    SystemMonitor:5251 [interfaces.py:start():190] Started disk monitoring
+2024-02-19 15:55:13,086 INFO    SystemMonitor:5251 [interfaces.py:start():190] Started gpuapple monitoring
+2024-02-19 15:55:13,087 INFO    SystemMonitor:5251 [interfaces.py:start():190] Started memory monitoring
+2024-02-19 15:55:13,088 INFO    SystemMonitor:5251 [interfaces.py:start():190] Started network monitoring
+2024-02-19 15:55:13,092 DEBUG   HandlerThread:5251 [system_info.py:_probe_git():136] Probing git
+2024-02-19 15:55:13,107 DEBUG   HandlerThread:5251 [system_info.py:_probe_git():144] Probing git done
+2024-02-19 15:55:13,107 DEBUG   HandlerThread:5251 [system_info.py:probe():199] Probing system done
+2024-02-19 15:55:13,107 DEBUG   HandlerThread:5251 [system_monitor.py:probe():223] {'os': 'macOS-13.3.1-arm64-arm-64bit', 'python': '3.11.7', 'heartbeatAt': '2024-02-19T14:55:13.084026', 'startedAt': '2024-02-19T14:55:12.451174', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/Users/volodimir/Desktop/Bachelor/training.py', 'codePathLocal': 'training.py', 'codePath': 'training.py', 'git': {'remote': 'https://github.com/Asthera/Bachelor.git', 'commit': '46e995fd2f3212578edbd549dedab03bc193c8cd'}, 'email': 'h', 'root': '/Users/volodimir/Desktop/Bachelor', 'host': 'Air-Volodimir.mshome.net', 'username': 'volodimir', 'executable': '/Users/volodimir/anaconda3/envs/Global/bin/python', 'cpu_count': 8, 'cpu_count_logical': 8, 'disk': {'/': {'total': 228.27386474609375, 'used': 148.52426528930664}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 16.0}}
+2024-02-19 15:55:13,107 INFO    HandlerThread:5251 [system_monitor.py:probe():224] Finished collecting system info
+2024-02-19 15:55:13,108 INFO    HandlerThread:5251 [system_monitor.py:probe():227] Publishing system info
+2024-02-19 15:55:13,108 DEBUG   HandlerThread:5251 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-02-19 15:55:13,961 INFO    Thread-12 :5251 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/volodimir/Desktop/Bachelor/wandb/run-20240219_155512-kn6twfq0/files/conda-environment.yaml
+2024-02-19 15:55:15,460 DEBUG   HandlerThread:5251 [system_info.py:_save_conda():220] Saving conda packages done
+2024-02-19 15:55:15,460 INFO    HandlerThread:5251 [system_monitor.py:probe():229] Finished publishing system info
+2024-02-19 15:55:15,463 DEBUG   SenderThread:5251 [sender.py:send():382] send: files
+2024-02-19 15:55:15,463 INFO    SenderThread:5251 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-02-19 15:55:15,466 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: python_packages
+2024-02-19 15:55:15,466 DEBUG   SenderThread:5251 [sender.py:send_request():409] send_request: python_packages
+2024-02-19 15:55:15,467 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-19 15:55:15,467 DEBUG   SenderThread:5251 [sender.py:send_request():409] send_request: stop_status
+2024-02-19 15:55:15,468 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-19 15:55:15,794 DEBUG   SenderThread:5251 [sender.py:send():382] send: telemetry
+2024-02-19 15:55:15,963 INFO    Thread-12 :5251 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/volodimir/Desktop/Bachelor/wandb/run-20240219_155512-kn6twfq0/files/conda-environment.yaml
+2024-02-19 15:55:15,963 INFO    Thread-12 :5251 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/volodimir/Desktop/Bachelor/wandb/run-20240219_155512-kn6twfq0/files/output.log
+2024-02-19 15:55:15,963 INFO    Thread-12 :5251 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/volodimir/Desktop/Bachelor/wandb/run-20240219_155512-kn6twfq0/files/requirements.txt
+2024-02-19 15:55:15,963 INFO    Thread-12 :5251 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/volodimir/Desktop/Bachelor/wandb/run-20240219_155512-kn6twfq0/files/wandb-metadata.json
+2024-02-19 15:55:16,109 INFO    wandb-upload_0:5251 [upload_job.py:push():131] Uploaded file /var/folders/r9/fn8812cd1czdjdytwc97q1h80000gn/T/tmpkhcis2vcwandb/rcuu74xl-wandb-metadata.json
+2024-02-19 15:55:17,846 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:55:17,972 INFO    Thread-12 :5251 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/volodimir/Desktop/Bachelor/wandb/run-20240219_155512-kn6twfq0/files/output.log
+2024-02-19 15:55:22,863 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:55:27,876 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:55:30,468 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-19 15:55:30,470 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-19 15:55:30,470 DEBUG   SenderThread:5251 [sender.py:send_request():409] send_request: stop_status
+2024-02-19 15:55:32,918 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:55:33,018 INFO    Thread-12 :5251 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/volodimir/Desktop/Bachelor/wandb/run-20240219_155512-kn6twfq0/files/output.log
+2024-02-19 15:55:37,937 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:55:42,963 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:55:44,061 INFO    Thread-12 :5251 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/volodimir/Desktop/Bachelor/wandb/run-20240219_155512-kn6twfq0/files/config.yaml
+2024-02-19 15:55:48,383 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:55:53,403 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:55:58,424 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:56:03,444 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:56:08,459 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:56:13,089 DEBUG   SystemMonitor:5251 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-02-19 15:56:13,091 DEBUG   SenderThread:5251 [sender.py:send():382] send: telemetry
+2024-02-19 15:56:13,091 DEBUG   SenderThread:5251 [sender.py:send():382] send: stats
+2024-02-19 15:56:14,102 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:56:15,192 INFO    Thread-12 :5251 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/volodimir/Desktop/Bachelor/wandb/run-20240219_155512-kn6twfq0/files/config.yaml
+2024-02-19 15:56:19,507 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:56:24,524 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:56:29,538 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:56:34,557 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:56:39,578 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:56:43,098 DEBUG   SenderThread:5251 [sender.py:send():382] send: stats
+2024-02-19 15:56:45,107 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:56:50,121 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:56:55,142 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:57:00,154 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:57:05,173 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:57:10,184 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:57:13,099 DEBUG   SenderThread:5251 [sender.py:send():382] send: stats
+2024-02-19 15:57:16,113 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:57:21,132 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:57:26,145 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:57:31,161 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:57:36,180 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:57:41,203 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:57:43,105 DEBUG   SenderThread:5251 [sender.py:send():382] send: stats
+2024-02-19 15:57:47,125 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:57:52,139 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:57:57,156 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:58:02,175 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:58:07,189 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:58:12,200 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:58:13,108 DEBUG   SenderThread:5251 [sender.py:send():382] send: stats
+2024-02-19 15:58:18,125 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:58:23,140 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
+2024-02-19 15:58:28,161 DEBUG   HandlerThread:5251 [handler.py:handle_request():146] handle_request: status_report
