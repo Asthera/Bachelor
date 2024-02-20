@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/volodimir/Desktop/Bachelor/training_sweep.py", line 43, in <module>
+    train()
+  File "/Users/volodimir/Desktop/Bachelor/training_sweep.py", line 35, in train
+    val_loss = train_epoch(network, train_loader, val_loader, optimizer, device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/Desktop/Bachelor/utilsweep.py", line 84, in train_epoch
+    loss = criterion(outputs, labels)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'torch.device' object is not callable

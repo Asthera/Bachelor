@@ -1,0 +1,6 @@
+wandb_version: 1
+
+batch_size:
+  value: 64
+transform:
+  value: random_rotation

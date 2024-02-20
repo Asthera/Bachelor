@@ -5,219 +5,114 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ed4b346-8254-4985-b0b6-9f7596a861a7" name="Changes" comment="training one model, with default augmentation, and wandb">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compare_mps.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_mps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing-sets.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/training.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/debug-cli.volodimir.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/latest-run" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240217_224924-it42uhj4/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240217_224924-it42uhj4/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240217_224924-it42uhj4/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240217_224924-it42uhj4/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240217_224924-it42uhj4/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240217_224924-it42uhj4/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240217_224924-it42uhj4/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240217_224924-it42uhj4/run-it42uhj4.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240217_225134-v3bphu4i/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240217_225134-v3bphu4i/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240217_225134-v3bphu4i/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240217_225134-v3bphu4i/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240217_225134-v3bphu4i/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240217_225134-v3bphu4i/files/wandb-summary.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240217_225134-v3bphu4i/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240217_225134-v3bphu4i/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240217_225134-v3bphu4i/run-v3bphu4i.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_151336-qeupb06s/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_151336-qeupb06s/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_151336-qeupb06s/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_151336-qeupb06s/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_151336-qeupb06s/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_151336-qeupb06s/files/wandb-summary.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_151336-qeupb06s/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_151336-qeupb06s/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_151336-qeupb06s/run-qeupb06s.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_151404-lxuhq853/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_151404-lxuhq853/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_151404-lxuhq853/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_151404-lxuhq853/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_151404-lxuhq853/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_151404-lxuhq853/files/wandb-summary.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_151404-lxuhq853/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_151404-lxuhq853/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_151404-lxuhq853/run-lxuhq853.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152334-y9gl3qjm/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152334-y9gl3qjm/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152334-y9gl3qjm/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152334-y9gl3qjm/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152334-y9gl3qjm/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152334-y9gl3qjm/run-y9gl3qjm.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152346-h6s6vjny/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152346-h6s6vjny/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152346-h6s6vjny/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152346-h6s6vjny/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152346-h6s6vjny/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152346-h6s6vjny/files/wandb-summary.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152346-h6s6vjny/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152346-h6s6vjny/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152346-h6s6vjny/run-h6s6vjny.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152510-2eqykvv0/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152510-2eqykvv0/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152510-2eqykvv0/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152510-2eqykvv0/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152510-2eqykvv0/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152510-2eqykvv0/files/wandb-summary.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152510-2eqykvv0/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152510-2eqykvv0/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152510-2eqykvv0/run-2eqykvv0.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152510-ydmih7rb/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152510-ydmih7rb/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152510-ydmih7rb/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152510-ydmih7rb/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152510-ydmih7rb/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152510-ydmih7rb/files/wandb-summary.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152510-ydmih7rb/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152510-ydmih7rb/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152510-ydmih7rb/run-ydmih7rb.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152828-caz5o72g/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152828-caz5o72g/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152828-caz5o72g/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152828-caz5o72g/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152828-caz5o72g/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152828-caz5o72g/files/wandb-summary.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152828-caz5o72g/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152828-caz5o72g/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_152828-caz5o72g/run-caz5o72g.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_153801-rmkj22p9/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_153801-rmkj22p9/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_153801-rmkj22p9/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_153801-rmkj22p9/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_153801-rmkj22p9/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_153801-rmkj22p9/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_153801-rmkj22p9/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_153801-rmkj22p9/run-rmkj22p9.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_153827-sxy4wwdi/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_153827-sxy4wwdi/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_153827-sxy4wwdi/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_153827-sxy4wwdi/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_153827-sxy4wwdi/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_153827-sxy4wwdi/files/wandb-summary.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_153827-sxy4wwdi/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_153827-sxy4wwdi/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_153827-sxy4wwdi/run-sxy4wwdi.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_154202-vxdh0pue/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_154202-vxdh0pue/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_154202-vxdh0pue/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_154202-vxdh0pue/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_154202-vxdh0pue/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_154202-vxdh0pue/files/wandb-summary.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_154202-vxdh0pue/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_154202-vxdh0pue/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_154202-vxdh0pue/run-vxdh0pue.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_154254-wczjbzu6/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_154254-wczjbzu6/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_154254-wczjbzu6/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_154254-wczjbzu6/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_154254-wczjbzu6/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_154254-wczjbzu6/files/wandb-summary.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_154254-wczjbzu6/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_154254-wczjbzu6/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_154254-wczjbzu6/run-wczjbzu6.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_154755-udgd09ar/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_154755-udgd09ar/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_154755-udgd09ar/files/media/table/confusion_matrix_table_2_cd3e67d19a3dd8629bed.table.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_154755-udgd09ar/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_154755-udgd09ar/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_154755-udgd09ar/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_154755-udgd09ar/files/wandb-summary.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_154755-udgd09ar/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_154755-udgd09ar/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_154755-udgd09ar/run-udgd09ar.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_155512-kn6twfq0/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_155512-kn6twfq0/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_155512-kn6twfq0/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_155512-kn6twfq0/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_155512-kn6twfq0/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_155512-kn6twfq0/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_155512-kn6twfq0/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_155512-kn6twfq0/run-kn6twfq0.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_155849-ogvx5dkg/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_155849-ogvx5dkg/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_155849-ogvx5dkg/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_155849-ogvx5dkg/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_155849-ogvx5dkg/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_155849-ogvx5dkg/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_155849-ogvx5dkg/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_155849-ogvx5dkg/run-ogvx5dkg.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_160017-wsp600af/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_160017-wsp600af/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_160017-wsp600af/files/media/table/confusion_matrix_table_2_6a46ae23aceaed869092.table.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_160017-wsp600af/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_160017-wsp600af/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_160017-wsp600af/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_160017-wsp600af/files/wandb-summary.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_160017-wsp600af/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_160017-wsp600af/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_160017-wsp600af/run-wsp600af.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_160556-n45nsejo/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_160556-n45nsejo/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_160556-n45nsejo/files/media/table/confusion_matrix_table_2_3f7a3161974319dd39bb.table.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_160556-n45nsejo/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_160556-n45nsejo/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_160556-n45nsejo/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_160556-n45nsejo/files/wandb-summary.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_160556-n45nsejo/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_160556-n45nsejo/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_160556-n45nsejo/run-n45nsejo.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_160751-ou488y5j/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_160751-ou488y5j/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_160751-ou488y5j/files/media/table/confusion_matrix_table_11_a7dd4a17c7fa28ec8b9a.table.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_160751-ou488y5j/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_160751-ou488y5j/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_160751-ou488y5j/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_160751-ou488y5j/files/wandb-summary.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_160751-ou488y5j/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_160751-ou488y5j/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_160751-ou488y5j/run-ou488y5j.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_162045-j09wp5pm/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_162045-j09wp5pm/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_162045-j09wp5pm/files/media/table/confusion_matrix_table_41_568b4fad4ac1aa21a25a.table.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_162045-j09wp5pm/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_162045-j09wp5pm/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_162045-j09wp5pm/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_162045-j09wp5pm/files/wandb-summary.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_162045-j09wp5pm/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_162045-j09wp5pm/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_162045-j09wp5pm/run-j09wp5pm.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_171734-x078iunq/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_171734-x078iunq/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_171734-x078iunq/files/media/table/confusion_matrix_table_5_675d448e68d975d4a4e0.table.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_171734-x078iunq/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_171734-x078iunq/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_171734-x078iunq/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_171734-x078iunq/files/wandb-summary.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_171734-x078iunq/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_171734-x078iunq/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_171734-x078iunq/run-x078iunq.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_172211-0jm7roc6/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_172211-0jm7roc6/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_172211-0jm7roc6/files/media/table/confusion_matrix_table_5_d2a3c47eeeecf9bca28a.table.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_172211-0jm7roc6/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_172211-0jm7roc6/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_172211-0jm7roc6/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_172211-0jm7roc6/files/wandb-summary.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_172211-0jm7roc6/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_172211-0jm7roc6/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20240219_172211-0jm7roc6/run-0jm7roc6.wandb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sweep_grid.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/training_sweep.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utilsweep.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_131957-4gpm74z1/files/conda-environment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_131957-4gpm74z1/files/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_131957-4gpm74z1/files/output.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_131957-4gpm74z1/files/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_131957-4gpm74z1/files/wandb-metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_131957-4gpm74z1/files/wandb-summary.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_131957-4gpm74z1/logs/debug-internal.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_131957-4gpm74z1/logs/debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_131957-4gpm74z1/run-4gpm74z1.wandb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132016-heqozitk/files/conda-environment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132016-heqozitk/files/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132016-heqozitk/files/output.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132016-heqozitk/files/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132016-heqozitk/files/wandb-metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132016-heqozitk/files/wandb-summary.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132016-heqozitk/logs/debug-internal.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132016-heqozitk/logs/debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132016-heqozitk/run-heqozitk.wandb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132032-e14z2dkn/files/conda-environment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132032-e14z2dkn/files/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132032-e14z2dkn/files/output.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132032-e14z2dkn/files/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132032-e14z2dkn/files/wandb-metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132032-e14z2dkn/files/wandb-summary.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132032-e14z2dkn/logs/debug-internal.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132032-e14z2dkn/logs/debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132032-e14z2dkn/run-e14z2dkn.wandb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132417-lpm51m15/files/conda-environment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132417-lpm51m15/files/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132417-lpm51m15/files/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132417-lpm51m15/files/wandb-metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132417-lpm51m15/files/wandb-summary.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132417-lpm51m15/logs/debug-internal.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132417-lpm51m15/logs/debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132417-lpm51m15/run-lpm51m15.wandb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132528-yxcxu0p0/files/conda-environment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132528-yxcxu0p0/files/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132528-yxcxu0p0/files/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132528-yxcxu0p0/files/wandb-metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132528-yxcxu0p0/files/wandb-summary.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132528-yxcxu0p0/logs/debug-internal.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132528-yxcxu0p0/logs/debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132528-yxcxu0p0/run-yxcxu0p0.wandb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132636-5h5cgpb5/files/conda-environment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132636-5h5cgpb5/files/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132636-5h5cgpb5/files/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132636-5h5cgpb5/files/wandb-metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132636-5h5cgpb5/files/wandb-summary.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132636-5h5cgpb5/logs/debug-internal.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132636-5h5cgpb5/logs/debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132636-5h5cgpb5/run-5h5cgpb5.wandb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132740-v4hhahh6/files/conda-environment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132740-v4hhahh6/files/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132740-v4hhahh6/files/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132740-v4hhahh6/files/wandb-metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132740-v4hhahh6/files/wandb-summary.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132740-v4hhahh6/logs/debug-internal.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132740-v4hhahh6/logs/debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132740-v4hhahh6/run-v4hhahh6.wandb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132848-v4gu3uio/files/conda-environment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132848-v4gu3uio/files/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132848-v4gu3uio/files/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132848-v4gu3uio/files/wandb-metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132848-v4gu3uio/files/wandb-summary.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132848-v4gu3uio/logs/debug-internal.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132848-v4gu3uio/logs/debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132848-v4gu3uio/run-v4gu3uio.wandb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132955-hpuni590/files/conda-environment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132955-hpuni590/files/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132955-hpuni590/files/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132955-hpuni590/files/wandb-metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132955-hpuni590/files/wandb-summary.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132955-hpuni590/logs/debug-internal.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132955-hpuni590/logs/debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/run-20240220_132955-hpuni590/run-hpuni590.wandb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/sweep-12crt2i8/config-b2pfajn5.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/sweep-12crt2i8/config-ggumga62.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/sweep-12crt2i8/config-q91s2msc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/sweep-b7v7647k/config-0tr7tiul.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/sweep-b7v7647k/config-36qoj81f.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/sweep-b7v7647k/config-48r54d30.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/sweep-b7v7647k/config-58nl6q1u.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/sweep-b7v7647k/config-78m7ckgg.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/sweep-b7v7647k/config-9fry3iyd.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/sweep-b7v7647k/config-h6aoksl6.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/sweep-b7v7647k/config-kduh6o6m.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/sweep-b7v7647k/config-mmhx7kxz.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/sweep-b7v7647k/config-numeq7nx.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/sweep-b7v7647k/config-v54yf5z1.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/sweep-b7v7647k/config-zwg7vfe8.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/sweep-ddpt15fm/config-4gpm74z1.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/sweep-ddpt15fm/config-e14z2dkn.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/sweep-ddpt15fm/config-heqozitk.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/sweep-st4jj2jn/config-5h5cgpb5.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/sweep-st4jj2jn/config-hpuni590.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/sweep-st4jj2jn/config-lpm51m15.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/sweep-st4jj2jn/config-v4gu3uio.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/sweep-st4jj2jn/config-v4hhahh6.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wandb/sweep-st4jj2jn/config-yxcxu0p0.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training.py" beforeDir="false" afterPath="$PROJECT_DIR$/training.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/debug-cli.volodimir.log" beforeDir="false" afterPath="$PROJECT_DIR$/wandb/debug-cli.volodimir.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/debug-internal.log" beforeDir="false" afterPath="$PROJECT_DIR$/wandb/debug-internal.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/wandb/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/latest-run" beforeDir="false" afterPath="$PROJECT_DIR$/wandb/latest-run" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -352,7 +247,7 @@
       <workItem from="1708174436812" duration="17718000" />
       <workItem from="1708345419755" duration="15272000" />
       <workItem from="1708376521637" duration="693000" />
-      <workItem from="1708425419232" duration="301000" />
+      <workItem from="1708425419232" duration="7551000" />
     </task>
     <task id="LOCAL-00001" summary="starting project">
       <option name="closed" value="true" />
@@ -378,7 +273,23 @@
       <option name="project" value="LOCAL" />
       <updated>1707899601039</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="training one model, with default augmentation, and wandb">
+      <option name="closed" value="true" />
+      <created>1708425723236</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708425723236</updated>
+    </task>
+    <task id="LOCAL-00005" summary="training one model, with default augmentation, and wandb">
+      <option name="closed" value="true" />
+      <created>1708425740930</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1708425740930</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

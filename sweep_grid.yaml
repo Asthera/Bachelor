@@ -1,0 +1,10 @@
+program: training_sweep.py
+method: grid
+metric:
+  goal: minimize
+  name: val_loss
+parameters:
+  transform:
+    values: ['none', 'random_erasing', 'random_crop', 'random_horizontal_flip', 'random_vertical_flip', 'random_rotation']
+  batch_size:
+    values: [32, 64]

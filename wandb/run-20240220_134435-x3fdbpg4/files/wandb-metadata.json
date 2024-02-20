@@ -1,0 +1,40 @@
+{
+    "os": "macOS-13.3.1-arm64-arm-64bit",
+    "python": "3.11.7",
+    "heartbeatAt": "2024-02-20T12:44:37.517889",
+    "startedAt": "2024-02-20T12:44:35.251122",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--batch_size=32",
+        "--transform=random_erasing"
+    ],
+    "state": "running",
+    "program": "/Users/volodimir/Desktop/Bachelor/training_sweep.py",
+    "codePathLocal": "training_sweep.py",
+    "codePath": "training_sweep.py",
+    "git": {
+        "remote": "https://github.com/Asthera/Bachelor.git",
+        "commit": "432b594570e80254b7340221709f5fa01c3862d9"
+    },
+    "email": "h",
+    "root": "/Users/volodimir/Desktop/Bachelor",
+    "host": "MacBook-Air-Volodimir.local",
+    "username": "volodimir",
+    "executable": "/Users/volodimir/anaconda3/envs/Global/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "disk": {
+        "/": {
+            "total": 228.27386474609375,
+            "used": 183.09576034545898
+        }
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 16.0
+    }
+}
