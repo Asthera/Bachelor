@@ -1,0 +1,13 @@
+program: training.py
+name: "with_cross_val"
+method: grid
+metric:
+  goal: minimize
+  name: test_loss
+parameters:
+  transform:
+    values: ['none', 'random_erasing_delete', "random_erasing_random", "random_crop","random_horizontal_flip","random_vertical_flip", "random_rotation", "color_jitter",  "random_noise(0.4, 0.5)", "random_noise(0, 0.1)" ]
+  fold:
+    values: ['fold_0', 'fold_1', 'fold_2', 'fold_3', 'fold_4']
+  batch_size:
+    values: [64]

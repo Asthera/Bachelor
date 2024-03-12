@@ -13,7 +13,7 @@ def train():
 
     # giving the run a name
 
-    custom_name = f"tr-{run.config.transform}-{run.config.batch_size}-{run.id}"
+    custom_name = f"tr:{run.config.transform}_batch:{run.config.batch_size}_{run.id}"
 
     wandb.run.name = custom_name
 
@@ -33,18 +33,33 @@ def train():
 
     optimizer = "adam"
     learning_rate = 0.001
-    epochs = 8
+    epochs = 12
     criterion = torch.nn.CrossEntropyLoss()
 
     optimizer = build_optimizer(network, optimizer, learning_rate)
 
     for epoch in range(epochs):
-        val_loss = train_epoch(network, train_loader, val_loader, optimizer, criterion, device)
-        wandb.log({"val_loss": val_loss})
+        val_loss, precision, recall, f1 = train_epoch(network, train_loader, val_loader, optimizer, criterion, device)
 
+        wandb.log({"val_loss": val_loss, "val_precision": precision, "val_recall": recall, "val_f1": f1})
     # Test model
-    test_loss, test_accuracy = test_model(network, test_loader, criterion, device)
-    wandb.log({"test_loss": test_loss, "test_accuracy": test_accuracy})
+    class_names = ["0", "1"]
+
+    test_loss, test_accuracy, true_labels, predicted_labels, precision, recall, f1 = test_model(network, test_loader, criterion, device)
+
+    wandb.log({
+        "test_loss": test_loss,
+        "test_accuracy": test_accuracy,
+        "test_precision": precision,
+        "test_recall": recall,
+        "test_f1": f1,
+        "confusion_matrix": wandb.plot.confusion_matrix(
+            probs=None,
+            y_true=true_labels,
+            preds=predicted_labels,
+            class_names=class_names
+        )
+    })
 
 
 train()

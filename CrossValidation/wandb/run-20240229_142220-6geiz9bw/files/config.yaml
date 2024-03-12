@@ -1,0 +1,120 @@
+wandb_version: 1
+
+program:
+  desc: null
+  value: training.py
+name:
+  desc: null
+  value: with_cross_val
+method:
+  desc: null
+  value: grid
+metric:
+  desc: null
+  value:
+    goal: minimize
+    name: test_loss
+parameters:
+  desc: null
+  value:
+    transform:
+      values:
+      - none
+      - random_erasing_delete
+      - random_erasing_random
+      - random_crop
+      - random_horizontal_flip
+      - random_vertical_flip
+      - random_rotation
+      - color_jitter
+      - random_noise(0.4, 0.5)
+      - random_noise(0, 0.1)
+    fold:
+      values:
+      - fold_0
+      - fold_1
+      - fold_2
+      - fold_3
+      - fold_4
+    batch_size:
+      values:
+      - 64
+_wandb:
+  desc: null
+  value:
+    python_version: 3.11.0
+    cli_version: 0.16.3
+    framework: huggingface
+    huggingface_version: 4.32.1
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1709212940.644743
+    t:
+      1:
+      - 1
+      - 5
+      - 11
+      - 41
+      - 49
+      - 53
+      - 55
+      2:
+      - 1
+      - 5
+      - 11
+      - 41
+      - 49
+      - 53
+      - 55
+      3:
+      - 16
+      - 17
+      - 23
+      - 37
+      4: 3.11.0
+      5: 0.16.3
+      6: 4.32.1
+      8:
+      - 4
+      - 5
+      13: darwin-arm64
+    visualize:
+      confusion_matrix:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/confusion_matrix/v1
+          fieldSettings:
+            Actual: Actual
+            Predicted: Predicted
+            nPredictions: nPredictions
+          stringSettings:
+            title: ''
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: confusion_matrix_table
+                fields: []
+batch_size:
+  desc: null
+  value: 64
+fold:
+  desc: null
+  value: fold_0
+transform:
+  desc: null
+  value: random_rotation

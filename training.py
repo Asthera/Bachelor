@@ -14,6 +14,7 @@ wandb.init(
     project="bachelor-test",
     name="no_aug_40epochs",
 
+
     # track hyperparameters and run metadata
     config={
         "learning_rate": 0.001,

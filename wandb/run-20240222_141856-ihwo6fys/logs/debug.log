@@ -1,0 +1,105 @@
+2024-02-22 14:18:56,416 INFO    MainThread:16695 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-02-22 14:18:56,417 INFO    MainThread:16695 [wandb_setup.py:_flush():76] Configure stats pid to 16695
+2024-02-22 14:18:56,417 INFO    MainThread:16695 [wandb_setup.py:_flush():76] Loading settings from /Users/volodimir/.config/wandb/settings
+2024-02-22 14:18:56,417 INFO    MainThread:16695 [wandb_setup.py:_flush():76] Loading settings from /Users/volodimir/Desktop/Bachelor/wandb/settings
+2024-02-22 14:18:56,417 INFO    MainThread:16695 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'entity': 'daswoldemar', 'project': 'bachelor-test', 'sweep_id': '5w7kcjix', 'root_dir': '/Users/volodimir/Desktop/Bachelor', 'run_id': 'ihwo6fys', 'sweep_param_path': '/Users/volodimir/Desktop/Bachelor/wandb/sweep-5w7kcjix/config-ihwo6fys.yaml'}
+2024-02-22 14:18:56,417 INFO    MainThread:16695 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-02-22 14:18:56,417 INFO    MainThread:16695 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'training_sweep.py', 'program_abspath': '/Users/volodimir/Desktop/Bachelor/training_sweep.py', 'program': '/Users/volodimir/Desktop/Bachelor/training_sweep.py'}
+2024-02-22 14:18:56,417 INFO    MainThread:16695 [wandb_init.py:_log_setup():526] Logging user logs to /Users/volodimir/Desktop/Bachelor/wandb/run-20240222_141856-ihwo6fys/logs/debug.log
+2024-02-22 14:18:56,418 INFO    MainThread:16695 [wandb_init.py:_log_setup():527] Logging internal logs to /Users/volodimir/Desktop/Bachelor/wandb/run-20240222_141856-ihwo6fys/logs/debug-internal.log
+2024-02-22 14:18:56,418 INFO    MainThread:16695 [wandb_init.py:init():566] calling init triggers
+2024-02-22 14:18:56,418 INFO    MainThread:16695 [wandb_init.py:init():573] wandb.init called with sweep_config: {'batch_size': 64, 'transform': 'random_erasing_delete'}
+config: {'program': 'training_sweep.py', 'method': 'grid', 'metric': {'goal': 'minimize', 'name': 'test_loss'}, 'parameters': {'transform': {'values': ['none', 'random_erasing_delete', 'random_erasing_random', 'random_crop', 'random_horizontal_flip', 'random_vertical_flip', 'random_rotation', 'color_jitter', 'random_noise(0.4, 0.5)', 'random_noise(0, 0.1)']}, 'batch_size': {'values': [64]}}}
+2024-02-22 14:18:56,418 INFO    MainThread:16695 [wandb_init.py:init():616] starting backend
+2024-02-22 14:18:56,418 INFO    MainThread:16695 [wandb_init.py:init():620] setting up manager
+2024-02-22 14:18:56,424 INFO    MainThread:16695 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-02-22 14:18:56,426 INFO    MainThread:16695 [wandb_init.py:init():628] backend started and connected
+2024-02-22 14:18:56,436 INFO    MainThread:16695 [wandb_run.py:_config_callback():1343] config_cb None None {'batch_size': 64, 'transform': 'random_erasing_delete'}
+2024-02-22 14:18:56,439 INFO    MainThread:16695 [wandb_init.py:init():720] updated telemetry
+2024-02-22 14:18:56,454 INFO    MainThread:16695 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-02-22 14:18:57,093 INFO    MainThread:16695 [wandb_run.py:_on_init():2262] communicating current version
+2024-02-22 14:18:57,227 INFO    MainThread:16695 [wandb_run.py:_on_init():2271] got version response 
+2024-02-22 14:18:57,227 INFO    MainThread:16695 [wandb_init.py:init():804] starting run threads in backend
+2024-02-22 14:18:59,091 INFO    MainThread:16695 [wandb_run.py:_console_start():2241] atexit reg
+2024-02-22 14:18:59,091 INFO    MainThread:16695 [wandb_run.py:_redirect():2096] redirect: wrap_raw
+2024-02-22 14:18:59,091 INFO    MainThread:16695 [wandb_run.py:_redirect():2161] Wrapping output streams.
+2024-02-22 14:18:59,091 INFO    MainThread:16695 [wandb_run.py:_redirect():2186] Redirects installed.
+2024-02-22 14:18:59,091 INFO    MainThread:16695 [wandb_init.py:init():847] run started, returning control to user process
+2024-02-22 14:21:54,100 INFO    MainThread:16695 [wandb_run.py:_config_callback():1343] config_cb ('_wandb', 'visualize', 'confusion_matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': ''}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'confusion_matrix_table'}], 'fields': []}]}]}}} None
+2024-02-22 14:22:39,226 INFO    MainThread:16695 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/connection.py", line 203, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/socket.py", line 961, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1096, in _validate_conn
+    conn.connect()
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/connection.py", line 611, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/connection.py", line 210, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x13ac55e10>: Failed to resolve 'api.wandb.ai' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/connectionpool.py", line 844, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/util/retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x13ac55e10>: Failed to resolve 'api.wandb.ai' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x13ac55e10>: Failed to resolve 'api.wandb.ai' ([Errno 8] nodename nor servname provided, or not known)"))
+2024-02-22 14:24:58,004 WARNING MsgRouterThr:16695 [router.py:message_loop():77] message_loop has been closed

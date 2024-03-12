@@ -201,3 +201,398 @@
 	batch_size: 32
 	transform: random_vertical_flip
 2024-02-20 13:48:18 INFO About to run command: /usr/bin/env python training_sweep.py --batch_size=32 --transform=random_vertical_flip
+2024-02-20 13:48:23 INFO Running runs: ['0z8ddqg2']
+2024-02-20 13:49:40 INFO Cleaning up finished run: 0z8ddqg2
+2024-02-20 13:49:41 INFO Agent received command: run
+2024-02-20 13:49:41 INFO Agent starting run with config:
+	batch_size: 32
+	transform: random_rotation
+2024-02-20 13:49:41 INFO About to run command: /usr/bin/env python training_sweep.py --batch_size=32 --transform=random_rotation
+2024-02-20 13:49:46 INFO Running runs: ['ak4uogj0']
+2024-02-20 13:51:03 INFO Cleaning up finished run: ak4uogj0
+2024-02-20 13:51:04 INFO Agent received command: run
+2024-02-20 13:51:04 INFO Agent starting run with config:
+	batch_size: 64
+	transform: none
+2024-02-20 13:51:04 INFO About to run command: /usr/bin/env python training_sweep.py --batch_size=64 --transform=none
+2024-02-20 13:51:09 INFO Running runs: ['5mdhn9l2']
+2024-02-20 13:52:21 INFO Cleaning up finished run: 5mdhn9l2
+2024-02-20 13:52:21 INFO Agent received command: run
+2024-02-20 13:52:21 INFO Agent starting run with config:
+	batch_size: 64
+	transform: random_erasing
+2024-02-20 13:52:21 INFO About to run command: /usr/bin/env python training_sweep.py --batch_size=64 --transform=random_erasing
+2024-02-20 13:52:26 INFO Running runs: ['vuc3owxw']
+2024-02-20 13:53:39 INFO Cleaning up finished run: vuc3owxw
+2024-02-20 13:53:39 INFO Agent received command: run
+2024-02-20 13:53:39 INFO Agent starting run with config:
+	batch_size: 64
+	transform: random_crop
+2024-02-20 13:53:39 INFO About to run command: /usr/bin/env python training_sweep.py --batch_size=64 --transform=random_crop
+2024-02-20 13:53:44 INFO Running runs: ['vjkyc9y0']
+2024-02-20 13:54:52 INFO Cleaning up finished run: vjkyc9y0
+2024-02-20 13:54:53 INFO Agent received command: run
+2024-02-20 13:54:53 INFO Agent starting run with config:
+	batch_size: 64
+	transform: random_horizontal_flip
+2024-02-20 13:54:53 INFO About to run command: /usr/bin/env python training_sweep.py --batch_size=64 --transform=random_horizontal_flip
+2024-02-20 13:54:58 INFO Running runs: ['6qkcyf7h']
+2024-02-20 13:56:15 INFO Cleaning up finished run: 6qkcyf7h
+2024-02-20 13:56:16 INFO Agent received command: run
+2024-02-20 13:56:16 INFO Agent starting run with config:
+	batch_size: 64
+	transform: random_vertical_flip
+2024-02-20 13:56:16 INFO About to run command: /usr/bin/env python training_sweep.py --batch_size=64 --transform=random_vertical_flip
+2024-02-20 13:56:21 INFO Running runs: ['8qculxmx']
+2024-02-20 13:57:39 INFO Cleaning up finished run: 8qculxmx
+2024-02-20 13:57:39 INFO Agent received command: run
+2024-02-20 13:57:39 INFO Agent starting run with config:
+	batch_size: 64
+	transform: random_rotation
+2024-02-20 13:57:39 INFO About to run command: /usr/bin/env python training_sweep.py --batch_size=64 --transform=random_rotation
+2024-02-20 13:57:44 INFO Running runs: ['9w2l04j3']
+2024-02-20 13:59:07 INFO Cleaning up finished run: 9w2l04j3
+2024-02-20 13:59:08 INFO Agent received command: exit
+2024-02-20 13:59:08 INFO Received exit command. Killing runs and quitting.
+2024-02-21 21:29:16 INFO Running runs: []
+2024-02-21 21:29:16 INFO Agent received command: run
+2024-02-21 21:29:16 INFO Agent starting run with config:
+	batch_size: 32
+	transform: none
+2024-02-21 21:29:16 INFO About to run command: /usr/bin/env python training_sweep.py --batch_size=32 --transform=none
+2024-02-21 21:29:21 INFO Running runs: ['p9x8sggk']
+2024-02-21 21:30:29 INFO Cleaning up finished run: p9x8sggk
+2024-02-21 21:30:36 INFO Agent received command: run
+2024-02-21 21:30:36 INFO Agent starting run with config:
+	batch_size: 32
+	transform: random_erasing
+2024-02-21 21:30:36 INFO About to run command: /usr/bin/env python training_sweep.py --batch_size=32 --transform=random_erasing
+2024-02-21 21:30:41 INFO Running runs: ['t682dfsn']
+2024-02-21 21:31:49 INFO Cleaning up finished run: t682dfsn
+2024-02-21 21:31:49 INFO Agent received command: run
+2024-02-21 21:31:49 INFO Agent starting run with config:
+	batch_size: 64
+	transform: none
+2024-02-21 21:31:49 INFO About to run command: /usr/bin/env python training_sweep.py --batch_size=64 --transform=none
+2024-02-21 21:31:54 INFO Running runs: ['sdwyz7l5']
+2024-02-21 21:33:10 INFO Cleaning up finished run: sdwyz7l5
+2024-02-21 21:33:11 INFO Agent received command: run
+2024-02-21 21:33:11 INFO Agent starting run with config:
+	batch_size: 64
+	transform: random_erasing
+2024-02-21 21:33:11 INFO About to run command: /usr/bin/env python training_sweep.py --batch_size=64 --transform=random_erasing
+2024-02-21 21:33:16 INFO Running runs: ['jba53xdi']
+2024-02-21 21:34:28 INFO Cleaning up finished run: jba53xdi
+2024-02-21 21:34:31 INFO Agent received command: exit
+2024-02-21 21:34:31 INFO Received exit command. Killing runs and quitting.
+2024-02-22 13:26:08 INFO Running runs: []
+2024-02-22 13:26:09 INFO Agent received command: run
+2024-02-22 13:26:09 INFO Agent starting run with config:
+	batch_size: 64
+	transform: none
+2024-02-22 13:26:09 INFO About to run command: /usr/bin/env python training_sweep.py --batch_size=64 --transform=none
+2024-02-22 13:26:14 INFO Running runs: ['r9rluho9']
+2024-02-22 13:28:07 INFO Cleaning up finished run: r9rluho9
+2024-02-22 13:28:14 INFO Agent received command: run
+2024-02-22 13:28:14 INFO Agent starting run with config:
+	batch_size: 64
+	transform: random_erasing
+2024-02-22 13:28:14 INFO About to run command: /usr/bin/env python training_sweep.py --batch_size=64 --transform=random_erasing
+2024-02-22 13:28:19 INFO Running runs: ['u6tjvwvg']
+2024-02-22 13:28:29 INFO Cleaning up finished run: u6tjvwvg
+2024-02-22 13:28:29 INFO Agent received command: exit
+2024-02-22 13:28:29 INFO Received exit command. Killing runs and quitting.
+2024-02-22 13:56:36 INFO Running runs: []
+2024-02-22 13:56:37 INFO Agent received command: run
+2024-02-22 13:56:37 INFO Agent starting run with config:
+	batch_size: 64
+	transform: none
+2024-02-22 13:56:37 INFO About to run command: /usr/bin/env python training_sweep.py --batch_size=64 --transform=none
+2024-02-22 13:56:42 INFO Running runs: ['2pj8hrz2']
+2024-02-22 13:59:49 INFO Cleaning up finished run: 2pj8hrz2
+2024-02-22 13:59:54 INFO Agent received command: run
+2024-02-22 13:59:54 INFO Agent starting run with config:
+	batch_size: 64
+	transform: random_erasing_delete
+2024-02-22 13:59:54 INFO About to run command: /usr/bin/env python training_sweep.py --batch_size=64 --transform=random_erasing_delete
+2024-02-22 13:59:59 INFO Running runs: ['lirbj0bc']
+2024-02-22 14:02:30 INFO Running runs: []
+2024-02-22 14:02:31 INFO Agent received command: run
+2024-02-22 14:02:31 INFO Agent starting run with config:
+	batch_size: 64
+	transform: none
+2024-02-22 14:02:31 INFO About to run command: /usr/bin/env python training_sweep.py --batch_size=64 --transform=none
+2024-02-22 14:02:36 INFO Running runs: ['3drsv4gp']
+2024-02-22 14:05:47 INFO Cleaning up finished run: 3drsv4gp
+2024-02-22 14:05:51 INFO Agent received command: run
+2024-02-22 14:05:51 INFO Agent starting run with config:
+	batch_size: 64
+	transform: random_erasing_delete
+2024-02-22 14:05:51 INFO About to run command: /usr/bin/env python training_sweep.py --batch_size=64 --transform=random_erasing_delete
+2024-02-22 14:05:56 INFO Running runs: ['27xhnd8s']
+2024-02-22 14:09:24 INFO Cleaning up finished run: 27xhnd8s
+2024-02-22 14:09:24 INFO Agent received command: run
+2024-02-22 14:09:24 INFO Agent starting run with config:
+	batch_size: 64
+	transform: random_erasing_random
+2024-02-22 14:09:24 INFO About to run command: /usr/bin/env python training_sweep.py --batch_size=64 --transform=random_erasing_random
+2024-02-22 14:09:29 INFO Running runs: ['k07lmye4']
+2024-02-22 14:12:47 INFO Cleaning up finished run: k07lmye4
+2024-02-22 14:12:48 INFO Agent received command: run
+2024-02-22 14:12:48 INFO Agent starting run with config:
+	batch_size: 64
+	transform: random_crop
+2024-02-22 14:12:48 INFO About to run command: /usr/bin/env python training_sweep.py --batch_size=64 --transform=random_crop
+2024-02-22 14:12:53 INFO Running runs: ['t53mxycf']
+2024-02-22 14:16:15 INFO Running runs: []
+2024-02-22 14:16:16 INFO Agent received command: run
+2024-02-22 14:16:16 INFO Agent starting run with config:
+	batch_size: 64
+	transform: none
+2024-02-22 14:16:16 INFO About to run command: /usr/bin/env python training_sweep.py --batch_size=64 --transform=none
+2024-02-22 14:16:21 INFO Running runs: ['w18xspbw']
+2024-02-22 14:18:48 INFO Cleaning up finished run: w18xspbw
+2024-02-22 14:18:52 INFO Agent received command: run
+2024-02-22 14:18:52 INFO Agent starting run with config:
+	batch_size: 64
+	transform: random_erasing_delete
+2024-02-22 14:18:52 INFO About to run command: /usr/bin/env python training_sweep.py --batch_size=64 --transform=random_erasing_delete
+2024-02-22 14:18:57 INFO Running runs: ['ihwo6fys']
+2024-02-22 14:23:17 INFO Retry attempt failed:
+Traceback (most recent call last):
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/connection.py", line 203, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/socket.py", line 961, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1096, in _validate_conn
+    conn.connect()
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/connection.py", line 611, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/connection.py", line 210, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x112d7f590>: Failed to resolve 'api.wandb.ai' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/connectionpool.py", line 844, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/util/retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x112d7f590>: Failed to resolve 'api.wandb.ai' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x112d7f590>: Failed to resolve 'api.wandb.ai' ([Errno 8] nodename nor servname provided, or not known)"))
+2024-02-22 14:24:59 INFO Cleaning up finished run: ihwo6fys
+2024-02-22 14:25:00 INFO Agent received command: run
+2024-02-22 14:25:00 INFO Agent starting run with config:
+	batch_size: 64
+	transform: random_erasing_random
+2024-02-22 14:25:00 INFO About to run command: /usr/bin/env python training_sweep.py --batch_size=64 --transform=random_erasing_random
+2024-02-22 14:25:05 INFO Running runs: ['l0vu23e1']
+2024-02-22 14:26:44 INFO Cleaning up finished run: l0vu23e1
+2024-02-22 14:26:44 INFO Agent received command: run
+2024-02-22 14:26:44 INFO Agent starting run with config:
+	batch_size: 64
+	transform: random_crop
+2024-02-22 14:26:44 INFO About to run command: /usr/bin/env python training_sweep.py --batch_size=64 --transform=random_crop
+2024-02-22 14:26:49 INFO Running runs: ['euetmq48']
+2024-02-22 14:28:19 INFO Cleaning up finished run: euetmq48
+2024-02-22 14:28:20 INFO Agent received command: run
+2024-02-22 14:28:20 INFO Agent starting run with config:
+	batch_size: 64
+	transform: random_horizontal_flip
+2024-02-22 14:28:20 INFO About to run command: /usr/bin/env python training_sweep.py --batch_size=64 --transform=random_horizontal_flip
+2024-02-22 14:28:25 INFO Running runs: ['lpdzghck']
+2024-02-22 14:30:08 INFO Cleaning up finished run: lpdzghck
+2024-02-22 14:30:08 INFO Agent received command: run
+2024-02-22 14:30:08 INFO Agent starting run with config:
+	batch_size: 64
+	transform: random_vertical_flip
+2024-02-22 14:30:08 INFO About to run command: /usr/bin/env python training_sweep.py --batch_size=64 --transform=random_vertical_flip
+2024-02-22 14:30:13 INFO Running runs: ['c3dehgsh']
+2024-02-22 14:32:12 INFO Cleaning up finished run: c3dehgsh
+2024-02-22 14:32:12 INFO Agent received command: run
+2024-02-22 14:32:12 INFO Agent starting run with config:
+	batch_size: 64
+	transform: random_rotation
+2024-02-22 14:32:12 INFO About to run command: /usr/bin/env python training_sweep.py --batch_size=64 --transform=random_rotation
+2024-02-22 14:32:17 INFO Running runs: ['xgtjd8i2']
+2024-02-22 14:34:13 INFO Cleaning up finished run: xgtjd8i2
+2024-02-22 14:34:13 INFO Agent received command: run
+2024-02-22 14:34:13 INFO Agent starting run with config:
+	batch_size: 64
+	transform: color_jitter
+2024-02-22 14:34:13 INFO About to run command: /usr/bin/env python training_sweep.py --batch_size=64 --transform=color_jitter
+2024-02-22 14:34:18 INFO Running runs: ['iqdu7sj3']
+2024-02-22 14:36:07 INFO Cleaning up finished run: iqdu7sj3
+2024-02-22 14:36:07 INFO Agent received command: run
+2024-02-22 14:36:07 INFO Agent starting run with config:
+	batch_size: 64
+	transform: random_noise(0.4, 0.5)
+2024-02-22 14:36:07 INFO About to run command: /usr/bin/env python training_sweep.py --batch_size=64 "--transform=random_noise(0.4, 0.5)"
+2024-02-22 14:36:12 INFO Running runs: ['2ixv3m5c']
+2024-02-22 14:39:58 INFO Cleaning up finished run: 2ixv3m5c
+2024-02-22 14:39:59 INFO Agent received command: run
+2024-02-22 14:39:59 INFO Agent starting run with config:
+	batch_size: 64
+	transform: random_noise(0, 0.1)
+2024-02-22 14:39:59 INFO About to run command: /usr/bin/env python training_sweep.py --batch_size=64 "--transform=random_noise(0, 0.1)"
+2024-02-22 14:40:04 INFO Running runs: ['3xb6c5y7']
+2024-02-22 14:42:58 INFO Cleaning up finished run: 3xb6c5y7
+2024-02-22 14:43:02 INFO Agent received command: exit
+2024-02-22 14:43:02 INFO Received exit command. Killing runs and quitting.
+2024-02-29 13:50:33 ERROR 400 response executing GraphQL.
+2024-02-29 13:50:33 ERROR {"errors":[{"message":"Invalid configuration for hyperparameter 'batch'","path":["upsertSweep"]}],"data":{"upsertSweep":null}}
+2024-02-29 13:50:33 ERROR Traceback (most recent call last):
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/cli/cli.py", line 105, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/cli/cli.py", line 1028, in sweep
+    sweep_id, warnings = api.upsert_sweep(
+                         ^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/apis/internal.py", line 129, in upsert_sweep
+    return self.api.upsert_sweep(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 3169, in upsert_sweep
+    raise e
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 3163, in upsert_sweep
+    response = self.gql(
+               ^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 341, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+                                ^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/util.py", line 878, in no_retry_4xx
+    raise UsageError(body["errors"][0]["message"])
+wandb.errors.UsageError: Invalid configuration for hyperparameter 'batch'
+
+2024-02-29 13:51:29 INFO Running runs: []
+2024-02-29 13:51:29 INFO Agent received command: run
+2024-02-29 13:51:29 INFO Agent starting run with config:
+	batch: 64
+	fold: fold_0
+	transform: none
+2024-02-29 13:51:29 INFO About to run command: /usr/bin/env python training.py --batch=64 --fold=fold_0 --transform=none
+2024-02-29 13:51:34 INFO Running runs: ['sjwqn308']
+2024-02-29 13:51:44 INFO Cleaning up finished run: sjwqn308
+2024-02-29 13:51:46 INFO Agent received command: run
+2024-02-29 13:51:46 INFO Agent starting run with config:
+	batch: 64
+	fold: fold_0
+	transform: random_erasing_delete
+2024-02-29 13:51:46 INFO About to run command: /usr/bin/env python training.py --batch=64 --fold=fold_0 --transform=random_erasing_delete
+2024-02-29 13:51:51 INFO Running runs: ['hktyepnl']
+2024-02-29 13:51:57 INFO Cleaning up finished run: hktyepnl
+2024-02-29 13:51:57 INFO Agent received command: run
+2024-02-29 13:51:57 INFO Agent starting run with config:
+	batch: 64
+	fold: fold_0
+	transform: random_erasing_random
+2024-02-29 13:51:57 INFO About to run command: /usr/bin/env python training.py --batch=64 --fold=fold_0 --transform=random_erasing_random
+2024-02-29 13:52:02 INFO Running runs: ['8dwgzllf']
+2024-02-29 13:53:20 INFO Running runs: []
+2024-02-29 13:53:20 INFO Agent received command: run
+2024-02-29 13:53:20 INFO Agent starting run with config:
+	batch: 64
+	fold: fold_0
+	transform: none
+2024-02-29 13:53:20 INFO About to run command: /usr/bin/env python CrossValidation/training.py --batch=64 --fold=fold_0 --transform=none
+2024-02-29 13:53:25 INFO Running runs: ['w5rz76yb']
+2024-02-29 13:53:25 INFO Cleaning up finished run: w5rz76yb
+2024-02-29 13:53:26 INFO Agent received command: run
+2024-02-29 13:53:26 INFO Agent starting run with config:
+	batch: 64
+	fold: fold_0
+	transform: random_erasing_delete
+2024-02-29 13:53:26 INFO About to run command: /usr/bin/env python CrossValidation/training.py --batch=64 --fold=fold_0 --transform=random_erasing_delete
+2024-02-29 13:53:31 INFO Running runs: ['slquc1hq']
+2024-02-29 13:53:31 INFO Cleaning up finished run: slquc1hq
+2024-02-29 13:53:31 INFO Agent received command: run
+2024-02-29 13:53:31 INFO Agent starting run with config:
+	batch: 64
+	fold: fold_0
+	transform: random_erasing_random
+2024-02-29 13:53:31 INFO About to run command: /usr/bin/env python CrossValidation/training.py --batch=64 --fold=fold_0 --transform=random_erasing_random
+2024-02-29 13:53:36 INFO Running runs: ['tcigs0v3']
+2024-02-29 13:53:36 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-02-29 13:53:36 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true

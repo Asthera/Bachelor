@@ -1,18 +1,54 @@
-import torch
 import torchvision
 from torch import nn
 from torch.utils.data import DataLoader
 from torchvision import transforms
-from torchvision.models import ResNet18_Weights
+import torchvision.transforms.functional as F
 
+from torchvision.models import ResNet18_Weights
 from utils import CustomDataset  # Ensure this includes necessary transformations
 import pandas as pd
 from sklearn.model_selection import train_test_split
+import torch
+from torchvision.transforms import transforms
+import wandb
+from sklearn.metrics import precision_score, recall_score, f1_score
+
+
+class RandomSpeckleNoise(object):
+    def __init__(self, p=0.5, mean=0, std=1):
+        super().__init__()
+        self.p = p
+        self.mean = mean
+        self.std = std
+
+    def __call__(self, img):
+        if torch.rand(1) < self.p:
+            noise = torch.randn(img.size()) * self.std + self.mean
+            img = img + img * noise
+        return img
+
+
+class RandomNoise(object):
+    def __init__(self, p=0.5, mean=0, std=1):
+        self.p = p
+        self.mean = mean
+        self.std = std
+
+    def __call__(self, img):
+        if torch.rand(1) < self.p:
+            noise = torch.randn(img.size()) * self.std + self.mean
+            img_tensor = torch.clamp(img + noise, 0, 1)
+
+            return img_tensor
+        return img
 
 
 def build_transforms(transform):
-    if transform == "random_erasing":
-        return transforms.RandomErasing()
+    if transform == "random_erasing_delete":
+        return transforms.RandomErasing(value=0)
+
+    elif transform == "random_erasing_random":
+        return transforms.RandomErasing(value="random")
 
     elif transform == "random_crop":
         return transforms.RandomCrop(size=(200, 200))
@@ -24,7 +60,21 @@ def build_transforms(transform):
         return transforms.RandomVerticalFlip()
 
     elif transform == "random_rotation":
-        return transforms.RandomRotation(degrees=90)
+        return transforms.RandomRotation(degrees=70)
+
+    elif transform == "color_jitter":
+        "Randomly change the brightness, contrast, saturation and hue of an image."
+        return transforms.ColorJitter(brightness=0.5, contrast=0.5, saturation=0.5, hue=0.5)
+
+    elif transform == "random_speckle_noise":
+        "Not implemented, because it is not undersatood how to works params, too strong noise"
+        return NotImplementedError()
+
+    elif transform == "random_noise(0.4, 0.5)":
+        return RandomNoise(p=0.5, mean=0.4, std=0.5)
+
+    elif transform == "random_noise(0, 0.1)":
+        return RandomNoise(p=0.5, mean=0, std=0.1)
 
     elif transform == "none":
         return None
@@ -90,14 +140,24 @@ def train_epoch(network, train_loader, val_loader, optimizer, criterion, device=
     with torch.no_grad():
         val_loss = 0
 
+        predicted_labels = []
+        true_labels = []
+
         for images, labels in val_loader:
             images, labels = images.to(device), labels.to(device)
             outputs = network(images)
             val_loss += criterion(outputs, labels).item()
 
-            # Calculate validation loss and accuracy
+            _, predicted = outputs.max(1)
 
-    return val_loss / len(val_loader)
+            predicted_labels.extend(predicted.cpu().numpy())
+            true_labels.extend(labels.cpu().numpy())
+
+        precision = precision_score(true_labels, predicted_labels, average='binary', pos_label=1)
+        recall = recall_score(true_labels, predicted_labels, average='binary', pos_label=1)
+        f1 = f1_score(true_labels, predicted_labels, average='binary', pos_label=1)
+
+    return val_loss / len(val_loader), precision, recall, f1
 
     # Log metrics using wandb here if needed
 
@@ -107,6 +167,9 @@ def test_model(network, test_loader, criterion, device="mps"):
     test_loss = 0
     correct = 0
     total = 0
+
+    true_labels = []
+    predicted_labels = []
 
     with torch.no_grad():
         for images, labels in test_loader:
@@ -119,10 +182,17 @@ def test_model(network, test_loader, criterion, device="mps"):
 
             _, predicted = outputs.max(1)
 
+            predicted_labels.extend(predicted.item() for predicted in predicted)
+            true_labels.extend(label.item() for label in labels)
+
             total += labels.size(0)
             correct += predicted.eq(labels).sum().item()
 
     test_accuracy = 100 * (correct / total)
     test_loss = test_loss / len(test_loader)
 
-    return test_loss, test_accuracy
+    precision = precision_score(true_labels, predicted_labels, average='binary', pos_label=1)
+    recall = recall_score(true_labels, predicted_labels, average='binary', pos_label=1)
+    f1 = f1_score(true_labels, predicted_labels, average='binary', pos_label=1)
+
+    return test_loss, test_accuracy, true_labels, predicted_labels, precision, recall, f1

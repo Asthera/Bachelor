@@ -1,0 +1,29 @@
+2024-02-22 14:02:34,819 INFO    MainThread:15589 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-02-22 14:02:34,819 INFO    MainThread:15589 [wandb_setup.py:_flush():76] Configure stats pid to 15589
+2024-02-22 14:02:34,819 INFO    MainThread:15589 [wandb_setup.py:_flush():76] Loading settings from /Users/volodimir/.config/wandb/settings
+2024-02-22 14:02:34,819 INFO    MainThread:15589 [wandb_setup.py:_flush():76] Loading settings from /Users/volodimir/Desktop/Bachelor/wandb/settings
+2024-02-22 14:02:34,819 WARNING MainThread:15589 [wandb_setup.py:_flush():76] Unknown environment variable: WANDB_SERVICE
+2024-02-22 14:02:34,819 INFO    MainThread:15589 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'entity': 'daswoldemar', 'project': 'bachelor-test', 'sweep_id': 'felt3p8r', 'root_dir': '/Users/volodimir/Desktop/Bachelor', 'run_id': '3drsv4gp', 'sweep_param_path': '/Users/volodimir/Desktop/Bachelor/wandb/sweep-felt3p8r/config-3drsv4gp.yaml'}
+2024-02-22 14:02:34,819 INFO    MainThread:15589 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-02-22 14:02:34,819 INFO    MainThread:15589 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'training_sweep.py', 'program_abspath': '/Users/volodimir/Desktop/Bachelor/training_sweep.py', 'program': '/Users/volodimir/Desktop/Bachelor/training_sweep.py'}
+2024-02-22 14:02:34,819 INFO    MainThread:15589 [wandb_init.py:_log_setup():526] Logging user logs to /Users/volodimir/Desktop/Bachelor/wandb/run-20240222_140234-3drsv4gp/logs/debug.log
+2024-02-22 14:02:34,819 INFO    MainThread:15589 [wandb_init.py:_log_setup():527] Logging internal logs to /Users/volodimir/Desktop/Bachelor/wandb/run-20240222_140234-3drsv4gp/logs/debug-internal.log
+2024-02-22 14:02:34,819 INFO    MainThread:15589 [wandb_init.py:init():566] calling init triggers
+2024-02-22 14:02:34,820 INFO    MainThread:15589 [wandb_init.py:init():573] wandb.init called with sweep_config: {'batch_size': 64, 'transform': 'none'}
+config: {'program': 'training_sweep.py', 'method': 'grid', 'metric': {'goal': 'minimize', 'name': 'test_loss'}, 'parameters': {'transform': {'values': ['none', 'random_erasing_delete', 'random_erasing_random', 'random_crop', 'random_horizontal_flip', 'random_vertical_flip', 'random_rotation', 'color_jitter', 'random_noise(0.4, 0.5)', 'random_noise(0, 0.1)']}, 'batch_size': {'values': [64]}}}
+2024-02-22 14:02:34,820 INFO    MainThread:15589 [wandb_init.py:init():616] starting backend
+2024-02-22 14:02:34,820 INFO    MainThread:15589 [wandb_init.py:init():620] setting up manager
+2024-02-22 14:02:34,826 INFO    MainThread:15589 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-02-22 14:02:34,828 INFO    MainThread:15589 [wandb_init.py:init():628] backend started and connected
+2024-02-22 14:02:34,837 INFO    MainThread:15589 [wandb_run.py:_config_callback():1343] config_cb None None {'batch_size': 64, 'transform': 'none'}
+2024-02-22 14:02:34,839 INFO    MainThread:15589 [wandb_init.py:init():720] updated telemetry
+2024-02-22 14:02:34,854 INFO    MainThread:15589 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-02-22 14:02:35,274 INFO    MainThread:15589 [wandb_run.py:_on_init():2262] communicating current version
+2024-02-22 14:02:35,374 INFO    MainThread:15589 [wandb_run.py:_on_init():2271] got version response 
+2024-02-22 14:02:35,374 INFO    MainThread:15589 [wandb_init.py:init():804] starting run threads in backend
+2024-02-22 14:02:37,877 INFO    MainThread:15589 [wandb_run.py:_console_start():2241] atexit reg
+2024-02-22 14:02:37,877 INFO    MainThread:15589 [wandb_run.py:_redirect():2096] redirect: wrap_raw
+2024-02-22 14:02:37,878 INFO    MainThread:15589 [wandb_run.py:_redirect():2161] Wrapping output streams.
+2024-02-22 14:02:37,878 INFO    MainThread:15589 [wandb_run.py:_redirect():2186] Redirects installed.
+2024-02-22 14:02:37,878 INFO    MainThread:15589 [wandb_init.py:init():847] run started, returning control to user process
+2024-02-22 14:05:43,372 INFO    MainThread:15589 [wandb_run.py:_config_callback():1343] config_cb ('_wandb', 'visualize', 'confusion_matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': ''}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'confusion_matrix_table'}], 'fields': []}]}]}}} None

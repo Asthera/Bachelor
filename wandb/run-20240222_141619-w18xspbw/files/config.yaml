@@ -1,0 +1,101 @@
+wandb_version: 1
+
+program:
+  desc: null
+  value: training_sweep.py
+method:
+  desc: null
+  value: grid
+metric:
+  desc: null
+  value:
+    goal: minimize
+    name: test_loss
+parameters:
+  desc: null
+  value:
+    transform:
+      values:
+      - none
+      - random_erasing_delete
+      - random_erasing_random
+      - random_crop
+      - random_horizontal_flip
+      - random_vertical_flip
+      - random_rotation
+      - color_jitter
+      - random_noise(0.4, 0.5)
+      - random_noise(0, 0.1)
+    batch_size:
+      values:
+      - 64
+_wandb:
+  desc: null
+  value:
+    python_version: 3.11.0
+    cli_version: 0.16.3
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1708607779.837376
+    t:
+      1:
+      - 1
+      - 5
+      - 41
+      - 53
+      - 55
+      2:
+      - 1
+      - 5
+      - 41
+      - 53
+      - 55
+      3:
+      - 16
+      - 17
+      - 23
+      - 37
+      4: 3.11.0
+      5: 0.16.3
+      8:
+      - 4
+      - 5
+      13: darwin-arm64
+    visualize:
+      confusion_matrix:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/confusion_matrix/v1
+          fieldSettings:
+            Actual: Actual
+            Predicted: Predicted
+            nPredictions: nPredictions
+          stringSettings:
+            title: ''
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: confusion_matrix_table
+                fields: []
+batch_size:
+  desc: null
+  value: 64
+transform:
+  desc: null
+  value: none

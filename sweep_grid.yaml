@@ -2,9 +2,9 @@ program: training_sweep.py
 method: grid
 metric:
   goal: minimize
-  name: val_loss
+  name: test_loss
 parameters:
   transform:
-    values: ['none', 'random_erasing', 'random_crop', 'random_horizontal_flip', 'random_vertical_flip', 'random_rotation']
+    values: ['none', 'random_erasing_delete', "random_erasing_random", "random_crop","random_horizontal_flip","random_vertical_flip", "random_rotation", "color_jitter",  "random_noise(0.4, 0.5)", "random_noise(0, 0.1)" ]
   batch_size:
-    values: [32, 64]
+    values: [64]
