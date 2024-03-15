@@ -1,4 +1,6 @@
 import os.path
+import time
+
 import torchvision
 from torch import nn
 from torchvision import transforms
@@ -15,6 +17,46 @@ from torchvision.io import read_image
 import matplotlib.pyplot as plt
 import numpy as np
 
+
+class TransformPad:
+    def __init__(self, square_size):
+        self.square_size = square_size
+        self.base_pad = transforms.Pad(0, padding_mode="edge")
+
+    def __call__(self, img):
+        *rest, h, w = img.shape
+
+        if h > self.square_size or w > self.square_size:
+            raise ValueError("Image sizes must be smaller or equal to max image size!")
+
+        left_pad = (self.square_size - w) // 2
+        right_pad = left_pad if w + 2 * left_pad == self.square_size else left_pad + 1
+        top_pad = (self.square_size - h) // 2
+        bottom_pad = top_pad if h + 2 * top_pad == self.square_size else top_pad + 1
+
+        self.base_pad.padding = (left_pad, top_pad, right_pad, bottom_pad)
+
+        return self.base_pad(img)
+
+
+class TransformResize:
+    def __init__(self, size):
+        self.size = size
+        self.base_resize = transforms.Resize(size, antialias=True)
+
+    def __call__(self, img):
+        *rest, h, w = img.shape
+
+        if h > w:
+            new_h = self.size
+            new_w = int((self.size * w) / h)
+        else:
+            new_h = int((self.size * h) / w)
+            new_w = self.size
+
+        self.base_resize.size = (new_h, new_w)
+
+        return self.base_resize(img)
 
 
 class FramesDataset(Dataset):
@@ -39,9 +81,8 @@ class FramesDataset(Dataset):
 
         init_transform = transforms.Compose([
             # MUST BE
-
-            transforms.Resize(self.resolution)
-            # transforms.Pad([(pad_left, pad_right), (pad_top, pad_bottom)])
+            TransformResize(self.resolution),
+            TransformPad(self.resolution)
 
         ])
 
@@ -217,6 +258,8 @@ def build_network(fc_layer_size=512, number_of_classes=2, device="mps"):
 
 
 def train_epoch(network, train_loader, val_loader, optimizer, criterion, device="mps", epoch=0):
+    # TODO: Add metrics how much memory of GPU is used
+
     network.train()
 
     train_loss = 0
@@ -226,8 +269,12 @@ def train_epoch(network, train_loader, val_loader, optimizer, criterion, device=
     # Training loop
     for images, labels in train_loader:
         images, labels = images.to(device), labels.to(device)
+        print("Memory allocated: ", torch.mps.current_allocated_memory())
         optimizer.zero_grad()
+
+        print("Memory allocated: ", torch.mps.current_allocated_memory()/ (1024**3))
         outputs = network(images)
+
 
         _, predicted = outputs.max(1)
 
@@ -240,6 +287,9 @@ def train_epoch(network, train_loader, val_loader, optimizer, criterion, device=
         loss.backward()
         optimizer.step()
 
+
+    metric_time = time.time()
+
     train_loss = train_loss / len(train_loader)
     train_precision = precision_score(true_labels, predicted_labels, average='binary', pos_label=1)
     train_recall = recall_score(true_labels, predicted_labels, average='binary', pos_label=1)
@@ -248,6 +298,8 @@ def train_epoch(network, train_loader, val_loader, optimizer, criterion, device=
     train_confusion_matrix = confusion_matrix(true_labels, predicted_labels)
     train_confusion_matrix = train_confusion_matrix.reshape(1, -1)
     train_confusion_matrix = np.insert(train_confusion_matrix, 0, [epoch], axis=1)
+
+    print("Computing metrics for train took: ", time.time() - metric_time)
 
     network.eval()
     # Validation loop
@@ -279,7 +331,6 @@ def train_epoch(network, train_loader, val_loader, optimizer, criterion, device=
 
         print("Val True labels: ", true_labels)
         print("Val Predicted labels: ", predicted_labels)
-
 
     return (train_loss, train_precision, train_recall, train_f1, train_balanced_accuracy, train_confusion_matrix,
             val_loss, val_precision, val_recall, val_f1, val_balanced_accuracy, val_confusion_matrix)
@@ -318,13 +369,10 @@ def test_model(network, test_loader, criterion, class_names, device="mps"):
     f1 = f1_score(true_labels, predicted_labels, average='binary', pos_label=1)
     balanced_accuracy = balanced_accuracy_score(true_labels, predicted_labels)
 
-
-
-
     confusion_matrix_wandb = wandb.plot.confusion_matrix(probs=None,
-                                              y_true=true_labels,
-                                              preds=predicted_labels,
-                                              class_names=class_names
-                                              )
+                                                         y_true=true_labels,
+                                                         preds=predicted_labels,
+                                                         class_names=class_names
+                                                         )
 
     return test_loss, test_accuracy, confusion_matrix_wandb, precision, recall, f1, balanced_accuracy

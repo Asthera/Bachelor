@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/volodimir/Downloads/Bachelor/CrossValidation/training.py", line 136, in <module>
+    train()
+  File "/Users/volodimir/Downloads/Bachelor/CrossValidation/training.py", line 15, in train
+    run = wandb.init(config=config).copy()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Run' object has no attribute 'copy'

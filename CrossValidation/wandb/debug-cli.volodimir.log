@@ -1,0 +1,173 @@
+2024-03-15 14:39:58 INFO Running runs: []
+2024-03-15 14:39:58 INFO Agent received command: run
+2024-03-15 14:39:58 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: none
+2024-03-15 14:39:58 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=none
+2024-03-15 14:40:03 INFO Running runs: ['8ruxgjaw']
+2024-03-15 14:40:39 INFO Cleaning up finished run: 8ruxgjaw
+2024-03-15 14:42:15 INFO Running runs: []
+2024-03-15 14:42:15 INFO Agent received command: run
+2024-03-15 14:42:15 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: none
+2024-03-15 14:42:15 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=none
+2024-03-15 14:42:20 INFO Running runs: ['vagkvn62']
+2024-03-15 14:47:27 INFO Running runs: []
+2024-03-15 14:47:27 INFO Agent received command: run
+2024-03-15 14:47:27 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: none
+2024-03-15 14:47:27 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=none
+2024-03-15 14:47:32 INFO Running runs: ['am58f0h4']
+2024-03-15 14:47:37 INFO Cleaning up finished run: am58f0h4
+2024-03-15 14:47:43 INFO Agent received command: run
+2024-03-15 14:47:43 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_erasing_delete
+2024-03-15 14:47:43 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_erasing_delete
+2024-03-15 14:47:48 INFO Running runs: ['2w1mwgyf']
+2024-03-15 14:47:59 INFO Cleaning up finished run: 2w1mwgyf
+2024-03-15 14:47:59 INFO Agent received command: run
+2024-03-15 14:47:59 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_erasing_random
+2024-03-15 14:47:59 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_erasing_random
+2024-03-15 14:48:04 INFO Running runs: ['y7e9gyvd']
+2024-03-15 14:48:17 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-03-15 14:48:17 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2024-03-15 14:49:33 INFO Running runs: []
+2024-03-15 14:49:34 INFO Agent received command: run
+2024-03-15 14:49:34 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: none
+2024-03-15 14:49:34 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=none
+2024-03-15 14:49:39 INFO Running runs: ['b07i18xh']
+2024-03-15 14:53:42 INFO Running runs: []
+2024-03-15 14:53:42 INFO Agent received command: run
+2024-03-15 14:53:42 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: none
+2024-03-15 14:53:42 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=none
+2024-03-15 14:53:47 INFO Running runs: ['mlmd2bp7']
+2024-03-15 14:53:52 INFO Cleaning up finished run: mlmd2bp7
+2024-03-15 14:53:58 INFO Agent received command: run
+2024-03-15 14:53:58 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_erasing_delete
+2024-03-15 14:53:58 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_erasing_delete
+2024-03-15 14:54:03 INFO Running runs: ['4gotmma0']
+2024-03-15 14:54:13 INFO Cleaning up finished run: 4gotmma0
+2024-03-15 14:54:13 INFO Agent received command: run
+2024-03-15 14:54:13 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_erasing_random
+2024-03-15 14:54:13 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_erasing_random
+2024-03-15 14:54:18 INFO Running runs: ['h20t82d9']
+2024-03-15 14:54:29 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-03-15 14:54:29 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2024-03-15 14:58:34 INFO Running runs: []
+2024-03-15 14:58:34 INFO Agent received command: run
+2024-03-15 14:58:34 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: none
+2024-03-15 14:58:34 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=none
+2024-03-15 14:58:39 INFO Running runs: ['07pmahyf']
+2024-03-15 15:03:13 INFO Running runs: []
+2024-03-15 15:03:13 INFO Agent received command: run
+2024-03-15 15:03:13 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: none
+2024-03-15 15:03:13 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=none
+2024-03-15 15:03:18 INFO Running runs: ['4m88q7bi']
+2024-03-15 15:06:08 INFO Running runs: []
+2024-03-15 15:06:08 INFO Agent received command: run
+2024-03-15 15:06:08 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: none
+2024-03-15 15:06:08 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=none
+2024-03-15 15:06:13 INFO Running runs: ['1joe6bjr']
+2024-03-15 15:10:21 INFO Running runs: []
+2024-03-15 15:10:22 INFO Agent received command: run
+2024-03-15 15:10:22 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: none
+2024-03-15 15:10:22 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=none
+2024-03-15 15:10:27 INFO Running runs: ['is0p4nb0']
+2024-03-15 15:28:13 INFO Running runs: []
+2024-03-15 15:28:14 INFO Agent received command: run
+2024-03-15 15:28:14 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: none
+2024-03-15 15:28:14 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=none
+2024-03-15 15:28:19 INFO Running runs: ['knupe3px']
+2024-03-15 15:28:29 INFO Cleaning up finished run: knupe3px
+2024-03-15 15:29:31 INFO Running runs: []
+2024-03-15 15:29:32 INFO Agent received command: run
+2024-03-15 15:29:32 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: none
+2024-03-15 15:29:32 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=none
+2024-03-15 15:29:37 INFO Running runs: ['2985s48y']
+2024-03-15 15:29:42 INFO Cleaning up finished run: 2985s48y
+2024-03-15 15:29:47 INFO Agent received command: run
+2024-03-15 15:29:47 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_erasing_delete
+2024-03-15 15:29:47 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_erasing_delete
+2024-03-15 15:34:19 INFO Running runs: []
+2024-03-15 15:34:20 INFO Agent received command: run
+2024-03-15 15:34:20 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: none
+2024-03-15 15:34:20 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=none
+2024-03-15 15:34:25 INFO Running runs: ['uf7dd5nj']
+2024-03-15 15:51:35 INFO Cleaning up finished run: uf7dd5nj
+2024-03-15 15:51:44 INFO Agent received command: run
+2024-03-15 15:51:44 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_erasing_delete
+2024-03-15 15:51:44 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_erasing_delete
+2024-03-15 15:51:49 INFO Running runs: ['u5zm7qoi']
+2024-03-15 16:05:15 INFO Cleaning up finished run: u5zm7qoi
+2024-03-15 16:05:15 INFO Agent received command: run
+2024-03-15 16:05:15 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_erasing_random
+2024-03-15 16:05:15 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_erasing_random
+2024-03-15 16:05:20 INFO Running runs: ['z2zym95d']
+2024-03-15 16:52:14 INFO Running runs: []
+2024-03-15 16:52:14 INFO Agent received command: run
+2024-03-15 16:52:14 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: none
+2024-03-15 16:52:14 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=none
+2024-03-15 16:52:19 INFO Running runs: ['us6j8wd8']
+2024-03-15 16:54:51 INFO Running runs: []
+2024-03-15 16:54:51 INFO Agent received command: run
+2024-03-15 16:54:51 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: none
+2024-03-15 16:54:51 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=none
+2024-03-15 16:54:56 INFO Running runs: ['85iiixlf']

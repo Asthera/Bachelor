@@ -8,20 +8,24 @@ import yaml
 
 
 def train():
+
+    init_time = time.time()
+
     # Initialize a new wandb run
     with open("sweep.yaml") as file:
         config = yaml.load(file, Loader=yaml.FullLoader)
 
     run = wandb.init(config=config)
 
+
     # giving the run a name
     custom_name = f"tr:{run.config.transform}_{run.config.fold}_batch:{run.config.batch_size}_{run.id}"
     wandb.run.name = custom_name
 
     # for example = wandb.config.fold = "fold_0"
-    fold_json_path = os.path.join(run.config.folds_path, wandb.config.fold + ".json")
+    fold_json_path = os.path.join(run.config.folds_path, run.config.fold + ".json")
 
-    image_size = (run.config.image_size["height"], run.config.image_size["width"])
+    image_size = run.config.image_size["height"]
     train_loader, val_loader, test_loader = build_dataset(run.config.batch_size,
                                                           fold_json_path,
                                                           run.config.img_dir,
@@ -49,10 +53,13 @@ def train():
 
     early_stopping = False
 
+    print(f"Initialization took {time.time() - init_time} seconds")
+
     for epoch in range(epochs):
 
         start_time = time.time()
         # TODO: Split train_epoch into train and validate functions
+
         (train_loss, train_precision, train_recall, train_f1, train_balanced_accuracy, train_conf_matrix,
          val_loss, val_precision, val_recall, val_f1, val_balanced_accuracy, val_conf_matrix) = train_epoch(network,
                                                                                                             train_loader,
@@ -61,6 +68,7 @@ def train():
                                                                                                             criterion,
                                                                                                             device,
                                                                                                             epoch)
+        print(f"Train epoch took {time.time() - start_time} seconds")
 
         # Check for early stopping
 
@@ -68,16 +76,18 @@ def train():
             best_val_loss = val_loss
             epochs_without_improvement = 0
             # best_model_state_dict = network.state_dict()
-            torch.save(network.state_dict(),
-                       "weights/{run_id}_{epoch}_{val_bal_acc}_{val_recall}_{val_loss}_{transform}.pth".format(
-                           run_id=run.id,
-                           epoch=epoch,
-                           val_bal_acc=val_balanced_accuracy,
-                           val_recall=val_recall,
-                           val_loss=val_loss,
-                           transform=run.config.transform))
-            print(
-                f"Model saved at epoch {epoch} with val_loss: {val_loss}, val_balanced_accuracy: {val_balanced_accuracy}, val_recall: {val_recall} transformation: {run.config.transform}")
+
+            if run.config.save_weights:
+                torch.save(network.state_dict(),
+                           "weights/{run_id}_{epoch}_{val_bal_acc}_{val_recall}_{val_loss}_{transform}.pth".format(
+                               run_id=run.id,
+                               epoch=epoch,
+                               val_bal_acc=val_balanced_accuracy,
+                               val_recall=val_recall,
+                               val_loss=val_loss,
+                               transform=run.config.transform))
+                print(
+                    f"Model saved at epoch {epoch} with val_loss: {val_loss}, val_balanced_accuracy: {val_balanced_accuracy}, val_recall: {val_recall} transformation: {run.config.transform}")
         else:
             epochs_without_improvement += 1
 
@@ -94,7 +104,6 @@ def train():
 
         val_confusion_matrix.add_data(*val_conf_matrix[0])
         train_confusion_matrix.add_data(*train_conf_matrix[0])
-
 
         wandb.log({"val_loss": val_loss, "val_precision": val_precision,
                    "val_recall": val_recall, "val_f1": val_f1,

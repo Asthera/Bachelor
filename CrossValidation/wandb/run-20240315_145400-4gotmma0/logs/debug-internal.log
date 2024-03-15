@@ -1,0 +1,184 @@
+2024-03-15 14:54:00,913 INFO    StreamThr :21239 [internal.py:wandb_internal():86] W&B internal server running at pid: 21239, started at: 2024-03-15 14:54:00.913059
+2024-03-15 14:54:00,914 DEBUG   HandlerThread:21239 [handler.py:handle_request():146] handle_request: status
+2024-03-15 14:54:00,918 INFO    WriterThread:21239 [datastore.py:open_for_write():87] open: /Users/volodimir/Downloads/Bachelor/CrossValidation/wandb/run-20240315_145400-4gotmma0/run-4gotmma0.wandb
+2024-03-15 14:54:00,919 DEBUG   SenderThread:21239 [sender.py:send():382] send: header
+2024-03-15 14:54:00,930 DEBUG   SenderThread:21239 [sender.py:send():382] send: run
+2024-03-15 14:54:01,349 INFO    SenderThread:21239 [dir_watcher.py:__init__():211] watching files in: /Users/volodimir/Downloads/Bachelor/CrossValidation/wandb/run-20240315_145400-4gotmma0/files
+2024-03-15 14:54:01,349 INFO    SenderThread:21239 [sender.py:_start_run_threads():1136] run started: 4gotmma0 with start time 1710510840.913383
+2024-03-15 14:54:01,360 DEBUG   HandlerThread:21239 [handler.py:handle_request():146] handle_request: check_version
+2024-03-15 14:54:01,360 DEBUG   SenderThread:21239 [sender.py:send_request():409] send_request: check_version
+2024-03-15 14:54:01,505 DEBUG   HandlerThread:21239 [handler.py:handle_request():146] handle_request: run_start
+2024-03-15 14:54:01,511 DEBUG   HandlerThread:21239 [system_info.py:__init__():27] System info init
+2024-03-15 14:54:01,511 DEBUG   HandlerThread:21239 [system_info.py:__init__():42] System info init done
+2024-03-15 14:54:01,511 INFO    HandlerThread:21239 [system_monitor.py:start():194] Starting system monitor
+2024-03-15 14:54:01,511 INFO    SystemMonitor:21239 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-15 14:54:01,511 INFO    HandlerThread:21239 [system_monitor.py:probe():214] Collecting system info
+2024-03-15 14:54:01,511 INFO    SystemMonitor:21239 [interfaces.py:start():190] Started cpu monitoring
+2024-03-15 14:54:01,512 DEBUG   HandlerThread:21239 [system_info.py:probe():151] Probing system
+2024-03-15 14:54:01,513 INFO    SystemMonitor:21239 [interfaces.py:start():190] Started disk monitoring
+2024-03-15 14:54:01,514 INFO    SystemMonitor:21239 [interfaces.py:start():190] Started gpuapple monitoring
+2024-03-15 14:54:01,515 INFO    SystemMonitor:21239 [interfaces.py:start():190] Started memory monitoring
+2024-03-15 14:54:01,515 INFO    SystemMonitor:21239 [interfaces.py:start():190] Started network monitoring
+2024-03-15 14:54:01,518 DEBUG   HandlerThread:21239 [system_info.py:_probe_git():136] Probing git
+2024-03-15 14:54:01,530 DEBUG   HandlerThread:21239 [system_info.py:_probe_git():144] Probing git done
+2024-03-15 14:54:01,530 DEBUG   HandlerThread:21239 [system_info.py:probe():199] Probing system done
+2024-03-15 14:54:01,530 DEBUG   HandlerThread:21239 [system_monitor.py:probe():223] {'os': 'macOS-13.3.1-arm64-arm-64bit', 'python': '3.11.0', 'heartbeatAt': '2024-03-15T13:54:01.513104', 'startedAt': '2024-03-15T13:54:00.908348', 'docker': None, 'cuda': None, 'args': ('--batch_size=64', '--fold=fold_0', '--transform=random_erasing_delete'), 'state': 'running', 'program': '/Users/volodimir/Downloads/Bachelor/CrossValidation/training.py', 'codePathLocal': 'training.py', 'codePath': 'CrossValidation/training.py', 'git': {'remote': 'https://github.com/Asthera/Bachelor.git', 'commit': 'b36634ba980a2f8725ef09a802e81178a3e82050'}, 'email': 'h', 'root': '/Users/volodimir/Downloads/Bachelor', 'host': 'Air-Volodimir.mshome.net', 'username': 'volodimir', 'executable': '/Users/volodimir/anaconda3/envs/Global/bin/python', 'cpu_count': 8, 'cpu_count_logical': 8, 'disk': {'/': {'total': 228.27386474609375, 'used': 185.9908218383789}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 16.0}}
+2024-03-15 14:54:01,530 INFO    HandlerThread:21239 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-15 14:54:01,530 INFO    HandlerThread:21239 [system_monitor.py:probe():227] Publishing system info
+2024-03-15 14:54:01,530 DEBUG   HandlerThread:21239 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-03-15 14:54:02,351 INFO    Thread-12 :21239 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/volodimir/Downloads/Bachelor/CrossValidation/wandb/run-20240315_145400-4gotmma0/files/conda-environment.yaml
+2024-03-15 14:54:03,356 INFO    Thread-12 :21239 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/volodimir/Downloads/Bachelor/CrossValidation/wandb/run-20240315_145400-4gotmma0/files/conda-environment.yaml
+2024-03-15 14:54:03,373 DEBUG   HandlerThread:21239 [system_info.py:_save_conda():220] Saving conda packages done
+2024-03-15 14:54:03,373 INFO    HandlerThread:21239 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-15 14:54:03,375 DEBUG   SenderThread:21239 [sender.py:send():382] send: files
+2024-03-15 14:54:03,375 INFO    SenderThread:21239 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-03-15 14:54:03,378 DEBUG   HandlerThread:21239 [handler.py:handle_request():146] handle_request: python_packages
+2024-03-15 14:54:03,378 DEBUG   SenderThread:21239 [sender.py:send_request():409] send_request: python_packages
+2024-03-15 14:54:03,379 DEBUG   HandlerThread:21239 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-15 14:54:03,379 DEBUG   SenderThread:21239 [sender.py:send():382] send: telemetry
+2024-03-15 14:54:03,379 DEBUG   HandlerThread:21239 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-15 14:54:03,380 DEBUG   SenderThread:21239 [sender.py:send_request():409] send_request: stop_status
+2024-03-15 14:54:03,716 DEBUG   SenderThread:21239 [sender.py:send():382] send: exit
+2024-03-15 14:54:03,716 INFO    SenderThread:21239 [sender.py:send_exit():589] handling exit code: 1
+2024-03-15 14:54:03,716 INFO    SenderThread:21239 [sender.py:send_exit():591] handling runtime: 1
+2024-03-15 14:54:03,717 INFO    SenderThread:21239 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-15 14:54:03,717 INFO    SenderThread:21239 [sender.py:send_exit():597] send defer
+2024-03-15 14:54:03,717 DEBUG   HandlerThread:21239 [handler.py:handle_request():146] handle_request: defer
+2024-03-15 14:54:03,717 INFO    HandlerThread:21239 [handler.py:handle_request_defer():172] handle defer: 0
+2024-03-15 14:54:03,717 DEBUG   SenderThread:21239 [sender.py:send_request():409] send_request: defer
+2024-03-15 14:54:03,717 INFO    SenderThread:21239 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-03-15 14:54:03,717 INFO    SenderThread:21239 [sender.py:transition_state():617] send defer: 1
+2024-03-15 14:54:03,717 DEBUG   HandlerThread:21239 [handler.py:handle_request():146] handle_request: defer
+2024-03-15 14:54:03,717 INFO    HandlerThread:21239 [handler.py:handle_request_defer():172] handle defer: 1
+2024-03-15 14:54:03,717 DEBUG   SenderThread:21239 [sender.py:send_request():409] send_request: defer
+2024-03-15 14:54:03,718 INFO    SenderThread:21239 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-03-15 14:54:03,718 INFO    SenderThread:21239 [sender.py:transition_state():617] send defer: 2
+2024-03-15 14:54:03,718 DEBUG   HandlerThread:21239 [handler.py:handle_request():146] handle_request: defer
+2024-03-15 14:54:03,718 INFO    HandlerThread:21239 [handler.py:handle_request_defer():172] handle defer: 2
+2024-03-15 14:54:03,718 INFO    HandlerThread:21239 [system_monitor.py:finish():203] Stopping system monitor
+2024-03-15 14:54:03,718 DEBUG   SystemMonitor:21239 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-15 14:54:03,718 DEBUG   SystemMonitor:21239 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-15 14:54:03,718 DEBUG   SystemMonitor:21239 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-15 14:54:03,718 INFO    HandlerThread:21239 [interfaces.py:finish():202] Joined cpu monitor
+2024-03-15 14:54:03,718 INFO    HandlerThread:21239 [interfaces.py:finish():202] Joined disk monitor
+2024-03-15 14:54:03,718 INFO    HandlerThread:21239 [interfaces.py:finish():202] Joined gpuapple monitor
+2024-03-15 14:54:03,718 INFO    HandlerThread:21239 [interfaces.py:finish():202] Joined memory monitor
+2024-03-15 14:54:03,718 INFO    HandlerThread:21239 [interfaces.py:finish():202] Joined network monitor
+2024-03-15 14:54:03,719 DEBUG   SenderThread:21239 [sender.py:send_request():409] send_request: defer
+2024-03-15 14:54:03,719 INFO    SenderThread:21239 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-03-15 14:54:03,719 INFO    SenderThread:21239 [sender.py:transition_state():617] send defer: 3
+2024-03-15 14:54:03,719 DEBUG   SenderThread:21239 [sender.py:send():382] send: telemetry
+2024-03-15 14:54:03,719 DEBUG   SenderThread:21239 [sender.py:send():382] send: stats
+2024-03-15 14:54:03,719 DEBUG   HandlerThread:21239 [handler.py:handle_request():146] handle_request: defer
+2024-03-15 14:54:03,719 INFO    HandlerThread:21239 [handler.py:handle_request_defer():172] handle defer: 3
+2024-03-15 14:54:03,719 DEBUG   SenderThread:21239 [sender.py:send_request():409] send_request: defer
+2024-03-15 14:54:03,719 INFO    SenderThread:21239 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-03-15 14:54:03,719 INFO    SenderThread:21239 [sender.py:transition_state():617] send defer: 4
+2024-03-15 14:54:03,719 DEBUG   HandlerThread:21239 [handler.py:handle_request():146] handle_request: defer
+2024-03-15 14:54:03,719 INFO    HandlerThread:21239 [handler.py:handle_request_defer():172] handle defer: 4
+2024-03-15 14:54:03,719 DEBUG   SenderThread:21239 [sender.py:send_request():409] send_request: defer
+2024-03-15 14:54:03,719 INFO    SenderThread:21239 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-03-15 14:54:03,719 INFO    SenderThread:21239 [sender.py:transition_state():617] send defer: 5
+2024-03-15 14:54:03,719 DEBUG   HandlerThread:21239 [handler.py:handle_request():146] handle_request: defer
+2024-03-15 14:54:03,719 INFO    HandlerThread:21239 [handler.py:handle_request_defer():172] handle defer: 5
+2024-03-15 14:54:03,719 DEBUG   SenderThread:21239 [sender.py:send():382] send: summary
+2024-03-15 14:54:03,719 INFO    SenderThread:21239 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-15 14:54:03,719 DEBUG   SenderThread:21239 [sender.py:send_request():409] send_request: defer
+2024-03-15 14:54:03,719 INFO    SenderThread:21239 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-03-15 14:54:03,719 INFO    SenderThread:21239 [sender.py:transition_state():617] send defer: 6
+2024-03-15 14:54:03,719 DEBUG   HandlerThread:21239 [handler.py:handle_request():146] handle_request: defer
+2024-03-15 14:54:03,719 INFO    HandlerThread:21239 [handler.py:handle_request_defer():172] handle defer: 6
+2024-03-15 14:54:03,719 DEBUG   SenderThread:21239 [sender.py:send_request():409] send_request: defer
+2024-03-15 14:54:03,719 INFO    SenderThread:21239 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-03-15 14:54:03,721 DEBUG   HandlerThread:21239 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 14:54:03,896 INFO    SenderThread:21239 [sender.py:transition_state():617] send defer: 7
+2024-03-15 14:54:03,896 DEBUG   HandlerThread:21239 [handler.py:handle_request():146] handle_request: defer
+2024-03-15 14:54:03,896 INFO    HandlerThread:21239 [handler.py:handle_request_defer():172] handle defer: 7
+2024-03-15 14:54:03,896 DEBUG   SenderThread:21239 [sender.py:send_request():409] send_request: defer
+2024-03-15 14:54:03,896 INFO    SenderThread:21239 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-03-15 14:54:04,121 INFO    wandb-upload_0:21239 [upload_job.py:push():131] Uploaded file /var/folders/r9/fn8812cd1czdjdytwc97q1h80000gn/T/tmpuy1e88sjwandb/ztvj4hf2-wandb-metadata.json
+2024-03-15 14:54:04,362 INFO    Thread-12 :21239 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/volodimir/Downloads/Bachelor/CrossValidation/wandb/run-20240315_145400-4gotmma0/files/config.yaml
+2024-03-15 14:54:04,362 INFO    Thread-12 :21239 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/volodimir/Downloads/Bachelor/CrossValidation/wandb/run-20240315_145400-4gotmma0/files/wandb-summary.json
+2024-03-15 14:54:04,363 INFO    Thread-12 :21239 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/volodimir/Downloads/Bachelor/CrossValidation/wandb/run-20240315_145400-4gotmma0/files/wandb-metadata.json
+2024-03-15 14:54:04,363 INFO    Thread-12 :21239 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/volodimir/Downloads/Bachelor/CrossValidation/wandb/run-20240315_145400-4gotmma0/files/requirements.txt
+2024-03-15 14:54:04,363 INFO    Thread-12 :21239 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/volodimir/Downloads/Bachelor/CrossValidation/wandb/run-20240315_145400-4gotmma0/files/output.log
+2024-03-15 14:54:04,386 DEBUG   HandlerThread:21239 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-15 14:54:06,373 INFO    Thread-12 :21239 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/volodimir/Downloads/Bachelor/CrossValidation/wandb/run-20240315_145400-4gotmma0/files/output.log
+2024-03-15 14:54:07,732 INFO    SenderThread:21239 [sender.py:transition_state():617] send defer: 8
+2024-03-15 14:54:07,733 DEBUG   SenderThread:21239 [sender.py:send_request():409] send_request: poll_exit
+2024-03-15 14:54:07,733 DEBUG   HandlerThread:21239 [handler.py:handle_request():146] handle_request: defer
+2024-03-15 14:54:07,734 INFO    HandlerThread:21239 [handler.py:handle_request_defer():172] handle defer: 8
+2024-03-15 14:54:07,734 DEBUG   SenderThread:21239 [sender.py:send_request():409] send_request: defer
+2024-03-15 14:54:07,734 INFO    SenderThread:21239 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-03-15 14:54:07,734 INFO    SenderThread:21239 [sender.py:transition_state():617] send defer: 9
+2024-03-15 14:54:07,735 DEBUG   HandlerThread:21239 [handler.py:handle_request():146] handle_request: defer
+2024-03-15 14:54:07,735 INFO    HandlerThread:21239 [handler.py:handle_request_defer():172] handle defer: 9
+2024-03-15 14:54:07,735 DEBUG   SenderThread:21239 [sender.py:send_request():409] send_request: defer
+2024-03-15 14:54:07,735 INFO    SenderThread:21239 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-03-15 14:54:07,735 INFO    SenderThread:21239 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-03-15 14:54:08,379 INFO    SenderThread:21239 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/volodimir/Downloads/Bachelor/CrossValidation/wandb/run-20240315_145400-4gotmma0/files/output.log
+2024-03-15 14:54:08,380 INFO    SenderThread:21239 [dir_watcher.py:finish():388] scan: /Users/volodimir/Downloads/Bachelor/CrossValidation/wandb/run-20240315_145400-4gotmma0/files
+2024-03-15 14:54:08,381 INFO    SenderThread:21239 [dir_watcher.py:finish():402] scan save: /Users/volodimir/Downloads/Bachelor/CrossValidation/wandb/run-20240315_145400-4gotmma0/files/requirements.txt requirements.txt
+2024-03-15 14:54:08,381 INFO    SenderThread:21239 [dir_watcher.py:finish():402] scan save: /Users/volodimir/Downloads/Bachelor/CrossValidation/wandb/run-20240315_145400-4gotmma0/files/output.log output.log
+2024-03-15 14:54:08,384 INFO    SenderThread:21239 [dir_watcher.py:finish():402] scan save: /Users/volodimir/Downloads/Bachelor/CrossValidation/wandb/run-20240315_145400-4gotmma0/files/config.yaml config.yaml
+2024-03-15 14:54:08,386 INFO    SenderThread:21239 [dir_watcher.py:finish():402] scan save: /Users/volodimir/Downloads/Bachelor/CrossValidation/wandb/run-20240315_145400-4gotmma0/files/wandb-summary.json wandb-summary.json
+2024-03-15 14:54:08,387 INFO    SenderThread:21239 [dir_watcher.py:finish():402] scan save: /Users/volodimir/Downloads/Bachelor/CrossValidation/wandb/run-20240315_145400-4gotmma0/files/conda-environment.yaml conda-environment.yaml
+2024-03-15 14:54:08,388 INFO    SenderThread:21239 [dir_watcher.py:finish():402] scan save: /Users/volodimir/Downloads/Bachelor/CrossValidation/wandb/run-20240315_145400-4gotmma0/files/wandb-metadata.json wandb-metadata.json
+2024-03-15 14:54:08,389 INFO    SenderThread:21239 [sender.py:transition_state():617] send defer: 10
+2024-03-15 14:54:08,389 DEBUG   HandlerThread:21239 [handler.py:handle_request():146] handle_request: defer
+2024-03-15 14:54:08,389 INFO    HandlerThread:21239 [handler.py:handle_request_defer():172] handle defer: 10
+2024-03-15 14:54:08,390 DEBUG   SenderThread:21239 [sender.py:send_request():409] send_request: defer
+2024-03-15 14:54:08,390 INFO    SenderThread:21239 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-03-15 14:54:08,390 INFO    SenderThread:21239 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-15 14:54:08,401 DEBUG   HandlerThread:21239 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-15 14:54:08,402 DEBUG   SenderThread:21239 [sender.py:send_request():409] send_request: poll_exit
+2024-03-15 14:54:08,778 INFO    wandb-upload_1:21239 [upload_job.py:push():131] Uploaded file /Users/volodimir/Downloads/Bachelor/CrossValidation/wandb/run-20240315_145400-4gotmma0/files/output.log
+2024-03-15 14:54:08,866 INFO    wandb-upload_0:21239 [upload_job.py:push():131] Uploaded file /Users/volodimir/Downloads/Bachelor/CrossValidation/wandb/run-20240315_145400-4gotmma0/files/requirements.txt
+2024-03-15 14:54:08,994 INFO    wandb-upload_3:21239 [upload_job.py:push():131] Uploaded file /Users/volodimir/Downloads/Bachelor/CrossValidation/wandb/run-20240315_145400-4gotmma0/files/wandb-summary.json
+2024-03-15 14:54:09,012 INFO    wandb-upload_2:21239 [upload_job.py:push():131] Uploaded file /Users/volodimir/Downloads/Bachelor/CrossValidation/wandb/run-20240315_145400-4gotmma0/files/config.yaml
+2024-03-15 14:54:09,016 INFO    wandb-upload_4:21239 [upload_job.py:push():131] Uploaded file /Users/volodimir/Downloads/Bachelor/CrossValidation/wandb/run-20240315_145400-4gotmma0/files/conda-environment.yaml
+2024-03-15 14:54:09,222 INFO    Thread-11 (_thread_body):21239 [sender.py:transition_state():617] send defer: 11
+2024-03-15 14:54:09,222 DEBUG   HandlerThread:21239 [handler.py:handle_request():146] handle_request: defer
+2024-03-15 14:54:09,222 INFO    HandlerThread:21239 [handler.py:handle_request_defer():172] handle defer: 11
+2024-03-15 14:54:09,223 DEBUG   SenderThread:21239 [sender.py:send_request():409] send_request: defer
+2024-03-15 14:54:09,223 INFO    SenderThread:21239 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-03-15 14:54:09,223 INFO    SenderThread:21239 [file_pusher.py:join():178] waiting for file pusher
+2024-03-15 14:54:09,224 INFO    SenderThread:21239 [sender.py:transition_state():617] send defer: 12
+2024-03-15 14:54:09,224 DEBUG   HandlerThread:21239 [handler.py:handle_request():146] handle_request: defer
+2024-03-15 14:54:09,224 INFO    HandlerThread:21239 [handler.py:handle_request_defer():172] handle defer: 12
+2024-03-15 14:54:09,224 DEBUG   SenderThread:21239 [sender.py:send_request():409] send_request: defer
+2024-03-15 14:54:09,224 INFO    SenderThread:21239 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-03-15 14:54:09,224 INFO    SenderThread:21239 [file_stream.py:finish():595] file stream finish called
+2024-03-15 14:54:09,393 INFO    SenderThread:21239 [file_stream.py:finish():599] file stream finish is done
+2024-03-15 14:54:09,394 INFO    SenderThread:21239 [sender.py:transition_state():617] send defer: 13
+2024-03-15 14:54:09,394 DEBUG   HandlerThread:21239 [handler.py:handle_request():146] handle_request: defer
+2024-03-15 14:54:09,394 INFO    HandlerThread:21239 [handler.py:handle_request_defer():172] handle defer: 13
+2024-03-15 14:54:09,395 DEBUG   SenderThread:21239 [sender.py:send_request():409] send_request: defer
+2024-03-15 14:54:09,395 INFO    SenderThread:21239 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-03-15 14:54:09,395 INFO    SenderThread:21239 [sender.py:transition_state():617] send defer: 14
+2024-03-15 14:54:09,396 DEBUG   HandlerThread:21239 [handler.py:handle_request():146] handle_request: defer
+2024-03-15 14:54:09,396 DEBUG   SenderThread:21239 [sender.py:send():382] send: final
+2024-03-15 14:54:09,396 INFO    HandlerThread:21239 [handler.py:handle_request_defer():172] handle defer: 14
+2024-03-15 14:54:09,396 DEBUG   SenderThread:21239 [sender.py:send():382] send: footer
+2024-03-15 14:54:09,396 DEBUG   SenderThread:21239 [sender.py:send_request():409] send_request: defer
+2024-03-15 14:54:09,396 INFO    SenderThread:21239 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-03-15 14:54:09,397 DEBUG   HandlerThread:21239 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-15 14:54:09,398 DEBUG   SenderThread:21239 [sender.py:send_request():409] send_request: poll_exit
+2024-03-15 14:54:09,398 DEBUG   HandlerThread:21239 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-15 14:54:09,399 DEBUG   SenderThread:21239 [sender.py:send_request():409] send_request: poll_exit
+2024-03-15 14:54:09,399 DEBUG   HandlerThread:21239 [handler.py:handle_request():146] handle_request: server_info
+2024-03-15 14:54:09,399 DEBUG   HandlerThread:21239 [handler.py:handle_request():146] handle_request: get_summary
+2024-03-15 14:54:09,400 DEBUG   SenderThread:21239 [sender.py:send_request():409] send_request: server_info
+2024-03-15 14:54:09,400 DEBUG   HandlerThread:21239 [handler.py:handle_request():146] handle_request: sampled_history
+2024-03-15 14:54:09,402 DEBUG   HandlerThread:21239 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-15 14:54:09,402 DEBUG   HandlerThread:21239 [handler.py:handle_request():146] handle_request: job_info
+2024-03-15 14:54:09,552 DEBUG   SenderThread:21239 [sender.py:send_request():409] send_request: job_info
+2024-03-15 14:54:09,553 INFO    MainThread:21239 [wandb_run.py:_footer_history_summary_info():3866] rendering history
+2024-03-15 14:54:09,553 INFO    MainThread:21239 [wandb_run.py:_footer_history_summary_info():3898] rendering summary
+2024-03-15 14:54:09,553 INFO    MainThread:21239 [wandb_run.py:_footer_sync_info():3825] logging synced files
+2024-03-15 14:54:09,554 DEBUG   HandlerThread:21239 [handler.py:handle_request():146] handle_request: shutdown
+2024-03-15 14:54:09,555 INFO    HandlerThread:21239 [handler.py:finish():869] shutting down handler
+2024-03-15 14:54:10,407 INFO    WriterThread:21239 [datastore.py:close():296] close: /Users/volodimir/Downloads/Bachelor/CrossValidation/wandb/run-20240315_145400-4gotmma0/run-4gotmma0.wandb
+2024-03-15 14:54:10,557 INFO    SenderThread:21239 [sender.py:finish():1572] shutting down sender
+2024-03-15 14:54:10,557 INFO    SenderThread:21239 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-15 14:54:10,557 INFO    SenderThread:21239 [file_pusher.py:join():178] waiting for file pusher
