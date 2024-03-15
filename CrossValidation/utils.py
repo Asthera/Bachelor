@@ -1,27 +1,26 @@
 import os.path
-
 import torchvision
 from torch import nn
 from torchvision import transforms
 from torchvision.models import ResNet18_Weights
-import pandas as pd
 from sklearn.model_selection import train_test_split
 from torchvision.transforms import transforms
-from sklearn.metrics import precision_score, recall_score, f1_score, balanced_accuracy_score
-
+from sklearn.metrics import precision_score, recall_score, f1_score, balanced_accuracy_score, confusion_matrix
 import torch
 from torch.utils.data import Dataset, DataLoader
 from PIL import Image
 import json
-from wandb.plot import confusion_matrix
+import wandb
 from torchvision.io import read_image
 import matplotlib.pyplot as plt
+import numpy as np
+
 
 
 class FramesDataset(Dataset):
 
     # TODO: Check the resolution, we need it ?
-    def __init__(self, frames_json, img_dir, transform=None, resolution=(224, 224)):
+    def __init__(self, frames_json, img_dir, transform=None, resolution=None):
         self.transform = transform
         self.img_dir = img_dir
         self.all_frames = frames_json
@@ -92,44 +91,25 @@ class RandomNoise(object):
         return img
 
 
-def build_transforms(transform):
-    if transform == "random_erasing_delete":
-        return transforms.RandomErasing(value=0)
+def build_transforms(transform_name):
+    # Mapping from transform names to actual transformations
+    transform_map = {
+        "random_erasing_delete": transforms.RandomErasing(value=0),
+        "random_erasing_random": transforms.RandomErasing(value="random"),
+        "random_crop": transforms.RandomCrop(size=(200, 200)),
+        "random_horizontal_flip": transforms.RandomHorizontalFlip(),
+        "random_vertical_flip": transforms.RandomVerticalFlip(),
+        "random_rotation": transforms.RandomRotation(degrees=70),
+        "color_jitter": transforms.ColorJitter(brightness=0.5, contrast=0.5, saturation=0.5, hue=0.5),
+        "random_noise(0.4, 0.5)": RandomNoise(p=0.5, mean=0.4, std=0.5),
+        "random_noise(0, 0.1)": RandomNoise(p=0.5, mean=0, std=0.1),
+        "none": None
+    }
 
-    elif transform == "random_erasing_random":
-        return transforms.RandomErasing(value="random")
-
-    elif transform == "random_crop":
-        return transforms.RandomCrop(size=(200, 200))
-
-    elif transform == "random_horizontal_flip":
-        return transforms.RandomHorizontalFlip()
-
-    elif transform == "random_vertical_flip":
-        return transforms.RandomVerticalFlip()
-
-    elif transform == "random_rotation":
-        return transforms.RandomRotation(degrees=70)
-
-    elif transform == "color_jitter":
-        "Randomly change the brightness, contrast, saturation and hue of an image."
-        return transforms.ColorJitter(brightness=0.5, contrast=0.5, saturation=0.5, hue=0.5)
-
-    elif transform == "random_speckle_noise":
-        "Not implemented, because it is not undersatood how to works params, too strong noise"
-        return NotImplementedError()
-
-    elif transform == "random_noise(0.4, 0.5)":
-        return RandomNoise(p=0.5, mean=0.4, std=0.5)
-
-    elif transform == "random_noise(0, 0.1)":
-        return RandomNoise(p=0.5, mean=0, std=0.1)
-
-    elif transform == "none" or transform is None:
-        return None
-
+    if transform_name in transform_map:
+        return transform_map[transform_name]
     else:
-        raise ValueError("Invalid transform")
+        raise ValueError(f"Invalid transform: {transform_name}")
 
 
 def update_labels(frames_json):
@@ -139,8 +119,11 @@ def update_labels(frames_json):
     ]
 
 
-def build_dataset(batch_size, json_path, img_dir, transform=None):
+def build_dataset(batch_size, json_path, img_dir, transform=None, image_size=None):
     # TODO: add here checking for a, b line (now only b)
+
+    if image_size is None:
+        raise ValueError("Image size (height, width) must be provided")
 
     train_transform = build_transforms(transform)
 
@@ -151,7 +134,7 @@ def build_dataset(batch_size, json_path, img_dir, transform=None):
     train_frames_json = [frame for video in data for frame in video['frames_only_label'] if video['subset'] == 'train']
     test_frames_json = [frame for video in data for frame in video['frames_only_label'] if video['subset'] == 'test']
 
-    show_sizes(train_frames_json, test_frames_json)
+    # show_sizes(train_frames_json, test_frames_json)
 
     # Split the json frames into train, validation, and test sets
     train_frames_json, val_frames_json = train_test_split(train_frames_json, test_size=0.2, random_state=42)
@@ -164,16 +147,16 @@ def build_dataset(batch_size, json_path, img_dir, transform=None):
     test_frames_json = update_labels(test_frames_json)
 
     # Create datasets
-    train_dataset = FramesDataset(train_frames_json, img_dir, transform=train_transform)
-    val_dataset = FramesDataset(val_frames_json, img_dir, transform=None)
-    test_dataset = FramesDataset(test_frames_json, img_dir, transform=None)
+    train_dataset = FramesDataset(train_frames_json, img_dir, transform=train_transform, resolution=image_size)
+    val_dataset = FramesDataset(val_frames_json, img_dir, transform=None, resolution=image_size)
+    test_dataset = FramesDataset(test_frames_json, img_dir, transform=None, resolution=image_size)
 
     # Create dataloaders
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
     val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=True)
     test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=True)
 
-    return train_loader, val_loader, test_loader, train_frames_json
+    return train_loader, val_loader, test_loader
 
 
 def show_sizes(train_frames_json, test_frames_json):
@@ -193,7 +176,6 @@ def show_sizes(train_frames_json, test_frames_json):
         plt.axis('off')
         plt.show()
 
-
         if Image.open(frame['frame_cropped_path']).size not in train_sizes:
             train_sizes[Image.open(frame['frame_cropped_path']).size] = 1
         else:
@@ -212,13 +194,20 @@ def show_sizes(train_frames_json, test_frames_json):
     print("Test size sum: ", sum(test_sizes.values()))
 
 
-def build_optimizer(network, optimizer, learning_rate):
-    if optimizer == "adam":
+def build_optimizer(network, optimizer_name, learning_rate):
+    if optimizer_name == "adam":
         return torch.optim.Adam(network.parameters(), lr=learning_rate)
-    elif optimizer == "sgd":
+    elif optimizer_name == "sgd":
         return torch.optim.SGD(network.parameters(), lr=learning_rate)
     else:
         raise ValueError("Invalid optimizer")
+
+
+def build_criterion(criterion_name):
+    if criterion_name == "cross-entropy":
+        return torch.nn.CrossEntropyLoss()
+    else:
+        raise ValueError("Invalid criterion")
 
 
 def build_network(fc_layer_size=512, number_of_classes=2, device="mps"):
@@ -227,16 +216,38 @@ def build_network(fc_layer_size=512, number_of_classes=2, device="mps"):
     return model.to(device)
 
 
-def train_epoch(network, train_loader, val_loader, optimizer, criterion, device="mps"):
+def train_epoch(network, train_loader, val_loader, optimizer, criterion, device="mps", epoch=0):
     network.train()
+
+    train_loss = 0
+    predicted_labels = []
+    true_labels = []
+
     # Training loop
     for images, labels in train_loader:
         images, labels = images.to(device), labels.to(device)
         optimizer.zero_grad()
         outputs = network(images)
+
+        _, predicted = outputs.max(1)
+
         loss = criterion(outputs, labels)
+        train_loss += loss
+
+        predicted_labels.extend(predicted.cpu().numpy())
+        true_labels.extend(labels.cpu().numpy())
+
         loss.backward()
         optimizer.step()
+
+    train_loss = train_loss / len(train_loader)
+    train_precision = precision_score(true_labels, predicted_labels, average='binary', pos_label=1)
+    train_recall = recall_score(true_labels, predicted_labels, average='binary', pos_label=1)
+    train_f1 = f1_score(true_labels, predicted_labels, average='binary', pos_label=1)
+    train_balanced_accuracy = balanced_accuracy_score(true_labels, predicted_labels)
+    train_confusion_matrix = confusion_matrix(true_labels, predicted_labels)
+    train_confusion_matrix = train_confusion_matrix.reshape(1, -1)
+    train_confusion_matrix = np.insert(train_confusion_matrix, 0, [epoch], axis=1)
 
     network.eval()
     # Validation loop
@@ -256,18 +267,22 @@ def train_epoch(network, train_loader, val_loader, optimizer, criterion, device=
             predicted_labels.extend(predicted.cpu().numpy())
             true_labels.extend(labels.cpu().numpy())
 
-        print(true_labels)
-        print()
-        print(predicted_labels)
+        val_loss = val_loss / len(val_loader)
+        val_precision = precision_score(true_labels, predicted_labels, average='binary', pos_label=1)
+        val_recall = recall_score(true_labels, predicted_labels, average='binary', pos_label=1)
+        val_f1 = f1_score(true_labels, predicted_labels, average='binary', pos_label=1)
+        val_balanced_accuracy = balanced_accuracy_score(true_labels, predicted_labels)
 
-        precision = precision_score(true_labels, predicted_labels, average='binary', pos_label=1)
-        recall = recall_score(true_labels, predicted_labels, average='binary', pos_label=1)
-        f1 = f1_score(true_labels, predicted_labels, average='binary', pos_label=1)
-        balanced_accuracy = balanced_accuracy_score(true_labels, predicted_labels)
+        val_confusion_matrix = confusion_matrix(true_labels, predicted_labels)
+        val_confusion_matrix = val_confusion_matrix.reshape(1, -1)
+        val_confusion_matrix = np.insert(val_confusion_matrix, 0, [epoch], axis=1)
 
-    return val_loss / len(val_loader), precision, recall, f1, balanced_accuracy
+        print("Val True labels: ", true_labels)
+        print("Val Predicted labels: ", predicted_labels)
 
-    # Log metrics using wandb here if needed
+
+    return (train_loss, train_precision, train_recall, train_f1, train_balanced_accuracy, train_confusion_matrix,
+            val_loss, val_precision, val_recall, val_f1, val_balanced_accuracy, val_confusion_matrix)
 
 
 def test_model(network, test_loader, criterion, class_names, device="mps"):
@@ -298,13 +313,15 @@ def test_model(network, test_loader, criterion, class_names, device="mps"):
 
     test_accuracy = 100 * (correct / total)
     test_loss = test_loss / len(test_loader)
-
     precision = precision_score(true_labels, predicted_labels, average='binary', pos_label=1)
     recall = recall_score(true_labels, predicted_labels, average='binary', pos_label=1)
     f1 = f1_score(true_labels, predicted_labels, average='binary', pos_label=1)
     balanced_accuracy = balanced_accuracy_score(true_labels, predicted_labels)
 
-    confusion_matrix_wandb = confusion_matrix(probs=None,
+
+
+
+    confusion_matrix_wandb = wandb.plot.confusion_matrix(probs=None,
                                               y_true=true_labels,
                                               preds=predicted_labels,
                                               class_names=class_names
