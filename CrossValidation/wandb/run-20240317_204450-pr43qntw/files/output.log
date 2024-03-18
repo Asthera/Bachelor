@@ -1,0 +1,481 @@
+Initialization took 4.0417749881744385 seconds
+Memory allocated:  83289600
+Memory allocated:  0.07756948471069336
+Memory allocated:  321231872
+Memory allocated:  0.23946571350097656
+Memory allocated:  321452800
+Memory allocated:  0.2395005226135254
+Memory allocated:  321305856
+Memory allocated:  0.23946595191955566
+Memory allocated:  321452288
+Memory allocated:  0.2395005226135254
+Computing metrics for train took:  0.0059680938720703125
+Val True labels:  [0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0]
+Val Predicted labels:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0]
+Train epoch took 5.012580871582031 seconds
+Model saved at epoch 0 with val_loss: 3.6897470951080322, val_balanced_accuracy: 0.48, val_recall: 0.0 transformation: random_erasing_delete
+Epoch 0 took 5.560873985290527 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.0032129287719726562
+Val True labels:  [0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1]
+Val Predicted labels:  [0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1]
+Train epoch took 4.502164125442505 seconds
+Model saved at epoch 1 with val_loss: 1.4498452544212341, val_balanced_accuracy: 0.6874074074074075, val_recall: 0.8148148148148148 transformation: random_erasing_delete
+Epoch 1 took 4.660959005355835 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.0024671554565429688
+Val True labels:  [1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0]
+Val Predicted labels:  [1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0]
+Train epoch took 4.562163829803467 seconds
+Model saved at epoch 2 with val_loss: 1.0175526142120361, val_balanced_accuracy: 0.7159259259259259, val_recall: 0.8518518518518519 transformation: random_erasing_delete
+Epoch 2 took 4.724919080734253 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.0033261775970458984
+Val True labels:  [1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]
+Val Predicted labels:  [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Train epoch took 4.566269874572754 seconds
+Model saved at epoch 3 with val_loss: 0.6003318428993225, val_balanced_accuracy: 0.6837037037037037, val_recall: 0.4074074074074074 transformation: random_erasing_delete
+Epoch 3 took 4.735635995864868 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.0028619766235351562
+Val True labels:  [0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0]
+Val Predicted labels:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1]
+Train epoch took 4.462619304656982 seconds
+Model saved at epoch 4 with val_loss: 0.5142423287034035, val_balanced_accuracy: 0.6837037037037037, val_recall: 0.4074074074074074 transformation: random_erasing_delete
+Epoch 4 took 4.6148762702941895 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.0030851364135742188
+Val True labels:  [0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0]
+Val Predicted labels:  [0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Train epoch took 4.454797029495239 seconds
+Model saved at epoch 5 with val_loss: 0.47405365109443665, val_balanced_accuracy: 0.8218518518518518, val_recall: 0.7037037037037037 transformation: random_erasing_delete
+Epoch 5 took 4.618680953979492 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.0028657913208007812
+Val True labels:  [0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Val Predicted labels:  [0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Train epoch took 4.635437965393066 seconds
+Model saved at epoch 6 with val_loss: 0.4173908978700638, val_balanced_accuracy: 0.8218518518518518, val_recall: 0.7037037037037037 transformation: random_erasing_delete
+Epoch 6 took 4.803647041320801 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.0029969215393066406
+Val True labels:  [1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0]
+Val Predicted labels:  [1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Train epoch took 4.58368706703186 seconds
+Early stopping counter: 1 / 5 pr43qntw
+Epoch 7 took 4.584699869155884 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.004173994064331055
+Val True labels:  [0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1]
+Val Predicted labels:  [0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+Train epoch took 4.886230945587158 seconds
+Early stopping counter: 2 / 5 pr43qntw
+Epoch 8 took 4.887156963348389 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.0028967857360839844
+Val True labels:  [0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0]
+Val Predicted labels:  [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0]
+Train epoch took 4.633671283721924 seconds
+Model saved at epoch 9 with val_loss: 0.25580383837223053, val_balanced_accuracy: 0.8318518518518518, val_recall: 0.7037037037037037 transformation: random_erasing_delete
+Epoch 9 took 4.797773122787476 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.0030388832092285156
+Val True labels:  [0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1]
+Val Predicted labels:  [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1]
+Train epoch took 4.547418832778931 seconds
+Model saved at epoch 10 with val_loss: 0.2122236154973507, val_balanced_accuracy: 0.8318518518518518, val_recall: 0.7037037037037037 transformation: random_erasing_delete
+Epoch 10 took 4.719062805175781 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.0028839111328125
+Val True labels:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1]
+Val Predicted labels:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0]
+Train epoch took 4.4757750034332275 seconds
+Early stopping counter: 1 / 5 pr43qntw
+Epoch 11 took 4.476547002792358 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.002977132797241211
+Val True labels:  [1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0]
+Val Predicted labels:  [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Train epoch took 4.479744911193848 seconds
+Early stopping counter: 2 / 5 pr43qntw
+Epoch 12 took 4.480768918991089 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.0037109851837158203
+Val True labels:  [0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0]
+Val Predicted labels:  [0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0]
+Train epoch took 4.6126039028167725 seconds
+Model saved at epoch 13 with val_loss: 0.18518472090363503, val_balanced_accuracy: 0.8518518518518519, val_recall: 0.7037037037037037 transformation: random_erasing_delete
+Epoch 13 took 4.805636882781982 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.0029070377349853516
+Val True labels:  [0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1]
+Val Predicted labels:  [0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1]
+Train epoch took 4.5674309730529785 seconds
+Early stopping counter: 1 / 5 pr43qntw
+Epoch 14 took 4.568053960800171 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.0022461414337158203
+Val True labels:  [1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1]
+Val Predicted labels:  [1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0]
+Train epoch took 4.389589071273804 seconds
+Early stopping counter: 2 / 5 pr43qntw
+Epoch 15 took 4.390545129776001 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.003036022186279297
+Val True labels:  [0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1]
+Val Predicted labels:  [0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1]
+Train epoch took 4.668621063232422 seconds
+Early stopping counter: 3 / 5 pr43qntw
+Epoch 16 took 4.6695780754089355 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.003075122833251953
+Val True labels:  [1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1]
+Val Predicted labels:  [0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1]
+Train epoch took 4.563237190246582 seconds
+Model saved at epoch 17 with val_loss: 0.156049195677042, val_balanced_accuracy: 0.8518518518518519, val_recall: 0.7037037037037037 transformation: random_erasing_delete
+Epoch 17 took 4.747582197189331 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.0034720897674560547
+Val True labels:  [1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0]
+Val Predicted labels:  [0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0]
+Train epoch took 4.526366949081421 seconds
+Early stopping counter: 1 / 5 pr43qntw
+Epoch 18 took 4.527475833892822 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.0033049583435058594
+Val True labels:  [1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0]
+Val Predicted labels:  [1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0]
+Train epoch took 4.7304158210754395 seconds
+Early stopping counter: 2 / 5 pr43qntw
+Epoch 19 took 4.731278896331787 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.002908945083618164
+Val True labels:  [1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0]
+Val Predicted labels:  [1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0]
+Train epoch took 4.555229902267456 seconds
+Model saved at epoch 20 with val_loss: 0.1271927822381258, val_balanced_accuracy: 0.8518518518518519, val_recall: 0.7037037037037037 transformation: random_erasing_delete
+Epoch 20 took 4.702106952667236 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.002307891845703125
+Val True labels:  [1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1]
+Val Predicted labels:  [0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1]
+Train epoch took 4.429607152938843 seconds
+Early stopping counter: 1 / 5 pr43qntw
+Epoch 21 took 4.430481195449829 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.003009796142578125
+Val True labels:  [0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1]
+Val Predicted labels:  [0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1]
+Train epoch took 4.400813817977905 seconds
+Early stopping counter: 2 / 5 pr43qntw
+Epoch 22 took 4.40148401260376 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.003072977066040039
+Val True labels:  [0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0]
+Val Predicted labels:  [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0]
+Train epoch took 4.389394998550415 seconds
+Early stopping counter: 3 / 5 pr43qntw
+Epoch 23 took 4.390185117721558 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.0031311511993408203
+Val True labels:  [0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0]
+Val Predicted labels:  [0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0]
+Train epoch took 4.393071889877319 seconds
+Model saved at epoch 24 with val_loss: 0.0983517486602068, val_balanced_accuracy: 0.8888888888888888, val_recall: 0.7777777777777778 transformation: random_erasing_delete
+Epoch 24 took 4.554893970489502 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.0028841495513916016
+Val True labels:  [0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1]
+Val Predicted labels:  [0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1]
+Train epoch took 4.3966169357299805 seconds
+Model saved at epoch 25 with val_loss: 0.08686759788542986, val_balanced_accuracy: 0.9074074074074074, val_recall: 0.8148148148148148 transformation: random_erasing_delete
+Epoch 25 took 4.551306962966919 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.002361297607421875
+Val True labels:  [1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0]
+Val Predicted labels:  [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0]
+Train epoch took 4.384943962097168 seconds
+Early stopping counter: 1 / 5 pr43qntw
+Epoch 26 took 4.385906934738159 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.0028040409088134766
+Val True labels:  [1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0]
+Val Predicted labels:  [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0]
+Train epoch took 4.434484958648682 seconds
+Early stopping counter: 2 / 5 pr43qntw
+Epoch 27 took 4.4351091384887695 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.0030307769775390625
+Val True labels:  [1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1]
+Val Predicted labels:  [0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1]
+Train epoch took 4.5817201137542725 seconds
+Early stopping counter: 3 / 5 pr43qntw
+Epoch 28 took 4.582477807998657 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.0030138492584228516
+Val True labels:  [0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1]
+Val Predicted labels:  [0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0]
+Train epoch took 4.485391855239868 seconds
+Early stopping counter: 4 / 5 pr43qntw
+Epoch 29 took 4.48629093170166 seconds

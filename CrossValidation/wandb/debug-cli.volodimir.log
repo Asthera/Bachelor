@@ -171,3 +171,1080 @@
 	transform: none
 2024-03-15 16:54:51 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=none
 2024-03-15 16:54:56 INFO Running runs: ['85iiixlf']
+2024-03-17 13:50:36 INFO Running runs: []
+2024-03-17 13:50:36 INFO Agent received command: run
+2024-03-17 13:50:36 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: none
+2024-03-17 13:50:36 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=none
+2024-03-17 13:50:41 INFO Running runs: ['x7kf5elc']
+2024-03-17 13:50:41 INFO Cleaning up finished run: x7kf5elc
+2024-03-17 13:50:42 INFO Agent received command: run
+2024-03-17 13:50:42 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_erasing_delete
+2024-03-17 13:50:42 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_erasing_delete
+2024-03-17 13:50:47 INFO Running runs: ['53lobmg7']
+2024-03-17 13:50:47 INFO Cleaning up finished run: 53lobmg7
+2024-03-17 13:50:47 INFO Agent received command: run
+2024-03-17 13:50:47 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_erasing_random
+2024-03-17 13:50:47 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_erasing_random
+2024-03-17 13:50:52 INFO Running runs: ['11nbo8r1']
+2024-03-17 13:50:52 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-03-17 13:50:52 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2024-03-17 13:51:33 INFO Running runs: []
+2024-03-17 13:51:33 INFO Agent received command: run
+2024-03-17 13:51:33 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_crop
+2024-03-17 13:51:33 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_crop
+2024-03-17 13:51:38 INFO Running runs: ['wuan2cr1']
+2024-03-17 13:52:20 INFO Running runs: []
+2024-03-17 13:52:20 INFO Agent received command: run
+2024-03-17 13:52:20 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_horizontal_flip
+2024-03-17 13:52:20 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_horizontal_flip
+2024-03-17 13:52:25 INFO Running runs: ['zigy4u53']
+2024-03-17 14:33:25 INFO Running runs: []
+2024-03-17 14:33:26 INFO Agent received command: run
+2024-03-17 14:33:26 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: none
+2024-03-17 14:33:26 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=none
+2024-03-17 14:33:31 INFO Running runs: ['bf70qaid']
+2024-03-17 14:33:36 INFO Cleaning up finished run: bf70qaid
+2024-03-17 14:33:43 INFO Agent received command: run
+2024-03-17 14:33:43 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_erasing_delete
+2024-03-17 14:33:43 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_erasing_delete
+2024-03-17 14:33:48 INFO Running runs: ['c58deijt']
+2024-03-17 14:33:58 INFO Cleaning up finished run: c58deijt
+2024-03-17 14:33:58 INFO Agent received command: run
+2024-03-17 14:33:58 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_erasing_random
+2024-03-17 14:33:58 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_erasing_random
+2024-03-17 14:35:01 INFO Running runs: []
+2024-03-17 14:35:01 INFO Agent received command: run
+2024-03-17 14:35:01 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_crop
+2024-03-17 14:35:01 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_crop
+2024-03-17 14:35:06 INFO Running runs: ['ndibdefg']
+2024-03-17 14:35:42 INFO Running runs: []
+2024-03-17 14:35:43 INFO Agent received command: run
+2024-03-17 14:35:43 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_horizontal_flip
+2024-03-17 14:35:43 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_horizontal_flip
+2024-03-17 14:35:48 INFO Running runs: ['2hu3kgd9']
+2024-03-17 14:37:48 INFO Cleaning up finished run: 2hu3kgd9
+2024-03-17 14:37:53 INFO Agent received command: run
+2024-03-17 14:37:53 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_vertical_flip
+2024-03-17 14:37:53 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_vertical_flip
+2024-03-17 14:37:58 INFO Running runs: ['p26utymm']
+2024-03-17 14:43:07 INFO Cleaning up finished run: p26utymm
+2024-03-17 14:43:08 INFO Agent received command: run
+2024-03-17 14:43:08 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_rotation
+2024-03-17 14:43:08 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_rotation
+2024-03-17 14:45:02 INFO Running runs: []
+2024-03-17 14:45:03 INFO Agent received command: run
+2024-03-17 14:45:03 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: none
+2024-03-17 14:45:03 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=none
+2024-03-17 14:45:08 INFO Running runs: ['kx2xbwvv']
+2024-03-17 14:54:06 INFO Cleaning up finished run: kx2xbwvv
+2024-03-17 14:54:11 INFO Agent received command: run
+2024-03-17 14:54:11 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_erasing_delete
+2024-03-17 14:54:11 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_erasing_delete
+2024-03-17 14:54:16 INFO Running runs: ['s3k0e8ug']
+2024-03-17 14:55:49 INFO Cleaning up finished run: s3k0e8ug
+2024-03-17 14:55:49 INFO Agent received command: run
+2024-03-17 14:55:49 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_erasing_random
+2024-03-17 14:55:49 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_erasing_random
+2024-03-17 14:55:54 INFO Running runs: ['j76j3bhx']
+2024-03-17 14:57:59 INFO Cleaning up finished run: j76j3bhx
+2024-03-17 14:58:00 INFO Agent received command: run
+2024-03-17 14:58:00 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_crop
+2024-03-17 14:58:00 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_crop
+2024-03-17 14:58:05 INFO Running runs: ['ak9j8pwm']
+2024-03-17 15:17:07 INFO Running runs: []
+2024-03-17 15:17:08 INFO Agent received command: run
+2024-03-17 15:17:08 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: none
+2024-03-17 15:17:08 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=none
+2024-03-17 15:17:13 INFO Running runs: ['0dcddjcj']
+2024-03-17 15:22:17 INFO Running runs: []
+2024-03-17 15:22:17 INFO Agent received command: run
+2024-03-17 15:22:17 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: none
+2024-03-17 15:22:17 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=none
+2024-03-17 15:22:22 INFO Running runs: ['kfrt14ii']
+2024-03-17 15:31:19 INFO Cleaning up finished run: kfrt14ii
+2024-03-17 15:31:25 INFO Agent received command: run
+2024-03-17 15:31:25 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_erasing_delete
+2024-03-17 15:31:25 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_erasing_delete
+2024-03-17 15:31:30 INFO Running runs: ['bnja6oai']
+2024-03-17 15:34:01 INFO Cleaning up finished run: bnja6oai
+2024-03-17 15:34:01 INFO Agent received command: run
+2024-03-17 15:34:01 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_erasing_random
+2024-03-17 15:34:01 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_erasing_random
+2024-03-17 15:34:06 INFO Running runs: ['gurpbwbg']
+2024-03-17 15:35:39 INFO Cleaning up finished run: gurpbwbg
+2024-03-17 15:35:40 INFO Agent received command: run
+2024-03-17 15:35:40 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_crop
+2024-03-17 15:35:40 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_crop
+2024-03-17 15:35:45 INFO Running runs: ['em24s1fn']
+2024-03-17 15:36:42 INFO Cleaning up finished run: em24s1fn
+2024-03-17 15:36:42 INFO Agent received command: run
+2024-03-17 15:36:42 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_horizontal_flip
+2024-03-17 15:36:42 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_horizontal_flip
+2024-03-17 15:36:47 INFO Running runs: ['oqdq69vo']
+2024-03-17 15:39:26 INFO Cleaning up finished run: oqdq69vo
+2024-03-17 15:39:27 INFO Agent received command: run
+2024-03-17 15:39:27 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_vertical_flip
+2024-03-17 15:39:27 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_vertical_flip
+2024-03-17 15:39:32 INFO Running runs: ['7bluzngt']
+2024-03-17 20:14:19 INFO Running runs: []
+2024-03-17 20:14:19 INFO Agent received command: run
+2024-03-17 20:14:19 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: none
+2024-03-17 20:14:19 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=none
+2024-03-17 20:14:24 INFO Running runs: ['5p21sa3f']
+2024-03-17 20:33:08 INFO Retry attempt failed:
+Traceback (most recent call last):
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/connection.py", line 203, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/socket.py", line 961, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1096, in _validate_conn
+    conn.connect()
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/connection.py", line 611, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/connection.py", line 210, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x119f7acd0>: Failed to resolve 'api.wandb.ai' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/connectionpool.py", line 844, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/util/retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x119f7acd0>: Failed to resolve 'api.wandb.ai' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x119f7acd0>: Failed to resolve 'api.wandb.ai' ([Errno 8] nodename nor servname provided, or not known)"))
+2024-03-17 20:43:58 INFO Cleaning up finished run: 5p21sa3f
+2024-03-17 20:44:46 INFO Agent received command: run
+2024-03-17 20:44:46 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_erasing_delete
+2024-03-17 20:44:46 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_erasing_delete
+2024-03-17 20:44:51 INFO Running runs: ['pr43qntw']
+2024-03-17 20:47:23 INFO Cleaning up finished run: pr43qntw
+2024-03-17 20:47:23 INFO Agent received command: run
+2024-03-17 20:47:23 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_erasing_random
+2024-03-17 20:47:23 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_erasing_random
+2024-03-17 20:47:28 INFO Running runs: ['cukpqz7r']
+2024-03-17 20:50:00 INFO Cleaning up finished run: cukpqz7r
+2024-03-17 20:50:00 INFO Agent received command: run
+2024-03-17 20:50:00 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_crop
+2024-03-17 20:50:00 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_crop
+2024-03-17 20:50:05 INFO Running runs: ['hamlrfj3']
+2024-03-17 21:17:55 INFO Retry attempt failed:
+Traceback (most recent call last):
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/connection.py", line 203, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+TimeoutError: [Errno 60] Operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1096, in _validate_conn
+    conn.connect()
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/connection.py", line 611, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/connection.py", line 212, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x119f79d50>, 'Connection to api.wandb.ai timed out. (connect timeout=60)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/connectionpool.py", line 844, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/urllib3/util/retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x119f79d50>, 'Connection to api.wandb.ai timed out. (connect timeout=60)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/requests/adapters.py", line 507, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x119f79d50>, 'Connection to api.wandb.ai timed out. (connect timeout=60)'))
+2024-03-17 21:18:15 INFO Cleaning up finished run: hamlrfj3
+2024-03-17 21:18:15 INFO Agent received command: run
+2024-03-17 21:18:15 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_horizontal_flip
+2024-03-17 21:18:15 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_horizontal_flip
+2024-03-17 21:18:20 INFO Running runs: ['eqz96iaa']
+2024-03-18 13:30:51 INFO Running runs: []
+2024-03-18 13:30:59 INFO Agent received command: run
+2024-03-18 13:30:59 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: none
+2024-03-18 13:30:59 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=none
+2024-03-18 13:31:04 INFO Running runs: ['t3kktfkp']
+2024-03-18 13:31:04 INFO Cleaning up finished run: t3kktfkp
+2024-03-18 13:31:04 INFO Agent received command: run
+2024-03-18 13:31:04 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_erasing_delete
+2024-03-18 13:31:04 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_erasing_delete
+2024-03-18 13:45:03 INFO Running runs: []
+2024-03-18 13:45:04 INFO Agent received command: run
+2024-03-18 13:45:04 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: none
+2024-03-18 13:45:04 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=none
+2024-03-18 13:45:09 INFO Running runs: ['i5b7nl6g']
+2024-03-18 13:45:09 INFO Cleaning up finished run: i5b7nl6g
+2024-03-18 13:45:09 INFO Agent received command: run
+2024-03-18 13:45:09 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_erasing_delete
+2024-03-18 13:45:09 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_erasing_delete
+2024-03-18 13:45:14 INFO Running runs: ['v67mtpxk']
+2024-03-18 13:45:14 INFO Cleaning up finished run: v67mtpxk
+2024-03-18 13:45:14 INFO Agent received command: run
+2024-03-18 13:45:14 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_erasing_random
+2024-03-18 13:45:14 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_erasing_random
+2024-03-18 13:45:20 INFO Running runs: ['yqscxyj1']
+2024-03-18 13:45:20 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-03-18 13:45:20 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2024-03-18 14:07:43 INFO Running runs: []
+2024-03-18 14:07:43 INFO Agent received command: run
+2024-03-18 14:07:43 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: none
+2024-03-18 14:07:43 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=none
+2024-03-18 14:07:48 INFO Running runs: ['xua51j61']
+2024-03-18 14:07:48 INFO Cleaning up finished run: xua51j61
+2024-03-18 14:07:49 INFO Agent received command: run
+2024-03-18 14:07:49 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_erasing_delete
+2024-03-18 14:07:49 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_erasing_delete
+2024-03-18 14:16:50 INFO Running runs: []
+2024-03-18 14:16:51 INFO Agent received command: run
+2024-03-18 14:16:51 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: none
+2024-03-18 14:16:51 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=none
+2024-03-18 14:16:56 INFO Running runs: ['115l2rte']
+2024-03-18 14:16:56 INFO Cleaning up finished run: 115l2rte
+2024-03-18 14:16:56 INFO Agent received command: run
+2024-03-18 14:16:56 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_erasing_delete
+2024-03-18 14:16:56 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_erasing_delete
+2024-03-18 14:17:01 INFO Running runs: ['y1773yin']
+2024-03-18 14:17:01 INFO Cleaning up finished run: y1773yin
+2024-03-18 14:17:01 INFO Agent received command: run
+2024-03-18 14:17:01 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_erasing_random
+2024-03-18 14:17:01 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_erasing_random
+2024-03-18 14:17:06 INFO Running runs: ['dzr0n98d']
+2024-03-18 14:17:06 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-03-18 14:17:06 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2024-03-18 14:18:53 INFO Running runs: []
+2024-03-18 14:18:58 INFO Agent received command: run
+2024-03-18 14:18:58 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_crop
+2024-03-18 14:18:58 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_crop
+2024-03-18 14:19:03 INFO Running runs: ['z5b1tkqi']
+2024-03-18 14:19:03 INFO Cleaning up finished run: z5b1tkqi
+2024-03-18 14:19:03 INFO Agent received command: run
+2024-03-18 14:19:03 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_horizontal_flip
+2024-03-18 14:19:03 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_horizontal_flip
+2024-03-18 14:19:08 INFO Running runs: ['pzs8w177']
+2024-03-18 14:19:08 INFO Cleaning up finished run: pzs8w177
+2024-03-18 14:22:12 INFO Running runs: []
+2024-03-18 14:22:12 INFO Agent received command: run
+2024-03-18 14:22:12 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_rotation
+2024-03-18 14:22:12 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_rotation
+2024-03-18 14:22:17 INFO Running runs: ['3ixjh7di']
+2024-03-18 14:22:17 INFO Cleaning up finished run: 3ixjh7di
+2024-03-18 14:22:18 INFO Agent received command: run
+2024-03-18 14:22:18 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: color_jitter
+2024-03-18 14:22:18 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=color_jitter
+2024-03-18 14:22:23 INFO Running runs: ['1layn9qt']
+2024-03-18 14:22:23 INFO Cleaning up finished run: 1layn9qt
+2024-03-18 14:22:23 INFO Agent received command: run
+2024-03-18 14:22:23 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_noise(0.4, 0.5)
+2024-03-18 14:22:23 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 "--transform=random_noise(0.4, 0.5)"
+2024-03-18 14:22:28 INFO Running runs: ['3f1632p1']
+2024-03-18 14:22:28 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-03-18 14:22:28 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2024-03-18 14:25:20 INFO Running runs: []
+2024-03-18 14:25:21 INFO Agent received command: run
+2024-03-18 14:25:21 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_noise(0, 0.1)
+2024-03-18 14:25:21 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 "--transform=random_noise(0, 0.1)"
+2024-03-18 14:25:26 INFO Running runs: ['jmr2ug01']
+2024-03-18 14:25:26 INFO Cleaning up finished run: jmr2ug01
+2024-03-18 14:25:26 INFO Agent received command: run
+2024-03-18 14:25:26 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_1
+	transform: none
+2024-03-18 14:25:26 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_1 --transform=none
+2024-03-18 14:25:31 INFO Running runs: ['9ztloabj']
+2024-03-18 14:25:31 INFO Cleaning up finished run: 9ztloabj
+2024-03-18 14:25:32 INFO Agent received command: run
+2024-03-18 14:25:32 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_1
+	transform: random_erasing_delete
+2024-03-18 14:25:32 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_1 --transform=random_erasing_delete
+2024-03-18 14:25:37 INFO Running runs: ['le8p3kni']
+2024-03-18 14:25:37 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-03-18 14:25:37 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2024-03-18 14:31:15 INFO Running runs: []
+2024-03-18 14:31:16 INFO Agent received command: run
+2024-03-18 14:31:16 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_1
+	transform: random_erasing_random
+2024-03-18 14:31:16 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_1 --transform=random_erasing_random
+2024-03-18 14:31:21 INFO Running runs: ['fr36e8k5']
+2024-03-18 14:31:21 INFO Cleaning up finished run: fr36e8k5
+2024-03-18 14:31:21 INFO Agent received command: run
+2024-03-18 14:31:21 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_1
+	transform: random_crop
+2024-03-18 14:31:21 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_1 --transform=random_crop
+2024-03-18 14:31:26 INFO Running runs: ['bp25cma9']
+2024-03-18 14:31:26 INFO Cleaning up finished run: bp25cma9
+2024-03-18 14:33:39 INFO Running runs: []
+2024-03-18 14:33:39 INFO Agent received command: run
+2024-03-18 14:33:39 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_1
+	transform: random_vertical_flip
+2024-03-18 14:33:39 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_1 --transform=random_vertical_flip
+2024-03-18 14:33:44 INFO Running runs: ['lqnql36n']
+2024-03-18 14:33:49 INFO Cleaning up finished run: lqnql36n
+2024-03-18 14:33:54 INFO Agent received command: run
+2024-03-18 14:33:54 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_1
+	transform: random_rotation
+2024-03-18 14:33:54 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_1 --transform=random_rotation
+2024-03-18 14:33:59 INFO Running runs: ['w2m5dqtc']
+2024-03-18 14:34:10 INFO Cleaning up finished run: w2m5dqtc
+2024-03-18 14:34:10 INFO Agent received command: run
+2024-03-18 14:34:10 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_1
+	transform: color_jitter
+2024-03-18 14:34:10 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_1 --transform=color_jitter
+2024-03-18 14:34:15 INFO Running runs: ['jn8hyvy3']
+2024-03-18 14:34:25 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-03-18 14:34:25 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2024-03-18 14:36:06 INFO Running runs: []
+2024-03-18 14:36:06 INFO Agent received command: run
+2024-03-18 14:36:06 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_1
+	transform: random_noise(0.4, 0.5)
+2024-03-18 14:36:06 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_1 "--transform=random_noise(0.4, 0.5)"
+2024-03-18 14:36:11 INFO Running runs: ['n0jqujde']
+2024-03-18 14:36:16 INFO Cleaning up finished run: n0jqujde
+2024-03-18 14:36:23 INFO Agent received command: run
+2024-03-18 14:36:23 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_1
+	transform: random_noise(0, 0.1)
+2024-03-18 14:36:23 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_1 "--transform=random_noise(0, 0.1)"
+2024-03-18 14:36:28 INFO Running runs: ['k6gu59a9']
+2024-03-18 14:36:39 INFO Cleaning up finished run: k6gu59a9
+2024-03-18 14:36:39 INFO Agent received command: run
+2024-03-18 14:36:39 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_2
+	transform: none
+2024-03-18 14:36:39 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_2 --transform=none
+2024-03-18 14:36:44 INFO Running runs: ['e6538byn']
+2024-03-18 14:36:54 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-03-18 14:36:54 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2024-03-18 14:37:53 INFO Running runs: []
+2024-03-18 14:37:53 INFO Agent received command: run
+2024-03-18 14:37:53 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_2
+	transform: random_erasing_delete
+2024-03-18 14:37:53 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_2 --transform=random_erasing_delete
+2024-03-18 14:37:58 INFO Running runs: ['768eyvix']
+2024-03-18 14:38:03 INFO Cleaning up finished run: 768eyvix
+2024-03-18 14:38:08 INFO Agent received command: run
+2024-03-18 14:38:08 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_2
+	transform: random_erasing_random
+2024-03-18 14:38:08 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_2 --transform=random_erasing_random
+2024-03-18 14:39:20 INFO Running runs: []
+2024-03-18 14:39:20 INFO Agent received command: run
+2024-03-18 14:39:20 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_2
+	transform: random_crop
+2024-03-18 14:39:20 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_2 --transform=random_crop
+2024-03-18 14:39:25 INFO Running runs: ['avrhn24s']
+2024-03-18 14:39:31 INFO Cleaning up finished run: avrhn24s
+2024-03-18 14:39:38 INFO Agent received command: run
+2024-03-18 14:39:38 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_2
+	transform: random_horizontal_flip
+2024-03-18 14:39:38 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_2 --transform=random_horizontal_flip
+2024-03-18 14:39:43 INFO Running runs: ['2vwq3r3j']
+2024-03-18 14:46:10 INFO Running runs: []
+2024-03-18 14:46:11 INFO Agent received command: run
+2024-03-18 14:46:11 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_2
+	transform: random_vertical_flip
+2024-03-18 14:46:11 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_2 --transform=random_vertical_flip
+2024-03-18 14:46:16 INFO Running runs: ['utc3gyjb']
+2024-03-18 14:46:21 INFO Cleaning up finished run: utc3gyjb
+2024-03-18 14:46:31 INFO Agent received command: run
+2024-03-18 14:46:31 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_2
+	transform: random_rotation
+2024-03-18 14:46:31 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_2 --transform=random_rotation
+2024-03-18 14:46:36 INFO Running runs: ['7veh59s3']
+2024-03-18 14:46:46 INFO Cleaning up finished run: 7veh59s3
+2024-03-18 14:46:47 INFO Agent received command: run
+2024-03-18 14:46:47 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_2
+	transform: color_jitter
+2024-03-18 14:46:47 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_2 --transform=color_jitter
+2024-03-18 14:46:52 INFO Running runs: ['2rhi5iit']
+2024-03-18 14:48:09 INFO Running runs: []
+2024-03-18 14:48:09 INFO Agent received command: run
+2024-03-18 14:48:09 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_2
+	transform: random_noise(0.4, 0.5)
+2024-03-18 14:48:09 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_2 "--transform=random_noise(0.4, 0.5)"
+2024-03-18 14:48:14 INFO Running runs: ['qgv5dqn5']
+2024-03-18 14:48:14 INFO Cleaning up finished run: qgv5dqn5
+2024-03-18 14:48:22 INFO Agent received command: run
+2024-03-18 14:48:22 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_2
+	transform: random_noise(0, 0.1)
+2024-03-18 14:48:22 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_2 "--transform=random_noise(0, 0.1)"
+2024-03-18 14:48:27 INFO Running runs: ['16f8wgey']
+2024-03-18 14:48:37 INFO Cleaning up finished run: 16f8wgey
+2024-03-18 14:48:38 INFO Agent received command: run
+2024-03-18 14:48:38 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_3
+	transform: none
+2024-03-18 14:48:38 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_3 --transform=none
+2024-03-18 14:48:43 INFO Running runs: ['2hivzjum']
+2024-03-18 14:48:53 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-03-18 14:48:53 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2024-03-18 14:49:19 INFO Running runs: []
+2024-03-18 14:49:19 INFO Agent received command: run
+2024-03-18 14:49:19 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_3
+	transform: random_erasing_delete
+2024-03-18 14:49:19 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_3 --transform=random_erasing_delete
+2024-03-18 14:49:24 INFO Running runs: ['bou54pez']
+2024-03-18 14:49:29 INFO Cleaning up finished run: bou54pez
+2024-03-18 14:49:34 INFO Agent received command: run
+2024-03-18 14:49:34 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_3
+	transform: random_erasing_random
+2024-03-18 14:49:34 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_3 --transform=random_erasing_random
+2024-03-18 14:49:39 INFO Running runs: ['poywzq7d']
+2024-03-18 14:49:50 INFO Cleaning up finished run: poywzq7d
+2024-03-18 14:49:50 INFO Agent received command: run
+2024-03-18 14:49:50 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_3
+	transform: random_crop
+2024-03-18 14:49:50 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_3 --transform=random_crop
+2024-03-18 14:49:55 INFO Running runs: ['fr01gl7s']
+2024-03-18 14:50:05 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-03-18 14:50:05 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2024-03-18 14:52:05 INFO Running runs: []
+2024-03-18 14:52:06 INFO Agent received command: run
+2024-03-18 14:52:06 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_3
+	transform: random_horizontal_flip
+2024-03-18 14:52:06 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_3 --transform=random_horizontal_flip
+2024-03-18 14:52:11 INFO Running runs: ['x78yyz5k']
+2024-03-18 14:52:16 INFO Cleaning up finished run: x78yyz5k
+2024-03-18 14:52:20 INFO Agent received command: run
+2024-03-18 14:52:20 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_3
+	transform: random_vertical_flip
+2024-03-18 14:52:20 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_3 --transform=random_vertical_flip
+2024-03-18 14:52:25 INFO Running runs: ['puui7o05']
+2024-03-18 14:52:36 INFO Cleaning up finished run: puui7o05
+2024-03-18 14:52:36 INFO Agent received command: run
+2024-03-18 14:52:36 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_3
+	transform: random_rotation
+2024-03-18 14:52:36 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_3 --transform=random_rotation
+2024-03-18 14:52:41 INFO Running runs: ['526jnb7l']
+2024-03-18 14:52:51 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-03-18 14:52:51 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2024-03-18 14:54:13 INFO Running runs: []
+2024-03-18 14:54:14 INFO Agent received command: run
+2024-03-18 14:54:14 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_3
+	transform: color_jitter
+2024-03-18 14:54:14 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_3 --transform=color_jitter
+2024-03-18 14:54:19 INFO Running runs: ['8jc5s2xh']
+2024-03-18 14:54:24 INFO Cleaning up finished run: 8jc5s2xh
+2024-03-18 14:54:31 INFO Agent received command: run
+2024-03-18 14:54:31 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_3
+	transform: random_noise(0.4, 0.5)
+2024-03-18 14:54:31 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_3 "--transform=random_noise(0.4, 0.5)"
+2024-03-18 14:54:36 INFO Running runs: ['8w9ywea9']
+2024-03-18 14:54:47 INFO Cleaning up finished run: 8w9ywea9
+2024-03-18 14:54:47 INFO Agent received command: run
+2024-03-18 14:54:47 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_3
+	transform: random_noise(0, 0.1)
+2024-03-18 14:54:47 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_3 "--transform=random_noise(0, 0.1)"
+2024-03-18 14:54:52 INFO Running runs: ['mu7gwqiw']
+2024-03-18 14:55:02 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-03-18 14:55:02 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2024-03-18 14:56:59 INFO Running runs: []
+2024-03-18 14:57:00 INFO Agent received command: run
+2024-03-18 14:57:00 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_4
+	transform: none
+2024-03-18 14:57:00 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_4 --transform=none
+2024-03-18 14:57:05 INFO Running runs: ['a3i99o3u']
+2024-03-18 14:57:10 INFO Cleaning up finished run: a3i99o3u
+2024-03-18 14:57:17 INFO Agent received command: run
+2024-03-18 14:57:17 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_4
+	transform: random_erasing_delete
+2024-03-18 14:57:17 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_4 --transform=random_erasing_delete
+2024-03-18 14:57:22 INFO Running runs: ['ra2dljmy']
+2024-03-18 14:57:33 INFO Cleaning up finished run: ra2dljmy
+2024-03-18 14:57:33 INFO Agent received command: run
+2024-03-18 14:57:33 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_4
+	transform: random_erasing_random
+2024-03-18 14:57:33 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_4 --transform=random_erasing_random
+2024-03-18 14:57:38 INFO Running runs: ['8c2uh3te']
+2024-03-18 14:57:48 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-03-18 14:57:48 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2024-03-18 14:58:55 INFO Running runs: []
+2024-03-18 14:58:56 INFO Agent received command: run
+2024-03-18 14:58:56 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_4
+	transform: random_crop
+2024-03-18 14:58:56 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_4 --transform=random_crop
+2024-03-18 14:59:01 INFO Running runs: ['3sh88o9k']
+2024-03-18 15:05:52 INFO Running runs: []
+2024-03-18 15:05:53 INFO Agent received command: run
+2024-03-18 15:05:53 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_4
+	transform: random_horizontal_flip
+2024-03-18 15:05:53 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_4 --transform=random_horizontal_flip
+2024-03-18 15:05:58 INFO Running runs: ['tgvku2d7']
+2024-03-18 15:05:58 INFO Cleaning up finished run: tgvku2d7
+2024-03-18 15:05:58 INFO Agent received command: run
+2024-03-18 15:05:58 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_4
+	transform: random_vertical_flip
+2024-03-18 15:05:58 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_4 --transform=random_vertical_flip
+2024-03-18 15:06:03 INFO Running runs: ['bp1xo9ny']
+2024-03-18 15:06:03 INFO Cleaning up finished run: bp1xo9ny
+2024-03-18 15:06:03 INFO Agent received command: run
+2024-03-18 15:06:03 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_4
+	transform: random_rotation
+2024-03-18 15:06:03 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_4 --transform=random_rotation
+2024-03-18 15:06:08 INFO Running runs: ['ovjufj31']
+2024-03-18 15:06:08 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-03-18 15:06:08 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2024-03-18 15:06:36 INFO Running runs: []
+2024-03-18 15:06:36 INFO Agent received command: run
+2024-03-18 15:06:36 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_4
+	transform: color_jitter
+2024-03-18 15:06:36 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_4 --transform=color_jitter
+2024-03-18 15:06:41 INFO Running runs: ['q99kd4fw']
+2024-03-18 15:06:46 INFO Cleaning up finished run: q99kd4fw
+2024-03-18 15:06:54 INFO Agent received command: run
+2024-03-18 15:06:54 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_4
+	transform: random_noise(0.4, 0.5)
+2024-03-18 15:06:54 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_4 "--transform=random_noise(0.4, 0.5)"
+2024-03-18 15:06:59 INFO Running runs: ['xne18s78']
+2024-03-18 15:07:09 INFO Cleaning up finished run: xne18s78
+2024-03-18 15:07:09 INFO Agent received command: run
+2024-03-18 15:07:09 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_4
+	transform: random_noise(0, 0.1)
+2024-03-18 15:07:09 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_4 "--transform=random_noise(0, 0.1)"
+2024-03-18 15:07:14 INFO Running runs: ['pxox46s7']
+2024-03-18 15:07:25 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-03-18 15:07:25 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2024-03-18 15:07:55 INFO Running runs: []
+2024-03-18 15:07:55 INFO Agent received command: run
+2024-03-18 15:07:55 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: none
+2024-03-18 15:07:55 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=none
+2024-03-18 15:08:00 INFO Running runs: ['ih4y5x6y']
+2024-03-18 15:08:05 INFO Cleaning up finished run: ih4y5x6y
+2024-03-18 15:08:10 INFO Agent received command: run
+2024-03-18 15:08:10 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_erasing_delete
+2024-03-18 15:08:10 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_erasing_delete
+2024-03-18 15:08:15 INFO Running runs: ['s87y5aof']
+2024-03-18 15:08:25 INFO Cleaning up finished run: s87y5aof
+2024-03-18 15:08:25 INFO Agent received command: run
+2024-03-18 15:08:25 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_erasing_random
+2024-03-18 15:08:25 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_erasing_random
+2024-03-18 15:08:30 INFO Running runs: ['c6r7yxua']
+2024-03-18 15:08:41 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-03-18 15:08:41 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2024-03-18 15:10:04 INFO Running runs: []
+2024-03-18 15:10:04 INFO Agent received command: run
+2024-03-18 15:10:04 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_crop
+2024-03-18 15:10:04 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_crop
+2024-03-18 15:10:09 INFO Running runs: ['xwgrm6py']
+2024-03-18 15:10:14 INFO Cleaning up finished run: xwgrm6py
+2024-03-18 15:10:21 INFO Agent received command: run
+2024-03-18 15:10:21 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_horizontal_flip
+2024-03-18 15:10:21 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_horizontal_flip
+2024-03-18 15:11:34 INFO Running runs: []
+2024-03-18 15:11:34 INFO Agent received command: run
+2024-03-18 15:11:34 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_vertical_flip
+2024-03-18 15:11:34 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_vertical_flip
+2024-03-18 15:11:39 INFO Running runs: ['wdnrz8u6']
+2024-03-18 15:11:44 INFO Cleaning up finished run: wdnrz8u6
+2024-03-18 15:11:51 INFO Agent received command: run
+2024-03-18 15:11:51 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_rotation
+2024-03-18 15:11:51 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_rotation
+2024-03-18 15:11:56 INFO Running runs: ['0w91xnrq']
+2024-03-18 15:12:06 INFO Cleaning up finished run: 0w91xnrq
+2024-03-18 15:12:06 INFO Agent received command: run
+2024-03-18 15:12:06 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: color_jitter
+2024-03-18 15:12:06 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=color_jitter
+2024-03-18 15:12:11 INFO Running runs: ['s64jnbqd']
+2024-03-18 15:12:22 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-03-18 15:12:22 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2024-03-18 15:14:07 INFO Running runs: []
+2024-03-18 15:14:08 INFO Agent received command: run
+2024-03-18 15:14:08 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_noise(0.4, 0.5)
+2024-03-18 15:14:08 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 "--transform=random_noise(0.4, 0.5)"
+2024-03-18 15:14:13 INFO Running runs: ['2hp45vtr']
+2024-03-18 15:20:24 INFO Running runs: []
+2024-03-18 15:20:24 INFO Agent received command: run
+2024-03-18 15:20:24 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_noise(0, 0.1)
+2024-03-18 15:20:24 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 "--transform=random_noise(0, 0.1)"
+2024-03-18 15:20:29 INFO Running runs: ['anaafu18']
+2024-03-18 15:20:34 INFO Cleaning up finished run: anaafu18
+2024-03-18 15:20:42 INFO Agent received command: run
+2024-03-18 15:20:42 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_1
+	transform: none
+2024-03-18 15:20:42 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_1 --transform=none
+2024-03-18 15:20:47 INFO Running runs: ['s945cr61']
+2024-03-18 15:22:23 INFO Running runs: []
+2024-03-18 15:22:23 INFO Agent received command: run
+2024-03-18 15:22:23 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: none
+2024-03-18 15:22:23 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=none
+2024-03-18 15:22:28 INFO Running runs: ['115l2rte']
+2024-03-18 15:22:33 INFO Cleaning up finished run: 115l2rte
+2024-03-18 15:22:40 INFO Agent received command: run
+2024-03-18 15:22:40 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_erasing_delete
+2024-03-18 15:22:40 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_erasing_delete
+2024-03-18 15:22:45 INFO Running runs: ['y1773yin']
+2024-03-18 15:22:56 INFO Cleaning up finished run: y1773yin
+2024-03-18 15:22:56 INFO Agent received command: run
+2024-03-18 15:22:56 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_erasing_random
+2024-03-18 15:22:56 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_erasing_random
+2024-03-18 15:23:01 INFO Running runs: ['dzr0n98d']
+2024-03-18 15:23:11 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-03-18 15:23:11 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2024-03-18 15:26:25 INFO Running runs: []
+2024-03-18 15:26:25 INFO Agent received command: run
+2024-03-18 15:26:25 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_crop
+2024-03-18 15:26:25 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_crop
+2024-03-18 15:26:30 INFO Running runs: ['z5b1tkqi']
+2024-03-18 15:26:35 INFO Cleaning up finished run: z5b1tkqi
+2024-03-18 15:26:40 INFO Agent received command: run
+2024-03-18 15:26:40 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_horizontal_flip
+2024-03-18 15:26:40 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_horizontal_flip
+2024-03-18 15:26:45 INFO Running runs: ['pzs8w177']
+2024-03-18 15:26:56 INFO Cleaning up finished run: pzs8w177
+2024-03-18 15:26:57 INFO Agent received command: run
+2024-03-18 15:26:57 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_vertical_flip
+2024-03-18 15:26:57 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_vertical_flip
+2024-03-18 15:27:02 INFO Running runs: ['k2vce0x8']
+2024-03-18 15:27:12 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-03-18 15:27:12 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2024-03-18 15:31:34 INFO Running runs: []
+2024-03-18 15:31:34 INFO Agent received command: run
+2024-03-18 15:31:34 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_rotation
+2024-03-18 15:31:34 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_rotation
+2024-03-18 15:31:39 INFO Running runs: ['3ixjh7di']
+2024-03-18 15:31:44 INFO Cleaning up finished run: 3ixjh7di
+2024-03-18 15:31:51 INFO Agent received command: run
+2024-03-18 15:31:51 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: color_jitter
+2024-03-18 15:31:51 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=color_jitter
+2024-03-18 15:36:59 INFO Running runs: []
+2024-03-18 15:36:59 INFO Agent received command: run
+2024-03-18 15:36:59 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_noise(0.4, 0.5)
+2024-03-18 15:36:59 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 "--transform=random_noise(0.4, 0.5)"
+2024-03-18 15:37:04 INFO Running runs: ['3f1632p1']
+2024-03-18 15:37:09 INFO Cleaning up finished run: 3f1632p1
+2024-03-18 15:37:17 INFO Agent received command: run
+2024-03-18 15:37:17 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_noise(0, 0.1)
+2024-03-18 15:37:17 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 "--transform=random_noise(0, 0.1)"
+2024-03-18 15:43:32 INFO Running runs: []
+2024-03-18 15:43:32 INFO Agent received command: run
+2024-03-18 15:43:32 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_1
+	transform: none
+2024-03-18 15:43:32 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_1 --transform=none
+2024-03-18 15:43:37 INFO Running runs: ['9ztloabj']
+2024-03-18 15:44:24 INFO Cleaning up finished run: 9ztloabj
+2024-03-18 15:44:32 INFO Agent received command: run
+2024-03-18 15:44:32 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_1
+	transform: random_erasing_delete
+2024-03-18 15:44:32 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_1 --transform=random_erasing_delete
+2024-03-18 15:44:37 INFO Running runs: ['le8p3kni']
+2024-03-18 15:45:50 INFO Cleaning up finished run: le8p3kni
+2024-03-18 15:45:50 INFO Agent received command: run
+2024-03-18 15:45:50 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_1
+	transform: random_erasing_random
+2024-03-18 15:45:50 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_1 --transform=random_erasing_random
+2024-03-18 15:45:55 INFO Running runs: ['fr36e8k5']
+2024-03-18 15:48:14 INFO Running runs: []
+2024-03-18 15:48:14 INFO Agent received command: run
+2024-03-18 15:48:14 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_1
+	transform: random_crop
+2024-03-18 15:48:14 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_1 --transform=random_crop
+2024-03-18 15:48:19 INFO Running runs: ['bp25cma9']
+2024-03-18 15:49:08 INFO Cleaning up finished run: bp25cma9
+2024-03-18 15:49:14 INFO Agent received command: run
+2024-03-18 15:49:14 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_1
+	transform: random_horizontal_flip
+2024-03-18 15:49:14 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_1 --transform=random_horizontal_flip
+2024-03-18 15:49:19 INFO Running runs: ['s8dwl6am']
+2024-03-18 15:50:52 INFO Cleaning up finished run: s8dwl6am
+2024-03-18 15:50:52 INFO Agent received command: run
+2024-03-18 15:50:52 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_2
+	transform: random_erasing_random
+2024-03-18 15:50:52 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_2 --transform=random_erasing_random
+2024-03-18 15:54:17 INFO Running runs: []
+2024-03-18 15:56:45 INFO Running runs: []
+2024-03-18 15:57:14 INFO Running runs: []
+2024-03-18 15:57:14 INFO Agent received command: run
+2024-03-18 15:57:14 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: none
+2024-03-18 15:57:14 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=none
+2024-03-18 15:57:19 INFO Running runs: ['jr0rdl9n']
+2024-03-18 16:00:06 INFO Running runs: []
+2024-03-18 16:00:06 INFO Agent received command: run
+2024-03-18 16:00:06 INFO Agent starting run with config:
+	batch_size: 64
+	fold: fold_0
+	transform: random_erasing_delete
+2024-03-18 16:00:06 INFO About to run command: /usr/bin/env python training.py --batch_size=64 --fold=fold_0 --transform=random_erasing_delete
+2024-03-18 16:00:11 INFO Running runs: ['89363s3k']

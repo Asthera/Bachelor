@@ -1,0 +1,37 @@
+Initialization took 3.2392189502716064 seconds
+Memory allocated:  136914432
+Memory allocated:  0.12751150131225586
+Traceback (most recent call last):
+  File "/Users/volodimir/Downloads/Bachelor/CrossValidation/training.py", line 144, in <module>
+    train()
+  File "/Users/volodimir/Downloads/Bachelor/CrossValidation/training.py", line 64, in train
+    val_loss, val_precision, val_recall, val_f1, val_balanced_accuracy, val_conf_matrix) = train_epoch(network,
+                                                                                           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/Downloads/Bachelor/CrossValidation/utils.py", line 276, in train_epoch
+    outputs = network(images)
+              ^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/torchvision/models/resnet.py", line 285, in forward
+    return self._forward_impl(x)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/torchvision/models/resnet.py", line 268, in _forward_impl
+    x = self.conv1(x)
+        ^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 460, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 456, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Given groups=1, weight of size [64, 3, 7, 7], expected input[64, 1, 600, 600] to have 3 channels, but got 1 channels instead

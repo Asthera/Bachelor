@@ -1,0 +1,16 @@
+{'program': 'training.py', 'name': 'with_cross_val', 'method': 'grid', 'metric': {'goal': 'minimize', 'name': 'test_loss'}, 'parameters': {'transform': {'values': ['none', 'random_erasing_delete', 'random_erasing_random', 'random_crop', 'random_horizontal_flip', 'random_vertical_flip', 'random_rotation', 'color_jitter', 'random_noise(0.4, 0.5)', 'random_noise(0, 0.1)']}, 'fold': {'values': ['fold_0', 'fold_1', 'fold_2', 'fold_3', 'fold_4']}, 'batch_size': {'values': [64]}}, 'folds_path': 'metadata_folds/kkui-lung-bline-lumify:latest/video', 'optimizer': 'adam', 'learning_rate': 0.0001, 'criterion': 'cross-entropy', 'img_dir': '/Volumes/LaCie/Macbook/Bachelor/CrossValidation/', 'fc_layer_size': 512, 'number_of_classes': 2, 'patience': 5, 'early_stopping': True, 'epochs': 30, 'pretrained': True, 'save_weights': True, 'init_transform': ['transform_resize(600)', 'transform_pad(600)'], 'output_transform': 'none', 'experiment_class': 'b_line', 'is_validating': True, 'val_dist': 0.2, 'device': 'mps', 'arch': 'resnet18', 'comment': 'testing with refactored code', 'batch_size': 64, 'fold': 'fold_0', 'transform': 'none'}
+{'program': 'training.py', 'name': 'with_cross_val', 'method': 'grid', 'metric': {'goal': 'minimize', 'name': 'test_loss'}, 'parameters': {'transform': {'values': ['none', 'random_erasing_delete', 'random_erasing_random', 'random_crop', 'random_horizontal_flip', 'random_vertical_flip', 'random_rotation', 'color_jitter', 'random_noise(0.4, 0.5)', 'random_noise(0, 0.1)']}, 'fold': {'values': ['fold_0', 'fold_1', 'fold_2', 'fold_3', 'fold_4']}, 'batch_size': {'values': [64]}}, 'folds_path': 'metadata_folds/kkui-lung-bline-lumify:latest/video', 'optimizer': 'adam', 'learning_rate': 0.0001, 'criterion': 'cross-entropy', 'img_dir': '/Volumes/LaCie/Macbook/Bachelor/CrossValidation/', 'fc_layer_size': 512, 'number_of_classes': 2, 'patience': 5, 'early_stopping': True, 'epochs': 30, 'pretrained': True, 'save_weights': True, 'init_transform': ['transform_resize(600)', 'transform_pad(600)'], 'output_transform': 'none', 'experiment_class': 'b_line', 'is_validating': True, 'val_dist': 0.2, 'device': 'mps', 'arch': 'resnet18', 'comment': 'testing with refactored code', 'batch_size': 64, 'fold': 'fold_0', 'transform': 'none'}
+['transform_resize(600)', 'transform_pad(600)']
+none
+none
+Compose(
+    <transforms.resize.TransformResize object at 0x14b079a50>
+    <transforms.pad.TransformPad object at 0x14b079590>
+) None None
+Initialization took 4.060485124588013 seconds
+/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Train epoch took 46.23851799964905 seconds
+/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Train epoch took 44.142038106918335 seconds

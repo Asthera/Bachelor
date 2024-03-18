@@ -1,0 +1,32 @@
+{'program': 'training.py', 'name': 'with_cross_val', 'method': 'grid', 'metric': {'goal': 'minimize', 'name': 'test_loss'}, 'parameters': {'transform': {'values': ['none', 'random_erasing_delete', 'random_erasing_random', 'random_crop', 'random_horizontal_flip', 'random_vertical_flip', 'random_rotation', 'color_jitter', 'random_noise(0.4, 0.5)', 'random_noise(0, 0.1)']}, 'fold': {'values': ['fold_0', 'fold_1', 'fold_2', 'fold_3', 'fold_4']}, 'batch_size': {'values': [64]}}, 'folds_path': 'metadata_folds/kkui-lung-bline-lumify:latest/video', 'optimizer': 'adam', 'learning_rate': 0.0001, 'criterion': 'cross-entropy', 'img_dir': '/Volumes/LaCie/Macbook/Bachelor/CrossValidation/', 'fc_layer_size': 512, 'number_of_classes': 2, 'patience': 5, 'early_stopping': True, 'epochs': 30, 'pretrained': True, 'save_weights': True, 'init_transform': ['transform_resize(600)', 'transform_pad(600)'], 'output_transform': 'none', 'experiment_class': 'b_line', 'is_validating': True, 'val_dist': 0.2, 'device': 'mps', 'arch': 'resnet18', 'comment': 'testing with refactored code', 'batch_size': 64, 'fold': 'fold_4', 'transform': 'color_jitter'}
+{'program': 'training.py', 'name': 'with_cross_val', 'method': 'grid', 'metric': {'goal': 'minimize', 'name': 'test_loss'}, 'parameters': {'transform': {'values': ['none', 'random_erasing_delete', 'random_erasing_random', 'random_crop', 'random_horizontal_flip', 'random_vertical_flip', 'random_rotation', 'color_jitter', 'random_noise(0.4, 0.5)', 'random_noise(0, 0.1)']}, 'fold': {'values': ['fold_0', 'fold_1', 'fold_2', 'fold_3', 'fold_4']}, 'batch_size': {'values': [64]}}, 'folds_path': 'metadata_folds/kkui-lung-bline-lumify:latest/video', 'optimizer': 'adam', 'learning_rate': 0.0001, 'criterion': 'cross-entropy', 'img_dir': '/Volumes/LaCie/Macbook/Bachelor/CrossValidation/', 'fc_layer_size': 512, 'number_of_classes': 2, 'patience': 5, 'early_stopping': True, 'epochs': 30, 'pretrained': True, 'save_weights': True, 'init_transform': ['transform_resize(600)', 'transform_pad(600)'], 'output_transform': 'none', 'experiment_class': 'b_line', 'is_validating': True, 'val_dist': 0.2, 'device': 'mps', 'arch': 'resnet18', 'comment': 'testing with refactored code', 'batch_size': 64, 'fold': 'fold_4', 'transform': 'color_jitter'}
+['transform_resize(600)', 'transform_pad(600)']
+color_jitter
+none
+Transforms built
+Compose(
+    <transforms.resize.TransformResize object at 0x135be7890>
+    <transforms.pad.TransformPad object at 0x160145ad0>
+) Compose(
+    ColorJitter(brightness=(0.5, 1.5), contrast=(0.5, 1.5), saturation=(0.5, 1.5), hue=(-0.5, 0.5))
+) Compose(
+    None
+)
+json_path metadata_folds/kkui-lung-bline-lumify:latest/video/fold_4.json
+Current working directory /Users/volodimir/Downloads/Bachelor/CrossValidation
+Traceback (most recent call last):
+  File "/Users/volodimir/Downloads/Bachelor/CrossValidation/training.py", line 97, in <module>
+    train()
+  File "/Users/volodimir/Downloads/Bachelor/CrossValidation/training.py", line 38, in train
+    train_dataset, val_dataset, test_dataset = build_datasets(fold_json_path,
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/Downloads/Bachelor/CrossValidation/utils/build.py", line 56, in build_datasets
+    val_dataset = FramesDataset(json_path, img_dir, init_transform, None, output_transform, subset="val",
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/Downloads/Bachelor/CrossValidation/data/dataset.py", line 22, in __init__
+    json_data = self.read_json(json_path)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/volodimir/Downloads/Bachelor/CrossValidation/data/dataset.py", line 49, in read_json
+    return json.load(open(json_path))
+                     ^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'metadata_folds/kkui-lung-bline-lumify:latest/video/fold_4.json'

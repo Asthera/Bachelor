@@ -1,0 +1,151 @@
+wandb_version: 1
+
+program:
+  desc: null
+  value: training.py
+name:
+  desc: null
+  value: with_cross_val
+method:
+  desc: null
+  value: grid
+metric:
+  desc: null
+  value:
+    goal: minimize
+    name: test_loss
+parameters:
+  desc: null
+  value:
+    transform:
+      values:
+      - none
+      - random_erasing_delete
+      - random_erasing_random
+      - random_crop
+      - random_horizontal_flip
+      - random_vertical_flip
+      - random_rotation
+      - color_jitter
+      - random_noise(0.4, 0.5)
+      - random_noise(0, 0.1)
+    fold:
+      values:
+      - fold_0
+      - fold_1
+      - fold_2
+      - fold_3
+      - fold_4
+    batch_size:
+      values:
+      - 64
+folds_path:
+  desc: null
+  value: metadata_folds/kkui-lung-bline-lumify:latest/video
+optimizer:
+  desc: null
+  value: adam
+learning_rate:
+  desc: null
+  value: 0.0001
+criterion:
+  desc: null
+  value: cross-entropy
+img_dir:
+  desc: null
+  value: /Volumes/LaCie/Macbook/Bachelor/CrossValidation/
+fc_layer_size:
+  desc: null
+  value: 512
+number_of_classes:
+  desc: null
+  value: 2
+patience:
+  desc: null
+  value: 5
+early_stopping:
+  desc: null
+  value: true
+epochs:
+  desc: null
+  value: 30
+pretrained:
+  desc: null
+  value: true
+save_weights:
+  desc: null
+  value: true
+init_transform:
+  desc: null
+  value:
+  - transform_resize(600)
+  - transform_pad(600)
+output_transform:
+  desc: null
+  value: none
+experiment_class:
+  desc: null
+  value: b_line
+is_validating:
+  desc: null
+  value: true
+val_dist:
+  desc: null
+  value: 0.2
+device:
+  desc: null
+  value: mps
+arch:
+  desc: null
+  value: resnet18
+comment:
+  desc: null
+  value: testing with refactored code
+_wandb:
+  desc: null
+  value:
+    python_version: 3.11.0
+    cli_version: 0.16.3
+    framework: huggingface
+    huggingface_version: 4.32.1
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1710772296.607986
+    t:
+      1:
+      - 1
+      - 5
+      - 11
+      - 41
+      - 49
+      - 53
+      - 55
+      2:
+      - 1
+      - 5
+      - 11
+      - 41
+      - 49
+      - 53
+      - 55
+      3:
+      - 16
+      - 17
+      - 23
+      - 37
+      4: 3.11.0
+      5: 0.16.3
+      6: 4.32.1
+      8:
+      - 4
+      - 5
+      13: darwin-arm64
+batch_size:
+  desc: null
+  value: 64
+fold:
+  desc: null
+  value: fold_0
+transform:
+  desc: null
+  value: random_rotation

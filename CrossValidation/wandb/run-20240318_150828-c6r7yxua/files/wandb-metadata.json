@@ -1,0 +1,41 @@
+{
+    "os": "macOS-13.3.1-arm64-arm-64bit",
+    "python": "3.11.0",
+    "heartbeatAt": "2024-03-18T14:08:28.909783",
+    "startedAt": "2024-03-18T14:08:28.369931",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--batch_size=64",
+        "--fold=fold_0",
+        "--transform=random_erasing_random"
+    ],
+    "state": "running",
+    "program": "/Users/volodimir/Downloads/Bachelor/CrossValidation/training.py",
+    "codePathLocal": "training.py",
+    "codePath": "CrossValidation/training.py",
+    "git": {
+        "remote": "https://github.com/Asthera/Bachelor.git",
+        "commit": "759222e2800d90531a940fd485b868f1380a0bb3"
+    },
+    "email": "h",
+    "root": "/Users/volodimir/Downloads/Bachelor",
+    "host": "MacBook-Air-Volodimir.local",
+    "username": "volodimir",
+    "executable": "/Users/volodimir/anaconda3/envs/Global/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "disk": {
+        "/": {
+            "total": 228.27386474609375,
+            "used": 190.85369873046875
+        }
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

@@ -1,0 +1,139 @@
+Initialization took 4.4099767208099365 seconds
+Memory allocated:  83289600
+Memory allocated:  0.07756948471069336
+Memory allocated:  321231872
+Memory allocated:  0.23946571350097656
+Memory allocated:  321452800
+Memory allocated:  0.2395005226135254
+Memory allocated:  321305856
+Memory allocated:  0.23946595191955566
+Memory allocated:  321452288
+Memory allocated:  0.2395005226135254
+Computing metrics for train took:  0.007367134094238281
+Val True labels:  [0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0]
+Val Predicted labels:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Train epoch took 5.031689882278442 seconds
+Epoch 0 took 5.455632925033569 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.0031931400299072266
+Val True labels:  [0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1]
+Val Predicted labels:  [1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+Train epoch took 4.435180187225342 seconds
+Epoch 1 took 4.436421871185303 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.002956867218017578
+Val True labels:  [0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1]
+Val Predicted labels:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1]
+Train epoch took 4.545147895812988 seconds
+Epoch 2 took 4.547222137451172 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.0033779144287109375
+Val True labels:  [0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1]
+Val Predicted labels:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Train epoch took 4.619319915771484 seconds
+Early stopping counter: 1 / 5 em24s1fn
+Epoch 3 took 4.620120048522949 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.004435062408447266
+/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Val True labels:  [1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0]
+Val Predicted labels:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Train epoch took 5.059400796890259 seconds
+Early stopping counter: 2 / 5 em24s1fn
+Epoch 4 took 5.061024904251099 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.002686023712158203
+Val True labels:  [0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0]
+Val Predicted labels:  [0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0]
+Train epoch took 4.470465898513794 seconds
+Early stopping counter: 3 / 5 em24s1fn
+Epoch 5 took 4.471353054046631 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.003899812698364258
+Val True labels:  [0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0]
+Val Predicted labels:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Train epoch took 4.605762720108032 seconds
+Early stopping counter: 4 / 5 em24s1fn
+Epoch 6 took 4.60664963722229 seconds
+Memory allocated:  321304064
+Memory allocated:  0.23946428298950195
+/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Memory allocated:  321306112
+Memory allocated:  0.23946619033813477
+Memory allocated:  321452544
+Memory allocated:  0.2395007610321045
+Computing metrics for train took:  0.009515047073364258
+Val True labels:  [0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0]
+Val Predicted labels:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Train epoch took 5.727245092391968 seconds
+Early stopping counter: 5 / 5 em24s1fn
+Early stopping at epoch 7 with val_loss: 0.7626069486141205, val_balanced_accuracy: 0.5, val_recall: 0.0 transformation: random_crop
+Epoch 7 took 5.72865891456604 seconds
+/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/Users/volodimir/anaconda3/envs/Global/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))

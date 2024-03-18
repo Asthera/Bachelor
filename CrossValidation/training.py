@@ -1,144 +1,92 @@
-import os
-import time
-
-import torch
+from os.path import join
+from time import time
 import wandb
-from utils import build_dataset, build_network, build_optimizer, build_criterion, train_epoch, test_model
+from transforms.builder import TransformsBuilder
+from utils.trainer import Trainer
 import yaml
+from utils.build import build_datasets, build_network, build_criterion, build_optimizer
+from torch.utils.data import DataLoader
 
 
 def train():
+    init_time = time()
 
-    init_time = time.time()
-
-    # Initialize a new wandb run
     with open("sweep.yaml") as file:
         config = yaml.load(file, Loader=yaml.FullLoader)
 
     run = wandb.init(config=config)
 
-
-    # giving the run a name
-    custom_name = f"tr:{run.config.transform}_{run.config.fold}_batch:{run.config.batch_size}_{run.id}"
-    wandb.run.name = custom_name
+    # giving a name to the run
+    wandb.run.name = f"tr:{run.config.transform}_{run.config.fold}_batch:{run.config.batch_size}_{run.id}"
 
     # for example = wandb.config.fold = "fold_0"
-    fold_json_path = os.path.join(run.config.folds_path, run.config.fold + ".json")
+    fold_json_path = str(join(run.config.folds_path, run.config.fold + ".json"))
 
-    image_size = run.config.image_size["height"]
-    train_loader, val_loader, test_loader = build_dataset(run.config.batch_size,
-                                                          fold_json_path,
-                                                          run.config.img_dir,
-                                                          run.config.transform,
-                                                          image_size)
+    # TRANSFORMS
+    init_transform = TransformsBuilder(run.config.init_transform).build()
+    train_target_transform = TransformsBuilder(run.config.transform).build()
+    output_transform = TransformsBuilder(run.config.output_transform).build()
 
-    device = torch.device("cuda" if torch.cuda.is_available() else "mps")
+    print(init_transform, train_target_transform, output_transform)
 
-    network = build_network(run.config.fc_layer_size, run.config.number_of_classes, device)
+    # DATASETS
+    train_dataset, val_dataset, test_dataset = build_datasets(fold_json_path,
+                                                              run.config.img_dir,
+                                                              init_transform,
+                                                              train_target_transform,
+                                                              output_transform,
+                                                              run.config.experiment_class,
+                                                              is_validating=run.config.is_validating,
+                                                              val_dist=run.config.val_dist)
 
-    epochs = run.config.epochs
+    # DATALOADERS
+    train_loader, test_loader = DataLoader(train_dataset, batch_size=run.config.batch_size, shuffle=True), \
+        DataLoader(test_dataset, batch_size=run.config.batch_size, shuffle=False)
 
-    criterion = build_criterion(run.config.criterion)
+    if val_dataset is not None:
+        val_loader = DataLoader(val_dataset, batch_size=run.config.batch_size, shuffle=False)
+    else:
+        val_loader = None
+
+    # NETWORK
+    network = build_network(arch=run.config.arch,
+                            fc_layer_size=run.config.fc_layer_size,
+                            number_of_classes=run.config.number_of_classes,
+                            pretrained=run.config.pretrained,
+                            device_name=run.config.device)
+
+    criterion = build_criterion(criterion_name=run.config.criterion)
     optimizer = build_optimizer(network, run.config.optimizer, run.config.learning_rate)
 
     # Train model
+    trainer = Trainer(network, train_loader, val_loader, test_loader, optimizer, criterion, run,
+                      device_name=run.config.device, patience=run.config.patience,
+                      early_stopping=run.config.early_stopping, save_weights=run.config.save_weights)
 
-    patience = run.config.patience
-    best_val_loss = float("inf")
-    epochs_without_improvement = 0
-    best_model_state_dict = None
+    print(f"Initialization took {time() - init_time} seconds")
 
-    train_confusion_matrix = wandb.Table(columns=["Step", "TP", "FP", "TN", "FN"])
-    val_confusion_matrix = wandb.Table(columns=["Step", "TP", "FP", "TN", "FN"])
+    for epoch in range(run.config.epochs):
 
-    early_stopping = False
+        start_time = time()
+        trainer.train_epoch()
 
-    print(f"Initialization took {time.time() - init_time} seconds")
+        if val_loader is not None:
+            trainer.validate()
 
-    for epoch in range(epochs):
+        trainer.send_to_wandb()
 
-        start_time = time.time()
-        # TODO: Split train_epoch into train and validate functions
-
-        (train_loss, train_precision, train_recall, train_f1, train_balanced_accuracy, train_conf_matrix,
-         val_loss, val_precision, val_recall, val_f1, val_balanced_accuracy, val_conf_matrix) = train_epoch(network,
-                                                                                                            train_loader,
-                                                                                                            val_loader,
-                                                                                                            optimizer,
-                                                                                                            criterion,
-                                                                                                            device,
-                                                                                                            epoch)
-        print(f"Train epoch took {time.time() - start_time} seconds")
-
-        # Check for early stopping
-
-        if val_loss < best_val_loss:
-            best_val_loss = val_loss
-            epochs_without_improvement = 0
-            # best_model_state_dict = network.state_dict()
-
-            if run.config.save_weights:
-                torch.save(network.state_dict(),
-                           "weights/{run_id}_{epoch}_{val_bal_acc}_{val_recall}_{val_loss}_{transform}.pth".format(
-                               run_id=run.id,
-                               epoch=epoch,
-                               val_bal_acc=val_balanced_accuracy,
-                               val_recall=val_recall,
-                               val_loss=val_loss,
-                               transform=run.config.transform))
-                print(
-                    f"Model saved at epoch {epoch} with val_loss: {val_loss}, val_balanced_accuracy: {val_balanced_accuracy}, val_recall: {val_recall} transformation: {run.config.transform}")
-        else:
-            epochs_without_improvement += 1
-
-            print(f"Early stopping counter: {epochs_without_improvement} / {patience} {run.id}")
-
-            # TODO: Add here ability to fine-tining
-            # if fine_tune_enable:
-
-            if epochs_without_improvement >= patience:
-                print(
-                    f"Early stopping at epoch {epoch} with val_loss: {val_loss}, val_balanced_accuracy: {val_balanced_accuracy}, val_recall: {val_recall} transformation: {run.config.transform}")
-                wandb.run.summary["stopping"] = epoch
-                early_stopping = True
-
-        val_confusion_matrix.add_data(*val_conf_matrix[0])
-        train_confusion_matrix.add_data(*train_conf_matrix[0])
-
-        wandb.log({"val_loss": val_loss, "val_precision": val_precision,
-                   "val_recall": val_recall, "val_f1": val_f1,
-                   "val_balanced_acc": val_balanced_accuracy,
-
-                   "train_loss": train_loss, "train_precision": train_precision,
-                   "train_recall": train_recall, "train_f1": train_f1,
-                   "train_balanced_acc": train_balanced_accuracy})
-
-        print(f"Epoch {epoch} took {time.time() - start_time} seconds")
-
-        if early_stopping:
+        if trainer.is_stopping():
             break
 
-    wandb.log({"vaL_confusion_matrix": val_confusion_matrix, "train_confusion_matrix": train_confusion_matrix})
+        print(f"Train epoch took {time() - start_time} seconds")
 
     # Test model
-    class_names = ["0", "1"]
+    trainer.test()
+    trainer.send_to_wandb(is_test=True)
 
-    (test_loss, test_accuracy, test_confusion_matrix, test_precision,
-     test_recall, test_f1, test_balanced_accuracy) = test_model(network,
-                                                                test_loader,
-                                                                criterion,
-                                                                class_names,
-                                                                device)
+    wandb.finish()
 
-    wandb.log({
-        "test_loss": test_loss,
-        "test_accuracy": test_accuracy,
-        "test_precision": test_precision,
-        "test_recall": test_recall,
-        "test_f1": test_f1,
-        "confusion_matrix": test_confusion_matrix,
-        "test_balanced_acc": test_balanced_accuracy
-    })
+    print(f"Total time: {time() - init_time} seconds")
 
 
 train()
