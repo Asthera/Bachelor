@@ -173,9 +173,10 @@ class Trainer:
                 self.epochs_without_improvement = 0
 
                 if self.save_weights:
-                    date = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+                    date = datetime.now().strftime("%Y-%m-%d")
                     save(self.best_model_state_dict,
-                         f"weights/{date}_epoch:{self.current_epoch}_run-id:{self.run.id}_val-loss:{self.val_metrics[5]}.pth")
+                         self.run.config.weights_dir +
+                         f"{date}_epoch:{self.current_epoch}_run-id:{self.run.id}_val-loss:{self.val_metrics[5]}_{self.run.config.fold}.pth")
 
             else:
 

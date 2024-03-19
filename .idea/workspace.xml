@@ -4,76 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ed4b346-8254-4985-b0b6-9f7596a861a7" name="Changes" comment="changed printing predicted to show after all bathes(after for loop)">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/test_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_120939-cb26pg5g/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_120939-cb26pg5g/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_120939-cb26pg5g/files/media/table/train_confusion_matrix_0_35151babbc1c65e58430.table.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_120939-cb26pg5g/files/media/table/val_confusion_matrix_0_23a0a5c2b428bc68770c.table.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_120939-cb26pg5g/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_120939-cb26pg5g/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_120939-cb26pg5g/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_120939-cb26pg5g/files/wandb-summary.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_120939-cb26pg5g/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_120939-cb26pg5g/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_120939-cb26pg5g/run-cb26pg5g.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_122055-jvvw3q6v/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_122055-jvvw3q6v/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_122055-jvvw3q6v/files/media/table/train_confusion_matrix_0_8a60551cdb59b24158ba.table.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_122055-jvvw3q6v/files/media/table/val_confusion_matrix_0_553f34fc4f99311622e6.table.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_122055-jvvw3q6v/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_122055-jvvw3q6v/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_122055-jvvw3q6v/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_122055-jvvw3q6v/files/wandb-summary.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_122055-jvvw3q6v/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_122055-jvvw3q6v/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_122055-jvvw3q6v/run-jvvw3q6v.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_142123-udmy6yff/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_142123-udmy6yff/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_142123-udmy6yff/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_142123-udmy6yff/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_142123-udmy6yff/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_142123-udmy6yff/files/wandb-summary.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_142123-udmy6yff/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_142123-udmy6yff/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_142123-udmy6yff/run-udmy6yff.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_142138-pkyu6xds/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_142138-pkyu6xds/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_142138-pkyu6xds/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_142138-pkyu6xds/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_142138-pkyu6xds/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_142138-pkyu6xds/files/wandb-summary.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_142138-pkyu6xds/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_142138-pkyu6xds/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_142138-pkyu6xds/run-pkyu6xds.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_142229-0mihaydc/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_142229-0mihaydc/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_142229-0mihaydc/files/media/table/train_confusion_matrix_0_f0af8bc23512f2f50dd9.table.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_142229-0mihaydc/files/media/table/val_confusion_matrix_0_e2b49a091f49f3de16c3.table.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_142229-0mihaydc/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_142229-0mihaydc/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_142229-0mihaydc/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_142229-0mihaydc/files/wandb-summary.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_142229-0mihaydc/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_142229-0mihaydc/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/run-20240319_142229-0mihaydc/run-0mihaydc.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/sweep-86wi4arm/config-jvvw3q6v.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/sweep-fk7cmoqr/config-cb26pg5g.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/sweep-her2g3kt/config-pkyu6xds.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/sweep-her2g3kt/config-udmy6yff.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/wandb/sweep-xaghczkl/config-0mihaydc.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="1ed4b346-8254-4985-b0b6-9f7596a861a7" name="Changes" comment="!!! Haved error when sent to wandb in table conf_matrix, correct is &quot;TN&quot;, &quot;FP&quot;, &quot;FN&quot;, &quot;TP&quot;">
+      <change afterPath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_14-24-37_epoch:2_run-id:0mihaydc_val-loss:0.7911615371704102.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_14-26-58_epoch:5_run-id:0mihaydc_val-loss:0.13838404417037964.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_14-27-44_epoch:6_run-id:0mihaydc_val-loss:0.0820239782333374.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_14-33-04_epoch:1_run-id:jhb95v3s_val-loss:1.1321430206298828.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_14-34-06_epoch:2_run-id:jhb95v3s_val-loss:1.1046926975250244.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_14-35-39_epoch:3_run-id:jhb95v3s_val-loss:1.0643136501312256.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_14-38-42_epoch:5_run-id:jhb95v3s_val-loss:0.32888099551200867.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_14-40-10_epoch:6_run-id:jhb95v3s_val-loss:0.1636328101158142.pth" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CrossValidation/sweep.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/CrossValidation/sweep.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/test_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/CrossValidation/test_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CrossValidation/utils/trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/CrossValidation/utils/trainer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CrossValidation/wandb/debug-cli.volodimir.log" beforeDir="false" afterPath="$PROJECT_DIR$/CrossValidation/wandb/debug-cli.volodimir.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CrossValidation/wandb/debug-internal.log" beforeDir="false" afterPath="$PROJECT_DIR$/CrossValidation/wandb/debug-internal.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CrossValidation/wandb/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/CrossValidation/wandb/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CrossValidation/wandb/latest-run" beforeDir="false" afterPath="$PROJECT_DIR$/CrossValidation/wandb/latest-run" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_12-02-19_epoch:1_run-id:oaq57afq_val-loss:1.537621259689331.pth" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_12-03-38_epoch:3_run-id:oaq57afq_val-loss:1.0390465259552002.pth" beforeDir="false" afterPath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_14-23-16_epoch:1_run-id:0mihaydc_val-loss:1.060957431793213.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_12-04-19_epoch:4_run-id:oaq57afq_val-loss:0.842841625213623.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_12-02-19_epoch:1_run-id:oaq57afq_val-loss:1.537621259689331.pth" beforeDir="false" afterPath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_14-37-11_epoch:4_run-id:jhb95v3s_val-loss:1.0370031595230103.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_12-03-38_epoch:3_run-id:oaq57afq_val-loss:1.0390465259552002.pth" beforeDir="false" afterPath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_14-26-06_epoch:4_run-id:0mihaydc_val-loss:0.3335469365119934.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_12-04-19_epoch:4_run-id:oaq57afq_val-loss:0.842841625213623.pth" beforeDir="false" afterPath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_14-23-16_epoch:1_run-id:0mihaydc_val-loss:1.060957431793213.pth" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,32 +84,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Python.main.executor": "Run",
-    "Python.test_gpu.executor": "Run",
-    "Python.test_model.executor": "Run",
-    "Python.test_mps.executor": "Run",
-    "Python.testing.executor": "Run",
-    "Python.testing_transforms.executor": "Run",
-    "Python.training.executor": "Run",
-    "Python.utilsweep.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/volodimir/Downloads/Bachelor/CrossValidation",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_gpu.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_model.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_mps.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testing.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testing_transforms.executor&quot;: &quot;Run&quot;,
+    &quot;Python.training.executor&quot;: &quot;Run&quot;,
+    &quot;Python.utilsweep.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/volodimir/Downloads/Bachelor/CrossValidation&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/CrossValidation" />
@@ -275,7 +221,8 @@
       <workItem from="1710775665492" duration="318000" />
       <workItem from="1710835403651" duration="2676000" />
       <workItem from="1710845869691" duration="2976000" />
-      <workItem from="1710851381769" duration="4855000" />
+      <workItem from="1710851381769" duration="6437000" />
+      <workItem from="1710857931172" duration="262000" />
     </task>
     <task id="LOCAL-00001" summary="starting project">
       <option name="closed" value="true" />
@@ -365,7 +312,23 @@
       <option name="project" value="LOCAL" />
       <updated>1710846511380</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="!!! Haved error when sent to wandb in table conf_matrix, correct is &quot;TN&quot;, &quot;FP&quot;, &quot;FN&quot;, &quot;TP&quot;">
+      <option name="closed" value="true" />
+      <created>1710856365775</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1710856365776</updated>
+    </task>
+    <task id="LOCAL-00013" summary="!!! Haved error when sent to wandb in table conf_matrix, correct is &quot;TN&quot;, &quot;FP&quot;, &quot;FN&quot;, &quot;TP&quot;">
+      <option name="closed" value="true" />
+      <created>1710856425941</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1710856425941</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -408,12 +371,13 @@
     <MESSAGE value="reset README.md" />
     <MESSAGE value="added norm names for saving weights and printing predicted values at train/val/test parts" />
     <MESSAGE value="changed printing predicted to show after all bathes(after for loop)" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed printing predicted to show after all bathes(after for loop)" />
+    <MESSAGE value="!!! Haved error when sent to wandb in table conf_matrix, correct is &quot;TN&quot;, &quot;FP&quot;, &quot;FN&quot;, &quot;TP&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="!!! Haved error when sent to wandb in table conf_matrix, correct is &quot;TN&quot;, &quot;FP&quot;, &quot;FN&quot;, &quot;TP&quot;" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Bachelor$testing_transforms.coverage" NAME="testing_transforms Coverage Results" MODIFIED="1708602401242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Bachelor$training.coverage" NAME="training Coverage Results" MODIFIED="1708359728005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Bachelor$test_model.coverage" NAME="test_model Coverage Results" MODIFIED="1710855972715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CrossValidation" />
+    <SUITE FILE_PATH="coverage/Bachelor$test_model.coverage" NAME="test_model Coverage Results" MODIFIED="1710857481418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CrossValidation" />
     <SUITE FILE_PATH="coverage/Bachelor$test_gpu.coverage" NAME="test_gpu Coverage Results" MODIFIED="1710596289544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CrossValidation" />
     <SUITE FILE_PATH="coverage/Bachelor$utilsweep.coverage" NAME="utilsweep Coverage Results" MODIFIED="1708600052100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Bachelor$test_mps.coverage" NAME="test_mps Coverage Results" MODIFIED="1708640219826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
