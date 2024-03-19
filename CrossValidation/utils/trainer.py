@@ -53,6 +53,12 @@ class Trainer:
             true_labels.extend(labels.cpu().numpy())
             loss.backward()
             self.optimizer.step()
+            print(f"train part({self.current_epoch}ep):")
+            print("predicted_labels, true_labels")
+            print(predicted_labels, true_labels)
+            print()
+
+
 
         self.train_metrics = self.calculate_metrics(true_labels, predicted_labels) + (train_loss,)
 
@@ -73,6 +79,10 @@ class Trainer:
                 val_loss += loss
                 predicted_labels.extend(predicted.cpu().numpy())
                 true_labels.extend(labels.cpu().numpy())
+                print(f"validation part({self.current_epoch}ep):")
+                print("predicted_labels, true_labels")
+                print(predicted_labels, true_labels)
+                print()
 
         self.val_metrics = self.calculate_metrics(true_labels, predicted_labels) + (val_loss,)
 
@@ -91,6 +101,10 @@ class Trainer:
                 test_loss += loss
                 predicted_labels.extend(predicted.cpu().numpy())
                 true_labels.extend(labels.cpu().numpy())
+                print(f"test part({self.current_epoch}ep):")
+                print("predicted_labels, true_labels")
+                print(predicted_labels, true_labels)
+                print()
 
         self.test_metrics = self.calculate_metrics(true_labels, predicted_labels) + (test_loss,)
 
@@ -157,7 +171,8 @@ class Trainer:
 
                 if self.save_weights:
                     date = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-                    save(self.best_model_state_dict, f"weights/{date}_run-id:{self.run.id}_val-loss:{self.val_metrics[5]}.pth")
+                    save(self.best_model_state_dict,
+                         f"weights/{date}_epoch:{self.current_epoch}_run-id:{self.run.id}_val-loss:{self.val_metrics[5]}.pth")
 
             else:
 
