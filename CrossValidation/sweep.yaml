@@ -44,4 +44,4 @@ output_transform: "none"
 
 # Experiment details
 experiment_class: "b_line"
-comment: "testing with refactored code"
+comment: "training some weights to check if the model is learning"

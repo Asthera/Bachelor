@@ -53,10 +53,11 @@ class Trainer:
             true_labels.extend(labels.cpu().numpy())
             loss.backward()
             self.optimizer.step()
-            print(f"train part({self.current_epoch}ep):")
-            print("predicted_labels, true_labels")
-            print(predicted_labels, true_labels)
-            print()
+
+        print(f"train part({self.current_epoch}ep):")
+        print("predicted_labels, true_labels")
+        print(predicted_labels, true_labels)
+        print()
 
 
 
@@ -79,10 +80,11 @@ class Trainer:
                 val_loss += loss
                 predicted_labels.extend(predicted.cpu().numpy())
                 true_labels.extend(labels.cpu().numpy())
-                print(f"validation part({self.current_epoch}ep):")
-                print("predicted_labels, true_labels")
-                print(predicted_labels, true_labels)
-                print()
+
+            print(f"validation part({self.current_epoch}ep):")
+            print("predicted_labels, true_labels")
+            print(predicted_labels, true_labels)
+            print()
 
         self.val_metrics = self.calculate_metrics(true_labels, predicted_labels) + (val_loss,)
 
@@ -101,10 +103,11 @@ class Trainer:
                 test_loss += loss
                 predicted_labels.extend(predicted.cpu().numpy())
                 true_labels.extend(labels.cpu().numpy())
-                print(f"test part({self.current_epoch}ep):")
-                print("predicted_labels, true_labels")
-                print(predicted_labels, true_labels)
-                print()
+
+            print(f"test part({self.current_epoch}ep):")
+            print("predicted_labels, true_labels")
+            print(predicted_labels, true_labels)
+            print()
 
         self.test_metrics = self.calculate_metrics(true_labels, predicted_labels) + (test_loss,)
 

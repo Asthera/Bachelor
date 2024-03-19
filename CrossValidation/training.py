@@ -27,7 +27,10 @@ def train():
     train_target_transform = TransformsBuilder(run.config.transform).build()
     output_transform = TransformsBuilder(run.config.output_transform).build()
 
+    print("Transforms:")
+    print(run.config.init_transform, run.config.transform, run.config.output_transform)
     print(init_transform, train_target_transform, output_transform)
+    print()
 
     # DATASETS
     train_dataset, val_dataset, test_dataset = build_datasets(fold_json_path,
