@@ -1,9 +1,9 @@
 from datetime import datetime
-
 from torch import no_grad, save
 from sklearn.metrics import precision_score, recall_score, f1_score, balanced_accuracy_score, confusion_matrix
 from wandb import Table
 from torch import device as torch_device
+from copy import copy
 
 
 class Trainer:
@@ -25,9 +25,9 @@ class Trainer:
         self.val_metrics = None
         self.test_metrics = None
 
-        self.train_confusion_matrix = Table(columns=["TP", "FP", "TN", "FN"])
-        self.val_confusion_matrix = Table(columns=["TP", "FP", "TN", "FN"])
-        self.test_confusion_matrix = Table(columns=["TP", "FP", "TN", "FN"])
+        self.train_confusion_matrix = Table(columns=["TN", "FP", "FN", "TP"])
+        self.val_confusion_matrix = Table(columns=["TN", "FP", "FN", "TP"])
+        self.test_confusion_matrix = Table(columns=["TN", "FP", "FN", "TP"])
 
         self.best_val_loss = float('inf')
         self.epochs_without_improvement = 0
@@ -122,7 +122,7 @@ class Trainer:
                 "test_recall": self.test_metrics[1],
                 "test_f1": self.test_metrics[2],
                 "test_balanced_acc": self.test_metrics[3],
-                "test_confusion_matrix": self.test_confusion_matrix
+                "test_confusion_matrix": copy(self.test_confusion_matrix)
             }
 
             self.run.log(test_log)
@@ -139,7 +139,7 @@ class Trainer:
                 "val_recall": self.val_metrics[1],
                 "val_f1": self.val_metrics[2],
                 "val_balanced_acc": self.val_metrics[3],
-                "val_confusion_matrix": self.val_confusion_matrix
+                "val_confusion_matrix": copy(self.val_confusion_matrix)
             }
 
         self.train_confusion_matrix.add_data(*(self.train_metrics[4].ravel()))
@@ -150,7 +150,7 @@ class Trainer:
             "train_recall": self.train_metrics[1],
             "train_f1": self.train_metrics[2],
             "train_balanced_acc": self.train_metrics[3],
-            "train_confusion_matrix": self.train_confusion_matrix
+            "train_confusion_matrix": copy(self.train_confusion_matrix)
         }
 
         self.run.log({**val_log, **run_log})
@@ -183,6 +183,8 @@ class Trainer:
                 # if fine_tune_enable:
 
                 self.epochs_without_improvement += 1
+                print(f"Epochs without improvement: {self.epochs_without_improvement}/ {self.patience}")
+
                 if self.epochs_without_improvement >= self.patience:
                     if self.run:
                         self.run.summary["stopping"] = self.current_epoch

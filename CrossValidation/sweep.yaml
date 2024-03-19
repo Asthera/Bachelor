@@ -33,7 +33,7 @@ pretrained: True
 # Training process
 patience: 5
 early_stopping: True
-epochs: 30
+epochs: 10
 is_validating: True
 val_dist: 0.2
 save_weights: True
