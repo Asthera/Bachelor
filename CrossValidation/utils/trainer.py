@@ -129,7 +129,8 @@ class Trainer:
     def send_to_wandb(self, is_test=False):
 
         if is_test:
-            test_confusion_matrix = Table(columns=["TN", "FP", "FN", "TP"], data=self.test_metrics[4].ravel())
+            test_confusion_matrix = Table(columns=["TN", "FP", "FN", "TP"])
+            test_confusion_matrix.add_data(*(self.test_metrics[4].ravel()))
 
             test_log = {
                 "test_loss": self.test_metrics[5],
@@ -137,7 +138,7 @@ class Trainer:
                 "test_recall": self.test_metrics[1],
                 "test_f1": self.test_metrics[2],
                 "test_balanced_acc": self.test_metrics[3],
-                "test_confusion_matrix": test_confusion_matrix
+                "test_confusion_matrix": copy(test_confusion_matrix)
             }
 
             self.run.log(test_log)
