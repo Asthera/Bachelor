@@ -1,14 +1,13 @@
 from torch.nn import CrossEntropyLoss
-from torch.nn import Linear
+from torch.nn import Linear, Sequential, Dropout
 from torchvision.models import resnet18
 from torchvision.models.resnet import ResNet18_Weights
 from torch import device as torch_device
 from torch.optim import Adam, SGD
 import sys
+
 sys.path.append("..")
 from data.dataset import FramesDataset
-
-
 
 
 def build_criterion(criterion_name):
@@ -18,7 +17,8 @@ def build_criterion(criterion_name):
         raise ValueError("Invalid criterion")
 
 
-def build_network(arch: str, fc_layer_size: int, number_of_classes: int, pretrained: bool, device_name: str):
+def build_network(arch: str, fc_layer_size: int, number_of_classes: int, pretrained: bool, device_name: str,
+                  dropout: bool, dropout_rate: float):
     if arch != "resnet18":
         raise ValueError("Invalid architecture")
 
@@ -30,6 +30,13 @@ def build_network(arch: str, fc_layer_size: int, number_of_classes: int, pretrai
         model = resnet18(weights=None)
 
     model.fc = Linear(fc_layer_size, number_of_classes)
+
+    if dropout:
+        model.fc = Sequential(
+            Dropout(dropout_rate, inplace=True),
+            Linear(fc_layer_size, number_of_classes)
+        )
+
     return model.to(device)
 
 

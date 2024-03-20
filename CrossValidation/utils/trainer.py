@@ -8,8 +8,9 @@ from copy import copy
 
 class Trainer:
     def __init__(self, network, train_loader, val_loader, test_loader, optimizer, criterion, run, device_name, patience=-1,
-                 early_stopping: bool = True or False, save_weights: bool = True or False):
+                 early_stopping: bool = True or False, save_weights: bool = True or False, test_with_best_val_loss: bool = True or False):
 
+        self.epochs_with_best_val_loss = None
         self.network = network
         self.train_loader = train_loader
         self.val_loader = val_loader
@@ -27,12 +28,16 @@ class Trainer:
 
         self.train_confusion_matrix = Table(columns=["TN", "FP", "FN", "TP"])
         self.val_confusion_matrix = Table(columns=["TN", "FP", "FN", "TP"])
-        self.test_confusion_matrix = Table(columns=["TN", "FP", "FN", "TP"])
+
+        # was removed to send test to wandb part because not sending to wandb
+        # self.test_confusion_matrix = Table(columns=["TN", "FP", "FN", "TP"])
 
         self.best_val_loss = float('inf')
         self.epochs_without_improvement = 0
         self.best_model_state_dict = None
         self.save_weights = save_weights
+
+        self.test_with_best_val_loss = test_with_best_val_loss
 
         self.current_epoch = 0
 
@@ -81,7 +86,7 @@ class Trainer:
                 predicted_labels.extend(predicted.cpu().numpy())
                 true_labels.extend(labels.cpu().numpy())
 
-            print(f"validation part({self.current_epoch}ep):")
+            print(f"validation part({self.current_epoch - 1}ep):")
             print("predicted_labels, true_labels")
             print(predicted_labels, true_labels)
             print()
@@ -94,6 +99,16 @@ class Trainer:
         predicted_labels = []
         true_labels = []
 
+        if self.test_with_best_val_loss:
+            self.network.load_state_dict(self.best_model_state_dict)
+            self.run.summary["best_val_loss_epoch"] = self.epochs_with_best_val_loss
+            print(f"Test with best val loss model from {self.epochs_with_best_val_loss} epoch, totally {self.current_epoch - 1} epochs")
+
+        else:
+            self.run.summary["best_val_loss_is_last"] = self.current_epoch - 1
+            print(f"Test with last model from {self.current_epoch - 1} epoch")
+
+
         with no_grad():
             for images, labels in self.test_loader:
                 images, labels = images.to(self.device), labels.to(self.device)
@@ -104,7 +119,7 @@ class Trainer:
                 predicted_labels.extend(predicted.cpu().numpy())
                 true_labels.extend(labels.cpu().numpy())
 
-            print(f"test part({self.current_epoch}ep):")
+            print(f"test part({self.current_epoch - 1}ep):")
             print("predicted_labels, true_labels")
             print(predicted_labels, true_labels)
             print()
@@ -114,7 +129,7 @@ class Trainer:
     def send_to_wandb(self, is_test=False):
 
         if is_test:
-            self.test_confusion_matrix.add_data(*(self.test_metrics[4].ravel()))
+            test_confusion_matrix = Table(columns=["TN", "FP", "FN", "TP"], data=self.test_metrics[4].ravel())
 
             test_log = {
                 "test_loss": self.test_metrics[5],
@@ -122,7 +137,7 @@ class Trainer:
                 "test_recall": self.test_metrics[1],
                 "test_f1": self.test_metrics[2],
                 "test_balanced_acc": self.test_metrics[3],
-                "test_confusion_matrix": copy(self.test_confusion_matrix)
+                "test_confusion_matrix": test_confusion_matrix
             }
 
             self.run.log(test_log)
@@ -171,6 +186,7 @@ class Trainer:
                 self.best_val_loss = self.val_metrics[5]
                 self.best_model_state_dict = self.network.state_dict()
                 self.epochs_without_improvement = 0
+                self.epochs_with_best_val_loss = self.current_epoch - 1
 
                 if self.save_weights:
                     date = datetime.now().strftime("%Y-%m-%d")

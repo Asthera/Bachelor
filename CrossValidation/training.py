@@ -56,7 +56,9 @@ def train():
                             fc_layer_size=run.config.fc_layer_size,
                             number_of_classes=run.config.number_of_classes,
                             pretrained=run.config.pretrained,
-                            device_name=run.config.device)
+                            device_name=run.config.device,
+                            dropout=run.config.dropout,
+                            dropout_rate=run.config.dropout_rate)
 
     criterion = build_criterion(criterion_name=run.config.criterion)
     optimizer = build_optimizer(network, run.config.optimizer, run.config.learning_rate)
@@ -64,7 +66,9 @@ def train():
     # Train model
     trainer = Trainer(network, train_loader, val_loader, test_loader, optimizer, criterion, run,
                       device_name=run.config.device, patience=run.config.patience,
-                      early_stopping=run.config.early_stopping, save_weights=run.config.save_weights)
+                      early_stopping=run.config.early_stopping, save_weights=run.config.save_weights,
+                      test_with_best_val_loss=run.config.testing_with_best_val_loss)
+
 
     print(f"Initialization took {time() - init_time} seconds")
 
