@@ -62,7 +62,7 @@ def build_datasets(json_path: str,
     if is_validating:
         val_dataset = FramesDataset(json_path, img_dir, init_transform, None, output_transform, subset="val",
                                     experiment_class=experiment_class, val=val_dist)
-        train_dataset = FramesDataset(json_path, img_dir, init_transform, None, output_transform, subset="train",
+        train_dataset = FramesDataset(json_path, img_dir, init_transform, train_target_transform, output_transform, subset="train",
                                       experiment_class=experiment_class, val=val_dist)
     else:
         val_dataset = None

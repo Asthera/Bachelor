@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ed4b346-8254-4985-b0b6-9f7596a861a7" name="Changes" comment="!!! Haved error when sent to wandb in table conf_matrix, correct is &quot;TN&quot;, &quot;FP&quot;, &quot;FN&quot;, &quot;TP&quot;">
+    <list default="true" id="1ed4b346-8254-4985-b0b6-9f7596a861a7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/CrossValidation/sweep_gpu.yaml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_14-24-37_epoch:2_run-id:0mihaydc_val-loss:0.7911615371704102.pth" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_14-26-58_epoch:5_run-id:0mihaydc_val-loss:0.13838404417037964.pth" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_14-27-44_epoch:6_run-id:0mihaydc_val-loss:0.0820239782333374.pth" afterDir="false" />
@@ -13,10 +14,13 @@
       <change afterPath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_14-35-39_epoch:3_run-id:jhb95v3s_val-loss:1.0643136501312256.pth" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_14-38-42_epoch:5_run-id:jhb95v3s_val-loss:0.32888099551200867.pth" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_14-40-10_epoch:6_run-id:jhb95v3s_val-loss:0.1636328101158142.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CrossValidation/sweep.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/CrossValidation/sweep.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CrossValidation/test_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/CrossValidation/test_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CrossValidation/utils/trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/CrossValidation/utils/trainer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utils/build.py" beforeDir="false" afterPath="$PROJECT_DIR$/CrossValidation/utils/build.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/wandb/debug-cli.volodimir.log" beforeDir="false" afterPath="$PROJECT_DIR$/CrossValidation/wandb/debug-cli.volodimir.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/wandb/debug-internal.log" beforeDir="false" afterPath="$PROJECT_DIR$/CrossValidation/wandb/debug-internal.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/wandb/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/CrossValidation/wandb/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/wandb/latest-run" beforeDir="false" afterPath="$PROJECT_DIR$/CrossValidation/wandb/latest-run" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_12-02-19_epoch:1_run-id:oaq57afq_val-loss:1.537621259689331.pth" beforeDir="false" afterPath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_14-37-11_epoch:4_run-id:jhb95v3s_val-loss:1.0370031595230103.pth" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_12-03-38_epoch:3_run-id:oaq57afq_val-loss:1.0390465259552002.pth" beforeDir="false" afterPath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_14-26-06_epoch:4_run-id:0mihaydc_val-loss:0.3335469365119934.pth" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_12-04-19_epoch:4_run-id:oaq57afq_val-loss:0.842841625213623.pth" beforeDir="false" afterPath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_14-23-16_epoch:1_run-id:0mihaydc_val-loss:1.060957431793213.pth" afterDir="false" />
@@ -131,7 +135,6 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="$USER_HOME$/anaconda3" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -222,7 +225,15 @@
       <workItem from="1710835403651" duration="2676000" />
       <workItem from="1710845869691" duration="2976000" />
       <workItem from="1710851381769" duration="6437000" />
-      <workItem from="1710857931172" duration="262000" />
+      <workItem from="1710857931172" duration="817000" />
+      <workItem from="1710866724840" duration="6512000" />
+      <workItem from="1710932004707" duration="2892000" />
+      <workItem from="1710934902650" duration="18000" />
+      <workItem from="1710938259854" duration="104000" />
+      <workItem from="1710938371619" duration="7678000" />
+      <workItem from="1710966657331" duration="114000" />
+      <workItem from="1710970756391" duration="377000" />
+      <workItem from="1711019356923" duration="939000" />
     </task>
     <task id="LOCAL-00001" summary="starting project">
       <option name="closed" value="true" />
@@ -328,7 +339,31 @@
       <option name="project" value="LOCAL" />
       <updated>1710856425941</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="changed saving models, weights path">
+      <option name="closed" value="true" />
+      <created>1710858212166</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1710858212166</updated>
+    </task>
+    <task id="LOCAL-00015" summary="opp to testing_with_best_val_loss, dropout, changed sending test_conf_matrix (wans one row ? check is work)">
+      <option name="closed" value="true" />
+      <created>1710934886633</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1710934886633</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fixed test_conf tables for wandb">
+      <option name="closed" value="true" />
+      <created>1710966760552</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1710966760552</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,7 +407,10 @@
     <MESSAGE value="added norm names for saving weights and printing predicted values at train/val/test parts" />
     <MESSAGE value="changed printing predicted to show after all bathes(after for loop)" />
     <MESSAGE value="!!! Haved error when sent to wandb in table conf_matrix, correct is &quot;TN&quot;, &quot;FP&quot;, &quot;FN&quot;, &quot;TP&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="!!! Haved error when sent to wandb in table conf_matrix, correct is &quot;TN&quot;, &quot;FP&quot;, &quot;FN&quot;, &quot;TP&quot;" />
+    <MESSAGE value="changed saving models, weights path" />
+    <MESSAGE value="opp to testing_with_best_val_loss, dropout, changed sending test_conf_matrix (wans one row ? check is work)" />
+    <MESSAGE value="fixed test_conf tables for wandb" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed test_conf tables for wandb" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Bachelor$testing_transforms.coverage" NAME="testing_transforms Coverage Results" MODIFIED="1708602401242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
