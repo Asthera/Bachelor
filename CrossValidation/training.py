@@ -6,7 +6,16 @@ from utils.trainer import Trainer
 import yaml
 from utils.build import build_datasets, build_network, build_criterion, build_optimizer
 from torch.utils.data import DataLoader
-import argparse
+import sys
+
+
+def find_yaml_file_arg(argv):
+    """Parse command line arguments for a --yaml_file argument."""
+    for arg in argv:
+        if arg.startswith('--yaml_file='):
+            return arg.split('=', 1)[1]
+    return None
+
 
 
 def train(config_path: str):
@@ -97,8 +106,5 @@ def train(config_path: str):
     print(f"Total time: {time() - init_time} seconds")
 
 
-parser = argparse.ArgumentParser(description='Train a model with wandb configuration')
-parser.add_argument('--yaml_file', type=str, required=True, help='Path to the configuration YAML file')
-args = parser.parse_args()
-
-train(args.yaml_file)
+yaml_file = find_yaml_file_arg(sys.argv)
+train(yaml_file)
