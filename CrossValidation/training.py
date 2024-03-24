@@ -6,12 +6,13 @@ from utils.trainer import Trainer
 import yaml
 from utils.build import build_datasets, build_network, build_criterion, build_optimizer
 from torch.utils.data import DataLoader
+import argparse
 
 
-def train():
+def train(config_path: str):
     init_time = time()
 
-    with open("sweep.yaml") as file:
+    with open(config_path) as file:
         config = yaml.load(file, Loader=yaml.FullLoader)
 
     run = wandb.init(config=config)
@@ -96,4 +97,8 @@ def train():
     print(f"Total time: {time() - init_time} seconds")
 
 
-train()
+parser = argparse.ArgumentParser(description='Train a model with wandb configuration')
+parser.add_argument('--yaml_file', type=str, required=True, help='Path to the configuration YAML file')
+args = parser.parse_args()
+
+train(args.yaml_file)
