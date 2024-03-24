@@ -205,6 +205,13 @@ class Trainer:
 
         return precision, recall, f1, balanced_accuracy, confusion_matrix_output
 
+
+    def save_model(self):
+        date = datetime.now().strftime("%Y-%m-%d")
+        save(self.best_model_state_dict,
+             self.run.config.weights_dir +
+             f"{date}_epoch:{self.current_epoch}_run-id:{self.run.id}_val-loss:{self.val_metrics[5]}_{self.run.config.fold}.pth")
+
     def is_stopping(self):
 
         if self.early_stopping:
@@ -214,11 +221,8 @@ class Trainer:
                 self.epochs_without_improvement = 0
                 self.epochs_with_best_val_loss = self.current_epoch - 1
 
-                if self.save_weights:
-                    date = datetime.now().strftime("%Y-%m-%d")
-                    save(self.best_model_state_dict,
-                         self.run.config.weights_dir +
-                         f"{date}_epoch:{self.current_epoch}_run-id:{self.run.id}_val-loss:{self.val_metrics[5]}_{self.run.config.fold}.pth")
+                if self.save_weights and not self.run.config.saving_only_best_one_weight_val_loss:
+                    self.save_model()
 
             else:
 
@@ -233,6 +237,10 @@ class Trainer:
                         self.run.summary["stopping"] = self.current_epoch
 
                     print(f"Early stopping after {self.current_epoch} epochs")
+
+                    if self.run.config.saving_only_best_one_weight_val_loss:
+                        self.save_model()
+
                     return True
 
         return False
