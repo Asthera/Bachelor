@@ -10,7 +10,7 @@ metric:
 # Hyperparameters
 parameters:
   transform:
-    values: ['none', 'random_erasing_delete', "random_erasing_random", "random_crop","random_horizontal_flip","random_vertical_flip", "random_rotation", "color_jitter",  "random_noise(0.4, 0.5)", "random_noise(0, 0.1)" ]
+    values: ['none', 'random_erasing_delete', "random_erasing_random", "random_crop(200, 200)","random_crop(400, 400)", "random_crop(500, 500)", "random_horizontal_flip","random_vertical_flip", "random_rotation(70)", "random_rotation(15)","color_jitter(brightness=0.5, contrast=0.5, saturation=0.5, hue=0.5)",  "random_noise(0.4, 0.5)", "random_noise(0, 0.1)" ]
   fold:
     values: ['fold_0', 'fold_1', 'fold_2', 'fold_3', 'fold_4']
   batch_size:

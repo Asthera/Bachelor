@@ -4,6 +4,7 @@ from sklearn.metrics import precision_score, recall_score, f1_score, balanced_ac
 from wandb import Table
 from torch import device as torch_device
 from copy import copy
+import matplotlib.pyplot as plt
 
 
 class Trainer:
@@ -41,6 +42,22 @@ class Trainer:
 
         self.current_epoch = 0
 
+
+    def show_images(self, images, labels):
+
+        batch = images.shape[0]
+        fig, axs = plt.subplots(1, batch, figsize=(30, 30))
+
+        for i in range(batch):
+            axs[i].imshow(images[i].permute(1, 2, 0).int(), cmap='gray')
+            axs[i].set_title(labels[i].item())
+            axs[i].axis('off')
+
+        plt.show()
+
+        # close when W pressed
+        plt.waitforbuttonpress()
+
     def train_epoch(self):
         self.network.train()
         train_loss = 0.0
@@ -48,6 +65,10 @@ class Trainer:
         true_labels = []
 
         for images, labels in self.train_loader:
+
+            # show images and labels
+            # self.show_images(images, labels)
+
             images, labels = images.to(self.device), labels.to(self.device)
             self.optimizer.zero_grad()
             outputs = self.network(images)
@@ -78,6 +99,10 @@ class Trainer:
 
         with no_grad():
             for images, labels in self.val_loader:
+
+                # show images and labels
+                # self.show_images(images, labels)
+
                 images, labels = images.to(self.device), labels.to(self.device)
                 outputs = self.network(images)
                 _, predicted = outputs.max(1)

@@ -71,7 +71,7 @@ class FramesDataset(Dataset):
 
         frame_path = join(self.img_dir, frame["frame_cropped_path"])
 
-        # read image  as tensor(torch.uint8) in [0, 255]
+        # read image as tensor(torch.uint8) in [0, 255]
         image = read_image(frame_path)
 
         # convert to float in [0, 1]

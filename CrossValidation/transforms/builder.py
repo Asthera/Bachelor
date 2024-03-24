@@ -15,11 +15,16 @@ class TransformsBuilder:
         transform_map = {
             "random_erasing_delete": RandomErasing(value=0),
             "random_erasing_random": RandomErasing(value="random"),
-            "random_crop": RandomCrop(size=(200, 200)),
+
+            "random_crop(200, 200)": RandomCrop(size=(200, 200)),
+            "random_crop(400, 400)": RandomCrop(size=(400, 400)),
+            "random_crop(500, 500)": RandomCrop(size=(500, 500)),
+
             "random_horizontal_flip": RandomHorizontalFlip(),
             "random_vertical_flip": RandomVerticalFlip(),
-            "random_rotation": RandomRotation(degrees=70),
-            "color_jitter": ColorJitter(brightness=0.5, contrast=0.5, saturation=0.5, hue=0.5),
+            "random_rotation(70)": RandomRotation(degrees=70),
+            "random_rotation(15)": RandomRotation(degrees=15),
+            "color_jitter(brightness=0.5, contrast=0.5, saturation=0.5, hue=0.5)": ColorJitter(brightness=0.5, contrast=0.5, saturation=0.5, hue=0.5),
             "random_noise(0.4, 0.5)": RandomNoise(p=0.5, mean=0.4, std=0.5),
             "random_noise(0, 0.1)": RandomNoise(p=0.5, mean=0, std=0.1),
             "transform_resize(600)": TransformResize(600),
