@@ -1,8 +1,0 @@
-wandb_version: 1
-
-batch_size:
-  value: 64
-fold:
-  value: fold_0
-transform:
-  value: random_horizontal_flip

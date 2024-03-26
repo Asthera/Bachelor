@@ -1,10 +1,7 @@
 # in this file we will test the model using the test data
 # you just need to pass a path to model weights and the test data
 
-import os
 import sys
-import numpy as np
-import pandas as pd
 from torchvision.models import resnet18
 from torchvision.models.resnet import ResNet18_Weights
 from transforms.builder import TransformsBuilder
