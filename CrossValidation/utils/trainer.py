@@ -194,6 +194,13 @@ class Trainer:
             "train_confusion_matrix": copy(self.train_confusion_matrix)
         }
 
+
+        print("logs")
+        print(val_log, type(val_log))
+        print(run_log, type(run_log))
+
+
+
         self.run.log({**val_log, **run_log})
 
     def calculate_metrics(self, true_labels, predicted_labels):

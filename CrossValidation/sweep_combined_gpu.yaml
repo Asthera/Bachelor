@@ -13,20 +13,20 @@ parameters:
     values:
       - - "None"
 
-      - - "RandomResizedCrop(510)"
+      - - "RandomResizedCrop(510, antialias=True)"
         - "RandomVerticalFlip()"
         - "RandomRotation(degrees=15)"
         - "ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2, hue=0.1)"
         - "RandomAffine(degrees=15, translate=(0.1, 0.1), scale=(0.8, 1.2), shear=10)"
         - "Normalize(mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5))"
 
-      - - "RandomResizedCrop(510)"
+      - - "RandomResizedCrop(510, antialias=True)"
         - "RandomVerticalFlip()"
         - "RandomRotation(degrees=15)"
         - "RandomAffine(degrees=15, translate=(0.1, 0.1), scale=(0.8, 1.2), shear=10)"
         - "Normalize(mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5))"
 
-      - - "RandomResizedCrop(510)"
+      - - "RandomResizedCrop(510, antialias=True)"
         - "RandomVerticalFlip()"
         - "RandomRotation(degrees=15)"
         - "RandomAffine(degrees=15, translate=(0.1, 0.1), scale=(0.8, 1.2), shear=10)"
@@ -45,9 +45,9 @@ parameters:
         - "RandHistogramShift(num_control_points=10, prob=0.5)"
         - "RandBiasField(degree=3, coeff_range=(0.0, 0.1), prob=0.5)"
         - "RandFlip(prob=0.5, spatial_axis=1)"
-        - "RandGibbsNoise(prob=0.5, alpha=(0.4, 1.0)"
+        - "RandGibbsNoise(prob=0.5, alpha=(0.4, 1.0))"
         - "RandZoom(prob=0.5, min_zoom=0.8, max_zoom=1.4)"
-        - "RandRotate(range_x=10.0, prob=0.5, keep_size=True))"
+        - "RandRotate(range_x=10.0, prob=0.5, keep_size=True)"
         - "RandGaussianSmooth(sigma_x=(0.25, 1.5), sigma_y=(0.25, 1.5), prob=0.8)"
         - 'RandAffine(prob=0.5)'
         - "RandGridDistortion(num_cells=5, prob=0.5, distort_limit=(-0.03, 0.03))"
@@ -61,14 +61,14 @@ parameters:
         - "RandHistogramShift(num_control_points=10, prob=0.5)"
         - "RandBiasField(degree=3, coeff_range=(0.0, 0.1), prob=0.5)"
         - "RandFlip(prob=0.5, spatial_axis=1)"
-        - "RandGibbsNoise(prob=0.5, alpha=(0.4, 1.0)"
+        - "RandGibbsNoise(prob=0.5, alpha=(0.4, 1.0))"
         - "RandZoom(prob=0.5, min_zoom=0.8, max_zoom=1.4)"
-        - "RandRotate(range_x=10.0, prob=0.5, keep_size=True))"
+        - "RandRotate(range_x=10.0, prob=0.5, keep_size=True)"
         - "RandGaussianSmooth(sigma_x=(0.25, 1.5), sigma_y=(0.25, 1.5), prob=0.8)"
         - 'RandAffine(prob=0.5)'
         - "RandGridDistortion(num_cells=5, prob=0.5, distort_limit=(-0.03, 0.03))"
         - "Rand2DElastic(spacing=(20,20), magnitude_range=(1,2), prob=0.4)"
-        - "RandCoarseDropout(holes=5, spatial_size=(30,30), fill_value=0,prob=0.6)"
+        - "RandCoarseDropout(holes=5, spatial_size=(30,30), fill_value=0, prob=0.6)"
         - "RandGaussianNoise(prob=0.5, mean=0.3, std=0.3)"
 
       - - "RandGaussianNoise(prob=0.5, mean=0.3, std=0.3)"
@@ -81,7 +81,7 @@ parameters:
 
       - - "RandGaussianNoise(prob=0.5, mean=0.3, std=0.3)"
         - "RandGibbsNoise(prob=0.5, alpha=(0.4, 1.0))"
-        - "RandGaussianSmooth(sigma_x=(0.25, 1.5), sigma_y=(0.25, 1.5), prob=0.8"
+        - "RandGaussianSmooth(sigma_x=(0.25, 1.5), sigma_y=(0.25, 1.5), prob=0.8)"
         - "NormalizeIntensity()"
 
 
