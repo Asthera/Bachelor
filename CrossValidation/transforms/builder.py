@@ -1,7 +1,6 @@
-from monai.transforms import RandGaussianNoise, RandAdjustContrast, RandHistogramShift, RandBiasField, RandFlip, \
-    RandGibbsNoise, RandZoom, RandRotate, NormalizeIntensity
-from torchvision.transforms import Compose, RandomCrop, RandomErasing, RandomHorizontalFlip, RandomRotation, \
-    RandomVerticalFlip, ColorJitter, RandomResizedCrop, Normalize, RandomAffine
+import monai.transforms as MT
+import torchvision.transforms as T
+
 from .random_noise import RandomNoise
 from .resize import TransformResize
 from .pad import TransformPad
@@ -19,18 +18,21 @@ class TransformsBuilder:
             return
 
         try:
-            transform = eval(transform)
+            # trying with torchvision
+            transform = eval(f'T.{transform}')
 
         except:
-            print(f"Transform {transform} not found!")
-            print("Or maybe you forgot to import it?")
-            print("Or maybe you have some error with name or params?")
-            raise ValueError(f"Error with transform {transform}")
 
+            try:
+                # trying with monai
+                transform = eval(f'MT.{transform}')
+
+            except:
+                raise ValueError(f"Transform {transform} not found in torchvision or monai")
 
         self.compose.append(transform)
 
-    def build(self) -> Compose or None:
+    def build(self) -> T.Compose or None:
 
         print(self.transforms)
 
@@ -43,4 +45,4 @@ class TransformsBuilder:
         if self.compose[0] is None:
             return None
 
-        return Compose(self.compose)
+        return T.Compose(self.compose)
