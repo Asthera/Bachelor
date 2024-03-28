@@ -28,7 +28,14 @@ class TransformsBuilder:
                 transform = eval(f'MT.{transform}')
 
             except:
-                raise ValueError(f"Transform {transform} not found in torchvision or monai")
+
+                try:
+                    # trying with custom transforms
+                    transform = eval(f'{transform}')
+
+                except:
+
+                    raise ValueError(f"Transform {transform} not found in torchvision or monai, or custom transforms.")
 
         self.compose.append(transform)
 
