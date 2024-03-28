@@ -124,7 +124,7 @@ testing_with_best_val_loss: True
 saving_only_best_one_weight_val_loss: True
 
 # Transformations
-init_transform: ["transform_resize(600)", "transform_pad(600)"]
+init_transform: ["TransformResize(600)", "TransformPad(600)"]
 output_transform: "none"
 
 # Experiment details
