@@ -10,7 +10,13 @@ metric:
 # Hyperparameters
 parameters:
   transform:
-    values: ['none', 'random_erasing_delete', "random_erasing_random", "random_crop(200, 200)","random_crop(400, 400)", "random_crop(500, 500)", "random_horizontal_flip","random_vertical_flip", "random_rotation(70)", "random_rotation(15)","color_jitter(brightness=0.5, contrast=0.5, saturation=0.5, hue=0.5)",  "random_noise(0.4, 0.5)", "random_noise(0, 0.1)" ]
+    values:
+      - - "RandomResizedCrop(510)"
+        - "RandomVerticalFlip()"
+        - "RandomRotation(degrees=15)"
+        - "ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2, hue=0.1)"
+        - "RandomAffine(degrees=15, translate=(0.1, 0.1), scale=(0.8, 1.2), shear=10)"
+        - "Normalize(mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5))"
   fold:
     values: ['fold_0', 'fold_1', 'fold_2', 'fold_3', 'fold_4']
   batch_size:
@@ -49,7 +55,7 @@ testing_with_best_val_loss: True
 saving_only_best_one_weight_val_loss: True
 
 # Transformations
-init_transform: ["transform_resize(600)", "transform_pad(600)"]
+init_transform: ["TransformResize(600)", "TransformPad(600)"]
 output_transform: "none"
 
 # Experiment details

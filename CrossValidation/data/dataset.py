@@ -77,6 +77,9 @@ class FramesDataset(Dataset):
         # convert to float in [0, 1]
         image = image.float()
 
+        # Expand the image to 3 channels, because the model expects 3 channels
+        image = image.expand(3, -1, -1)
+
         # apply transform
         if self.init_transform:
             image = self.init_transform(image)
@@ -87,7 +90,5 @@ class FramesDataset(Dataset):
         if self.output_transform:
             image = self.output_transform(image)
 
-        # Expand the image to 3 channels, because the model expects 3 channels
-        image = image.expand(3, -1, -1)
 
         return image, frame["label"]

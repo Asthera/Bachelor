@@ -1,0 +1,16 @@
+The augmentation methods used in the AutoAugment strategy, along with their magnitude intervals, are as follows:
+
+1. **ShearX/Y**: Shearing the image along the horizontal (X) or vertical (Y) axis, with a magnitude range of [-0.3, 0.3].
+2. **TranslateX/Y**: Translating the image in the horizontal (X) or vertical (Y) direction, with a magnitude range of [-150, 150] pixels.
+3. **Rotate**: Rotating the image, with a magnitude range of [-30, 30] degrees.
+4. **AutoContrast**: Maximizing image contrast, making the darkest pixel black and the lightest pixel white. This operation does not use magnitude information.
+5. **Invert**: Inverting the pixels of the image. This operation does not use magnitude information.
+6. **Equalize**: Equalizing the image histogram. This operation does not use magnitude information.
+7. **Solarize**: Inverting all pixels above a threshold value of magnitude, with a magnitude range of [0, 256].
+8. **Posterize**: Reducing the number of bits for each pixel to a certain number, with a magnitude range of [4, 8] bits.
+9. **Contrast**: Adjusting the contrast of the image, with a magnitude range of [0.1, 1.9].
+10. **Color**: Adjusting the color balance of the image, with a magnitude range of [0.1, 1.9].
+11. **Brightness**: Adjusting the brightness of the image, with a magnitude range of [0.1, 1.9].
+12. **Sharpness**: Adjusting the sharpness of the image, with a magnitude range of [0.1, 1.9].
+13. **Cutout**: Setting a random square patch of the image to gray, with a magnitude range of [0, 60] pixels for the side length of the square patch.
+14. **Sample Pairing**: Linearly adding the image with another randomly selected image from the same mini-batch, with a magnitude range of [0, 0.4] without changing the label【3†source】.
