@@ -73,7 +73,7 @@ class Trainer:
             self.optimizer.zero_grad()
             outputs = self.network(images)
             _, predicted = outputs.max(1)
-            loss = self.criterion(outputs, labels)
+            loss = self.criterion(outputs, labels).item()
             train_loss += loss
             predicted_labels.extend(predicted.cpu().numpy())
             true_labels.extend(labels.cpu().numpy())
@@ -106,7 +106,7 @@ class Trainer:
                 images, labels = images.to(self.device), labels.to(self.device)
                 outputs = self.network(images)
                 _, predicted = outputs.max(1)
-                loss = self.criterion(outputs, labels)
+                loss = self.criterion(outputs, labels).item()
                 val_loss += loss
                 predicted_labels.extend(predicted.cpu().numpy())
                 true_labels.extend(labels.cpu().numpy())
@@ -139,7 +139,7 @@ class Trainer:
                 images, labels = images.to(self.device), labels.to(self.device)
                 outputs = self.network(images)
                 _, predicted = outputs.max(1)
-                loss = self.criterion(outputs, labels)
+                loss = self.criterion(outputs, labels).item()
                 test_loss += loss
                 predicted_labels.extend(predicted.cpu().numpy())
                 true_labels.extend(labels.cpu().numpy())
