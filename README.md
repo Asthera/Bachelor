@@ -24,3 +24,13 @@ Project at [WandB](https://wandb.ai/daswoldemar/bachelor?nw=nwuserdaswoldemar)
 ## Practical Side
 
 ### To Do
+
+1. Experiment with Mixup, Cutout, Cutmix
+2. Maybe try to implement AutoAugment
+3. Maybe implement deterministic seeds ?
+
+
+Strategies
+1. Affine transformations
+   1. From "An Integration of blockchain and AI ..."
+       1. 
