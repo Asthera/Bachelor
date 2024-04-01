@@ -23,12 +23,18 @@ Project at [WandB](https://wandb.ai/daswoldemar/bachelor?nw=nwuserdaswoldemar)
 
 ## Practical Side
 
+In theory, researcher often not say which augmentation methods they used. They just say that they used augmentation. 
+without parameters intervals 
+
 ### To Do
 
 1. Experiment with Mixup, Cutout, Cutmix
 2. Maybe try to implement AutoAugment
 3. Maybe implement deterministic seeds ?
-
+4. Try in output transform resize to format that take ImageNet pretrained models
+5. Try without pretraining
+6. Try with dropout
+7. Add more metrics (good discussed in "Medical image data augmentation: techniques, comparisons and interpretations")
 
 Strategies
 1. Affine transformations
