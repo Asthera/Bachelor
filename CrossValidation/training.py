@@ -5,8 +5,10 @@ from transforms.builder import TransformsBuilder
 from utils.trainer import Trainer
 import yaml
 from utils.build import build_datasets, build_network, build_criterion, build_optimizer
-from torch.utils.data import DataLoader
+import torch
 import sys
+import random
+import numpy as np
 
 
 def find_yaml_file_arg(argv):
@@ -19,6 +21,14 @@ def find_yaml_file_arg(argv):
 
 
 def train(config_path: str):
+
+    # set deterministic behavior
+    torch.backends.cudnn.deterministic = True
+    random.seed(hash("setting random seeds") % 2 ** 32 - 1)
+    np.random.seed(hash("improves reproducibility") % 2 ** 32 - 1)
+    torch.manual_seed(hash("by removing stochasticity") % 2 ** 32 - 1)
+    torch.cuda.manual_seed_all(hash("so runs are repeatable") % 2 ** 32 - 1)
+
     init_time = time()
 
     with open(config_path) as file:
@@ -53,11 +63,11 @@ def train(config_path: str):
                                                               val_dist=run.config.val_dist)
 
     # DATALOADERS
-    train_loader, test_loader = DataLoader(train_dataset, batch_size=run.config.batch_size, shuffle=True), \
-        DataLoader(test_dataset, batch_size=run.config.batch_size, shuffle=False)
+    train_loader, test_loader = torch.DataLoader(train_dataset, batch_size=run.config.batch_size, shuffle=True), \
+        torch.DataLoader(test_dataset, batch_size=run.config.batch_size, shuffle=False)
 
     if val_dataset is not None:
-        val_loader = DataLoader(val_dataset, batch_size=run.config.batch_size, shuffle=False)
+        val_loader = torch.DataLoader(val_dataset, batch_size=run.config.batch_size, shuffle=False)
     else:
         val_loader = None
 
