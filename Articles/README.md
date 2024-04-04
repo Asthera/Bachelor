@@ -145,7 +145,7 @@
     - 2.5.5 Shearing
       - This transformation slides one edge of an image along the vertical or horizontal axis, creating a parallelogram. A vertical direction shear slides an edge along the vertical axis,
       - while a horizontal direction shear slides an edge along the horizontal axis. The amount of the shear is controlled by a shear angle.
-    - 2.5.6 Augmentation using intensities
+    - 2.5.6 Augmentation using intensities(contrast or brightness, blurring, intensity normalization, histogram equalization, sharpening, and addition of noise)
       - This augmentation is provided by modification of contrast or brightness, blurring, intensity normalization, histogram equalization, sharpening, and addition of noise. If the preferred type of noise is Gaussian, intensity values are modified by sampling a Gaussian distribution randomly. If it is salt-and-pepper type of noise, pixel values are set randomly to white and black. Uniform noise addition is performed by modification of pixel values using randomly sampling a uniform distribution.
     - 2.5.7 Random cropping and random erasing
       - Augmentation by random cropping is applied by taking a small region from an original image and resizing it to match the dimensions of the original image. Therefore, this augmentation can also be called scaling or zooming. Augmentation by random erasing is performed by randomly eliminating image regions.
@@ -154,6 +154,36 @@
     - 2.5.9 GAN based augmentation
       - GANs are generative architectures constructed with a discriminator to separate synthetic and true images and a generator to generate synthetic realistic images. The main challenging issues of GAN based image augmentations are generating images with high quality (i.e., high-resolution, clear) and maintaining training stability. To overcome those issues, several GAN variants were developed such as conditional, deep convolutional, and cycle GAN. Conditional GAN adds parameters (e.g., class labels) to the input of the generator to control generated images and allows conditional image generation from the generator. Deep convolutional GAN uses deep convolution networks in the GAN structure.
   - 3.2 Implemented augmentation methods (good part about design methods)
+  - Good rewiev comparing common single augmentation methods (In results)
+  - 6 epoch used for single augmentation methods
+
+- Deep CNN with Hybrid Binary Local Search and Particle Swarm Optimizer for Exudates Classification from Fundus Images .pdf
+  - ![Augments params](images/Params.png)
+  
+- Mahmood T, Li J, Pei Y, Akhtar F, Jia Y, Khand ZH (2021) Breast mass detection and classification using deep convolutional neural networks for radiologist diagnosis assistance. In: 45th Annual computers, software, and applications conf (COMPSAC), Madrid, Spain, pp 1918–1923\
+  - need to reread, download
+  - Rotation, shrinkage, shifting, flipping, cropping, contrast and brightness changing
+
+- Sun X, Fang H, Yang Y et al (2021) Robust retinal vessel segmentation from a data augmentation perspec- tive. In: International workshop on ophthalmic medical image analysis, pp 189–198
+  - need to reread, download
+  - Channel-wise gamma correction
+
+- Implementation_of_Data_Augmentation_to_Improve_Performance_CNN_Method_for_Detecting_Diabetic_Retinopathy.pdf
+  - need to reread
+  - best with random zoom and CLAHE(Contrast Limited Adaptive Histogram Equalization)
+  - tested vertical flip, horizontal flip, random rotation, random zoom, CLAHE, random brightness
+  - ![Results](images/1.png)
+  - ![Results](images/2.png)
+
+- Diagnosis of Diabetic Retinopathy through Retinal Fundus Images and 3D Convolutional Neural Networks with Limited Number of Samples
+  - need to read
+  - Blurring and shifting
+  - and other, reread
+
+- Data augmentation for improving proliferative diabetic retin- opathy detection in eye fundus image 
+  - need to read
+  - Heuristic augmentation with NV-like structures
+
 
 ## Methods
 
@@ -172,10 +202,28 @@ Here will be summarized good methods for data augmentation:
   - Color Jittering
   - Cutout
 
- 
-  - Scale 
+- Channel-wise gamma correction
+- shrinkage
+- Intensity Augmentation
+  - Contrast
+  - Brightness
+  - Blurring
+  - Intensity Normalization
+  - Histogram Equalization
+  - Sharpening
+  - Noise Addition
+    - Gaussian
+    - Salt-and-pepper
+    - Uniform
+    - Speckle
+    - Poisson
+    - Bernoulli
+  - Scale ( scaling randomly into different sizes )
+  - Gray level augmentation
+
+- Channel-wise gamma correction
 - Cutmix
 - Mixup (to generate synthetic images)
-- 
+- TensorMixUp
 - Sample Pairing
-
+- Mirroring

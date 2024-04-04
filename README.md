@@ -34,7 +34,10 @@ without parameters intervals
 4. Try in output transform resize to format that take ImageNet pretrained models
 5. Try without pretraining
 6. Try with dropout
-7. Add more metrics (good discussed in "Medical image data augmentation: techniques, comparisons and interpretations")
+7. Add more metrics (good discussed in "Medical image data augmentation: techniques, comparisons and interpretations") [MCC, accuraccy, kappa ]
+
+
+Test same as Medical image data augmentation: techniques, comparisons and interpretations" for single methods (11 methods)
 
 Strategies
 1. Affine transformations
