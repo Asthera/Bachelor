@@ -74,8 +74,8 @@ class FramesDataset(Dataset):
         # read image as tensor(torch.uint8) in [0, 255]
         image = read_image(frame_path)
 
-        # convert to float in [0, 1]
-        image = image.float()
+        # convert to [0 ,1], tensor(torch.float32)
+        image = image / 255
 
         # Expand the image to 3 channels, because the model expects 3 channels
         image = image.expand(3, -1, -1)

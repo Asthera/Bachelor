@@ -113,7 +113,7 @@
   - Translation, rotation,random cropping, blurring, flipping and noise addition
 
 - nnU-Net for Brain Tumor Segmentation.pdf 
-  - need to reread
+  - need to reread 
   - From text 
     - increase the probability of applying rotation and scaling from 0.2 to 0.3. 
     - increase the scale range from (0.85, 1.25) to (0.65, 1.6)
@@ -194,11 +194,11 @@ Here will be summarized good methods for data augmentation:
   - Translation
   - Shearing
   - Rotation
-  - Horizontal Reflection
-  - Vertical Reflection
+
   - Zooming
   - Cropping
-  - Flipping
+  - Erasing
+  - Flipping (horizontal, vertical)
   - Color Jittering
   - Cutout
 

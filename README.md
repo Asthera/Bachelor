@@ -30,7 +30,7 @@ without parameters intervals
 
 1. Experiment with Mixup, Cutout, Cutmix
 2. Maybe try to implement AutoAugment
-3. Maybe implement deterministic seeds ?
+3. Maybe implement deterministic seeds ? - Added
 4. Try in output transform resize to format that take ImageNet pretrained models
 5. Try without pretraining
 6. Try with dropout
@@ -38,6 +38,10 @@ without parameters intervals
 
 
 Test same as Medical image data augmentation: techniques, comparisons and interpretations" for single methods (11 methods)
+1. Shear  - V
+2. Translation - V Npt understand params
+3. 
+
 
 Strategies
 1. Affine transformations
