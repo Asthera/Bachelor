@@ -6,6 +6,7 @@ from utils.trainer import Trainer
 import yaml
 from utils.build import build_datasets, build_network, build_criterion, build_optimizer
 import torch
+from torch.utils.data import DataLoader
 import sys
 import random
 import numpy as np
@@ -63,11 +64,11 @@ def train(config_path: str):
                                                               val_dist=run.config.val_dist)
 
     # DATALOADERS
-    train_loader, test_loader = torch.DataLoader(train_dataset, batch_size=run.config.batch_size, shuffle=True), \
-        torch.DataLoader(test_dataset, batch_size=run.config.batch_size, shuffle=False)
+    train_loader, test_loader = DataLoader(train_dataset, batch_size=run.config.batch_size, shuffle=True), \
+        DataLoader(test_dataset, batch_size=run.config.batch_size, shuffle=False)
 
     if val_dataset is not None:
-        val_loader = torch.DataLoader(val_dataset, batch_size=run.config.batch_size, shuffle=False)
+        val_loader = DataLoader(val_dataset, batch_size=run.config.batch_size, shuffle=False)
     else:
         val_loader = None
 
