@@ -12,11 +12,45 @@ parameters:
   transform:
     values:
       - "None"
-      - "RandAffine(prob=0.5, mode='bilinear', shear_range=0.261799)"
-      - "RandAffine(prob=0.5, mode='nearest', shear_range=0.261799)"
-      -
-
-
+      - "RandomApply([T.RandomAffine(degrees=0, shear=(-15, 15, -15, 15))], p=0.5)"
+      - "RandomApply([T.RandomAffine(degrees=0, translate=(0.15, 0.15))], p=0.5)"
+      - "RandomApply([T.RandomAffine(degrees=(-25, 25)) ],  p=0.5)"
+      - "RandomNoiseWithFV(p=0.5, fv=(0.1, 0.5))"
+      - "RandomSaltAndPepperNoise(p=0.5, density=(0.01, 0.03))"
+      - "RandGaussianNoise(prob=0.5, mean=0, std=0.002)"
+      - "RandGaussianNoise(prob=0.5, mean=0, std=0.1)"
+      - "RandomApply([MT.SavitzkyGolaySmooth(window_length=5, order=2)], p=0.5)"
+      - "RandomApply([MT.SavitzkyGolaySmooth(window_length=3, order=1)], p=0.5)"
+      - "RandomVerticalFlip(p=0.5)"
+      - "RandomHorizontalFlip(p=0.5)"
+      - "RandZoom(prob=0.5, min_zoom=1.0, max_zoom=1.2)"
+      - "RandZoom(prob=0.5, min_zoom=0.8, max_zoom=1.0)"
+      - "RandomResizedCrop(size=(600, 600), scale=(0.5, 1.0), ratio=(3.0 / 4.0, 4.0 / 3.0), antialias=True)"
+      - "RandomResizedCrop(size=(600, 600), scale=(0.7, 1.0), ratio=(3.0 / 4.0, 4.0 / 3.0), antialias=True)"
+      - "RandomResizedCrop(size=(600, 600), scale=(0.2, 1.0), ratio=(3.0 / 4.0, 4.0 / 3.0), antialias=True)"
+      - "RandomApply([T.ColorJitter(contrast=(0.5, 1.5))], p=0.5)"
+      - "RandSmoothFieldAdjustContrast(prob=0.5, spatial_size=(600, 600), rand_size=(5, 5))"
+      - "RandSmoothFieldAdjustContrast(prob=0.5, spatial_size=(600, 600), rand_size=(2, 2))"
+      - "RandSmoothFieldAdjustContrast(prob=0.5, spatial_size=(600, 600), rand_size=(10, 10))"
+      - "RandomContrastByMultiply(p=0.5, multiplier=(0.75, 0.75))"
+      - "RandomApply([T.ColorJitter(brightness=(0.5, 1.5))], p=0.5)"
+      - "RandomBrightnessByAdd(p=0.5, delta=(0.15, 0.25))"
+      - "RandomBrightnessByAdd(p=0.5, delta=(0.05, 0.15))"
+      - "RandomApply([T.ColorJitter(saturation=0.5)], p=0.5)"
+      - "RandomApply([T.GaussianBlur(kernel_size=5, sigma=(0.1, 2.0))], p=0.5)"
+      - "RandGaussianNoise(prob=0.5, mean=0, std=0.001)"
+      - "RandGaussianNoise(prob=0.5, mean=0, std=0.01)"
+      - "RandGaussianNoise(prob=0.5, mean=0, std=0.1)"
+      - "RandGaussianSharpen(prob=0.5, alpha=(1.0, 5.0))"
+      - "RandGaussianSharpen(prob=0.5)"
+      - "RandomAdjustSharpness(sharpness_factor=2.0, p=0.5)"
+      - "RandomAdjustSharpness(sharpness_factor=1.5, p=0.5)"
+      - "RandomAdjustSharpness(sharpness_factor=2.5, p=0.5)"
+      - "RandShiftIntensity(prob=0.5, offsets=(-0.1, 0.1))"
+      - "RandShiftIntensity(prob=0.5, offsets=(-0.05, 0.05))"
+      - "RandShiftIntensity(prob=0.5, offsets=(0.1, 0.1))"
+      - "RandomErasing(p=0.5, scale=(0.02, 0.33), ratio=(0.3, 3.3), value=0, inplace=False)"
+      - "RandomErasing(p=0.5, scale=(0.02, 0.33), ratio=(0.3, 3.3), value='random', inplace=False)"
 
 
   fold:
@@ -24,7 +58,7 @@ parameters:
   batch_size:
     values: [32]
   yaml_file:
-    values: ["sweep_combined_gpu.yaml"]
+    values: ["sweep_single_gpu.yaml"]
 
 # Paths and directories
 folds_path: "metadata_folds/kkui-lung-bline-lumify:latest/video"

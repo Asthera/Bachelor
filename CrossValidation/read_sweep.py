@@ -7,6 +7,9 @@ def format_methods_from_list(methods_list):
     if methods_list == 'None' or methods_list == 'none':
         return 'None'
 
+    if isinstance(methods_list, str):
+        return methods_list
+
     # move to string
     methods_str = str(methods_list)
     # remove brackets
@@ -18,7 +21,6 @@ def format_methods_from_list(methods_list):
     methods_str = methods_str.replace("'", "")
 
     return methods_str
-
 
 # Initialize wandb
 # Make sure you're logged in. You might need to do `wandb login` in your terminal.

@@ -4,7 +4,10 @@ import torchvision.transforms as T
 from .random_noise import RandomNoise
 from .resize import TransformResize
 from .pad import TransformPad
-
+from .random_noise_with_fv import RandomNoiseWithFV
+from .salt_and_pepper_noise import RandomSaltAndPepperNoise
+from .contrast_by_multiply import RandomContrastByMultiply
+from .brightness_by_add import RandomBrightnessByAdd
 
 class TransformsBuilder:
     def __init__(self, transforms: list[str] or str) -> None:
