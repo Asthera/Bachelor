@@ -24,16 +24,16 @@ transform_3 = [
 
 # Add Gaussian noise with fixed variance [0.3, 0.4, 0.5]
 transform_4 = [
-    T.RandomApply(T.RandomChoice([CT.RandomNoiseWithFV(p=1.0, fv=(0.3, 0.3)),
+    T.RandomApply([T.RandomChoice([CT.RandomNoiseWithFV(p=1.0, fv=(0.3, 0.3)),
                                     CT.RandomNoiseWithFV(p=1.0, fv=(0.4, 0.4)),
-                                    CT.RandomNoiseWithFV(p=1.0, fv=(0.5, 0.5))]), p=0.5)
+                                    CT.RandomNoiseWithFV(p=1.0, fv=(0.5, 0.5))])], p=0.5)
 ]
 
 # Add salt and pepper noise with density [0.01, 0.02, 0.03]
 transform_5 = [
-    T.RandomApply(T.RandomChoice([CT.RandomSaltAndPepperNoise(p=1.0, density=(0.01, 0.01)),
+    T.RandomApply([T.RandomChoice([CT.RandomSaltAndPepperNoise(p=1.0, density=(0.01, 0.01)),
                                   CT.RandomSaltAndPepperNoise(p=1.0, density=(0.02, 0.02)),
-                                  CT.RandomSaltAndPepperNoise(p=1.0, density=(0.03, 0.03))]), p=0.5)
+                                  CT.RandomSaltAndPepperNoise(p=1.0, density=(0.03, 0.03))])], p=0.5)
 ]
 
 # Salt and pepper noise with density [0.01, 0.02, 0.03] ans Shear  [−15°, 15°]
