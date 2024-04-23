@@ -36,6 +36,7 @@ parameters:
     - fold_4
   transform:
     values:
+    - - None
     - - T.RandomApply([T.RandomAffine(degrees=0, shear=(-15, 15, -15, 15))], p=0.5)
     - - T.RandomApply([T.RandomAffine(degrees=0, translate=(0.15, 0.15))], p=0.5)
     - - T.RandomApply([T.RandomAffine(degrees=(-25, 25))], p=0.5)

@@ -2,6 +2,11 @@ import torchvision.transforms as T
 import monai.transforms as MT
 import custom.transforms as CT
 
+transform_0 = [
+    None
+]
+
+
 # Shear  [−15°, 15°]
 transform_1 = [
     T.RandomApply([T.RandomAffine(degrees=0, shear=(-15, 15, -15, 15))], p=0.5)
