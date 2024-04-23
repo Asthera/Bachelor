@@ -64,7 +64,7 @@ parameters:
         1.5))], p=0.5)
   yaml_file:
     values:
-    - sweep_paper_11_gpu.yaml
+    - sweep_paper_11_600x400_gpu.yaml
 patience: 5
 pretrained: true
 program: training.py
