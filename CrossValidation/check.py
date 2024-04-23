@@ -4,7 +4,7 @@ from transforms.builder import TransformsBuilder
 
 
 def main():
-    sweep_file_path = "sweep_single_gpu.yaml"
+    sweep_file_path = "sweep_paper_11_gpu.yaml"
 
     with open(sweep_file_path) as file:
         sweep = yaml.load(file, Loader=yaml.FullLoader)

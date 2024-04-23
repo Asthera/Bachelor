@@ -20,9 +20,7 @@ def find_yaml_file_arg(argv):
     return None
 
 
-
 def train(config_path: str):
-
     # set deterministic behavior
     torch.backends.cudnn.deterministic = True
     random.seed(hash("setting random seeds") % 2 ** 32 - 1)
@@ -89,7 +87,6 @@ def train(config_path: str):
                       device_name=run.config.device, patience=run.config.patience,
                       early_stopping=run.config.early_stopping, save_weights=run.config.save_weights,
                       test_with_best_val_loss=run.config.testing_with_best_val_loss)
-
 
     print(f"Initialization took {time() - init_time} seconds")
 

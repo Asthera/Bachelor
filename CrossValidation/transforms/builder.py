@@ -1,13 +1,6 @@
 import monai.transforms as MT
 import torchvision.transforms as T
-
-from .random_noise import RandomNoise
-from .resize import TransformResize
-from .pad import TransformPad
-from .random_noise_with_fv import RandomNoiseWithFV
-from .salt_and_pepper_noise import RandomSaltAndPepperNoise
-from .contrast_by_multiply import RandomContrastByMultiply
-from .brightness_by_add import RandomBrightnessByAdd
+import custom.transforms as CT
 
 class TransformsBuilder:
     def __init__(self, transforms: list[str] or str) -> None:
@@ -21,24 +14,10 @@ class TransformsBuilder:
             return
 
         try:
-            # trying with torchvision
-            transform = eval(f'T.{transform}')
+            transform = eval(transform)
 
-        except:
-
-            try:
-                # trying with monai
-                transform = eval(f'MT.{transform}')
-
-            except:
-
-                try:
-                    # trying with custom transforms
-                    transform = eval(f'{transform}')
-
-                except:
-
-                    raise ValueError(f"Transform {transform} not found in torchvision or monai, or custom transforms.")
+        except NameError:
+            raise ValueError(f"Transform {transform} is not defined in torchvision.transforms, monai.transforms or custom.transforms")
 
         self.compose.append(transform)
 
