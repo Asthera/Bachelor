@@ -62,5 +62,5 @@ def update_yaml_transforms(yaml_file_path, new_transform_values):
 
 
 # Assume the file 'script.py' contains the definitions of the transformations
-transforms = read_transforms('sweep_paper_11_gpu.py')
-update_yaml_transforms('sweep_paper_11_600x400_gpu.yaml', transforms)
+transforms = read_transforms('sweep_affine_single_gpu.py')
+update_yaml_transforms('sweep_affine_single_gpu.yaml', transforms)
