@@ -77,9 +77,6 @@ class FramesDataset(Dataset):
         # convert to [0 ,1], tensor(torch.float32)
         image = image / 255.0
 
-        # Expand the image to 3 channels, because the model expects 3 channels
-        image = image.expand(3, -1, -1)
-
         # apply transform
         if self.init_transform:
             image = self.init_transform(image)
@@ -90,5 +87,7 @@ class FramesDataset(Dataset):
         if self.output_transform:
             image = self.output_transform(image)
 
+        # Expand the image to 3 channels, because the model expects 3 channels
+        image = image.expand(3, -1, -1)
 
         return image, frame["label"]

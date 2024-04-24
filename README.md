@@ -23,6 +23,14 @@ Project at [WandB](https://wandb.ai/daswoldemar/bachelor?nw=nwuserdaswoldemar)
 
 ## Practical Side
 
+### Temporary pipeline augmentation methods:
+1. Read image as tensor, all images are grayscale, so input channels are 1
+2. Apply init transforms, now - TransformResize((600, 400)) and TransformPad((600, 400))
+3. Apply augmentation 'tramsform", `all augmentation methods must work with GrayScale image (1 channel)`
+4. Apply output transform, now - `None`
+5. Convert image to 3 channels, copy grayscale image to all 3 channels, because pretrained model needs 3 channels
+
+
 In theory, researcher often not say which augmentation methods they used. They just say that they used augmentation. 
 without parameters intervals 
 
