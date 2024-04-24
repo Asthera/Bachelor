@@ -37,13 +37,42 @@ without parameters intervals
 7. Add more metrics (good discussed in "Medical image data augmentation: techniques, comparisons and interpretations") [MCC, accuraccy, kappa ]
 
 
-Test same as Medical image data augmentation: techniques, comparisons and interpretations" for single methods (11 methods)
-1. Shear  - V
-2. Translation - V Npt understand params
-3. 
+# Tested
+1. From paper "Medical image data augmentation: techniques, comparisons and interpretations.pdf"
+Was tested with 11 augmentation methods, like it was tested in the paper.
+Methods:
+   1. Shear  [−15°, 15°], prob=0.5
+   2. Translate [0.15, 0.15], y-axis and x-axis
+   3. Rotate  [-25°, 25°]
+   4. Add Gaussian noise with fixed variance [0.3, 0.4, 0.5]
+   5. Add salt and pepper noise with density [0.01, 0.02, 0.03]
+   6. Salt and pepper noise with density [0.01, 0.02, 0.03] ans Shear  [−15°, 15°]
+   7. Add Gaussian noise with fixed variance [0.3, 0.4, 0.5] and Rotate  [-25°, 25°]
+   8. Rotate  [-25°, 25°] and Translate [0.15, 0.15], y-axis and x-axis
+   9. Translate [0.15, 0.15], y-axis and x-axis and Shear  [−15°, 15°]
+   10. Translate [0.15, 0.15] y-axis and x-axis, shear  [-15°, 15°] and Rotate  [-25°, 25°]
+   11. Color shifting, sharpening, and contrast
+
+Was tested with init transforms 600x400 or 600x600, 600x400 better (`CrossValidation/utills_sweep/analyze_sweep_paper_11.ipynb`)
+
+Implementation of them is in `CrossValidation/Transforms.py` and `CrossValidation/sweep_paper_11_gpu.py` <br/>
+Results are in `CrossValidation/utills_sweep/sweeps_edited or sweeps_raw/25oanqcs.csv`
+
+| N | Mean F1 Score        |
+|---|----------------------|
+| 1 | 0.3983488028564471   |
+| 2 | 0.19309099081069694  |
+| 3 | 0.2828702176088404   |
+| 4 | 0.18923495241626498  |
+| 5 | 0.18013008477871972  |
+| 6 | ,0.30354764735342454 |
+| 7 | 0.1974380579349123   |
+| 8 | 0.27780086796118225  |
+| 9 | 0.29636829738599646  |
+| 10| 0.24985674537524435  |
+| 11| 0.3116045607034342   |
 
 
-Strategies
-1. Affine transformations
-   1. From "An Integration of blockchain and AI ..."
-       1. 
+
+
+
