@@ -14,15 +14,15 @@ class RandomSaltAndPepperNoise(object):
             image_copy = image.clone()
 
             # Generate random matrix
-            rand_matrix = torch.rand(image.size())
+            rand_matrix = torch.rand(image.size()[1:])
 
             # Create salt & pepper mask
             salt_mask = (rand_matrix < (density / 2))
             pepper_mask = (rand_matrix > 1 - (density / 2))
 
             # Apply masks to image
-            image_copy[salt_mask] = 1
-            image_copy[pepper_mask] = 0
+            image_copy[:, salt_mask] = 1
+            image_copy[:, pepper_mask] = 0
 
             return image_copy
 
