@@ -58,19 +58,20 @@ Was tested with init transforms 600x400 or 600x600, 600x400 better (`CrossValida
 Implementation of them is in `CrossValidation/Transforms.py` and `CrossValidation/sweep_paper_11_gpu.py` <br/>
 Results are in `CrossValidation/utills_sweep/sweeps_edited or sweeps_raw/25oanqcs.csv`
 
-| N | Mean F1 Score        |
-|---|----------------------|
-| 1 | 0.3983488028564471   |
-| 2 | 0.19309099081069694  |
-| 3 | 0.2828702176088404   |
-| 4 | 0.18923495241626498  |
-| 5 | 0.18013008477871972  |
-| 6 | ,0.30354764735342454 |
-| 7 | 0.1974380579349123   |
-| 8 | 0.27780086796118225  |
-| 9 | 0.29636829738599646  |
-| 10| 0.24985674537524435  |
-| 11| 0.3116045607034342   |
+| Transforms | Test F1_mean | Test F1_max | Test F1_min | Test Precision_mean | Test Precision_max | Test Precision_min | Test Recall_mean | Test Recall_max | Test Recall_min |
+|------------|--------------|-------------|-------------|---------------------|--------------------|--------------------|------------------|-----------------|-----------------|
+| No Transforms | 0.313 | 0.825 | 0.000 | 0.560 | 1.000 | 0.000 | 0.239 | 0.702 | 0.000 |
+| Color shifting, sharpening, and contrast | 0.312 | 0.840 | 0.054 | 0.472 | 1.000 | 0.035 | 0.393 | 0.724 | 0.111 |
+| Rotate and Translate | 0.278 | 0.824 | 0.057 | 0.455 | 1.000 | 0.038 | 0.402 | 0.862 | 0.037 |
+| Rotate | 0.283 | 0.699 | 0.046 | 0.312 | 0.643 | 0.029 | 0.408 | 0.766 | 0.111 |
+| Shear | 0.398 | 0.824 | 0.067 | 0.468 | 1.000 | 0.048 | 0.410 | 0.745 | 0.111 |
+| Translate, Shear, and Rotate | 0.250 | 0.642 | 0.075 | 0.352 | 1.000 | 0.057 | 0.340 | 0.745 | 0.111 |
+| Translate and Shear | 0.296 | 0.625 | 0.111 | 0.369 | 1.000 | 0.076 | 0.376 | 0.745 | 0.148 |
+| Translate | 0.193 | 0.496 | 0.049 | 0.311 | 1.000 | 0.032 | 0.287 | 0.745 | 0.069 |
+| Gaussian noise and Rotate | 0.197 | 0.554 | 0.000 | 0.327 | 1.000 | 0.000 | 0.274 | 0.872 | 0.000 |
+| Gaussian noise | 0.189 | 0.753 | 0.000 | 0.194 | 0.761 | 0.000 | 0.194 | 0.745 | 0.000 |
+| Salt and Pepper noise and Shear | 0.304 | 0.650 | 0.047 | 0.320 | 1.000 | 0.030 | 0.473 | 0.828 | 0.111 |
+| Salt and Pepper noise | 0.180 | 0.761 | 0.000 | 0.177 | 0.778 | 0.000 | 0.196 | 0.745 | 0.000 |
 
 
 
