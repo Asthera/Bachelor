@@ -60,7 +60,7 @@ def update_yaml_transforms(transforms, base_yaml_path, new_yaml_path):
     # Update the 'transform' values under 'parameters'
     if 'parameters' in config and 'transform' in config['parameters']:
         config['parameters']['transform']['values'] = transforms
-        config['parameters']['yaml_file']['values'] = new_yaml
+        config['parameters']['yaml_file']['values'] = [new_yaml]
     else:
         # If the structure is not as expected, create or recreate the necessary structure
         if 'parameters' not in config:
