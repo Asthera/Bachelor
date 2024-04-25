@@ -1,6 +1,8 @@
 import ast
 import re
 import yaml
+import os
+import shutil
 
 
 def read_transforms(file_path):
@@ -42,25 +44,37 @@ def read_transforms(file_path):
     return transforms_values
 
 
-def update_yaml_transforms(yaml_file_path, new_transform_values):
+def update_yaml_transforms(transforms, base_yaml_path, new_yaml_path):
+    new_yaml = new_yaml_path[:-3] + ".yaml"
+
+    # Check if the new YAML file exists
+    if not os.path.exists(new_yaml):
+        # Copy the base YAML file to a new file if it does not exist
+        shutil.copy(base_yaml_file_path, new_yaml)
+
     # Read the existing YAML configuration
-    with open(yaml_file_path, 'r') as file:
+    with open(new_yaml, 'r') as file:
         config = yaml.safe_load(file)
+
 
     # Update the 'transform' values under 'parameters'
     if 'parameters' in config and 'transform' in config['parameters']:
-        config['parameters']['transform']['values'] = new_transform_values
+        config['parameters']['transform']['values'] = transforms
+        config['parameters']['yaml_file']['values'] = new_yaml
     else:
         # If the structure is not as expected, create or recreate the necessary structure
         if 'parameters' not in config:
             config['parameters'] = {}
-        config['parameters']['transform'] = {'values': new_transform_values}
+        config['parameters']['transform'] = {'values': transforms}
 
     # Write the updated configuration back to the YAML file
-    with open(yaml_file_path, 'w') as file:
+    with open(new_yaml, 'w') as file:
         yaml.dump(config, file, default_flow_style=False)
 
 
+base_yaml_file_path = 'sweep_gpu.yaml'
+file_with_transforms = 'sweep_elastic_single_gpu.py'
+
 # Assume the file 'script.py' contains the definitions of the transformations
-transforms = read_transforms('sweep_affine_single_gpu.py')
-update_yaml_transforms('sweep_affine_single_gpu.yaml', transforms)
+transforms = read_transforms(file_with_transforms)
+update_yaml_transforms(transforms, base_yaml_file_path, file_with_transforms)

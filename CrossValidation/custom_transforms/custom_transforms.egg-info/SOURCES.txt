@@ -4,6 +4,7 @@ custom/transforms/__init__.py
 custom/transforms/pad.py
 custom/transforms/random_brightness_by_add.py
 custom/transforms/random_contrast_by_multiply.py
+custom/transforms/random_elastic_transform.py
 custom/transforms/random_noise.py
 custom/transforms/random_noise_with_fv.py
 custom/transforms/random_salt_and_pepper_noise.py
