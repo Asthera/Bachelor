@@ -31,3 +31,8 @@ creating alternative variants that account for possible invariances caused by sh
 
 ## Types of Image Data Augmentation Techniques
 
+Before we talk about the types themselves, it is necessary to clarify possible inaccuracies in applying augmentation techniques.
+
+As mentioned above, changes can be applied to the data space of an image, but they can also apply to the feature space.
+We consider only the first variant, based on [when to warp], which says that if the possible image distortion is known, then it is better to apply it to the data space.
+
