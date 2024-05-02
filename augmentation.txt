@@ -29,7 +29,9 @@ This is where the main idea of Data Augmentation comes from expanding the size o
 Despite having access to a large amount of data, one should pay attention to the importance of augmentation techniques. These methods can manipulate within image data space,
 creating alternative variants that account for possible invariances caused by shooting factors such as angle, distance [When To Warp]
 
-## Types of Image Data Augmentation Techniques
+## Taxonomy of Data Augmentation in medical image data
+
+In this section, we provide a taxonomy of da
 
 Before we talk about the types themselves, it is necessary to clarify possible inaccuracies in applying augmentation techniques.
 
