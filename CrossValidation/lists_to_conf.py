@@ -73,7 +73,7 @@ def update_yaml_transforms(transforms, base_yaml_path, new_yaml_path):
 
 
 base_yaml_file_path = 'sweep_gpu.yaml'
-file_with_transforms = 'sweep_elastic_single_gpu.py'
+file_with_transforms = 'sweep_pixel-level_single.py'
 
 # Assume the file 'script.py' contains the definitions of the transformations
 transforms = read_transforms(file_with_transforms)

@@ -12,4 +12,5 @@ class RandomSpeckleNoise(object):
         if rand(1) < self.p:
             noise = randn(img.size()) * self.std + self.mean
             img = img + img * noise
+            img = img.clamp(0.0, 1.0)
         return img

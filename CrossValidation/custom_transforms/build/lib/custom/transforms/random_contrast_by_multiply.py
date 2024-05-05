@@ -11,5 +11,6 @@ class RandomContrastByMultiply(object):
     def __call__(self, image):
         if torch.rand(1) < self.p:
             multiplier = np.random.uniform(self.lower, self.upper)
-            return image * multiplier
+            return torch.clamp(image * multiplier, 0.0, 1.0)
+
         return image

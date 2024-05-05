@@ -10,6 +10,6 @@ class RandomBrightnessByAdd(object):
     def __call__(self, image):
         if torch.rand(1) < self.p:
             delta = np.random.uniform(self.delta[0], self.delta[1])
-            return image + delta
+            return torch.clamp(image + delta, 0.0, 1.0)
 
         return image
