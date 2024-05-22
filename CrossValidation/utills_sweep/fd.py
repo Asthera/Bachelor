@@ -1,19 +1,9 @@
-import matplotlib.pyplot as plt
-import csv
+# read  general_single_higher_than_best_none_renamed.csv
+# where column "Type of Augmentation" is NaN, change it to "No Augmentation"
 
-x = []
-y = []
 
-with open('general_single.csv', 'r') as csvfile:
-    plots = csv.reader(csvfile, delimiter=',')
+import pandas as pd
 
-    for row in plots:
-        x.append(row[-2])
-        y.append(row[1])
-
-plt.bar(x, y, color='g', width=0.72, label="Age")
-plt.xlabel('Transforms')
-plt.ylabel('Test F1 mean')
-plt.title('Single trnasform ')
-plt.legend()
-plt.show()
+df = pd.read_csv("general_single_higher_than_best_none_renamed.csv")
+df["Type of Augmentation"] = df["Type of Augmentation"].fillna("No Augmentation")
+df.to_csv("general_single_higher_than_best_none_renamed.csv", index=False)
