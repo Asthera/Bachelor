@@ -1,0 +1,75 @@
+arch: resnet18
+comment: ''
+criterion: cross-entropy
+device: cuda
+dropout: false
+dropout_rate: 0.8
+early_stopping: true
+epochs: 40
+experiment_class: b_line
+fc_layer_size: 512
+folds_path: metadata_folds/kkui-lung-bline-lumify:latest/video
+img_dir: /home/vn126ks/nas_storage_synology/APVV_Lung/revision_8/
+init_transform:
+- CT.TransformResize(600)
+- CT.TransformPad(600)
+is_validating: true
+learning_rate: 0.0001
+method: grid
+metric:
+  goal: minimize
+  name: val_f1
+name: with_cross_val_with_aug
+number_of_classes: 2
+optimizer: adam
+output_transform: none
+parameters:
+  batch_size:
+    values:
+    - 32
+  fold:
+    values:
+    - fold_0
+    - fold_1
+    - fold_2
+    - fold_3
+    - fold_4
+  transform:
+    values:
+    - - None
+    - - T.RandomApply([T.RandomAffine(degrees=0, shear=(-15, 15, -15, 15))], p=0.5)
+    - - T.RandomApply([T.RandomAffine(degrees=0, translate=(0.15, 0.15))], p=0.5)
+    - - T.RandomApply([T.RandomAffine(degrees=(-25, 25))], p=0.5)
+    - - T.RandomApply([T.RandomChoice([CT.RandomNoiseWithFV(p=1.0, fv=(0.3, 0.3)),
+        CT.RandomNoiseWithFV(p=1.0, fv=(0.4, 0.4)), CT.RandomNoiseWithFV(p=1.0, fv=(0.5,
+        0.5))])], p=0.5)
+    - - T.RandomApply([T.RandomChoice([CT.RandomSaltAndPepperNoise(p=1.0, density=(0.01,
+        0.01)), CT.RandomSaltAndPepperNoise(p=1.0, density=(0.02, 0.02)), CT.RandomSaltAndPepperNoise(p=1.0,
+        density=(0.03, 0.03))])], p=0.5)
+    - - T.RandomApply([T.RandomChoice([CT.RandomSaltAndPepperNoise(p=1.0, density=(0.01,
+        0.01)), CT.RandomSaltAndPepperNoise(p=1.0, density=(0.02, 0.02)), CT.RandomSaltAndPepperNoise(p=1.0,
+        density=(0.03, 0.03))]), T.RandomAffine(degrees=0, shear=(-15, 15, -15, 15))],
+        p=0.5)
+    - - T.RandomApply([T.RandomChoice([CT.RandomNoiseWithFV(p=1.0, fv=(0.3, 0.3)),
+        CT.RandomNoiseWithFV(p=1.0, fv=(0.4, 0.4)), CT.RandomNoiseWithFV(p=1.0, fv=(0.5,
+        0.5))]), T.RandomAffine(degrees=(-25, 25))], p=0.5)
+    - - T.RandomApply([T.RandomAffine(degrees=(-25, 25)), T.RandomAffine(degrees=0,
+        translate=(0.15, 0.15))], p=0.5)
+    - - T.RandomApply([T.RandomAffine(degrees=0, translate=(0.15, 0.15)), T.RandomAffine(degrees=0,
+        shear=(-15, 15, -15, 15))], p=0.5)
+    - - T.RandomApply([T.RandomAffine(degrees=0, translate=(0.15, 0.15)), T.RandomAffine(degrees=0,
+        shear=(-15, 15, -15, 15)), T.RandomAffine(degrees=(-25, 25))], p=0.5)
+    - - T.RandomApply([T.ColorJitter(brightness=(0.5, 1.5), saturation=(0.5, 1.5)),
+        T.RandomAdjustSharpness(sharpness_factor=2, p=0.5), T.ColorJitter(contrast=(0.5,
+        1.5))], p=0.5)
+  yaml_file:
+    values:
+    - sweep_paper_11_gpu.yaml
+patience: 5
+pretrained: true
+program: training.py
+save_weights: true
+saving_only_best_one_weight_val_loss: true
+testing_with_best_val_loss: true
+val_dist: 0.2
+weights_dir: /home/vn126ks/nas_storage_synology/_experiments_output/weights/

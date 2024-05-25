@@ -4,26 +4,832 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ed4b346-8254-4985-b0b6-9f7596a861a7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CrossValidation/sweep_gpu.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_14-24-37_epoch:2_run-id:0mihaydc_val-loss:0.7911615371704102.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_14-26-58_epoch:5_run-id:0mihaydc_val-loss:0.13838404417037964.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_14-27-44_epoch:6_run-id:0mihaydc_val-loss:0.0820239782333374.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_14-33-04_epoch:1_run-id:jhb95v3s_val-loss:1.1321430206298828.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_14-34-06_epoch:2_run-id:jhb95v3s_val-loss:1.1046926975250244.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_14-35-39_epoch:3_run-id:jhb95v3s_val-loss:1.0643136501312256.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_14-38-42_epoch:5_run-id:jhb95v3s_val-loss:0.32888099551200867.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_14-40-10_epoch:6_run-id:jhb95v3s_val-loss:0.1636328101158142.pth" afterDir="false" />
+    <list default="true" id="1ed4b346-8254-4985-b0b6-9f7596a861a7" name="Changes" comment="just update">
+      <change afterPath="$PROJECT_DIR$/Practical/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/show_dir_structure.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CrossValidation/utils/build.py" beforeDir="false" afterPath="$PROJECT_DIR$/CrossValidation/utils/build.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CrossValidation/wandb/debug-cli.volodimir.log" beforeDir="false" afterPath="$PROJECT_DIR$/CrossValidation/wandb/debug-cli.volodimir.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CrossValidation/wandb/debug-internal.log" beforeDir="false" afterPath="$PROJECT_DIR$/CrossValidation/wandb/debug-internal.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CrossValidation/wandb/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/CrossValidation/wandb/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CrossValidation/wandb/latest-run" beforeDir="false" afterPath="$PROJECT_DIR$/CrossValidation/wandb/latest-run" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_12-02-19_epoch:1_run-id:oaq57afq_val-loss:1.537621259689331.pth" beforeDir="false" afterPath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_14-37-11_epoch:4_run-id:jhb95v3s_val-loss:1.0370031595230103.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_12-03-38_epoch:3_run-id:oaq57afq_val-loss:1.0390465259552002.pth" beforeDir="false" afterPath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_14-26-06_epoch:4_run-id:0mihaydc_val-loss:0.3335469365119934.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_12-04-19_epoch:4_run-id:oaq57afq_val-loss:0.842841625213623.pth" beforeDir="false" afterPath="$PROJECT_DIR$/CrossValidation/weights/2024-03-19_14-23-16_epoch:1_run-id:0mihaydc_val-loss:1.060957431793213.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/check.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/check.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/custom_transforms/build/lib/custom/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/custom_transforms/build/lib/custom/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/custom_transforms/build/lib/custom/transforms/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/custom_transforms/build/lib/custom/transforms/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/custom_transforms/build/lib/custom/transforms/pad.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/custom_transforms/build/lib/custom/transforms/pad.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/custom_transforms/build/lib/custom/transforms/random_brightness_by_add.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/custom_transforms/build/lib/custom/transforms/random_brightness_by_add.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/custom_transforms/build/lib/custom/transforms/random_contrast_by_multiply.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/custom_transforms/build/lib/custom/transforms/random_contrast_by_multiply.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/custom_transforms/build/lib/custom/transforms/random_elastic_transform.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/custom_transforms/build/lib/custom/transforms/random_elastic_transform.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/custom_transforms/build/lib/custom/transforms/random_noise.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/custom_transforms/build/lib/custom/transforms/random_noise.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/custom_transforms/build/lib/custom/transforms/random_noise_with_fv.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/custom_transforms/build/lib/custom/transforms/random_noise_with_fv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/custom_transforms/build/lib/custom/transforms/random_salt_and_pepper_noise.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/custom_transforms/build/lib/custom/transforms/random_salt_and_pepper_noise.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/custom_transforms/build/lib/custom/transforms/random_speckle_noise.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/custom_transforms/build/lib/custom/transforms/random_speckle_noise.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/custom_transforms/build/lib/custom/transforms/resize.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/custom_transforms/build/lib/custom/transforms/resize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/custom_transforms/custom/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/custom_transforms/custom/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/custom_transforms/custom/transforms/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/custom_transforms/custom/transforms/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/custom_transforms/custom/transforms/pad.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/custom_transforms/custom/transforms/pad.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/custom_transforms/custom/transforms/random_brightness_by_add.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/custom_transforms/custom/transforms/random_brightness_by_add.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/custom_transforms/custom/transforms/random_contrast_by_multiply.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/custom_transforms/custom/transforms/random_contrast_by_multiply.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/custom_transforms/custom/transforms/random_elastic_transform.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/custom_transforms/custom/transforms/random_elastic_transform.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/custom_transforms/custom/transforms/random_noise.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/custom_transforms/custom/transforms/random_noise.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/custom_transforms/custom/transforms/random_noise_with_fv.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/custom_transforms/custom/transforms/random_noise_with_fv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/custom_transforms/custom/transforms/random_salt_and_pepper_noise.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/custom_transforms/custom/transforms/random_salt_and_pepper_noise.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/custom_transforms/custom/transforms/random_speckle_noise.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/custom_transforms/custom/transforms/random_speckle_noise.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/custom_transforms/custom/transforms/resize.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/custom_transforms/custom/transforms/resize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/custom_transforms/custom_transforms.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/custom_transforms/custom_transforms.egg-info/PKG-INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/custom_transforms/custom_transforms.egg-info/SOURCES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/custom_transforms/custom_transforms.egg-info/SOURCES.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/custom_transforms/custom_transforms.egg-info/dependency_links.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/custom_transforms/custom_transforms.egg-info/dependency_links.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/custom_transforms/custom_transforms.egg-info/requires.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/custom_transforms/custom_transforms.egg-info/requires.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/custom_transforms/custom_transforms.egg-info/top_level.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/custom_transforms/custom_transforms.egg-info/top_level.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/custom_transforms/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/custom_transforms/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/data/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/data/dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/j9h2x6w7_grouped_runs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/j9h2x6w7_runs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/j9h2x6w7_runs.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/ky2kmeuh_runs.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/lists_to_conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/lists_to_conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/._.DS_Store" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/._.DS_Store" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/._kkui-lung-aline-lumify:latest" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/._kkui-lung-aline-lumify:latest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/._kkui-lung-aline-not_old:latest" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/._kkui-lung-aline-not_old:latest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/._kkui-lung-bline-lumify:latest" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/._kkui-lung-bline-lumify:latest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/._kkui-lung-bline-not_old:latest" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/._kkui-lung-bline-not_old:latest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-aline-lumify:latest/._df_frames_full.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-aline-lumify:latest/._df_frames_full.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-aline-lumify:latest/._video" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-aline-lumify:latest/._video" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-aline-lumify:latest/df_frames_full.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-aline-lumify:latest/df_frames_full.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-aline-lumify:latest/video/._fold_0.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-aline-lumify:latest/video/._fold_0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-aline-lumify:latest/video/._fold_1.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-aline-lumify:latest/video/._fold_1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-aline-lumify:latest/video/._fold_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-aline-lumify:latest/video/._fold_2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-aline-lumify:latest/video/._fold_3.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-aline-lumify:latest/video/._fold_3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-aline-lumify:latest/video/._fold_4.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-aline-lumify:latest/video/._fold_4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-aline-lumify:latest/video/fold_0.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-aline-lumify:latest/video/fold_0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-aline-lumify:latest/video/fold_1.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-aline-lumify:latest/video/fold_1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-aline-lumify:latest/video/fold_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-aline-lumify:latest/video/fold_2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-aline-lumify:latest/video/fold_3.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-aline-lumify:latest/video/fold_3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-aline-lumify:latest/video/fold_4.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-aline-lumify:latest/video/fold_4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-aline-not_old:latest/._df_frames_full.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-aline-not_old:latest/._df_frames_full.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-aline-not_old:latest/._video" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-aline-not_old:latest/._video" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-aline-not_old:latest/df_frames_full.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-aline-not_old:latest/df_frames_full.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-aline-not_old:latest/video/._fold_0.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-aline-not_old:latest/video/._fold_0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-aline-not_old:latest/video/._fold_1.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-aline-not_old:latest/video/._fold_1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-aline-not_old:latest/video/._fold_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-aline-not_old:latest/video/._fold_2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-aline-not_old:latest/video/._fold_3.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-aline-not_old:latest/video/._fold_3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-aline-not_old:latest/video/._fold_4.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-aline-not_old:latest/video/._fold_4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-aline-not_old:latest/video/fold_0.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-aline-not_old:latest/video/fold_0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-aline-not_old:latest/video/fold_1.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-aline-not_old:latest/video/fold_1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-aline-not_old:latest/video/fold_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-aline-not_old:latest/video/fold_2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-aline-not_old:latest/video/fold_3.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-aline-not_old:latest/video/fold_3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-aline-not_old:latest/video/fold_4.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-aline-not_old:latest/video/fold_4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-bline-lumify:latest/._.DS_Store" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-bline-lumify:latest/._.DS_Store" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-bline-lumify:latest/._df_frames_full.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-bline-lumify:latest/._df_frames_full.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-bline-lumify:latest/._video" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-bline-lumify:latest/._video" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-bline-lumify:latest/df_frames_full.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-bline-lumify:latest/df_frames_full.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-bline-lumify:latest/video/._fold_0.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-bline-lumify:latest/video/._fold_0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-bline-lumify:latest/video/._fold_1.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-bline-lumify:latest/video/._fold_1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-bline-lumify:latest/video/._fold_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-bline-lumify:latest/video/._fold_2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-bline-lumify:latest/video/._fold_3.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-bline-lumify:latest/video/._fold_3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-bline-lumify:latest/video/._fold_4.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-bline-lumify:latest/video/._fold_4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-bline-lumify:latest/video/fold_0.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-bline-lumify:latest/video/fold_0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-bline-lumify:latest/video/fold_1.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-bline-lumify:latest/video/fold_1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-bline-lumify:latest/video/fold_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-bline-lumify:latest/video/fold_2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-bline-lumify:latest/video/fold_3.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-bline-lumify:latest/video/fold_3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-bline-lumify:latest/video/fold_4.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-bline-lumify:latest/video/fold_4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-bline-not_old:latest/._df_frames_full.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-bline-not_old:latest/._df_frames_full.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-bline-not_old:latest/._video" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-bline-not_old:latest/._video" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-bline-not_old:latest/df_frames_full.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-bline-not_old:latest/df_frames_full.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-bline-not_old:latest/video/._fold_0.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-bline-not_old:latest/video/._fold_0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-bline-not_old:latest/video/._fold_1.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-bline-not_old:latest/video/._fold_1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-bline-not_old:latest/video/._fold_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-bline-not_old:latest/video/._fold_2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-bline-not_old:latest/video/._fold_3.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-bline-not_old:latest/video/._fold_3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-bline-not_old:latest/video/._fold_4.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-bline-not_old:latest/video/._fold_4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-bline-not_old:latest/video/fold_0.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-bline-not_old:latest/video/fold_0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-bline-not_old:latest/video/fold_1.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-bline-not_old:latest/video/fold_1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-bline-not_old:latest/video/fold_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-bline-not_old:latest/video/fold_2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-bline-not_old:latest/video/fold_3.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-bline-not_old:latest/video/fold_3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/metadata_folds/kkui-lung-bline-not_old:latest/video/fold_4.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/metadata_folds/kkui-lung-bline-not_old:latest/video/fold_4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/mixup.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/output.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/sweep.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/configs/sweep.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/sweep_affine_single_gpu.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/configs_code/sweep_affine_single_gpu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/sweep_affine_single_gpu.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/configs/sweep_affine_single_gpu.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/sweep_combined_average_metric_top.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/configs_code/sweep_combined_average_metric_top.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/sweep_combined_fold.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/configs_code/sweep_combined_fold.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/sweep_combined_fold.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/configs/sweep_combined_fold.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/sweep_combined_gpu.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/configs_code/sweep_combined_gpu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/sweep_combined_gpu.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/configs/sweep_combined_gpu.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/sweep_elastic_single_gpu.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/configs_code/sweep_elastic_single_gpu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/sweep_elastic_single_gpu.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/configs/sweep_elastic_single_gpu.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/sweep_erasing_single.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/configs_code/sweep_erasing_single.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/sweep_erasing_single.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/configs/sweep_erasing_single.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/sweep_gpu.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/configs/sweep_gpu.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/sweep_grid_distortion_single.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/configs_code/sweep_grid_distortion_single.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/sweep_grid_distortion_single.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/configs/sweep_grid_distortion_single.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/sweep_paper_11_600x400_gpu.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/configs/sweep_paper_11_600x400_gpu.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/sweep_paper_11_gpu.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/configs_code/sweep_paper_11_gpu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/sweep_paper_11_gpu.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/configs/sweep_paper_11_gpu.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/sweep_pixel-level_single.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/configs_code/sweep_pixel-level_single.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/sweep_pixel-level_single.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/configs/sweep_pixel-level_single.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/sweep_single_gpu.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/configs_code/sweep_single_gpu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/sweep_single_gpu.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/configs/sweep_single_gpu.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/sweep_speckle_0.5.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/configs_code/sweep_speckle_0.5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/sweep_speckle_0.5.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/configs/sweep_speckle_0.5.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/test_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/configs_code/test_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/testing/checking_sizes.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/testing/methods.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/testing/methods.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/testing/noisy_image_density_0.01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/testing/noisy_image_density_0.02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/testing/noisy_image_density_0.03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/testing/resize_a_b.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/testing/resized_withAlineNoSliding.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/testing/resized_withAlineNoSliding_with_bounding_box.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/testing/resized_withBline.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/testing/resized_withBline_with_bounding_box.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/testing/test_gpu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/testing/testing_autoaugment.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/testing/testing_image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/testing/testing_with_size_resnet_transform.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/testing/withAlineNoSliding.png" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/testing/withAlineNoSliding.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/testing/withBline.png" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/testing/withBline.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/testing/with_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/training.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/training.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/transforms/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/transforms/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/transforms/builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/transforms/builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/analyze/analyze_5_combine_by_fold_f1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/analyze/analyze_5_combine_by_fold_f1.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/analyze/analyze_combine_old_seeming_good.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/analyze/analyze_combine_old_seeming_good.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/analyze/analyze_sweep_affine_single.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/analyze/analyze_sweep_affine_single.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/analyze/analyze_sweep_elastic_single.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/analyze/analyze_sweep_elastic_single.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/analyze/analyze_sweep_erasing_single.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/analyze/analyze_sweep_erasing_single.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/analyze/analyze_sweep_paper_11.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/analyze/analyze_sweep_paper_11.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/analyze/analyze_sweep_pixel-level_single.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/analyze/analyze_sweep_pixel-level_single.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/analyze/analyze_sweep_speckle.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/analyze/analyze_sweep_speckle.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/analyze/ananlyze_sweep_grid_distortion_single.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/analyze/ananlyze_sweep_grid_distortion_single.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/analyze/count_pos_neg.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/analyze/count_pos_neg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/analyze/edit_sweep_df.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/analyze/edit_sweep_df.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/analyze/read_sweep.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/analyze/read_sweep.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/clean_general_single.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/clean_general_single.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/cleaned_for_bc.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/cleaned_for_bc.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/combine_single_edited.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/combine_single_edited.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/combine_single_raw.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/combine_single_raw.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/fd.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/general_single.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/general_single.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/general_single_higher_than_best_none_renamed.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/general_single_higher_than_best_none_renamed.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/general_single_renamed.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/general_single_renamed.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/grid_distortion.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/grid_distortion.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/sweeps_edited/25oanqcs.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/sweeps_edited/25oanqcs.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/sweeps_edited/97eubagm.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/sweeps_edited/97eubagm.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/sweeps_edited/cruht9ii.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/sweeps_edited/cruht9ii.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/sweeps_edited/d1x4gpe3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/sweeps_edited/d1x4gpe3.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/sweeps_edited/db2snkal.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/sweeps_edited/db2snkal.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/sweeps_edited/ky2kmeuh.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/sweeps_edited/ky2kmeuh.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/sweeps_edited/m2a2visa.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/sweeps_edited/m2a2visa.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/sweeps_edited/nmr2duru.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/sweeps_edited/nmr2duru.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/sweeps_edited/tqx61cub.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/sweeps_edited/tqx61cub.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/sweeps_edited/yopel9on.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/sweeps_edited/yopel9on.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/sweeps_raw/25oanqcs.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/sweeps_raw/25oanqcs.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/sweeps_raw/97eubagm.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/sweeps_raw/97eubagm.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/sweeps_raw/d1x4gpe3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/sweeps_raw/d1x4gpe3.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/sweeps_raw/db2snkal.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/sweeps_raw/db2snkal.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/sweeps_raw/ky2kmeuh.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/sweeps_raw/ky2kmeuh.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/sweeps_raw/m2a2visa.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/sweeps_raw/m2a2visa.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/sweeps_raw/nmr2duru.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/sweeps_raw/nmr2duru.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/sweeps_raw/tqx61cub.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/sweeps_raw/tqx61cub.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/sweeps_raw/yopel9on.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/sweeps_raw/yopel9on.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/visualize_single_edited.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/vizulizing.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utills_sweep/without augmentation.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/without augmentation.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utils/build.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/utils/build.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossValidation/utils/trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/utils/trainer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/augmentation.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/debug-cli.volodimir.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/latest-run" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240217_224924-it42uhj4/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240217_224924-it42uhj4/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240217_224924-it42uhj4/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240217_224924-it42uhj4/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240217_224924-it42uhj4/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240217_224924-it42uhj4/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240217_224924-it42uhj4/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240217_224924-it42uhj4/run-it42uhj4.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240217_225134-v3bphu4i/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240217_225134-v3bphu4i/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240217_225134-v3bphu4i/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240217_225134-v3bphu4i/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240217_225134-v3bphu4i/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240217_225134-v3bphu4i/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240217_225134-v3bphu4i/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240217_225134-v3bphu4i/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240217_225134-v3bphu4i/run-v3bphu4i.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_151336-qeupb06s/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_151336-qeupb06s/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_151336-qeupb06s/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_151336-qeupb06s/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_151336-qeupb06s/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_151336-qeupb06s/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_151336-qeupb06s/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_151336-qeupb06s/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_151336-qeupb06s/run-qeupb06s.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_151404-lxuhq853/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_151404-lxuhq853/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_151404-lxuhq853/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_151404-lxuhq853/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_151404-lxuhq853/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_151404-lxuhq853/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_151404-lxuhq853/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_151404-lxuhq853/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_151404-lxuhq853/run-lxuhq853.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152334-y9gl3qjm/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152334-y9gl3qjm/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152334-y9gl3qjm/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152334-y9gl3qjm/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152346-h6s6vjny/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152346-h6s6vjny/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152346-h6s6vjny/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152346-h6s6vjny/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152346-h6s6vjny/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152346-h6s6vjny/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152346-h6s6vjny/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152346-h6s6vjny/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152510-2eqykvv0/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152510-2eqykvv0/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152510-2eqykvv0/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152510-2eqykvv0/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152510-2eqykvv0/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152510-2eqykvv0/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152510-2eqykvv0/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152510-2eqykvv0/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152510-2eqykvv0/run-2eqykvv0.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152510-ydmih7rb/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152510-ydmih7rb/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152510-ydmih7rb/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152510-ydmih7rb/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152510-ydmih7rb/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152510-ydmih7rb/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152510-ydmih7rb/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152510-ydmih7rb/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152828-caz5o72g/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152828-caz5o72g/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152828-caz5o72g/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152828-caz5o72g/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152828-caz5o72g/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152828-caz5o72g/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152828-caz5o72g/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152828-caz5o72g/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_152828-caz5o72g/run-caz5o72g.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_153801-rmkj22p9/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_153801-rmkj22p9/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_153801-rmkj22p9/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_153801-rmkj22p9/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_153801-rmkj22p9/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_153801-rmkj22p9/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_153801-rmkj22p9/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_153827-sxy4wwdi/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_153827-sxy4wwdi/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_153827-sxy4wwdi/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_153827-sxy4wwdi/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_153827-sxy4wwdi/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_153827-sxy4wwdi/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_153827-sxy4wwdi/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_153827-sxy4wwdi/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_153827-sxy4wwdi/run-sxy4wwdi.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_154202-vxdh0pue/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_154202-vxdh0pue/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_154202-vxdh0pue/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_154202-vxdh0pue/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_154202-vxdh0pue/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_154202-vxdh0pue/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_154202-vxdh0pue/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_154202-vxdh0pue/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_154202-vxdh0pue/run-vxdh0pue.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_154254-wczjbzu6/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_154254-wczjbzu6/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_154254-wczjbzu6/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_154254-wczjbzu6/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_154254-wczjbzu6/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_154254-wczjbzu6/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_154254-wczjbzu6/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_154254-wczjbzu6/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_154254-wczjbzu6/run-wczjbzu6.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_154755-udgd09ar/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_154755-udgd09ar/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_154755-udgd09ar/files/media/table/confusion_matrix_table_2_cd3e67d19a3dd8629bed.table.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_154755-udgd09ar/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_154755-udgd09ar/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_154755-udgd09ar/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_154755-udgd09ar/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_154755-udgd09ar/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_154755-udgd09ar/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_154755-udgd09ar/run-udgd09ar.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_155512-kn6twfq0/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_155512-kn6twfq0/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_155512-kn6twfq0/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_155512-kn6twfq0/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_155512-kn6twfq0/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_155512-kn6twfq0/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_155512-kn6twfq0/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_155512-kn6twfq0/run-kn6twfq0.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_155849-ogvx5dkg/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_155849-ogvx5dkg/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_155849-ogvx5dkg/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_155849-ogvx5dkg/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_155849-ogvx5dkg/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_155849-ogvx5dkg/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_155849-ogvx5dkg/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_155849-ogvx5dkg/run-ogvx5dkg.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_160017-wsp600af/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_160017-wsp600af/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_160017-wsp600af/files/media/table/confusion_matrix_table_2_6a46ae23aceaed869092.table.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_160017-wsp600af/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_160017-wsp600af/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_160017-wsp600af/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_160017-wsp600af/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_160017-wsp600af/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_160017-wsp600af/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_160017-wsp600af/run-wsp600af.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_160556-n45nsejo/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_160556-n45nsejo/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_160556-n45nsejo/files/media/table/confusion_matrix_table_2_3f7a3161974319dd39bb.table.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_160556-n45nsejo/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_160556-n45nsejo/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_160556-n45nsejo/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_160556-n45nsejo/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_160556-n45nsejo/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_160556-n45nsejo/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_160556-n45nsejo/run-n45nsejo.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_160751-ou488y5j/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_160751-ou488y5j/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_160751-ou488y5j/files/media/table/confusion_matrix_table_11_a7dd4a17c7fa28ec8b9a.table.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_160751-ou488y5j/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_160751-ou488y5j/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_160751-ou488y5j/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_160751-ou488y5j/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_160751-ou488y5j/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_160751-ou488y5j/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_160751-ou488y5j/run-ou488y5j.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_162045-j09wp5pm/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_162045-j09wp5pm/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_162045-j09wp5pm/files/media/table/confusion_matrix_table_41_568b4fad4ac1aa21a25a.table.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_162045-j09wp5pm/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_162045-j09wp5pm/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_162045-j09wp5pm/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_162045-j09wp5pm/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_162045-j09wp5pm/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_162045-j09wp5pm/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_162045-j09wp5pm/run-j09wp5pm.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_171734-x078iunq/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_171734-x078iunq/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_171734-x078iunq/files/media/table/confusion_matrix_table_5_675d448e68d975d4a4e0.table.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_171734-x078iunq/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_171734-x078iunq/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_171734-x078iunq/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_171734-x078iunq/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_171734-x078iunq/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_171734-x078iunq/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_171734-x078iunq/run-x078iunq.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_172211-0jm7roc6/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_172211-0jm7roc6/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_172211-0jm7roc6/files/media/table/confusion_matrix_table_5_d2a3c47eeeecf9bca28a.table.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_172211-0jm7roc6/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_172211-0jm7roc6/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_172211-0jm7roc6/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_172211-0jm7roc6/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_172211-0jm7roc6/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_172211-0jm7roc6/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240219_172211-0jm7roc6/run-0jm7roc6.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_131957-4gpm74z1/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_131957-4gpm74z1/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_131957-4gpm74z1/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_131957-4gpm74z1/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_131957-4gpm74z1/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_131957-4gpm74z1/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_131957-4gpm74z1/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_131957-4gpm74z1/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_131957-4gpm74z1/run-4gpm74z1.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132016-heqozitk/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132016-heqozitk/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132016-heqozitk/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132016-heqozitk/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132016-heqozitk/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132016-heqozitk/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132016-heqozitk/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132016-heqozitk/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132016-heqozitk/run-heqozitk.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132032-e14z2dkn/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132032-e14z2dkn/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132032-e14z2dkn/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132032-e14z2dkn/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132032-e14z2dkn/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132032-e14z2dkn/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132032-e14z2dkn/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132032-e14z2dkn/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132032-e14z2dkn/run-e14z2dkn.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132417-lpm51m15/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132417-lpm51m15/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132417-lpm51m15/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132417-lpm51m15/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132417-lpm51m15/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132417-lpm51m15/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132417-lpm51m15/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132417-lpm51m15/run-lpm51m15.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132528-yxcxu0p0/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132528-yxcxu0p0/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132528-yxcxu0p0/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132528-yxcxu0p0/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132528-yxcxu0p0/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132528-yxcxu0p0/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132528-yxcxu0p0/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132528-yxcxu0p0/run-yxcxu0p0.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132636-5h5cgpb5/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132636-5h5cgpb5/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132636-5h5cgpb5/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132636-5h5cgpb5/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132636-5h5cgpb5/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132636-5h5cgpb5/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132636-5h5cgpb5/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132636-5h5cgpb5/run-5h5cgpb5.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132740-v4hhahh6/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132740-v4hhahh6/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132740-v4hhahh6/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132740-v4hhahh6/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132740-v4hhahh6/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132740-v4hhahh6/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132740-v4hhahh6/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132740-v4hhahh6/run-v4hhahh6.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132848-v4gu3uio/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132848-v4gu3uio/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132848-v4gu3uio/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132848-v4gu3uio/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132848-v4gu3uio/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132848-v4gu3uio/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132848-v4gu3uio/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132848-v4gu3uio/run-v4gu3uio.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132955-hpuni590/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132955-hpuni590/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132955-hpuni590/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132955-hpuni590/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132955-hpuni590/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132955-hpuni590/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132955-hpuni590/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_132955-hpuni590/run-hpuni590.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134321-lqj2scrp/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134321-lqj2scrp/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134321-lqj2scrp/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134321-lqj2scrp/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134321-lqj2scrp/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134321-lqj2scrp/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134321-lqj2scrp/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134321-lqj2scrp/run-lqj2scrp.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134435-x3fdbpg4/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134435-x3fdbpg4/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134435-x3fdbpg4/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134435-x3fdbpg4/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134435-x3fdbpg4/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134435-x3fdbpg4/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134435-x3fdbpg4/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134435-x3fdbpg4/run-x3fdbpg4.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134552-fuygs6cc/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134552-fuygs6cc/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134552-fuygs6cc/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134552-fuygs6cc/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134552-fuygs6cc/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134552-fuygs6cc/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134552-fuygs6cc/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134552-fuygs6cc/run-fuygs6cc.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134702-f4n12kfn/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134702-f4n12kfn/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134702-f4n12kfn/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134702-f4n12kfn/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134702-f4n12kfn/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134702-f4n12kfn/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134702-f4n12kfn/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134702-f4n12kfn/run-f4n12kfn.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134821-0z8ddqg2/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134821-0z8ddqg2/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134821-0z8ddqg2/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134821-0z8ddqg2/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134821-0z8ddqg2/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134821-0z8ddqg2/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134821-0z8ddqg2/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134821-0z8ddqg2/run-0z8ddqg2.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134945-ak4uogj0/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134945-ak4uogj0/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134945-ak4uogj0/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134945-ak4uogj0/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134945-ak4uogj0/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134945-ak4uogj0/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134945-ak4uogj0/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_134945-ak4uogj0/run-ak4uogj0.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135107-5mdhn9l2/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135107-5mdhn9l2/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135107-5mdhn9l2/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135107-5mdhn9l2/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135107-5mdhn9l2/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135107-5mdhn9l2/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135107-5mdhn9l2/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135107-5mdhn9l2/run-5mdhn9l2.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135225-vuc3owxw/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135225-vuc3owxw/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135225-vuc3owxw/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135225-vuc3owxw/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135225-vuc3owxw/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135225-vuc3owxw/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135225-vuc3owxw/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135225-vuc3owxw/run-vuc3owxw.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135342-vjkyc9y0/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135342-vjkyc9y0/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135342-vjkyc9y0/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135342-vjkyc9y0/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135342-vjkyc9y0/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135342-vjkyc9y0/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135342-vjkyc9y0/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135342-vjkyc9y0/run-vjkyc9y0.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135457-6qkcyf7h/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135457-6qkcyf7h/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135457-6qkcyf7h/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135457-6qkcyf7h/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135457-6qkcyf7h/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135457-6qkcyf7h/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135457-6qkcyf7h/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135457-6qkcyf7h/run-6qkcyf7h.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135619-8qculxmx/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135619-8qculxmx/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135619-8qculxmx/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135619-8qculxmx/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135619-8qculxmx/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135619-8qculxmx/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135619-8qculxmx/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135619-8qculxmx/run-8qculxmx.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135743-9w2l04j3/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135743-9w2l04j3/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135743-9w2l04j3/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135743-9w2l04j3/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135743-9w2l04j3/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135743-9w2l04j3/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135743-9w2l04j3/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240220_135743-9w2l04j3/run-9w2l04j3.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_212922-p9x8sggk/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_212922-p9x8sggk/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_212922-p9x8sggk/files/media/table/confusion_matrix_table_9_d1b24c6008af91afbfd2.table.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_212922-p9x8sggk/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_212922-p9x8sggk/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_212922-p9x8sggk/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_212922-p9x8sggk/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_212922-p9x8sggk/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_212922-p9x8sggk/run-p9x8sggk.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_213039-t682dfsn/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_213039-t682dfsn/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_213039-t682dfsn/files/media/table/confusion_matrix_table_9_1886679cd623a6a5fc73.table.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_213039-t682dfsn/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_213039-t682dfsn/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_213039-t682dfsn/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_213039-t682dfsn/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_213039-t682dfsn/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_213039-t682dfsn/run-t682dfsn.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_213152-sdwyz7l5/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_213152-sdwyz7l5/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_213152-sdwyz7l5/files/media/table/confusion_matrix_table_9_5d288ab7b0840fe9ed52.table.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_213152-sdwyz7l5/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_213152-sdwyz7l5/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_213152-sdwyz7l5/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_213152-sdwyz7l5/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_213152-sdwyz7l5/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_213152-sdwyz7l5/run-sdwyz7l5.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_213314-jba53xdi/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_213314-jba53xdi/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_213314-jba53xdi/files/media/table/confusion_matrix_table_9_0109e74f0da6a73746ed.table.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_213314-jba53xdi/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_213314-jba53xdi/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_213314-jba53xdi/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_213314-jba53xdi/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_213314-jba53xdi/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240221_213314-jba53xdi/run-jba53xdi.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_132613-r9rluho9/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_132613-r9rluho9/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_132613-r9rluho9/files/media/table/confusion_matrix_table_36_a5d15cca001f3f386c86.table.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_132613-r9rluho9/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_132613-r9rluho9/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_132613-r9rluho9/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_132613-r9rluho9/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_132613-r9rluho9/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_132613-r9rluho9/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_132613-r9rluho9/run-r9rluho9.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_132818-u6tjvwvg/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_132818-u6tjvwvg/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_132818-u6tjvwvg/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_132818-u6tjvwvg/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_132818-u6tjvwvg/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_132818-u6tjvwvg/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_132818-u6tjvwvg/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_132818-u6tjvwvg/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_132818-u6tjvwvg/run-u6tjvwvg.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_135641-2pj8hrz2/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_135641-2pj8hrz2/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_135641-2pj8hrz2/files/media/table/confusion_matrix_table_52_aedfe1de0978bb093ea9.table.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_135641-2pj8hrz2/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_135641-2pj8hrz2/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_135641-2pj8hrz2/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_135641-2pj8hrz2/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_135641-2pj8hrz2/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_135641-2pj8hrz2/run-2pj8hrz2.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_135959-lirbj0bc/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_135959-lirbj0bc/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_135959-lirbj0bc/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_135959-lirbj0bc/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_135959-lirbj0bc/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_135959-lirbj0bc/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_135959-lirbj0bc/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_135959-lirbj0bc/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_135959-lirbj0bc/run-lirbj0bc.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_140234-3drsv4gp/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_140234-3drsv4gp/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_140234-3drsv4gp/files/media/table/confusion_matrix_table_52_19bc4ef5148f1d0ce4d9.table.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_140234-3drsv4gp/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_140234-3drsv4gp/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_140234-3drsv4gp/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_140234-3drsv4gp/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_140234-3drsv4gp/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_140234-3drsv4gp/run-3drsv4gp.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_140557-27xhnd8s/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_140557-27xhnd8s/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_140557-27xhnd8s/files/media/table/confusion_matrix_table_52_6c5750f42c4a58dbc396.table.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_140557-27xhnd8s/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_140557-27xhnd8s/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_140557-27xhnd8s/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_140557-27xhnd8s/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_140557-27xhnd8s/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_140557-27xhnd8s/run-27xhnd8s.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_140929-k07lmye4/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_140929-k07lmye4/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_140929-k07lmye4/files/media/table/confusion_matrix_table_52_00c03762f02fa4292250.table.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_140929-k07lmye4/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_140929-k07lmye4/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_140929-k07lmye4/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_140929-k07lmye4/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_140929-k07lmye4/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_140929-k07lmye4/run-k07lmye4.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_141252-t53mxycf/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_141252-t53mxycf/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_141252-t53mxycf/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_141252-t53mxycf/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_141252-t53mxycf/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_141252-t53mxycf/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_141252-t53mxycf/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_141252-t53mxycf/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_141252-t53mxycf/run-t53mxycf.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_141619-w18xspbw/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_141619-w18xspbw/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_141619-w18xspbw/files/media/table/confusion_matrix_table_12_542a72e46aa7028f2581.table.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_141619-w18xspbw/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_141619-w18xspbw/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_141619-w18xspbw/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_141619-w18xspbw/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_141619-w18xspbw/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_141619-w18xspbw/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_141619-w18xspbw/run-w18xspbw.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_141856-ihwo6fys/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_141856-ihwo6fys/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_141856-ihwo6fys/files/media/table/confusion_matrix_table_12_b38bfce0d667cc44e20c.table.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_141856-ihwo6fys/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_141856-ihwo6fys/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_141856-ihwo6fys/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_141856-ihwo6fys/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_141856-ihwo6fys/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_141856-ihwo6fys/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_141856-ihwo6fys/run-ihwo6fys.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_142503-l0vu23e1/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_142503-l0vu23e1/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_142503-l0vu23e1/files/media/table/confusion_matrix_table_12_baf356ad8da3e9e618b0.table.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_142503-l0vu23e1/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_142503-l0vu23e1/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_142503-l0vu23e1/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_142503-l0vu23e1/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_142503-l0vu23e1/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_142503-l0vu23e1/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_142503-l0vu23e1/run-l0vu23e1.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_142647-euetmq48/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_142647-euetmq48/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_142647-euetmq48/files/media/table/confusion_matrix_table_12_50d639b751e23d36f97f.table.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_142647-euetmq48/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_142647-euetmq48/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_142647-euetmq48/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_142647-euetmq48/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_142647-euetmq48/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_142647-euetmq48/run-euetmq48.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_142823-lpdzghck/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_142823-lpdzghck/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_142823-lpdzghck/files/media/table/confusion_matrix_table_12_c1eb91dd9cc155054bea.table.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_142823-lpdzghck/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_142823-lpdzghck/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_142823-lpdzghck/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_142823-lpdzghck/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_142823-lpdzghck/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_142823-lpdzghck/run-lpdzghck.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143012-c3dehgsh/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143012-c3dehgsh/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143012-c3dehgsh/files/media/table/confusion_matrix_table_12_900a1432d0c8f9890de6.table.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143012-c3dehgsh/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143012-c3dehgsh/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143012-c3dehgsh/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143012-c3dehgsh/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143012-c3dehgsh/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143012-c3dehgsh/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143012-c3dehgsh/run-c3dehgsh.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143215-xgtjd8i2/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143215-xgtjd8i2/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143215-xgtjd8i2/files/media/table/confusion_matrix_table_12_6a46ae23aceaed869092.table.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143215-xgtjd8i2/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143215-xgtjd8i2/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143215-xgtjd8i2/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143215-xgtjd8i2/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143215-xgtjd8i2/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143215-xgtjd8i2/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143215-xgtjd8i2/run-xgtjd8i2.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143416-iqdu7sj3/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143416-iqdu7sj3/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143416-iqdu7sj3/files/media/table/confusion_matrix_table_12_cd3e67d19a3dd8629bed.table.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143416-iqdu7sj3/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143416-iqdu7sj3/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143416-iqdu7sj3/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143416-iqdu7sj3/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143416-iqdu7sj3/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143416-iqdu7sj3/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143416-iqdu7sj3/run-iqdu7sj3.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143610-2ixv3m5c/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143610-2ixv3m5c/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143610-2ixv3m5c/files/media/table/confusion_matrix_table_12_ea0b13df85e334db4c1e.table.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143610-2ixv3m5c/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143610-2ixv3m5c/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143610-2ixv3m5c/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143610-2ixv3m5c/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143610-2ixv3m5c/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143610-2ixv3m5c/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_143610-2ixv3m5c/run-2ixv3m5c.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_144002-3xb6c5y7/files/conda-environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_144002-3xb6c5y7/files/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_144002-3xb6c5y7/files/media/table/confusion_matrix_table_12_069480f88cd950a92297.table.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_144002-3xb6c5y7/files/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_144002-3xb6c5y7/files/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_144002-3xb6c5y7/files/wandb-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_144002-3xb6c5y7/files/wandb-summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_144002-3xb6c5y7/logs/debug-internal.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_144002-3xb6c5y7/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20240222_144002-3xb6c5y7/run-3xb6c5y7.wandb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-12crt2i8/config-b2pfajn5.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-12crt2i8/config-ggumga62.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-12crt2i8/config-q91s2msc.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-3t6l9m7y/config-0z8ddqg2.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-3t6l9m7y/config-5mdhn9l2.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-3t6l9m7y/config-6qkcyf7h.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-3t6l9m7y/config-8qculxmx.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-3t6l9m7y/config-9w2l04j3.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-3t6l9m7y/config-ak4uogj0.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-3t6l9m7y/config-f4n12kfn.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-3t6l9m7y/config-fuygs6cc.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-3t6l9m7y/config-lqj2scrp.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-3t6l9m7y/config-vjkyc9y0.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-3t6l9m7y/config-vuc3owxw.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-3t6l9m7y/config-x3fdbpg4.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-5c6zvoo2/config-2pj8hrz2.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-5c6zvoo2/config-lirbj0bc.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-5w7kcjix/config-2ixv3m5c.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-5w7kcjix/config-3xb6c5y7.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-5w7kcjix/config-c3dehgsh.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-5w7kcjix/config-euetmq48.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-5w7kcjix/config-ihwo6fys.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-5w7kcjix/config-iqdu7sj3.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-5w7kcjix/config-l0vu23e1.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-5w7kcjix/config-lpdzghck.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-5w7kcjix/config-w18xspbw.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-5w7kcjix/config-xgtjd8i2.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-b7v7647k/config-0tr7tiul.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-b7v7647k/config-36qoj81f.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-b7v7647k/config-48r54d30.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-b7v7647k/config-58nl6q1u.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-b7v7647k/config-78m7ckgg.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-b7v7647k/config-9fry3iyd.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-b7v7647k/config-h6aoksl6.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-b7v7647k/config-kduh6o6m.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-b7v7647k/config-mmhx7kxz.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-b7v7647k/config-numeq7nx.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-b7v7647k/config-v54yf5z1.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-b7v7647k/config-zwg7vfe8.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-ddpt15fm/config-4gpm74z1.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-ddpt15fm/config-e14z2dkn.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-ddpt15fm/config-heqozitk.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-felt3p8r/config-27xhnd8s.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-felt3p8r/config-3drsv4gp.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-felt3p8r/config-k07lmye4.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-felt3p8r/config-t53mxycf.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-kl62o5qf/config-jba53xdi.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-kl62o5qf/config-p9x8sggk.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-kl62o5qf/config-sdwyz7l5.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-kl62o5qf/config-t682dfsn.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-llxstaqz/config-r9rluho9.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-llxstaqz/config-u6tjvwvg.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-st4jj2jn/config-5h5cgpb5.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-st4jj2jn/config-hpuni590.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-st4jj2jn/config-lpm51m15.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-st4jj2jn/config-v4gu3uio.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-st4jj2jn/config-v4hhahh6.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/sweep-st4jj2jn/config-yxcxu0p0.yaml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +840,9 @@
     <option name="groupingKeys">
       <option value="directory" />
     </option>
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -55,6 +864,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="adding-opp-to-save-only-best-by-val_los-weight-same-for-testing" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -66,7 +880,7 @@
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="10b28089-d112-4e66-8830-15bf46f67f17" />
+        <option name="accountId" value="62f73580-b38b-4ae7-90c2-0784df2287c9" />
         <option name="url" value="https://github.com/Asthera/Bachelor.git" />
       </UrlAndAccount>
     </option>
@@ -88,41 +902,52 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_gpu.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_model.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_mps.executor&quot;: &quot;Run&quot;,
-    &quot;Python.testing.executor&quot;: &quot;Run&quot;,
-    &quot;Python.testing_transforms.executor&quot;: &quot;Run&quot;,
-    &quot;Python.training.executor&quot;: &quot;Run&quot;,
-    &quot;Python.utilsweep.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/volodimir/Downloads/Bachelor/CrossValidation&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Python.check.executor": "Run",
+    "Python.count_pos_neg.executor": "Run",
+    "Python.fd.executor": "Run",
+    "Python.group_csv.executor": "Run",
+    "Python.lists_to_conf.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.read_sweep.executor": "Run",
+    "Python.resize_a_b.executor": "Run",
+    "Python.show_dir_structure.executor": "Run",
+    "Python.test_gpu.executor": "Run",
+    "Python.test_model.executor": "Run",
+    "Python.test_mps.executor": "Run",
+    "Python.testing.executor": "Run",
+    "Python.testing_transforms.executor": "Run",
+    "Python.training.executor": "Run",
+    "Python.utilsweep.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/volodimir/Downloads/Bachelor/CrossValidation/testing",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/CrossValidation/testing" />
       <recent name="$PROJECT_DIR$/CrossValidation" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/CrossValidation/results" />
       <recent name="$PROJECT_DIR$/CrossValidation" />
-      <recent name="$PROJECT_DIR$/CrossValidation/data" />
-      <recent name="$PROJECT_DIR$/CrossValidation/testing" />
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/CrossValidation/configs_code" />
+      <recent name="$PROJECT_DIR$/CrossValidation/configs" />
+      <recent name="$PROJECT_DIR$/CrossValidation/utills_sweep/analyze" />
     </key>
   </component>
   <component name="RunManager">
@@ -149,6 +974,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="training" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Bachelor" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CrossValidation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CrossValidation/training.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.training" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -234,136 +1087,492 @@
       <workItem from="1710966657331" duration="114000" />
       <workItem from="1710970756391" duration="377000" />
       <workItem from="1711019356923" duration="939000" />
+      <workItem from="1711210131927" duration="9000" />
+      <workItem from="1711273758908" duration="3410000" />
+      <workItem from="1711277500070" duration="3285000" />
+      <workItem from="1711281564436" duration="5293000" />
+      <workItem from="1711287815459" duration="139000" />
+      <workItem from="1711450614963" duration="932000" />
+      <workItem from="1711451613015" duration="5115000" />
+      <workItem from="1711463168152" duration="7440000" />
+      <workItem from="1711482049857" duration="177000" />
+      <workItem from="1711482232843" duration="70000" />
+      <workItem from="1711482703359" duration="3415000" />
+      <workItem from="1711489867256" duration="4141000" />
+      <workItem from="1711494532344" duration="1994000" />
+      <workItem from="1711496836315" duration="1286000" />
+      <workItem from="1711498134223" duration="6923000" />
+      <workItem from="1711565451499" duration="20545000" />
+      <workItem from="1711629734581" duration="983000" />
+      <workItem from="1711632240855" duration="9147000" />
+      <workItem from="1711731151343" duration="2538000" />
+      <workItem from="1711786758640" duration="2038000" />
+      <workItem from="1711881064935" duration="10002000" />
+      <workItem from="1711904165832" duration="1682000" />
+      <workItem from="1711962689024" duration="16314000" />
+      <workItem from="1712228261702" duration="7414000" />
+      <workItem from="1712602002307" duration="8179000" />
+      <workItem from="1712610192857" duration="2006000" />
+      <workItem from="1712662571248" duration="2377000" />
+      <workItem from="1712665037627" duration="292000" />
+      <workItem from="1712665333811" duration="2983000" />
+      <workItem from="1712668323591" duration="197000" />
+      <workItem from="1712668524207" duration="4416000" />
+      <workItem from="1712676979086" duration="20890000" />
+      <workItem from="1712747769152" duration="22863000" />
+      <workItem from="1712830305822" duration="1531000" />
+      <workItem from="1712861389607" duration="1189000" />
+      <workItem from="1712909945081" duration="24000" />
+      <workItem from="1713189275007" duration="1906000" />
+      <workItem from="1713204515903" duration="6643000" />
+      <workItem from="1713864790647" duration="19655000" />
+      <workItem from="1713940059606" duration="1284000" />
+      <workItem from="1713941355944" duration="257000" />
+      <workItem from="1713941617756" duration="900000" />
+      <workItem from="1713942541678" duration="720000" />
+      <workItem from="1713943265803" duration="635000" />
+      <workItem from="1713943905206" duration="50000" />
+      <workItem from="1713943958982" duration="544000" />
+      <workItem from="1713944511664" duration="142000" />
+      <workItem from="1713944676704" duration="3416000" />
+      <workItem from="1713948364855" duration="487000" />
+      <workItem from="1713948856565" duration="5379000" />
+      <workItem from="1713955765396" duration="2478000" />
+      <workItem from="1713961387433" duration="32000" />
+      <workItem from="1713961469205" duration="5679000" />
+      <workItem from="1713979266883" duration="4192000" />
+      <workItem from="1714030772312" duration="13297000" />
+      <workItem from="1714129706335" duration="609000" />
+      <workItem from="1714138664942" duration="4847000" />
+      <workItem from="1714219084005" duration="5494000" />
+      <workItem from="1714573396246" duration="1208000" />
+      <workItem from="1714645637093" duration="3121000" />
+      <workItem from="1714809734079" duration="1327000" />
+      <workItem from="1714821715512" duration="15500000" />
+      <workItem from="1714897236593" duration="7562000" />
+      <workItem from="1714915327460" duration="2955000" />
+      <workItem from="1714931249780" duration="938000" />
+      <workItem from="1714932194964" duration="5876000" />
+      <workItem from="1714997205863" duration="16075000" />
+      <workItem from="1715247725764" duration="8753000" />
+      <workItem from="1715267137703" duration="2185000" />
+      <workItem from="1715275679662" duration="7018000" />
+      <workItem from="1715335732294" duration="77000" />
+      <workItem from="1715335812555" duration="13077000" />
+      <workItem from="1715419609133" duration="8663000" />
+      <workItem from="1715504162742" duration="1978000" />
+      <workItem from="1715511633678" duration="604000" />
+      <workItem from="1715521598245" duration="6590000" />
+      <workItem from="1715602691582" duration="4842000" />
+      <workItem from="1715691410861" duration="3036000" />
+      <workItem from="1715695154368" duration="2048000" />
+      <workItem from="1715712839167" duration="2418000" />
+      <workItem from="1715772164513" duration="2541000" />
+      <workItem from="1715777784046" duration="3637000" />
+      <workItem from="1715803763919" duration="7354000" />
+      <workItem from="1715866038836" duration="683000" />
+      <workItem from="1715937614283" duration="10924000" />
+      <workItem from="1716033198715" duration="11306000" />
+      <workItem from="1716138069186" duration="1762000" />
+      <workItem from="1716149328067" duration="667000" />
+      <workItem from="1716191023721" duration="970000" />
+      <workItem from="1716192596255" duration="414000" />
+      <workItem from="1716193434632" duration="26738000" />
+      <workItem from="1716462732410" duration="1971000" />
     </task>
-    <task id="LOCAL-00001" summary="starting project">
+    <task id="LOCAL-00017" summary="randomly not applyied augments, fixes :(, added yaml for gpu">
       <option name="closed" value="true" />
-      <created>1707855171190</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
+      <created>1711023077157</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
       <option name="project" value="LOCAL" />
-      <updated>1707855171190</updated>
+      <updated>1711023077157</updated>
     </task>
-    <task id="LOCAL-00002" summary="starting project">
+    <task id="LOCAL-00018" summary="checked that augs applied only for train (by adding function show_images), concreted values for augs (to include params)">
       <option name="closed" value="true" />
-      <created>1707899487481</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
+      <created>1711278383564</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
       <option name="project" value="LOCAL" />
-      <updated>1707899487481</updated>
+      <updated>1711278383564</updated>
     </task>
-    <task id="LOCAL-00003" summary="starting project">
+    <task id="LOCAL-00019" summary="added opp to save only best model (by val loss) of run, to minimize weights">
       <option name="closed" value="true" />
-      <created>1707899601039</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
+      <created>1711279180428</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
       <option name="project" value="LOCAL" />
-      <updated>1707899601039</updated>
+      <updated>1711279180428</updated>
     </task>
-    <task id="LOCAL-00004" summary="training one model, with default augmentation, and wandb">
+    <task id="LOCAL-00020" summary="added previous to sweep_gpu.yaml">
       <option name="closed" value="true" />
-      <created>1708425723236</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
+      <created>1711279250724</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
       <option name="project" value="LOCAL" />
-      <updated>1708425723236</updated>
+      <updated>1711279250724</updated>
     </task>
-    <task id="LOCAL-00005" summary="training one model, with default augmentation, and wandb">
+    <task id="LOCAL-00021" summary="added opp to run sweep with multiple config files (problem was in training.py, because it hardcoded opened default sweep.yaml), now just add yaml_file as parameters to config file">
       <option name="closed" value="true" />
-      <created>1708425740930</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
+      <created>1711285204476</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
       <option name="project" value="LOCAL" />
-      <updated>1708425740930</updated>
+      <updated>1711285204476</updated>
     </task>
-    <task id="LOCAL-00006" summary="added grid sweep, training_sweep.py with sweep_grid.yaml, with norm name for each run &quot;tr-{run.config.transform}-{run.config.batch_size}-{run.id}&quot;">
+    <task id="LOCAL-00022" summary="argparse -&gt; just take manualy from args">
       <option name="closed" value="true" />
-      <created>1708433304673</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
+      <created>1711286112740</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
       <option name="project" value="LOCAL" />
-      <updated>1708433304673</updated>
+      <updated>1711286112740</updated>
     </task>
-    <task id="LOCAL-00007" summary="remake, so here will be code and metadata for jsons">
+    <task id="LOCAL-00023" summary="Leaved everything except CrossValidation, Articles">
       <option name="closed" value="true" />
-      <created>1710523501578</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
+      <created>1711452173973</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
       <option name="project" value="LOCAL" />
-      <updated>1710523501578</updated>
+      <updated>1711452173973</updated>
     </task>
-    <task id="LOCAL-00008" summary="fully refactored code, now can control all from sweep (+ init/out transforms, arch, exper-class, with/out valid, early stop)">
+    <task id="LOCAL-00024" summary="now in swee we have string with Functions, not constats, so can can change params immediately at sweep yaml.">
       <option name="closed" value="true" />
-      <created>1710775588345</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
+      <created>1711584439227</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
       <option name="project" value="LOCAL" />
-      <updated>1710775588345</updated>
+      <updated>1711584439227</updated>
     </task>
-    <task id="LOCAL-00009" summary="reset README.md">
+    <task id="LOCAL-00025" summary="changed to init_transform: [&quot;TransformResize(600)&quot;, &quot;TransformPad(600)&quot;] in sweep_combined_gpu.yaml">
       <option name="closed" value="true" />
-      <created>1710775879132</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
+      <created>1711633377056</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
       <option name="project" value="LOCAL" />
-      <updated>1710775879132</updated>
+      <updated>1711633377056</updated>
     </task>
-    <task id="LOCAL-00010" summary="added norm names for saving weights and printing predicted values at train/val/test parts">
+    <task id="LOCAL-00026" summary="forget to add values: [&quot;sweep_combined_gpu.yaml&quot;] in sweep_combined_gpu.yaml">
       <option name="closed" value="true" />
-      <created>1710845695716</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
+      <created>1711633841345</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
       <option name="project" value="LOCAL" />
-      <updated>1710845695716</updated>
+      <updated>1711633841345</updated>
     </task>
-    <task id="LOCAL-00011" summary="changed printing predicted to show after all bathes(after for loop)">
+    <task id="LOCAL-00027" summary="changed calling classes in buider.py, now it trying with torch then monai, not importing">
       <option name="closed" value="true" />
-      <created>1710846511380</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
+      <created>1711635137425</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
       <option name="project" value="LOCAL" />
-      <updated>1710846511380</updated>
+      <updated>1711635137425</updated>
     </task>
-    <task id="LOCAL-00012" summary="!!! Haved error when sent to wandb in table conf_matrix, correct is &quot;TN&quot;, &quot;FP&quot;, &quot;FN&quot;, &quot;TP&quot;">
+    <task id="LOCAL-00028" summary="added checking custom transforms,">
       <option name="closed" value="true" />
-      <created>1710856365775</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
+      <created>1711635560215</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
       <option name="project" value="LOCAL" />
-      <updated>1710856365776</updated>
+      <updated>1711635560215</updated>
     </task>
-    <task id="LOCAL-00013" summary="!!! Haved error when sent to wandb in table conf_matrix, correct is &quot;TN&quot;, &quot;FP&quot;, &quot;FN&quot;, &quot;TP&quot;">
+    <task id="LOCAL-00029" summary="added param antialias=True for torch resizes, and prints for senting to wandb because it show that take Metatensor">
       <option name="closed" value="true" />
-      <created>1710856425941</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
+      <created>1711646330908</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
       <option name="project" value="LOCAL" />
-      <updated>1710856425941</updated>
+      <updated>1711646330908</updated>
     </task>
-    <task id="LOCAL-00014" summary="changed saving models, weights path">
+    <task id="LOCAL-00030" summary="added .item() when getting loss from criterion">
       <option name="closed" value="true" />
-      <created>1710858212166</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
+      <created>1711732115171</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
       <option name="project" value="LOCAL" />
-      <updated>1710858212166</updated>
+      <updated>1711732115171</updated>
     </task>
-    <task id="LOCAL-00015" summary="opp to testing_with_best_val_loss, dropout, changed sending test_conf_matrix (wans one row ? check is work)">
+    <task id="LOCAL-00031" summary="not correctly used item()">
       <option name="closed" value="true" />
-      <created>1710934886633</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
+      <created>1711732893464</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
       <option name="project" value="LOCAL" />
-      <updated>1710934886633</updated>
+      <updated>1711732893464</updated>
     </task>
-    <task id="LOCAL-00016" summary="fixed test_conf tables for wandb">
+    <task id="LOCAL-00032" summary="changes from yesterday, (articles)">
       <option name="closed" value="true" />
-      <created>1710966760552</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
+      <created>1711962738307</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
       <option name="project" value="LOCAL" />
-      <updated>1710966760552</updated>
+      <updated>1711962738307</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00033" summary=" (articles)">
+      <option name="closed" value="true" />
+      <created>1711969465375</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1711969465376</updated>
+    </task>
+    <task id="LOCAL-00034" summary=" (articles)">
+      <option name="closed" value="true" />
+      <created>1712228285364</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1712228285364</updated>
+    </task>
+    <task id="LOCAL-00035" summary="added setting deterministic behavior in training.py">
+      <option name="closed" value="true" />
+      <created>1712228753237</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1712228753237</updated>
+    </task>
+    <task id="LOCAL-00036" summary="addded read sweeep and then to excel">
+      <option name="closed" value="true" />
+      <created>1712746029404</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1712746029404</updated>
+    </task>
+    <task id="LOCAL-00037" summary="finisheed single augmentatio sweep_single_gpu.yaml, added file check.py to control mothods are correctly written">
+      <option name="closed" value="true" />
+      <created>1712829411331</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1712829411331</updated>
+    </task>
+    <task id="LOCAL-00038" summary="was error at training.py, with importing Dataloader.">
+      <option name="closed" value="true" />
+      <created>1712830471908</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1712830471908</updated>
+    </task>
+    <task id="LOCAL-00039" summary="changed type of writing augments, now from python">
+      <option name="closed" value="true" />
+      <created>1713881523552</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1713881523552</updated>
+    </task>
+    <task id="LOCAL-00040" summary="added None to sweep_paper_11_gpu.yaml">
+      <option name="closed" value="true" />
+      <created>1713882428699</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1713882428699</updated>
+    </task>
+    <task id="LOCAL-00041" summary="was err in yaml, CT. in init-transform">
+      <option name="closed" value="true" />
+      <created>1713882534954</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1713882534954</updated>
+    </task>
+    <task id="LOCAL-00042" summary="fixes error in sweep">
+      <option name="closed" value="true" />
+      <created>1713883889523</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1713883889523</updated>
+    </task>
+    <task id="LOCAL-00043" summary="name in sweep_paper_11_600x400_gpu.yaml">
+      <option name="closed" value="true" />
+      <created>1713884030575</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1713884030575</updated>
+    </task>
+    <task id="LOCAL-00044" summary="was error in FV transforms">
+      <option name="closed" value="true" />
+      <created>1713885039549</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1713885039549</updated>
+    </task>
+    <task id="LOCAL-00045" summary="added to tuple param of init transforms">
+      <option name="closed" value="true" />
+      <created>1713889879442</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1713889879442</updated>
+    </task>
+    <task id="LOCAL-00046" summary="compared sweeps &quot;paper_11&quot;">
+      <option name="closed" value="true" />
+      <created>1713945122972</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1713945122972</updated>
+    </task>
+    <task id="LOCAL-00047" summary="compared sweeps &quot;paper_11&quot;">
+      <option name="closed" value="true" />
+      <created>1713945197822</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1713945197822</updated>
+    </task>
+    <task id="LOCAL-00048" summary="upd README.md">
+      <option name="closed" value="true" />
+      <created>1713948080517</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1713948080517</updated>
+    </task>
+    <task id="LOCAL-00049" summary="upd README.md">
+      <option name="closed" value="true" />
+      <created>1713950330617</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1713950330617</updated>
+    </task>
+    <task id="LOCAL-00050" summary="was error in random_salt_and_pepper_noise.py">
+      <option name="closed" value="true" />
+      <created>1713954277367</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1713954277367</updated>
+    </task>
+    <task id="LOCAL-00051" summary="change pipeline of augment, now all methods applys to grayscale image, and expand it after send to model">
+      <option name="closed" value="true" />
+      <created>1713961107540</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1713961107540</updated>
+    </task>
+    <task id="LOCAL-00052" summary="upd methods.ipynb">
+      <option name="closed" value="true" />
+      <created>1713961934100</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1713961934101</updated>
+    </task>
+    <task id="LOCAL-00053" summary="added sweep_affine_single_gpu.py">
+      <option name="closed" value="true" />
+      <created>1713975238393</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1713975238393</updated>
+    </task>
+    <task id="LOCAL-00054" summary="paper 11 remaked,affine single added">
+      <option name="closed" value="true" />
+      <created>1714030830519</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1714030830519</updated>
+    </task>
+    <task id="LOCAL-00055" summary="added elastic single">
+      <option name="closed" value="true" />
+      <created>1714042109761</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1714042109761</updated>
+    </task>
+    <task id="LOCAL-00056" summary="was err in list_to_conf [sweep name]">
+      <option name="closed" value="true" />
+      <created>1714042494792</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1714042494792</updated>
+    </task>
+    <task id="LOCAL-00057" summary="upd">
+      <option name="closed" value="true" />
+      <created>1714160489598</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1714160489598</updated>
+    </task>
+    <task id="LOCAL-00058" summary="upd">
+      <option name="closed" value="true" />
+      <created>1714222322962</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1714222322962</updated>
+    </task>
+    <task id="LOCAL-00059" summary="init Bachelor-LiteratureReview.docx">
+      <option name="closed" value="true" />
+      <created>1714645753678</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1714645753678</updated>
+    </task>
+    <task id="LOCAL-00060" summary="added sweep for pixel-level">
+      <option name="closed" value="true" />
+      <created>1714903089562</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1714903089562</updated>
+    </task>
+    <task id="LOCAL-00061" summary="added sweep for combined by fold">
+      <option name="closed" value="true" />
+      <created>1714934340825</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1714934340825</updated>
+    </task>
+    <task id="LOCAL-00062" summary="added sweep for SINGLE erasing">
+      <option name="closed" value="true" />
+      <created>1715159336160</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1715159336160</updated>
+    </task>
+    <task id="LOCAL-00063" summary="added sweep for SINGLE grid distortion">
+      <option name="closed" value="true" />
+      <created>1715264975740</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1715264975740</updated>
+    </task>
+    <task id="LOCAL-00064" summary="added sweep for SINGLE speckle noise 0.5 prop">
+      <option name="closed" value="true" />
+      <created>1715364647737</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1715364647738</updated>
+    </task>
+    <task id="LOCAL-00065" summary="just update">
+      <option name="closed" value="true" />
+      <created>1716386380493</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1716386380493</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,31 +1603,48 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="starting project" />
-    <MESSAGE value="training one model, with default augmentation, and wandb" />
-    <MESSAGE value="added grid sweep, training_sweep.py with sweep_grid.yaml, with norm name for each run &quot;tr-{run.config.transform}-{run.config.batch_size}-{run.id}&quot;" />
-    <MESSAGE value="added conf-matrix" />
-    <MESSAGE value="just commit with some testings" />
-    <MESSAGE value="just commit with some testings, folder with cross val" />
-    <MESSAGE value="remaked, so here will be code and metadata for jsons" />
-    <MESSAGE value="remake, so here will be code and metadata for jsons" />
-    <MESSAGE value="fully refactored code, now can control all from sweep (+ init/out transforms, arch, exper-class, with/out valid, early stop)" />
-    <MESSAGE value="reset README.md" />
-    <MESSAGE value="added norm names for saving weights and printing predicted values at train/val/test parts" />
-    <MESSAGE value="changed printing predicted to show after all bathes(after for loop)" />
-    <MESSAGE value="!!! Haved error when sent to wandb in table conf_matrix, correct is &quot;TN&quot;, &quot;FP&quot;, &quot;FN&quot;, &quot;TP&quot;" />
-    <MESSAGE value="changed saving models, weights path" />
-    <MESSAGE value="opp to testing_with_best_val_loss, dropout, changed sending test_conf_matrix (wans one row ? check is work)" />
-    <MESSAGE value="fixed test_conf tables for wandb" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed test_conf tables for wandb" />
+    <MESSAGE value="was error at training.py, with importing Dataloader." />
+    <MESSAGE value="changed type of writing augments, now from python" />
+    <MESSAGE value="added None to sweep_paper_11_gpu.yaml" />
+    <MESSAGE value="was err in yaml, CT. in init-transform" />
+    <MESSAGE value="fixes error in sweep" />
+    <MESSAGE value="name in sweep_paper_11_600x400_gpu.yaml" />
+    <MESSAGE value="was error in FV transforms" />
+    <MESSAGE value="added to tuple param of init transforms" />
+    <MESSAGE value="compared sweeps &quot;paper_11&quot;" />
+    <MESSAGE value="upd README.md" />
+    <MESSAGE value="was error in random_salt_and_pepper_noise.py" />
+    <MESSAGE value="change pipeline of augment, now all methods applys to grayscale image, and expand it after send to model" />
+    <MESSAGE value="upd methods.ipynb" />
+    <MESSAGE value="added sweep_affine_single_gpu.py" />
+    <MESSAGE value="paper 11 remaked,affine single added" />
+    <MESSAGE value="added elastic single" />
+    <MESSAGE value="was err in list_to_conf [sweep name]" />
+    <MESSAGE value="upd" />
+    <MESSAGE value="init Bachelor-LiteratureReview.docx" />
+    <MESSAGE value="added sweep for pixel-level" />
+    <MESSAGE value="added sweep for combined by fold" />
+    <MESSAGE value="added sweep for SINGLE erasing" />
+    <MESSAGE value="added sweep for SINGLE grid distortion" />
+    <MESSAGE value="added sweep for SINGLE speckle noise 0.5 prop" />
+    <MESSAGE value="just update" />
+    <option name="LAST_COMMIT_MESSAGE" value="just update" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Bachelor$testing_transforms.coverage" NAME="testing_transforms Coverage Results" MODIFIED="1708602401242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Bachelor$training.coverage" NAME="training Coverage Results" MODIFIED="1708359728005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Bachelor$test_model.coverage" NAME="test_model Coverage Results" MODIFIED="1710857481418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CrossValidation" />
-    <SUITE FILE_PATH="coverage/Bachelor$test_gpu.coverage" NAME="test_gpu Coverage Results" MODIFIED="1710596289544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CrossValidation" />
+    <SUITE FILE_PATH="coverage/Bachelor$check.coverage" NAME="check Coverage Results" MODIFIED="1715504263991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CrossValidation" />
+    <SUITE FILE_PATH="coverage/Bachelor$count_pos_neg.coverage" NAME="count_pos_neg Coverage Results" MODIFIED="1716045442496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CrossValidation/utills_sweep/analyze" />
+    <SUITE FILE_PATH="coverage/Bachelor$training.coverage" NAME="training Coverage Results" MODIFIED="1712662513366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CrossValidation" />
+    <SUITE FILE_PATH="coverage/Bachelor$group_csv.coverage" NAME="group_csv Coverage Results" MODIFIED="1713210972083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CrossValidation" />
+    <SUITE FILE_PATH="coverage/Bachelor$lists_to_conf.coverage" NAME="lists_to_conf Coverage Results" MODIFIED="1715364619133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CrossValidation" />
     <SUITE FILE_PATH="coverage/Bachelor$utilsweep.coverage" NAME="utilsweep Coverage Results" MODIFIED="1708600052100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Bachelor$fd.coverage" NAME="fd Coverage Results" MODIFIED="1715778659622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CrossValidation/utills_sweep" />
     <SUITE FILE_PATH="coverage/Bachelor$test_mps.coverage" NAME="test_mps Coverage Results" MODIFIED="1708640219826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Bachelor$testing.coverage" NAME="testing Coverage Results" MODIFIED="1708174489994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Bachelor$testing_transforms.coverage" NAME="testing_transforms Coverage Results" MODIFIED="1708602401242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Bachelor$show_dir_structure.coverage" NAME="show_dir_structure Coverage Results" MODIFIED="1716463341689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Bachelor$test_model.coverage" NAME="test_model Coverage Results" MODIFIED="1710857481418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CrossValidation" />
+    <SUITE FILE_PATH="coverage/Bachelor$resize_a_b.coverage" NAME="resize_a_b Coverage Results" MODIFIED="1715986747075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CrossValidation/testing" />
+    <SUITE FILE_PATH="coverage/Bachelor$read_sweep.coverage" NAME="read_sweep Coverage Results" MODIFIED="1713204677342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CrossValidation" />
+    <SUITE FILE_PATH="coverage/Bachelor$test_gpu.coverage" NAME="test_gpu Coverage Results" MODIFIED="1710596289544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CrossValidation" />
   </component>
 </project>

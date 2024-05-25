@@ -1,0 +1,231 @@
+Run ID,Transform Init,Transforms,Output Transform,Fold,Best Epoch,Test F1,Test Precision,Test Recall,Test Accuracy,TN,FP,FN,TP
+0v4qq8sn,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomResizedCrop(size=(600, 400), scale=(1.0, 1.15), ratio=(3.0 / 2.0, 3.0 / 2.0), antialias=True)], p=0.5)",None,4,39,0.40909090909090906,1.0,0.2571428571428571,,215,0,26,9
+0owee7yz,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomResizedCrop(size=(600, 400), scale=(0.85, 1.0), ratio=(3.0 / 2.0, 3.0 / 2.0), antialias=True)], p=0.5)",None,4,38,0.3529411764705882,0.5625,0.2571428571428571,,208,7,26,9
+x97kqqm8,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomResizedCrop(size=(600, 400), scale=(0.85, 1.15), ratio=(3.0 / 2.0, 3.0 / 2.0), antialias=True)], p=0.5)",None,4,19,0.47058823529411753,0.75,0.34285714285714286,,211,4,23,12
+p6iu70rz,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomResizedCrop(size=(600, 400), scale=(0.7, 1.3), ratio=(3.0 / 2.0, 3.0 / 2.0), antialias=True)], p=0.5)",None,4,32,0.2680412371134021,0.20967741935483872,0.37142857142857144,,166,49,22,13
+dg9pu2vn,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, scale=(0.7, 1.3))], p=0.5)",None,4,10,0.14705882352941174,0.15151515151515152,0.14285714285714285,,187,28,30,5
+83xefx90,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, scale=(0.85, 1.15))], p=0.5)",None,4,29,0.3013698630136986,0.2894736842105263,0.3142857142857143,,188,27,24,11
+delet16u,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, scale=(0.85, 1.0))], p=0.5)",None,4,20,0.21739130434782608,0.17543859649122806,0.2857142857142857,,168,47,25,10
+p9k4qp8r,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, scale=(1.0, 1.15))], p=0.5)",None,4,33,0.2222222222222222,0.1956521739130435,0.2571428571428571,,178,37,26,9
+hg3ex780,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))",T.RandomVerticalFlip(p=0.5),None,4,17,0.2524271844660194,0.19117647058823528,0.37142857142857144,,160,55,22,13
+a6vnlgok,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))",T.RandomHorizontalFlip(p=0.5),None,4,39,0.29545454545454547,0.24528301886792453,0.37142857142857144,,175,40,22,13
+mg4ui7zg,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, shear=(-30, 30, -30, 30))], p=0.5)",None,4,12,0.2184873949579832,0.15476190476190477,0.37142857142857144,,144,71,22,13
+t4gxk2tp,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, shear=(-15, 15, -15, 15))], p=0.5)",None,4,18,0.2777777777777778,0.2702702702702703,0.2857142857142857,,188,27,25,10
+v4hn2nva,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, shear=(0, 0, -15, 15))], p=0.5)",None,4,10,0.2439024390243902,0.8333333333333334,0.14285714285714285,,214,1,30,5
+dng300dr,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, shear=(-15, 15, 0, 0))], p=0.5)",None,4,16,0.24,0.4,0.17142857142857143,,206,9,29,6
+mtj1arne,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=(-5, 5))], p=0.5)",None,4,20,0.13157894736842105,0.12195121951219512,0.14285714285714285,,179,36,30,5
+ftgs8j32,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=(-45, 45))], p=0.5)",None,4,23,0.28571428571428575,0.2619047619047619,0.3142857142857143,,184,31,24,11
+avzj3epj,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=(-30, 30))], p=0.5)",None,4,19,0.2682926829268293,0.23404255319148937,0.3142857142857143,,179,36,24,11
+vhk2701d,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=(-15, 15))], p=0.5)",None,4,11,0.19354838709677424,0.15517241379310345,0.2571428571428571,,166,49,26,9
+wbt1esy1,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, translate=(0.3, 0.3))], p=0.5)",None,4,10,0.14705882352941174,0.15151515151515152,0.14285714285714285,,187,28,30,5
+15am8yct,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, translate=(0.15, 0.15))], p=0.5)",None,4,20,0.31578947368421045,0.4090909090909091,0.2571428571428571,,202,13,26,9
+uu3pl1sn,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, translate=(0.0, 0.15))], p=0.5)",None,4,20,0.3508771929824561,0.4545454545454546,0.2857142857142857,,203,12,25,10
+gkyn9762,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, translate=(0.15, 0.0))], p=0.5)",None,4,39,0.1643835616438356,0.15789473684210523,0.17142857142857143,,183,32,29,6
+l8u07v33,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))",None,None,4,38,0.4615384615384616,0.7058823529411765,0.34285714285714286,,210,5,23,12
+8pp0vot6,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomResizedCrop(size=(600, 400), scale=(1.0, 1.15), ratio=(3.0 / 2.0, 3.0 / 2.0), antialias=True)], p=0.5)",None,3,15,0.6363636363636364,0.5555555555555556,0.7446808510638298,,138,28,12,35
+6i2s65ho,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomResizedCrop(size=(600, 400), scale=(0.85, 1.0), ratio=(3.0 / 2.0, 3.0 / 2.0), antialias=True)], p=0.5)",None,3,14,0.4516129032258064,0.32407407407407407,0.7446808510638298,,93,73,12,35
+u1ajw4h4,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomResizedCrop(size=(600, 400), scale=(0.85, 1.15), ratio=(3.0 / 2.0, 3.0 / 2.0), antialias=True)], p=0.5)",None,3,11,0.813953488372093,0.8974358974358975,0.7446808510638298,,162,4,12,35
+fxyq6o1i,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomResizedCrop(size=(600, 400), scale=(0.7, 1.3), ratio=(3.0 / 2.0, 3.0 / 2.0), antialias=True)], p=0.5)",None,3,24,0.578512396694215,0.47297297297297297,0.7446808510638298,,127,39,12,35
+u1hvuiyz,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, scale=(0.7, 1.3))], p=0.5)",None,3,8,0.5555555555555555,0.4430379746835443,0.7446808510638298,,122,44,12,35
+pi2v45i4,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, scale=(0.85, 1.15))], p=0.5)",None,3,18,0.7368421052631579,0.7291666666666666,0.7446808510638298,,153,13,12,35
+t330e0hc,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, scale=(0.85, 1.0))], p=0.5)",None,3,9,0.6542056074766355,0.5833333333333334,0.7446808510638298,,141,25,12,35
+2evliz66,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, scale=(1.0, 1.15))], p=0.5)",None,3,9,0.8333333333333334,0.945945945945946,0.7446808510638298,,164,2,12,35
+b0ep7iqn,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))",T.RandomVerticalFlip(p=0.5),None,3,25,0.5072463768115941,0.38461538461538464,0.7446808510638298,,110,56,12,35
+6alpd71b,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))",T.RandomHorizontalFlip(p=0.5),None,3,17,0.810126582278481,1.0,0.6808510638297872,,166,0,15,32
+huhljadr,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, shear=(-30, 30, -30, 30))], p=0.5)",None,3,35,0.39325842696629215,0.26717557251908397,0.7446808510638298,,70,96,12,35
+mgd2ud08,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, shear=(-15, 15, -15, 15))], p=0.5)",None,3,17,0.8333333333333334,0.945945945945946,0.7446808510638298,,164,2,12,35
+680h7y5h,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, shear=(0, 0, -15, 15))], p=0.5)",None,3,22,0.7865168539325842,0.8333333333333334,0.7446808510638298,,159,7,12,35
+xr7b45lo,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, shear=(-15, 15, 0, 0))], p=0.5)",None,3,18,0.4666666666666667,0.33980582524271846,0.7446808510638298,,98,68,12,35
+n5jkdgra,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=(-5, 5))], p=0.5)",None,3,31,0.7415730337078651,0.7857142857142857,0.7021276595744681,,157,9,14,33
+gsh09944,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=(-45, 45))], p=0.5)",None,3,21,0.8045977011494252,0.875,0.7446808510638298,,161,5,12,35
+apxlprxl,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=(-30, 30))], p=0.5)",None,3,12,0.8433734939759036,0.9722222222222222,0.7446808510638298,,165,1,12,35
+tvtsn64z,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=(-15, 15))], p=0.5)",None,3,19,0.8192771084337349,0.9444444444444444,0.723404255319149,,164,2,13,34
+djh92qoo,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, translate=(0.3, 0.3))], p=0.5)",None,3,22,0.5511811023622046,0.4375,0.7446808510638298,,121,45,12,35
+bl9qs7w5,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, translate=(0.15, 0.15))], p=0.5)",None,3,12,0.8235294117647057,0.9210526315789472,0.7446808510638298,,163,3,12,35
+4a5fv7j5,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, translate=(0.0, 0.15))], p=0.5)",None,3,14,0.5423728813559323,0.4507042253521127,0.6808510638297872,,127,39,15,32
+iyk9z21s,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, translate=(0.15, 0.0))], p=0.5)",None,3,16,0.7123287671232876,1.0,0.5531914893617021,,166,0,21,26
+y395497d,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))",None,None,3,4,0.53125,1.0,0.3617021276595745,,166,0,30,17
+3n2amx4g,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomResizedCrop(size=(600, 400), scale=(1.0, 1.15), ratio=(3.0 / 2.0, 3.0 / 2.0), antialias=True)], p=0.5)",None,2,30,0.3125,1.0,0.18518518518518515,,144,0,22,5
+8srxo0vm,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomResizedCrop(size=(600, 400), scale=(0.85, 1.0), ratio=(3.0 / 2.0, 3.0 / 2.0), antialias=True)], p=0.5)",None,2,26,0.07142857142857142,1.0,0.037037037037037035,,144,0,26,1
+3t3ljxm8,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomResizedCrop(size=(600, 400), scale=(0.85, 1.15), ratio=(3.0 / 2.0, 3.0 / 2.0), antialias=True)], p=0.5)",None,2,39,0.07142857142857142,1.0,0.037037037037037035,,144,0,26,1
+qcuubmfi,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomResizedCrop(size=(600, 400), scale=(0.7, 1.3), ratio=(3.0 / 2.0, 3.0 / 2.0), antialias=True)], p=0.5)",None,2,16,0.3125,1.0,0.18518518518518515,,144,0,22,5
+k69atkep,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, scale=(0.7, 1.3))], p=0.5)",None,2,9,0.24242424242424243,0.6666666666666666,0.14814814814814814,,142,2,23,4
+yen54gun,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, scale=(0.85, 1.15))], p=0.5)",None,2,12,0.34285714285714286,0.75,0.2222222222222222,,142,2,21,6
+w40gn49e,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, scale=(0.85, 1.0))], p=0.5)",None,2,17,0.07142857142857142,1.0,0.037037037037037035,,144,0,26,1
+ygak7kjf,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, scale=(1.0, 1.15))], p=0.5)",None,2,15,0.07142857142857142,1.0,0.037037037037037035,,144,0,26,1
+xm0erjm6,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))",T.RandomVerticalFlip(p=0.5),None,2,20,0.0,0.0,0.0,,144,0,27,0
+kx3ni2za,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))",T.RandomHorizontalFlip(p=0.5),None,2,25,0.5777777777777777,0.7222222222222222,0.48148148148148145,,139,5,14,13
+qpw5souy,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, shear=(-30, 30, -30, 30))], p=0.5)",None,2,17,0.5,1.0,0.3333333333333333,,144,0,18,9
+8iy45ok9,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, shear=(-15, 15, -15, 15))], p=0.5)",None,2,17,0.25806451612903225,1.0,0.14814814814814814,,144,0,23,4
+ogr39q8v,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, shear=(0, 0, -15, 15))], p=0.5)",None,2,20,0.07142857142857142,1.0,0.037037037037037035,,144,0,26,1
+5myk1x34,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, shear=(-15, 15, 0, 0))], p=0.5)",None,2,18,0.32380952380952377,0.21794871794871795,0.6296296296296297,,83,61,10,17
+sjrzbfkg,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=(-5, 5))], p=0.5)",None,2,12,0.25806451612903225,1.0,0.14814814814814814,,144,0,23,4
+t82j8smz,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=(-45, 45))], p=0.5)",None,2,21,0.303030303030303,0.8333333333333334,0.18518518518518515,,143,1,22,5
+o0l8zwny,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=(-30, 30))], p=0.5)",None,2,9,0.45714285714285713,1.0,0.2962962962962963,,144,0,19,8
+vpat27ca,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=(-15, 15))], p=0.5)",None,2,22,0.06896551724137931,0.5,0.037037037037037035,,143,1,26,1
+a0tj3qw4,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, translate=(0.3, 0.3))], p=0.5)",None,2,14,0.4117647058823529,1.0,0.25925925925925924,,144,0,20,7
+h16u2g3e,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, translate=(0.15, 0.15))], p=0.5)",None,2,27,0.5263157894736842,0.9090909090909092,0.3703703703703703,,143,1,17,10
+dlkvvtzc,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, translate=(0.0, 0.15))], p=0.5)",None,2,35,0.07142857142857142,1.0,0.037037037037037035,,144,0,26,1
+je63jjca,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, translate=(0.15, 0.0))], p=0.5)",None,2,36,0.0,0.0,0.0,,143,1,27,0
+wvlvpmxo,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))",None,None,2,38,0.07142857142857142,1.0,0.037037037037037035,,144,0,26,1
+rwfnkt9c,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomResizedCrop(size=(600, 400), scale=(1.0, 1.15), ratio=(3.0 / 2.0, 3.0 / 2.0), antialias=True)], p=0.5)",None,1,31,0.00975609756097561,0.005681818181818182,0.034482758620689655,,126,175,28,1
+2y5hbt1b,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomResizedCrop(size=(600, 400), scale=(0.85, 1.0), ratio=(3.0 / 2.0, 3.0 / 2.0), antialias=True)], p=0.5)",None,1,14,0.010204081632653062,0.005988023952095809,0.034482758620689655,,135,166,28,1
+64e73w0j,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomResizedCrop(size=(600, 400), scale=(0.85, 1.15), ratio=(3.0 / 2.0, 3.0 / 2.0), antialias=True)], p=0.5)",None,1,19,0.0,0.0,0.0,,157,144,29,0
+pslwcdot,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomResizedCrop(size=(600, 400), scale=(0.7, 1.3), ratio=(3.0 / 2.0, 3.0 / 2.0), antialias=True)], p=0.5)",None,1,17,0.0,0.0,0.0,,140,161,29,0
+olebitab,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, scale=(0.7, 1.3))], p=0.5)",None,1,8,0.05882352941176471,0.03428571428571429,0.20689655172413793,,132,169,23,6
+5cbwbjdw,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, scale=(0.85, 1.15))], p=0.5)",None,1,25,0.0,0.0,0.0,,132,169,29,0
+1kk0jq1r,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, scale=(0.85, 1.0))], p=0.5)",None,1,24,0.029268292682926828,0.017045454545454544,0.10344827586206896,,128,173,26,3
+risfac08,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, scale=(1.0, 1.15))], p=0.5)",None,1,31,0.0,0.0,0.0,,158,143,29,0
+yqsbg4af,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))",T.RandomVerticalFlip(p=0.5),None,1,32,0.0,0.0,0.0,,177,124,29,0
+c1f49z6w,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))",T.RandomHorizontalFlip(p=0.5),None,1,38,0.0,0.0,0.0,,151,150,29,0
+wgp6cuiq,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, shear=(-30, 30, -30, 30))], p=0.5)",None,1,9,0.0,0.0,0.0,,142,159,29,0
+4wveoi59,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, shear=(-15, 15, -15, 15))], p=0.5)",None,1,12,0.04926108374384237,0.02873563218390805,0.1724137931034483,,132,169,24,5
+7q58wut6,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, shear=(0, 0, -15, 15))], p=0.5)",None,1,22,0.14678899082568805,0.08465608465608465,0.5517241379310345,,128,173,13,16
+7e4iii92,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, shear=(-15, 15, 0, 0))], p=0.5)",None,1,26,0.0,0.0,0.0,,145,156,29,0
+9wh6fj8g,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=(-5, 5))], p=0.5)",None,1,22,0.020100502512562814,0.01176470588235294,0.06896551724137931,,133,168,27,2
+xuc9jxgk,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=(-45, 45))], p=0.5)",None,1,14,0.06635071090047394,0.038461538461538464,0.2413793103448276,,126,175,22,7
+xkuq41qq,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=(-30, 30))], p=0.5)",None,1,15,0.13761467889908255,0.07936507936507936,0.5172413793103449,,127,174,14,15
+ilsr9o7h,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=(-15, 15))], p=0.5)",None,1,13,0.136986301369863,0.07894736842105263,0.5172413793103449,,126,175,14,15
+il9cdfls,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, translate=(0.3, 0.3))], p=0.5)",None,1,15,0.23236514522821575,0.1320754716981132,0.9655172413793104,,117,184,1,28
+gkwnvd40,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, translate=(0.15, 0.15))], p=0.5)",None,1,17,0.019704433497536943,0.011494252873563218,0.06896551724137931,,129,172,27,2
+0s0qqiws,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, translate=(0.0, 0.15))], p=0.5)",None,1,10,0.009950248756218909,0.005813953488372093,0.034482758620689655,,130,171,28,1
+jonegrtw,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, translate=(0.15, 0.0))], p=0.5)",None,1,13,0.0,0.0,0.0,,135,166,29,0
+mp248m2y,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))",None,None,1,24,0.1339712918660287,0.07777777777777778,0.4827586206896552,,135,166,15,14
+d3y95gq1,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomResizedCrop(size=(600, 400), scale=(1.0, 1.15), ratio=(3.0 / 2.0, 3.0 / 2.0), antialias=True)], p=0.5)",None,0,13,0.05,0.03225806451612903,0.1111111111111111,,113,90,24,3
+ehulp385,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomResizedCrop(size=(600, 400), scale=(0.85, 1.0), ratio=(3.0 / 2.0, 3.0 / 2.0), antialias=True)], p=0.5)",None,0,12,0.04444444444444444,0.027777777777777776,0.1111111111111111,,98,105,24,3
+zxkugp6f,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomResizedCrop(size=(600, 400), scale=(0.85, 1.15), ratio=(3.0 / 2.0, 3.0 / 2.0), antialias=True)], p=0.5)",None,0,38,0.046875,0.0297029702970297,0.1111111111111111,,105,98,24,3
+r6x286ag,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomResizedCrop(size=(600, 400), scale=(0.7, 1.3), ratio=(3.0 / 2.0, 3.0 / 2.0), antialias=True)], p=0.5)",None,0,37,0.047619047619047616,0.030303030303030304,0.1111111111111111,,107,96,24,3
+7ce3e8s9,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, scale=(0.7, 1.3))], p=0.5)",None,0,19,0.05405405405405406,0.03571428571428571,0.1111111111111111,,122,81,24,3
+fkoz37gj,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, scale=(0.85, 1.15))], p=0.5)",None,0,14,0.05714285714285715,0.038461538461538464,0.1111111111111111,,128,75,24,3
+7fvvrblp,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, scale=(0.85, 1.0))], p=0.5)",None,0,16,0.04580152671755725,0.028846153846153848,0.1111111111111111,,102,101,24,3
+yk0t4eod,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, scale=(1.0, 1.15))], p=0.5)",None,0,24,0.049180327868852465,0.031578947368421054,0.1111111111111111,,111,92,24,3
+siqebt5m,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))",T.RandomVerticalFlip(p=0.5),None,0,22,0.05714285714285715,0.038461538461538464,0.1111111111111111,,128,75,24,3
+bcaenxiq,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))",T.RandomHorizontalFlip(p=0.5),None,0,14,0.06593406593406594,0.046875,0.1111111111111111,,142,61,24,3
+r6hts41i,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, shear=(-30, 30, -30, 30))], p=0.5)",None,0,28,0.06741573033707865,0.04838709677419355,0.1111111111111111,,144,59,24,3
+dykk83j7,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, shear=(-15, 15, -15, 15))], p=0.5)",None,0,13,0.1176470588235294,0.125,0.1111111111111111,,182,21,24,3
+1xrbv99n,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, shear=(0, 0, -15, 15))], p=0.5)",None,0,21,0.05309734513274336,0.03488372093023256,0.1111111111111111,,120,83,24,3
+qw9k5zk6,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, shear=(-15, 15, 0, 0))], p=0.5)",None,0,32,0.05714285714285715,0.038461538461538464,0.1111111111111111,,128,75,24,3
+n2pjbweg,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=(-5, 5))], p=0.5)",None,0,34,0.05555555555555555,0.037037037037037035,0.1111111111111111,,125,78,24,3
+40wybvi8,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=(-45, 45))], p=0.5)",None,0,30,0.058823529411764705,0.04,0.1111111111111111,,131,72,24,3
+93rzh828,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=(-30, 30))], p=0.5)",None,0,16,0.12,0.13043478260869565,0.1111111111111111,,183,20,24,3
+h6r58moj,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=(-15, 15))], p=0.5)",None,0,13,0.04705882352941176,0.034482758620689655,0.07407407407407407,,147,56,25,2
+oq4s8ena,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, translate=(0.3, 0.3))], p=0.5)",None,0,22,0.1917808219178082,0.1176470588235294,0.5185185185185185,,98,105,13,14
+ppgpo9tj,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, translate=(0.15, 0.15))], p=0.5)",None,0,16,0.06593406593406594,0.046875,0.1111111111111111,,142,61,24,3
+373zeewu,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, translate=(0.0, 0.15))], p=0.5)",None,0,16,0.04651162790697674,0.029411764705882353,0.1111111111111111,,104,99,24,3
+ic47vfv7,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))","T.RandomApply([T.RandomAffine(degrees=0, translate=(0.15, 0.0))], p=0.5)",None,0,24,0.03738317757009346,0.025,0.07407407407407407,,125,78,25,2
+muqkanu2,"CT.TransformResize((600, 400))
+CT.TransformPad((600, 400))",None,None,0,14,0.048,0.030612244897959183,0.1111111111111111,,108,95,24,3

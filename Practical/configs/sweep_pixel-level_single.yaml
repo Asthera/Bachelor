@@ -1,0 +1,134 @@
+arch: resnet18
+comment: ''
+criterion: cross-entropy
+device: cuda
+dropout: false
+dropout_rate: 0.8
+early_stopping: true
+epochs: 40
+experiment_class: b_line
+fc_layer_size: 512
+folds_path: metadata_folds/kkui-lung-bline-lumify:latest/video
+img_dir: /home/vn126ks/nas_storage_synology/APVV_Lung/revision_8/
+init_transform:
+- CT.TransformResize((600, 400))
+- CT.TransformPad((600, 400))
+is_validating: true
+learning_rate: 0.0001
+method: grid
+metric:
+  goal: minimize
+  name: val_f1
+name: with_cross_val_with_aug
+number_of_classes: 2
+optimizer: adam
+output_transform: none
+parameters:
+  batch_size:
+    values:
+    - 32
+  fold:
+    values:
+    - fold_0
+    - fold_1
+    - fold_2
+    - fold_3
+    - fold_4
+  transform:
+    values:
+    - - None
+    - - CT.RandomSaltAndPepperNoise(p=0.5, density=(0.001, 0.001))
+    - - CT.RandomSaltAndPepperNoise(p=0.5, density=(0.005, 0.01))
+    - - CT.RandomSaltAndPepperNoise(p=0.5, density=(0.01, 0.01))
+    - - CT.RandomSaltAndPepperNoise(p=0.5, density=(0.01, 0.03))
+    - - MT.RandGaussianNoise(prob=0.5, mean=0, std=0.001)
+    - - MT.RandGaussianNoise(prob=0.5, mean=0, std=0.005)
+    - - MT.RandGaussianNoise(prob=0.5, mean=0, std=0.01)
+    - - MT.RandGaussianNoise(prob=0.5, mean=0, std=0.05)
+    - - MT.RandGaussianNoise(prob=0.5, mean=0, std=0.1)
+    - - MT.RandGaussianNoise(prob=0.5, mean=0, std=0.5)
+    - - CT.RandomNoise(p=0.5, mean=0, std=0.01)
+    - - CT.RandomNoise(p=0.5, mean=0, std=0.05)
+    - - CT.RandomNoise(p=0.5, mean=0, std=0.1)
+    - - CT.RandomNoise(p=0.5, mean=0, std=0.5)
+    - - CT.RandomNoiseWithFV(p=0.5, fv=(0.1, 0.1))
+    - - CT.RandomNoiseWithFV(p=0.5, fv=(0.1, 0.5))
+    - - CT.RandomNoiseWithFV(p=0.5, fv=(0.5, 0.5))
+    - - CT.RandomNoiseWithFV(p=0.5, fv=(0.5, 1.0))
+    - - CT.RandomNoiseWithFV(p=0.5, fv=(0.1, 1.0))
+    - - CT.RandomNoiseWithFV(p=0.5, fv=(0.5, 1.5))
+    - - CT.RandomNoiseWithFV(p=0.5, fv=(1.0, 1.5))
+    - - CT.RandomSpeckleNoise(p=1.0, mean=0, std=0.5)
+    - - CT.RandomSpeckleNoise(p=1.0, mean=0, std=0.1)
+    - - CT.RandomSpeckleNoise(p=1.0, mean=0, std=0.05)
+    - - CT.RandomSpeckleNoise(p=1.0, mean=0, std=0.8)
+    - - CT.RandomBrightnessByAdd(p=1.0, delta=(0.005, 0.015))
+    - - CT.RandomBrightnessByAdd(p=0.5, delta=(0.15, 0.25))
+    - - CT.RandomBrightnessByAdd(p=0.5, delta=(0.25, 0.35))
+    - - CT.RandomBrightnessByAdd(p=0.5, delta=(0.05, 0.15))
+    - - CT.RandomBrightnessByAdd(p=0.5, delta=(-0.15, 0.15))
+    - - CT.RandomBrightnessByAdd(p=0.5, delta=(-0.25, 0.25))
+    - - CT.RandomBrightnessByAdd(p=0.5, delta=(-0.35, 0.35))
+    - - T.RandomApply([T.ColorJitter(brightness=0.1, contrast=0.1, saturation=0.1,
+        hue=0.1)], p=0.5)
+    - - T.RandomApply([T.ColorJitter(brightness=0.3, contrast=0.3, saturation=0.3,
+        hue=0.3)], p=0.5)
+    - - T.RandomApply([T.ColorJitter(brightness=0.3, contrast=0.3, saturation=0.3)],
+        p=0.5)
+    - - T.RandomApply([T.ColorJitter(brightness=0.3, contrast=0.3)], p=0.5)
+    - - T.RandomApply([T.ColorJitter(brightness=0.3)], p=0.5)
+    - - T.RandomApply([T.ColorJitter(brightness=0.15, contrast=0.15)], p=0.5)
+    - - T.RandomApply([T.ColorJitter(brightness=0.4, contrast=0.4)], p=0.5)
+    - - T.RandomApply([T.ColorJitter(contrast=0.1)], p=0.5)
+    - - T.RandomApply([T.ColorJitter(contrast=0.3)], p=0.5)
+    - - T.RandomApply([T.ColorJitter(contrast=0.5)], p=0.5)
+    - - CT.RandomContrastByMultiply(p=0.5, multiplier=(0.5, 1.5))
+    - - CT.RandomContrastByMultiply(p=0.5, multiplier=(0.1, 0.5))
+    - - CT.RandomContrastByMultiply(p=0.5, multiplier=(0.01, 0.1))
+    - - CT.RandomContrastByMultiply(p=0.5, multiplier=(0.5, 1.0))
+    - - CT.RandomContrastByMultiply(p=0.5, multiplier=(1.5, 2.0))
+    - - CT.RandomContrastByMultiply(p=0.5, multiplier=(0.9, 1.1))
+    - - MT.RandSmoothFieldAdjustContrast(prob=0.5, spatial_size=(600, 400), rand_size=(2,
+        2))
+    - - MT.RandSmoothFieldAdjustContrast(prob=0.5, spatial_size=(600, 400), rand_size=(3,
+        3))
+    - - MT.RandSmoothFieldAdjustContrast(prob=0.5, spatial_size=(600, 400), rand_size=(5,
+        5))
+    - - MT.RandSmoothFieldAdjustContrast(prob=0.5, spatial_size=(600, 400), rand_size=(5,
+        5), gamma=(0.5, 1.5))
+    - - MT.RandSmoothFieldAdjustContrast(prob=0.5, spatial_size=(600, 400), rand_size=(3,
+        3), gamma=(0.5, 1.5))
+    - - MT.RandSmoothFieldAdjustContrast(prob=0.5, spatial_size=(600, 400), rand_size=(2,
+        2), gamma=(0.5, 1.5))
+    - - T.RandomApply([T.GaussianBlur(kernel_size=3, sigma=(0.1, 2.0))], p=0.5)
+    - - T.RandomApply([T.GaussianBlur(kernel_size=5, sigma=(0.1, 2.0))], p=0.5)
+    - - T.RandomApply([T.GaussianBlur(kernel_size=3, sigma=(0.1, 0.5))], p=0.5)
+    - - T.RandomApply([T.GaussianBlur(kernel_size=5, sigma=(0.1, 0.5))], p=0.5)
+    - - T.RandomApply([T.GaussianBlur(kernel_size=3, sigma=(0.5, 1.0))], p=0.5)
+    - - T.RandomApply([T.GaussianBlur(kernel_size=5, sigma=(0.5, 1.0))], p=0.5)
+    - - T.RandomApply([T.GaussianBlur(kernel_size=3, sigma=(1.5, 2.0))], p=0.5)
+    - - T.RandomApply([T.GaussianBlur(kernel_size=5, sigma=(1.5, 2.0))], p=0.5)
+    - - T.RandomApply([T.GaussianBlur(kernel_size=3, sigma=(0.1, 1.5))], p=0.25)
+    - - MT.RandGaussianSharpen(prob=0.5, alpha=(2.0, 2.0))
+    - - MT.RandGaussianSharpen(prob=0.5, alpha=(0.0, 2.0))
+    - - MT.RandGaussianSharpen(prob=0.5, alpha=(1.0, 5.0))
+    - - T.RandomAdjustSharpness(sharpness_factor=2.0, p=0.5)
+    - - T.RandomAdjustSharpness(sharpness_factor=1.5, p=0.5)
+    - - T.RandomAdjustSharpness(sharpness_factor=2.5, p=0.5)
+    - - T.RandomAdjustSharpness(sharpness_factor=3.0, p=0.5)
+    - - MT.RandShiftIntensity(prob=0.5, offsets=(0.1, 0.1))
+    - - MT.RandShiftIntensity(prob=0.5, offsets=(0.05, 0.05))
+    - - MT.RandShiftIntensity(prob=0.5, offsets=(-0.1, 0.1))
+    - - MT.RandShiftIntensity(prob=0.5, offsets=(0.1, 0.4))
+    - - MT.RandShiftIntensity(prob=0.5, offsets=(-0.1, 0.4))
+  yaml_file:
+    values:
+    - sweep_pixel-level_single.yaml
+patience: 5
+pretrained: true
+program: training.py
+save_weights: true
+saving_only_best_one_weight_val_loss: true
+testing_with_best_val_loss: true
+val_dist: 0.2
+weights_dir: /home/vn126ks/nas_storage_synology/_experiments_output/weights/
