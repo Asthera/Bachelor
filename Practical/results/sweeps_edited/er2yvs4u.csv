@@ -1,0 +1,42 @@
+Transforms,Test F1_mean,Test F1_max,Test F1_min,Test F1_std,Test Precision_mean,Test Precision_max,Test Precision_min,Test Precision_std,Test Recall_mean,Test Recall_max,Test Recall_min,Test Recall_std,Test Accuracy_mean,Test Accuracy_max,Test Accuracy_min,Test Accuracy_std
+"CT.RandomBrightnessByAdd(p=0.5, delta=(-0.35, 0.35))
+CT.RandomContrastByMultiply(p=0.5, multiplier=(0.01, 0.1))
+T.RandomHorizontalFlip(p=0.5)
+T.RandomApply([T.ColorJitter(brightness=0.4, contrast=0.4)], p=0.5)
+T.RandomApply([T.RandomAffine(degrees=0, translate=(0.3, 0.3))], p=0.5)",0.48630904380302936,0.896551724137931,0.075,0.352499160563135,0.5955880405786942,0.975,0.05660377358490566,0.4635851706892496,0.43899521363938093,0.8297872340425532,0.1111111111111111,0.2798187285586998,,,,
+"CT.RandomBrightnessByAdd(p=1.0, delta=(0.005, 0.015))
+T.RandomApply([T.RandomAffine(degrees=0, translate=(0.3, 0.3))], p=0.5)
+T.RandomApply([T.RandomAffine(degrees=0, shear=(-30, 30, -30, 30))], p=0.5)
+T.RandomApply([T.GaussianBlur(kernel_size=5, sigma=(0.5, 1.0))], p=0.5)
+MT.RandSmoothFieldAdjustContrast(prob=0.5, spatial_size=(600, 400), rand_size=(2, 2))",0.281269402648713,0.45714285714285713,0.009852216748768471,0.1960803096844475,0.3257636268973527,1.0,0.005747126436781609,0.3940071482174359,0.4659441707717569,1.0,0.034482758620689655,0.36597027082971717,,,,
+"CT.RandomContrastByMultiply(p=0.5, multiplier=(0.01, 0.1))
+T.RandomAdjustSharpness(sharpness_factor=1.5, p=0.5)
+T.RandomHorizontalFlip(p=0.5)
+CT.RandomElasticTransform(p=0.5, alpha=(5.0, 50.0), sigma=(4.0, 5.0))
+T.RandomApply([T.RandomAffine(degrees=0, translate=(0.3, 0.3))], p=0.5)",0.4399327548926899,0.7848101265822784,0.11009174311926603,0.3235858722017784,0.46597222222222223,0.96875,0.06349206349206349,0.3975730184562443,0.4923454719786341,0.7777777777777778,0.2962962962962963,0.21549255760333644,,,,
+"MT.RandSmoothFieldAdjustContrast(prob=0.5, spatial_size=(600, 400), rand_size=(2, 2))
+T.RandomApply([T.GaussianBlur(kernel_size=5, sigma=(0.5, 1.0))], p=0.5)
+T.RandomApply([T.RandomAffine(degrees=0, shear=(-30, 30, -30, 30))], p=0.5)
+T.RandomApply([T.RandomAffine(degrees=0, translate=(0.3, 0.3))], p=0.5)
+CT.RandomBrightnessByAdd(p=1.0, delta=(0.005, 0.015))",0.44670537102249297,0.7792207792207793,0.2109704641350211,0.3007546300127117,0.4956956043956044,1.0,0.1201923076923077,0.46166272783540896,0.610761198259364,0.8620689655172413,0.2571428571428571,0.21934062128216844,,,,
+"MT.RandSmoothFieldAdjustContrast(prob=0.5, spatial_size=(600, 400), rand_size=(2, 2))
+T.RandomApply([T.GaussianBlur(kernel_size=5, sigma=(0.5, 1.0))], p=0.5)
+T.RandomHorizontalFlip(p=0.5)
+MT.RandGaussianNoise(prob=0.5, mean=0, std=0.05)
+T.RandomApply([T.RandomAffine(degrees=0, shear=(-15, 15, -15, 15))], p=0.5)",0.37078069950551396,0.8131868131868133,0.0,0.36096479840968915,0.43185740058043764,1.0,0.0,0.45582953442527935,0.35025104131487106,0.7872340425531915,0.0,0.32352205651775984,,,,
+None,0.21675491435512256,0.5309734513274336,0.0,0.2453077956328969,0.43486070381231673,1.0,0.0,0.42859924299208213,0.2201463469548576,0.6382978723404256,0.0,0.26343644146899153,,,,
+"T.RandomApply([T.RandomAffine(degrees=0, shear=(-15, 15, -15, 15))], p=0.5)
+MT.RandGaussianNoise(prob=0.5, mean=0, std=0.05)
+T.RandomHorizontalFlip(p=0.5)
+T.RandomApply([T.GaussianBlur(kernel_size=5, sigma=(0.5, 1.0))], p=0.5)
+MT.RandSmoothFieldAdjustContrast(prob=0.5, spatial_size=(600, 400), rand_size=(2, 2))",0.3077462777203005,0.7954545454545454,0.0851063829787234,0.2878129294241821,0.4409230687167451,1.0,0.06451612903225806,0.4487732143738854,0.3464037856114158,0.7446808510638298,0.07407407407407407,0.2570760687223681,,,,
+"T.RandomApply([T.RandomAffine(degrees=0, translate=(0.3, 0.3))], p=0.5)
+CT.RandomElasticTransform(p=0.5, alpha=(5.0, 50.0), sigma=(4.0, 5.0))
+T.RandomHorizontalFlip(p=0.5)
+T.RandomAdjustSharpness(sharpness_factor=1.5, p=0.5)
+CT.RandomContrastByMultiply(p=0.5, multiplier=(0.01, 0.1))",0.3681716472610238,0.6930693069306931,0.25688073394495414,0.1839216024677696,0.4503267973856209,1.0,0.14814814814814814,0.36528580874803646,0.6023570788060884,0.9655172413793104,0.18518518518518515,0.3566530720734066,,,,
+"T.RandomApply([T.RandomAffine(degrees=0, translate=(0.3, 0.3))], p=0.5)
+T.RandomApply([T.ColorJitter(brightness=0.4, contrast=0.4)], p=0.5)
+T.RandomHorizontalFlip(p=0.5)
+CT.RandomContrastByMultiply(p=0.5, multiplier=(0.01, 0.1))
+CT.RandomBrightnessByAdd(p=0.5, delta=(-0.35, 0.35))",0.3815322690473884,0.8571428571428572,0.05755395683453238,0.29555247084583486,0.3315512851942449,0.9545454545454546,0.03571428571428571,0.36080424213055673,0.6426927839693797,1.0,0.14814814814814814,0.32049162238086476,,,,

@@ -1,0 +1,76 @@
+Transforms,Test F1_mean,Test F1_max,Test F1_min
+"CT.RandomBrightnessByAdd(p=0.5, delta=(-0.15, 0.15))",0.2155644141954302,0.5882352941176471,0.0
+"CT.RandomBrightnessByAdd(p=0.5, delta=(-0.25, 0.25))",0.2319889931207004,0.7948717948717948,0.0
+"CT.RandomBrightnessByAdd(p=0.5, delta=(-0.35, 0.35))",0.3335530045351474,0.7777777777777778,0.0
+"CT.RandomBrightnessByAdd(p=0.5, delta=(0.05, 0.15))",0.2641826923076923,0.5384615384615385,0.0
+"CT.RandomBrightnessByAdd(p=0.5, delta=(0.15, 0.25))",0.1773269808183825,0.4210526315789473,0.0
+"CT.RandomBrightnessByAdd(p=0.5, delta=(0.25, 0.35))",0.2908632933342036,0.7865168539325842,0.0
+"CT.RandomBrightnessByAdd(p=1.0, delta=(0.005, 0.015))",0.2415273265686433,0.5035971223021584,0.0
+"CT.RandomContrastByMultiply(p=0.5, multiplier=(0.01, 0.1))",0.2959842325695984,0.8536585365853657,0.0
+"CT.RandomContrastByMultiply(p=0.5, multiplier=(0.1, 0.5))",0.2386106564829969,0.523076923076923,0.0
+"CT.RandomContrastByMultiply(p=0.5, multiplier=(0.5, 1.0))",0.2608445642407906,0.7142857142857144,0.0
+"CT.RandomContrastByMultiply(p=0.5, multiplier=(0.5, 1.5))",0.1291722715451529,0.3389830508474576,0.0
+"CT.RandomContrastByMultiply(p=0.5, multiplier=(0.9, 1.1))",0.1833239727289479,0.5970149253731344,0.0
+"CT.RandomContrastByMultiply(p=0.5, multiplier=(1.5, 2.0))",0.1330368933085401,0.564516129032258,0.0
+"CT.RandomNoise(p=0.5, mean=0, std=0.01)",0.2166076785654093,0.393939393939394,0.0
+"CT.RandomNoise(p=0.5, mean=0, std=0.05)",0.2154936120789779,0.8536585365853657,0.0
+"CT.RandomNoise(p=0.5, mean=0, std=0.1)",0.2077256077256077,0.7142857142857144,0.0
+"CT.RandomNoise(p=0.5, mean=0, std=0.5)",0.1445797952047952,0.546875,0.0
+"CT.RandomNoiseWithFV(p=0.5, fv=(0.1, 0.1))",0.1866310160427807,0.6666666666666665,0.0
+"CT.RandomNoiseWithFV(p=0.5, fv=(0.1, 0.5))",0.1453530436782643,0.564516129032258,0.0
+"CT.RandomNoiseWithFV(p=0.5, fv=(0.1, 1.0))",0.1461971553825802,0.4347826086956521,0.0
+"CT.RandomNoiseWithFV(p=0.5, fv=(0.5, 0.5))",0.1649185867895545,0.56,0.0
+"CT.RandomNoiseWithFV(p=0.5, fv=(0.5, 1.0))",0.2208125024045422,0.8395061728395062,0.0
+"CT.RandomNoiseWithFV(p=0.5, fv=(0.5, 1.5))",0.0914633577459532,0.2061855670103092,0.0
+"CT.RandomNoiseWithFV(p=0.5, fv=(1.0, 1.5))",0.2194332908667574,0.8235294117647057,0.0
+"CT.RandomSaltAndPepperNoise(p=0.5, density=(0.001, 0.001))",0.1280573219439184,0.4216867469879518,0.0
+"CT.RandomSaltAndPepperNoise(p=0.5, density=(0.005, 0.01))",0.3037648948736121,0.8433734939759036,0.0
+"CT.RandomSaltAndPepperNoise(p=0.5, density=(0.01, 0.01))",0.1695652173913043,0.608695652173913,0.0
+"CT.RandomSaltAndPepperNoise(p=0.5, density=(0.01, 0.03))",0.1040103739758515,0.4430379746835443,0.0
+"CT.RandomSpeckleNoise(p=1.0, mean=0, std=0.05)",0.0642857142857143,0.3214285714285714,0.0
+"CT.RandomSpeckleNoise(p=1.0, mean=0, std=0.1)",0.1192307692307692,0.5961538461538461,0.0
+"CT.RandomSpeckleNoise(p=1.0, mean=0, std=0.5)",0.0313725490196078,0.1568627450980392,0.0
+"CT.RandomSpeckleNoise(p=1.0, mean=0, std=0.8)",0.0070175438596491,0.0350877192982456,0.0
+"MT.RandGaussianNoise(prob=0.5, mean=0, std=0.001)",0.1848081277213352,0.5760000000000001,0.0
+"MT.RandGaussianNoise(prob=0.5, mean=0, std=0.005)",0.1515058207060476,0.4761904761904761,0.0
+"MT.RandGaussianNoise(prob=0.5, mean=0, std=0.01)",0.2465273292186177,0.6422018348623854,0.0
+"MT.RandGaussianNoise(prob=0.5, mean=0, std=0.05)",0.2386670205558367,0.4794520547945205,0.0451127819548872
+"MT.RandGaussianNoise(prob=0.5, mean=0, std=0.1)",0.245031301178538,0.7446808510638298,0.0
+"MT.RandGaussianNoise(prob=0.5, mean=0, std=0.5)",0.0108108108108108,0.054054054054054,0.0
+"MT.RandGaussianSharpen(prob=0.5, alpha=(0.0, 2.0))",0.2291060534431913,0.7948717948717948,0.0
+"MT.RandGaussianSharpen(prob=0.5, alpha=(1.0, 5.0))",0.2360252650575231,0.4895104895104895,0.0
+"MT.RandGaussianSharpen(prob=0.5, alpha=(2.0, 2.0))",0.2543057503506311,0.608695652173913,0.0
+"MT.RandShiftIntensity(prob=0.5, offsets=(-0.1, 0.1))",0.2779457269584046,0.7368421052631579,0.0
+"MT.RandShiftIntensity(prob=0.5, offsets=(-0.1, 0.4))",0.1476109986095229,0.2909090909090909,0.0
+"MT.RandShiftIntensity(prob=0.5, offsets=(0.05, 0.05))",0.1996331040233479,0.5691056910569106,0.0
+"MT.RandShiftIntensity(prob=0.5, offsets=(0.1, 0.1))",0.2403834260977118,0.4897959183673469,0.0
+"MT.RandShiftIntensity(prob=0.5, offsets=(0.1, 0.4))",0.3112743534054726,0.8395061728395062,0.0
+"MT.RandSmoothFieldAdjustContrast(prob=0.5, spatial_size=(600, 400), rand_size=(2, 2))",0.3150868353344768,0.6603773584905661,0.0
+"MT.RandSmoothFieldAdjustContrast(prob=0.5, spatial_size=(600, 400), rand_size=(2, 2), gamma=(0.5, 1.5))",0.2103421286425017,0.7466666666666666,0.0
+"MT.RandSmoothFieldAdjustContrast(prob=0.5, spatial_size=(600, 400), rand_size=(3, 3))",0.2125657020145209,0.7792207792207793,0.0
+"MT.RandSmoothFieldAdjustContrast(prob=0.5, spatial_size=(600, 400), rand_size=(3, 3), gamma=(0.5, 1.5))",0.1491264367816092,0.4166666666666666,0.0
+"MT.RandSmoothFieldAdjustContrast(prob=0.5, spatial_size=(600, 400), rand_size=(5, 5))",0.195737593916429,0.4761904761904761,0.0
+"MT.RandSmoothFieldAdjustContrast(prob=0.5, spatial_size=(600, 400), rand_size=(5, 5), gamma=(0.5, 1.5))",0.1907994695462726,0.5147058823529412,0.0
+"T.RandomAdjustSharpness(sharpness_factor=1.5, p=0.5)",0.2693511763436218,0.8536585365853657,0.0
+"T.RandomAdjustSharpness(sharpness_factor=2.0, p=0.5)",0.2025906120023767,0.7070707070707072,0.0
+"T.RandomAdjustSharpness(sharpness_factor=2.5, p=0.5)",0.234141621129326,0.7777777777777778,0.0
+"T.RandomAdjustSharpness(sharpness_factor=3.0, p=0.5)",0.2661194383709596,0.7792207792207793,0.0
+"T.RandomApply([T.ColorJitter(brightness=0.1, contrast=0.1, saturation=0.1, hue=0.1)], p=0.5)",0.2820963926039356,0.8536585365853657,0.0
+"T.RandomApply([T.ColorJitter(brightness=0.15, contrast=0.15)], p=0.5)",0.2510916307859115,0.7608695652173912,0.0
+"T.RandomApply([T.ColorJitter(brightness=0.3)], p=0.5)",0.2230820549031601,0.6862745098039216,0.0
+"T.RandomApply([T.ColorJitter(brightness=0.3, contrast=0.3)], p=0.5)",0.119043180838071,0.2928870292887029,0.0
+"T.RandomApply([T.ColorJitter(brightness=0.3, contrast=0.3, saturation=0.3)], p=0.5)",0.2267495173745174,0.7297297297297298,0.0
+"T.RandomApply([T.ColorJitter(brightness=0.3, contrast=0.3, saturation=0.3, hue=0.3)], p=0.5)",0.1530078511929691,0.3319838056680161,0.0
+"T.RandomApply([T.ColorJitter(brightness=0.4, contrast=0.4)], p=0.5)",0.1910018222017159,0.4590163934426229,0.0
+"T.RandomApply([T.ColorJitter(contrast=0.1)], p=0.5)",0.1961696762950054,0.5000000000000001,0.0
+"T.RandomApply([T.ColorJitter(contrast=0.3)], p=0.5)",0.2620724109425161,0.6862745098039216,0.0
+"T.RandomApply([T.ColorJitter(contrast=0.5)], p=0.5)",0.1820481868104685,0.4,0.0
+"T.RandomApply([T.GaussianBlur(kernel_size=3, sigma=(0.1, 0.5))], p=0.5)",0.2006439446592375,0.4046242774566474,0.0
+"T.RandomApply([T.GaussianBlur(kernel_size=3, sigma=(0.1, 1.5))], p=0.25)",0.2490097445991591,0.6666666666666665,0.0
+"T.RandomApply([T.GaussianBlur(kernel_size=3, sigma=(0.1, 2.0))], p=0.5)",0.2179219234526995,0.631578947368421,0.0
+"T.RandomApply([T.GaussianBlur(kernel_size=3, sigma=(0.5, 1.0))], p=0.5)",0.2213896450668892,0.6862745098039216,0.0
+"T.RandomApply([T.GaussianBlur(kernel_size=3, sigma=(1.5, 2.0))], p=0.5)",0.2533638944124834,0.6363636363636364,0.0
+"T.RandomApply([T.GaussianBlur(kernel_size=5, sigma=(0.1, 0.5))], p=0.5)",0.2692720918277207,0.8536585365853657,0.0
+"T.RandomApply([T.GaussianBlur(kernel_size=5, sigma=(0.1, 2.0))], p=0.5)",0.1328261916225325,0.4193548387096774,0.0
+"T.RandomApply([T.GaussianBlur(kernel_size=5, sigma=(0.5, 1.0))], p=0.5)",0.2598125254187554,0.8536585365853657,0.0
+"T.RandomApply([T.GaussianBlur(kernel_size=5, sigma=(1.5, 2.0))], p=0.5)",0.097065142065142,0.3513513513513513,0.0
