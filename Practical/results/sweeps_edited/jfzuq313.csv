@@ -1,0 +1,51 @@
+Transforms,Test F1_mean,Test F1_max,Test F1_min,Test F1_std,Test Precision_mean,Test Precision_max,Test Precision_min,Test Precision_std,Test Recall_mean,Test Recall_max,Test Recall_min,Test Recall_std,Test Accuracy_mean,Test Accuracy_max,Test Accuracy_min,Test Accuracy_std
+"CT.RandomSaltAndPepperNoise(p=0.5, density=(0.005, 0.01))
+CT.RandomBrightnessByAdd(p=0.5, delta=(-0.35, 0.35))
+T.RandomHorizontalFlip(p=0.5)
+T.RandomApply([T.RandomAffine(degrees=0, translate=(0.15, 0.15))], p=0.5)
+T.RandomApply([T.RandomAffine(degrees=(-30, 30))], p=0.5)",0.32002695694116023,0.6153846153846153,0.07017543859649124,0.2719045221790765,0.3550245675646535,1.0,0.06666666666666667,0.40793497716665233,0.4222950463302627,0.7446808510638298,0.07407407407407407,0.23814550191368952,,,,
+"MT.RandShiftIntensity(prob=0.5, offsets=(0.1, 0.4))
+CT.RandomBrightnessByAdd(p=0.5, delta=(-0.35, 0.35))
+T.RandomHorizontalFlip(p=0.5)
+T.RandomApply([T.RandomAffine(degrees=0, translate=(0.15, 0.15))], p=0.5)
+T.RandomApply([T.RandomAffine(degrees=(-30, 30))], p=0.5)",0.39670593382272523,0.8333333333333334,0.16143497757847533,0.2773705795890542,0.6032587107329376,1.0,0.09278350515463918,0.4239504408576727,0.41847092664407415,0.7446808510638298,0.17142857142857143,0.25742530708433026,,,,
+"MT.RandSmoothFieldAdjustContrast(prob=0.5, spatial_size=(600, 400), rand_size=(2, 2))
+CT.RandomBrightnessByAdd(p=0.5, delta=(-0.35, 0.35))
+T.RandomHorizontalFlip(p=0.5)
+T.RandomApply([T.RandomAffine(degrees=0, translate=(0.15, 0.15))], p=0.5)
+T.RandomApply([T.RandomAffine(degrees=(-30, 30))], p=0.5)",0.43615873427186136,0.923076923076923,0.0784313725490196,0.39110905789169725,0.4270840932117528,0.96,0.05333333333333334,0.435416076460985,0.521466730329533,0.8888888888888888,0.14814814814814814,0.2989941690846459,,,,
+"T.RandomApply([T.RandomAffine(degrees=(-30, 30))], p=0.5)
+T.RandomApply([T.RandomAffine(degrees=0, translate=(0.15, 0.15))], p=0.5)
+T.RandomHorizontalFlip(p=0.5)
+CT.RandomBrightnessByAdd(p=0.5, delta=(-0.35, 0.35))
+CT.RandomSaltAndPepperNoise(p=0.5, density=(0.005, 0.01))",0.25104692364903264,0.8235294117647057,0.038709677419354833,0.3272654883062398,0.4214267921324609,1.0,0.023809523809523808,0.49372661750166696,0.25068402644338084,0.7446808510638298,0.037037037037037035,0.2876102311528037,,,,
+"T.RandomApply([T.RandomAffine(degrees=(-30, 30))], p=0.5)
+T.RandomApply([T.RandomAffine(degrees=0, translate=(0.15, 0.15))], p=0.5)
+T.RandomHorizontalFlip(p=0.5)
+CT.RandomBrightnessByAdd(p=0.5, delta=(-0.35, 0.35))
+MT.RandShiftIntensity(prob=0.5, offsets=(0.1, 0.4))",0.3274668039127157,0.7777777777777778,0.1176470588235294,0.26882732169694246,0.4481683227221468,1.0,0.08,0.42998262623031636,0.3950664384119996,0.7446808510638298,0.2,0.2532617587630471,,,,
+"T.RandomApply([T.RandomAffine(degrees=(-30, 30))], p=0.5)
+T.RandomApply([T.RandomAffine(degrees=0, translate=(0.15, 0.15))], p=0.5)
+T.RandomHorizontalFlip(p=0.5)
+CT.RandomBrightnessByAdd(p=0.5, delta=(-0.35, 0.35))
+MT.RandSmoothFieldAdjustContrast(prob=0.5, spatial_size=(600, 400), rand_size=(2, 2))",0.35632050532305415,0.6933333333333334,0.09345794392523366,0.2924055231814683,0.29502574002574,0.5416666666666666,0.05405405405405406,0.22424804517646885,0.5166160857430115,0.9629629629629628,0.07407407407407407,0.36869222866400414,,,,
+"T.RandomApply([T.RandomAffine(degrees=(-30, 30))], p=0.5)
+T.RandomApply([T.RandomAffine(degrees=0, translate=(0.15, 0.15))], p=0.5)
+T.RandomHorizontalFlip(p=0.5)
+CT.RandomBrightnessByAdd(p=0.5, delta=(-0.35, 0.35))
+T.RandomApply([T.RandomAffine(degrees=0, shear=(-15, 15, -15, 15))], p=0.5)",0.3058496509188697,0.7532467532467533,0.10526315789473684,0.27113107010842746,0.6281214024071168,1.0,0.08163265306122448,0.49420303614506844,0.33770091651236184,0.6206896551724138,0.07407407407407407,0.26241241346032357,,,,
+"T.RandomApply([T.RandomAffine(degrees=(-30, 30))], p=0.5)
+T.RandomApply([T.RandomAffine(degrees=0, translate=(0.15, 0.15))], p=0.5)
+T.RandomHorizontalFlip(p=0.5)
+CT.RandomBrightnessByAdd(p=0.5, delta=(-0.35, 0.35))
+T.RandomApply([T.RandomAffine(degrees=0, translate=(0.3, 0.3))], p=0.5)",0.3679809954521901,0.7692307692307692,0.02941176470588235,0.29144552888633984,0.5034743881382411,1.0,0.018691588785046728,0.3931463031774175,0.37225308318485134,0.7446808510638298,0.06896551724137931,0.33105003379427517,,,,
+"T.RandomApply([T.RandomAffine(degrees=0, shear=(-15, 15, -15, 15))], p=0.5)
+CT.RandomBrightnessByAdd(p=0.5, delta=(-0.35, 0.35))
+T.RandomHorizontalFlip(p=0.5)
+T.RandomApply([T.RandomAffine(degrees=0, translate=(0.15, 0.15))], p=0.5)
+T.RandomApply([T.RandomAffine(degrees=(-30, 30))], p=0.5)",0.3640721225513264,0.6306306306306305,0.099009900990099,0.2475763534654598,0.298641941818666,0.546875,0.06756756756756757,0.2303606953748073,0.5624957396344044,0.8275862068965517,0.18518518518518515,0.2912074527985111,,,,
+"T.RandomApply([T.RandomAffine(degrees=0, translate=(0.3, 0.3))], p=0.5)
+CT.RandomBrightnessByAdd(p=0.5, delta=(-0.35, 0.35))
+T.RandomHorizontalFlip(p=0.5)
+T.RandomApply([T.RandomAffine(degrees=0, translate=(0.15, 0.15))], p=0.5)
+T.RandomApply([T.RandomAffine(degrees=(-30, 30))], p=0.5)",0.34813806207030207,0.8275862068965516,0.08695652173913043,0.2857210198793033,0.4744976076555024,1.0,0.11961722488038276,0.4361436793488647,0.47777459463446253,0.8620689655172413,0.05714285714285714,0.34386891921929635,,,,
