@@ -4,20 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6547dc91-bedc-426d-90c2-6f591de7153f" name="Changes" comment="Cleaned/Edited structure&#10;Ready requirements.txt&#10;&#10;Ready for submiting">
-      <change afterPath="$PROJECT_DIR$/configs_code/sweep_combined_f-1_mean.py" afterDir="false" />
+    <list default="true" id="6547dc91-bedc-426d-90c2-6f591de7153f" name="Changes" comment="changes, add combination by mean">
+      <change afterPath="$PROJECT_DIR$/configs_code/sweep_combined_fold_normalize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/analyze/analyze_5_combine_by_f1_mean.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code_to_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/code_to_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/sweep.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configs/sweep.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/sweep_affine_single_gpu.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configs/sweep_affine_single_gpu.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/sweep_combined_fold.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configs/sweep_combined_fold.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/sweep_combined_gpu.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configs/sweep_combined_gpu.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/sweep_pixel-level_single.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configs/sweep_pixel-level_single.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs_code/sweep_combined_average_metric_top.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/configs_code/sweep_combined_fold.py" beforeDir="false" afterPath="$PROJECT_DIR$/configs_code/sweep_combined_fold.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/analyze/analyze_5_combine_by_fold_f1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/results/analyze/analyze_5_combine_by_fold_f1.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/analyze/analyze_sweep_affine_single.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/results/analyze/analyze_sweep_affine_single.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/analyze/edit_sweep_df.py" beforeDir="false" afterPath="$PROJECT_DIR$/results/analyze/edit_sweep_df.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +19,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Jupyter Notebook" />
         <option value="Python Script" />
       </list>
     </option>
@@ -89,7 +82,7 @@
       <workItem from="1716636441221" duration="5009000" />
       <workItem from="1716641998238" duration="83000" />
       <workItem from="1716644021817" duration="3981000" />
-      <workItem from="1716718589697" duration="3826000" />
+      <workItem from="1716718589697" duration="5991000" />
     </task>
     <task id="LOCAL-00001" summary="Cleaned/Edited structure&#10;Ready requirements.txt&#10;&#10;Ready for submiting">
       <option name="closed" value="true" />
@@ -99,7 +92,23 @@
       <option name="project" value="LOCAL" />
       <updated>1716641948850</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="changes, add combination by mean">
+      <option name="closed" value="true" />
+      <created>1716723665145</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716723665145</updated>
+    </task>
+    <task id="LOCAL-00003" summary="changes, add combination by mean">
+      <option name="closed" value="true" />
+      <created>1716723946133</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716723946133</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,7 +127,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Cleaned/Edited structure&#10;Ready requirements.txt&#10;&#10;Ready for submiting" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned/Edited structure&#10;Ready requirements.txt&#10;&#10;Ready for submiting" />
+    <MESSAGE value="changes, add combination by mean" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes, add combination by mean" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Practical$code_to_config.coverage" NAME="code_to_config Coverage Results" MODIFIED="1716723516215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

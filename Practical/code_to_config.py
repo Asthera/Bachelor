@@ -78,7 +78,7 @@ def update_yaml_transforms(transforms, base_yaml_path, new_yaml_path):
 
 
 base_yaml_file_path = 'configs/sweep_gpu.yaml'
-file_with_transforms = 'configs_code/sweep_combined_f-1_mean.py'
+file_with_transforms = 'configs_code/sweep_combined_fold_normalize.py'
 # Assume the file 'script.py' contains the definitions of the transformations
 transforms = read_transforms(file_with_transforms)
 update_yaml_transforms(transforms, base_yaml_file_path, file_with_transforms)
