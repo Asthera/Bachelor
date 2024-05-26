@@ -13,10 +13,10 @@ class SweepEditorDataFrame:
         # Group by the 'Transforms' column and calculate the mean for each metric
         grouped_df = df.groupby('Transforms').agg(
             {
-                'Test F1': ['mean', 'max', 'min'],
-                'Test Precision': ['mean', 'max', 'min'],
-                'Test Recall': ['mean', 'max', 'min'],
-                'Test Accuracy': ['mean', 'max', 'min']
+                'Test F1': ['mean', 'max', 'min', 'std'],
+                'Test Precision': ['mean', 'max', 'min', 'std'],
+                'Test Recall': ['mean', 'max', 'min', 'std'],
+                'Test Accuracy': ['mean', 'max', 'min', 'std'],
             }
         )
 

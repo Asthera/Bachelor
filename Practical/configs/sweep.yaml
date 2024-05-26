@@ -22,7 +22,7 @@ parameters:
   batch_size:
     values: [64]
   yaml_file:
-    values: ["sweep.yaml"]
+    values: ["configs/sweep.yaml"]
 
 # Paths and directories
 folds_path: "metadata_folds/kkui-lung-bline-lumify:latest/video"

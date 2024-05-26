@@ -2,6 +2,15 @@ import torchvision.transforms as T
 import monai.transforms as MT
 import custom.transforms as CT
 
+Transforms | Test F1 Mean | Test F1 Std | Test F1 Min | Test F1 Max
+           | Straight | Mirror | Straight | Mirror | Straight | Mirror | Straight | Mirror
+---------------------------------------------------------------------
+transform_0 | - | - | - | - | - | - | - | -
+
+
+
+
+
 
 transform_0 = [
     None

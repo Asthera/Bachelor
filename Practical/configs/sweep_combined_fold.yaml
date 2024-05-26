@@ -83,7 +83,7 @@ parameters:
       - T.RandomApply([T.RandomAffine(degrees=0, shear=(-15, 15, -15, 15))], p=0.5)
   yaml_file:
     values:
-    - sweep_combined_fold.yaml
+    - configs/sweep_combined_fold.yaml
 patience: 5
 pretrained: true
 program: training.py

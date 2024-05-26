@@ -65,7 +65,7 @@ parameters:
         / 2.0, 3.0 / 2.0), antialias=True)], p=0.5)
   yaml_file:
     values:
-    - sweep_affine_single_gpu.yaml
+    - configs/sweep_affine_single_gpu.yaml
 patience: 5
 pretrained: true
 program: training.py
