@@ -1,87 +1,218 @@
-# Bachelor 
+# Augmentation Methods for Medical Ultrasound Data
 
-This is the repository for my Bachelor's thesis.
-Title: "Implementation of augmentation methods for medical ultrasound data"
+Bachelor's thesis — *"Implementation of augmentation methods for medical ultrasound data"*
 
-Temporary working directory: "/CrossValidation"
-Articles: "/Articles"
+Experiments are tracked on [Weights & Biases](https://wandb.ai/daswoldemar/bachelor?nw=nwuserdaswoldemar).
 
-Project at [WandB](https://wandb.ai/daswoldemar/bachelor?nw=nwuserdaswoldemar)
+---
 
+## Overview
 
+This project systematically evaluates image augmentation strategies for binary classification of lung ultrasound (LUS) frames. The clinical task is detecting **B-lines** (pathological artifacts indicating fluid in the lungs) versus **A-lines** (healthy lung pattern). Because LUS datasets are small and class-imbalanced, augmentation is critical for generalisation.
 
+The core question: *which augmentation methods — and combinations — actually help a ResNet18 classifier on this data?*
 
-## Instructions from the University
+---
 
-1. Create an overview of image data augmentation associated with neural network training with a focus on medical image data.
-2. Provide an overview of existing solutions for parallel hyperparameter tuning in neural networks.
-3. Use the processed knowledge to design augmentation methods suitable for ultrasound image data.
-4. Apply the selected methods and develop a mechanism for automatic and parallel validation of the proposed experiments.
-5. Compare the results of the different augmentation techniques and perform an appropriate evaluation.
-6. Prepare documentation as directed by the thesis advisor.
+## Task & Dataset
 
+| Property | Detail |
+|---|---|
+| Task | Binary frame-level classification (B-line vs. A-line) |
+| Dataset | KKUI lung ultrasound (`kkui-lung-bline-lumify`, `kkui-lung-aline-not_old`) |
+| Input | Grayscale frames extracted from ultrasound videos |
+| Validation | 5-fold cross-validation (folds defined in `metadata_folds/`) |
+| Evaluation split | 80% train / 20% val (within each fold), held-out test set per fold |
 
-## Practical Side
+Label mapping (B-line experiment):
+- Raw label `1` → class `0` (no B-line)
+- Raw label `2` → class `1` (B-line present)
 
-### Temporary pipeline augmentation methods:
-1. Read image as tensor, all images are grayscale, so input channels are 1
-2. Apply init transforms, now - TransformResize((600, 400)) and TransformPad((600, 400))
-3. Apply augmentation 'tramsform", `all augmentation methods must work with GrayScale image (1 channel)`
-4. Apply output transform, now - `None`
-5. Convert image to 3 channels, copy grayscale image to all 3 channels, because pretrained model needs 3 channels
+---
 
+## Architecture & Training
 
-In theory, researcher often not say which augmentation methods they used. They just say that they used augmentation. 
-without parameters intervals 
+**Model**: ResNet18 (ImageNet pretrained) with a replaced fully-connected head (`512 → 2`).
+Optional dropout before the FC layer is configurable.
 
-### To Do
+**Pipeline for each image:**
 
-1. Experiment with Mixup, Cutout, Cutmix
-2. Maybe try to implement AutoAugment
-3. Maybe implement deterministic seeds ? - Added
-4. Try in output transform resize to format that take ImageNet pretrained models
-5. Try without pretraining
-6. Try with dropout
-7. Add more metrics (good discussed in "Medical image data augmentation: techniques, comparisons and interpretations") [MCC, accuraccy, kappa ]
+```
+read grayscale frame  →  [0,255] uint8  →  [0,1] float32
+    ↓
+init transform  (Resize → Pad to 600×400)
+    ↓
+augmentation transforms  (training only, see configs/)
+    ↓
+output transform  (optional normalisation)
+    ↓
+expand 1-channel → 3-channel  (copy grayscale to RGB for ResNet)
+```
 
+**Training settings** (defaults across sweeps):
 
-# Tested
-1. From paper "Medical image data augmentation: techniques, comparisons and interpretations.pdf"
-Was tested with 11 augmentation methods, like it was tested in the paper.
-Methods:
-   1. Shear  [−15°, 15°], prob=0.5
-   2. Translate [0.15, 0.15], y-axis and x-axis
-   3. Rotate  [-25°, 25°]
-   4. Add Gaussian noise with fixed variance [0.3, 0.4, 0.5]
-   5. Add salt and pepper noise with density [0.01, 0.02, 0.03]
-   6. Salt and pepper noise with density [0.01, 0.02, 0.03] ans Shear  [−15°, 15°]
-   7. Add Gaussian noise with fixed variance [0.3, 0.4, 0.5] and Rotate  [-25°, 25°]
-   8. Rotate  [-25°, 25°] and Translate [0.15, 0.15], y-axis and x-axis
-   9. Translate [0.15, 0.15], y-axis and x-axis and Shear  [−15°, 15°]
-   10. Translate [0.15, 0.15] y-axis and x-axis, shear  [-15°, 15°] and Rotate  [-25°, 25°]
-   11. Color shifting, sharpening, and contrast
+| Setting | Value |
+|---|---|
+| Optimizer | Adam, lr=0.0001 |
+| Loss | Cross-Entropy |
+| Batch size | 32 |
+| Max epochs | 40 |
+| Early stopping | patience=5 on val loss |
+| Test model | weights from best validation loss epoch |
 
-Was tested with init transforms 600x400 or 600x600, 600x400 better (`CrossValidation/utills_sweep/analyze_sweep_paper_11.ipynb`)
+**Metrics reported**: F1, Precision, Recall, Balanced Accuracy, Confusion Matrix (all logged to WandB per epoch).
 
-Implementation of them is in `CrossValidation/Transforms.py` and `CrossValidation/sweep_paper_11_gpu.py` <br/>
-Results are in `CrossValidation/utills_sweep/sweeps_edited or sweeps_raw/25oanqcs.csv`
+---
 
-| Transforms | Test F1_mean | Test F1_max | Test F1_min | Test Precision_mean | Test Precision_max | Test Precision_min | Test Recall_mean | Test Recall_max | Test Recall_min |
-|------------|--------------|-------------|-------------|---------------------|--------------------|--------------------|------------------|-----------------|-----------------|
-| No Transforms | 0.313 | 0.825 | 0.000 | 0.560 | 1.000 | 0.000 | 0.239 | 0.702 | 0.000 |
-| Color shifting, sharpening, and contrast | 0.312 | 0.840 | 0.054 | 0.472 | 1.000 | 0.035 | 0.393 | 0.724 | 0.111 |
-| Rotate and Translate | 0.278 | 0.824 | 0.057 | 0.455 | 1.000 | 0.038 | 0.402 | 0.862 | 0.037 |
-| Rotate | 0.283 | 0.699 | 0.046 | 0.312 | 0.643 | 0.029 | 0.408 | 0.766 | 0.111 |
-| Shear | 0.398 | 0.824 | 0.067 | 0.468 | 1.000 | 0.048 | 0.410 | 0.745 | 0.111 |
-| Translate, Shear, and Rotate | 0.250 | 0.642 | 0.075 | 0.352 | 1.000 | 0.057 | 0.340 | 0.745 | 0.111 |
-| Translate and Shear | 0.296 | 0.625 | 0.111 | 0.369 | 1.000 | 0.076 | 0.376 | 0.745 | 0.148 |
-| Translate | 0.193 | 0.496 | 0.049 | 0.311 | 1.000 | 0.032 | 0.287 | 0.745 | 0.069 |
-| Gaussian noise and Rotate | 0.197 | 0.554 | 0.000 | 0.327 | 1.000 | 0.000 | 0.274 | 0.872 | 0.000 |
-| Gaussian noise | 0.189 | 0.753 | 0.000 | 0.194 | 0.761 | 0.000 | 0.194 | 0.745 | 0.000 |
-| Salt and Pepper noise and Shear | 0.304 | 0.650 | 0.047 | 0.320 | 1.000 | 0.030 | 0.473 | 0.828 | 0.111 |
-| Salt and Pepper noise | 0.180 | 0.761 | 0.000 | 0.177 | 0.778 | 0.000 | 0.196 | 0.745 | 0.000 |
+## Repository Structure
 
+```
+Bachelor/
+├── Practical/
+│   ├── training.py              # main training entry point
+│   ├── code_to_config.py        # converts Python transform definitions → YAML sweep configs
+│   ├── check.py                 # validates that all transforms in a YAML config can be imported
+│   ├── requirements.txt
+│   │
+│   ├── data/
+│   │   └── dataset.py           # FramesDataset — reads JSON fold metadata + images
+│   │
+│   ├── transforms/
+│   │   └── builder.py           # TransformsBuilder — instantiates transforms from string names
+│   │
+│   ├── custom_transforms/       # installable package (pip install -e ./custom_transforms)
+│   │   └── custom/transforms/
+│   │       ├── pad.py                      # TransformPad (edge-fill to target size)
+│   │       ├── resize.py                   # TransformResize
+│   │       ├── random_noise.py             # RandomNoise (additive Gaussian)
+│   │       ├── random_noise_with_fv.py     # RandomNoiseWithFV (field-variance Gaussian)
+│   │       ├── random_speckle_noise.py     # RandomSpeckleNoise (multiplicative)
+│   │       ├── random_salt_and_pepper_noise.py
+│   │       ├── random_brightness_by_add.py
+│   │       ├── random_contrast_by_multiply.py
+│   │       └── random_elastic_transform.py
+│   │
+│   ├── utils/
+│   │   ├── build.py             # builds model, optimizer, criterion, datasets
+│   │   └── trainer.py           # Trainer class — train/val/test loops, early stopping, WandB logging
+│   │
+│   ├── configs/                 # WandB sweep YAML configs (grid search over transforms × folds)
+│   ├── configs_code/            # Python source files for transform definitions (→ YAML via code_to_config.py)
+│   ├── metadata_folds/          # JSON files defining train/test splits per fold
+│   ├── results/                 # exported CSVs and analysis notebooks
+│   └── testing/                 # exploration notebooks
+│
+├── Articles/                    # collected literature
+├── Experiments.md               # running experiment log
+└── Bachelor-LiteratureReview.docx
+```
 
+---
 
+## Custom Transforms
 
+All custom transforms live in the `custom_transforms` package and follow the same interface as torchvision transforms (callable objects, work on `float32` tensors in `[0, 1]`).
 
+| Class | Description |
+|---|---|
+| `TransformResize(size)` | Resize the shorter side to `size` |
+| `TransformPad(size)` | Centre-pad with edge-fill to reach target `(H, W)` |
+| `RandomNoise(p, mean, std)` | Additive Gaussian noise |
+| `RandomNoiseWithFV(p, fv)` | Gaussian noise with randomly sampled field variance |
+| `RandomSpeckleNoise(p, mean, std)` | Multiplicative noise: `img + img × N(mean, std)` |
+| `RandomSaltAndPepperNoise(p, density)` | Salt-and-pepper noise with random density |
+| `RandomBrightnessByAdd(p, delta)` | Brightness shift by additive constant |
+| `RandomContrastByMultiply(p, multiplier)` | Contrast scaling by a random multiplier |
+| `RandomElasticTransform(p, alpha, sigma)` | Elastic deformation with random strength |
+
+All transforms use `(min, max)` ranges and sample uniformly at call time.
+
+---
+
+## Sweep Experiments
+
+Experiments are run as **WandB grid sweeps** — each sweep exhaustively evaluates every `(transform, fold)` combination so that per-fold and averaged results are available.
+
+| Config file | Experiment group |
+|---|---|
+| `sweep_paper_11_gpu.yaml` | 11 methods from the reference paper (geometric + noise) |
+| `sweep_pixel-level_single.yaml` | ~60 single pixel-level transforms (noise, contrast, brightness, blur, sharpness) |
+| `sweep_elastic_single_gpu.yaml` | Elastic deformation parameter sweep |
+| `sweep_grid_distortion_single.yaml` | Grid distortion variants |
+| `sweep_erasing_single.yaml` | Random Erasing / Cutout variants |
+| `sweep_speckle_0.5.yaml` | Speckle noise variants |
+| `sweep_combined_gpu.yaml` | Combined multi-transform pipelines (torchvision + MONAI) |
+| `sweep_combined_fold_normalize.yaml` | Combined pipelines with ImageNet-style normalisation |
+
+Transforms in sweep configs can be specified as strings of Python expressions — they are evaluated with `torchvision.transforms` aliased as `T`, `monai.transforms` as `MT`, and `custom.transforms` as `CT`.
+
+---
+
+## Running an Experiment
+
+### 1. Install dependencies
+
+```bash
+cd Practical
+pip install -r requirements.txt
+pip install -e ./custom_transforms
+```
+
+### 2. Validate a sweep config
+
+```bash
+python check.py  # edit the path inside the file to point at your target config
+```
+
+### 3. Launch a WandB sweep
+
+```bash
+wandb sweep configs/sweep_combined_fold_normalize.yaml
+wandb agent <sweep-id>
+```
+
+The agent calls `training.py --yaml_file=<config_path>` for each run.
+
+### 4. (Optional) Generate a YAML config from Python transform definitions
+
+Edit `configs_code/sweep_combined_fold_normalize.py` to define transforms as `transform_*` list variables, then:
+
+```bash
+python code_to_config.py
+```
+
+This writes the corresponding YAML to `configs/`.
+
+---
+
+## Key Results (Paper 11 Benchmark)
+
+Tested on the B-line classification task, 600×400 input, no cross-validation (single split):
+
+| Augmentation | Test F1 (mean) | Test Precision (mean) | Test Recall (mean) |
+|---|---|---|---|
+| No augmentation | 0.313 | 0.560 | 0.239 |
+| **Shear** | **0.398** | 0.468 | 0.410 |
+| Color shifting / sharpness / contrast | 0.312 | 0.472 | 0.393 |
+| Salt & Pepper + Shear | 0.304 | 0.320 | 0.473 |
+| Translate + Shear | 0.296 | 0.369 | 0.376 |
+| Rotate | 0.283 | 0.312 | 0.408 |
+| Rotate + Translate | 0.278 | 0.455 | 0.402 |
+| Translate + Shear + Rotate | 0.250 | 0.352 | 0.340 |
+| Gaussian Noise + Rotate | 0.197 | 0.327 | 0.274 |
+| Translate | 0.193 | 0.311 | 0.287 |
+| Gaussian Noise | 0.189 | 0.194 | 0.194 |
+| Salt & Pepper | 0.180 | 0.177 | 0.196 |
+
+Full results including cross-validation sweeps are in `Practical/results/`.
+
+---
+
+## University Requirements
+
+1. Overview of image augmentation in deep learning, with focus on medical images.
+2. Overview of existing parallel hyperparameter search tools.
+3. Design augmentation methods suited for ultrasound characteristics (speckle, fan geometry, low contrast).
+4. Implement selected methods and an automated parallel validation mechanism (WandB sweeps).
+5. Compare augmentation strategies and evaluate statistically.
+6. Prepare documentation per thesis advisor guidelines.
