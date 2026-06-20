@@ -6,6 +6,17 @@ Experiments are tracked on [Weights & Biases](https://wandb.ai/daswoldemar/bache
 
 ---
 
+## Thesis Document
+
+The full thesis is available in the repository root:
+
+- **`Implementation_of_augmentation_methods_for_medical_ultrasound_data.pdf`** — the complete thesis text covering literature review, methodology, experiments, and conclusions.
+- **`Bachelor-LiteratureReview.docx`** — standalone literature review document.
+
+The `Articles/` directory contains the research papers consulted during the project. Papers already read and annotated are in `Articles/Readed/Commented/`; papers queued for reading are in `Articles/ToRead/`. A running summary of relevant methods and findings from each paper is in `Articles/README.md`.
+
+---
+
 ## Overview
 
 This project systematically evaluates image augmentation strategies for binary classification of lung ultrasound (LUS) frames. The clinical task is detecting **B-lines** (pathological artifacts indicating fluid in the lungs) versus **A-lines** (healthy lung pattern). Because LUS datasets are small and class-imbalanced, augmentation is critical for generalisation.

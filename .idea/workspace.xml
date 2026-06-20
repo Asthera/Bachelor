@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ed4b346-8254-4985-b0b6-9f7596a861a7" name="Changes" comment="just update">
-      <change beforePath="$PROJECT_DIR$/Practical/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practical/results/analyze/analyze_sweep_affine_single.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/analyze/analyze_sweep_affine_single.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practical/results/analyze/analyze_sweep_elastic_single.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/analyze/analyze_sweep_elastic_single.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practical/results/analyze/analyze_sweep_erasing_single.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/analyze/analyze_sweep_erasing_single.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practical/results/analyze/analyze_sweep_pixel-level_single.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/analyze/analyze_sweep_pixel-level_single.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practical/results/analyze/analyze_sweep_speckle.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/analyze/analyze_sweep_speckle.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practical/results/analyze/ananlyze_sweep_grid_distortion_single.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/analyze/ananlyze_sweep_grid_distortion_single.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practical/results/sweeps_edited/97eubagm.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/sweeps_edited/97eubagm.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practical/results/sweeps_edited/cruht9ii.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/sweeps_edited/cruht9ii.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practical/results/sweeps_edited/d1x4gpe3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/sweeps_edited/d1x4gpe3.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practical/results/sweeps_edited/m2a2visa.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/sweeps_edited/m2a2visa.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practical/results/sweeps_edited/tqx61cub.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/sweeps_edited/tqx61cub.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practical/results/sweeps_edited/yopel9on.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Practical/results/sweeps_edited/yopel9on.csv" afterDir="false" />
+    <list default="true" id="1ed4b346-8254-4985-b0b6-9f7596a861a7" name="Changes" comment="made a clear readme">
+      <change afterPath="$PROJECT_DIR$/Implementation_of_augmentation_methods_for_medical_ultrasound_data.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +19,9 @@
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="232" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -65,16 +56,77 @@
     &quot;assignee&quot;: &quot;Asthera&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="62f73580-b38b-4ae7-90c2-0784df2287c9" />
-        <option name="url" value="https://github.com/Asthera/Bachelor.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Asthera/Bachelor.git",
+    "accountId": "3a999c3f-d082-4e7d-9c72-4869d08d42ad"
+  }
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0004861375799923" />
+      <entry key="MS500" value="1.3956337312157525" />
+      <entry key="S2" value="3.2657003896146595" />
+      <entry key="S5" value="4.590380509495388" />
+      <entry key="S10" value="5.3613687165047486" />
+      <entry key="S30" value="6.253199242865741" />
+      <entry key="S60" value="6.588359801704768" />
+      <entry key="M2" value="6.783174002833828" />
+      <entry key="M5" value="6.910416416858303" />
+      <entry key="M10" value="6.954713783054115" />
+      <entry key="M15" value="6.9696978696957945" />
+      <entry key="M30" value="6.984792909008579" />
+      <entry key="H1" value="6.992382378914586" />
+      <entry key="H2" value="6.9961876618797465" />
+      <entry key="H4" value="6.998092947958031" />
+      <entry key="D1" value="6.999682035264225" />
+      <entry key="W1" value="6.99995457345951" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.2242258437947177" />
+      <entry key="MS500" value="1.1340277097937432" />
+      <entry key="S2" value="3.1892486624426577" />
+      <entry key="S5" value="4.558052245441213" />
+      <entry key="S10" value="5.344642443333371" />
+      <entry key="S30" value="6.247338073800012" />
+      <entry key="S60" value="6.5853672584239495" />
+      <entry key="M2" value="6.781658964582857" />
+      <entry key="M5" value="6.909805395367839" />
+      <entry key="M10" value="6.954407392111633" />
+      <entry key="M15" value="6.969493409920574" />
+      <entry key="M30" value="6.984690578645438" />
+      <entry key="H1" value="6.992331188443548" />
+      <entry key="H2" value="6.996162060300408" />
+      <entry key="H4" value="6.99808014557972" />
+      <entry key="D1" value="6.999679901313632" />
+      <entry key="W1" value="6.999954268604012" />
+    </decayedShown>
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
@@ -90,41 +142,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Python.check.executor&quot;: &quot;Run&quot;,
-    &quot;Python.count_pos_neg.executor&quot;: &quot;Run&quot;,
-    &quot;Python.fd.executor&quot;: &quot;Run&quot;,
-    &quot;Python.group_csv.executor&quot;: &quot;Run&quot;,
-    &quot;Python.lists_to_conf.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.read_sweep.executor&quot;: &quot;Run&quot;,
-    &quot;Python.resize_a_b.executor&quot;: &quot;Run&quot;,
-    &quot;Python.show_dir_structure.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_gpu.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_model.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_mps.executor&quot;: &quot;Run&quot;,
-    &quot;Python.testing.executor&quot;: &quot;Run&quot;,
-    &quot;Python.testing_transforms.executor&quot;: &quot;Run&quot;,
-    &quot;Python.training.executor&quot;: &quot;Run&quot;,
-    &quot;Python.utilsweep.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/volodimir/Downloads/Bachelor/CrossValidation/testing&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Python.check.executor": "Run",
+    "Python.count_pos_neg.executor": "Run",
+    "Python.fd.executor": "Run",
+    "Python.group_csv.executor": "Run",
+    "Python.lists_to_conf.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.read_sweep.executor": "Run",
+    "Python.resize_a_b.executor": "Run",
+    "Python.show_dir_structure.executor": "Run",
+    "Python.test_gpu.executor": "Run",
+    "Python.test_model.executor": "Run",
+    "Python.test_mps.executor": "Run",
+    "Python.testing.executor": "Run",
+    "Python.testing_transforms.executor": "Run",
+    "Python.training.executor": "Run",
+    "Python.utilsweep.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/daswoldemar/PycharmProjects/Bachelor",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/CrossValidation/testing" />
@@ -198,7 +255,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-5a2391486177-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13763.11" />
+        <option value="bundled-python-sdk-c59985aa861c-c2ffad84badb-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.24374.152" />
       </set>
     </attachedChunks>
   </component>
@@ -372,14 +429,7 @@
       <workItem from="1716193434632" duration="26738000" />
       <workItem from="1716462732410" duration="1971000" />
       <workItem from="1716901179822" duration="608000" />
-    </task>
-    <task id="LOCAL-00017" summary="randomly not applyied augments, fixes :(, added yaml for gpu">
-      <option name="closed" value="true" />
-      <created>1711023077157</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1711023077157</updated>
+      <workItem from="1781961660199" duration="594000" />
     </task>
     <task id="LOCAL-00018" summary="checked that augs applied only for train (by adding function show_images), concreted values for augs (to include params)">
       <option name="closed" value="true" />
@@ -765,7 +815,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716386380493</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="made a clear readme">
+      <option name="closed" value="true" />
+      <created>1781961884530</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1781961884531</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -796,7 +854,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="was error at training.py, with importing Dataloader." />
     <MESSAGE value="changed type of writing augments, now from python" />
     <MESSAGE value="added None to sweep_paper_11_gpu.yaml" />
     <MESSAGE value="was err in yaml, CT. in init-transform" />
@@ -821,7 +878,8 @@
     <MESSAGE value="added sweep for SINGLE grid distortion" />
     <MESSAGE value="added sweep for SINGLE speckle noise 0.5 prop" />
     <MESSAGE value="just update" />
-    <option name="LAST_COMMIT_MESSAGE" value="just update" />
+    <MESSAGE value="made a clear readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="made a clear readme" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Bachelor$check.coverage" NAME="check Coverage Results" MODIFIED="1715504263991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CrossValidation" />
