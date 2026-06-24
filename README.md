@@ -25,6 +25,71 @@ The core question: *which augmentation methods — and combinations — actually
 
 ---
 
+## Results
+
+The effectiveness of various data augmentation strategies was evaluated on the B-line classification task using a pretrained ResNet-18 model and **5-fold cross-validation**. Performance is measured by F1-score, chosen due to class imbalance in the dataset.
+
+### Baseline
+
+| Configuration | F1 Mean |
+|---|---|
+| No augmentation | 0.249 |
+
+Models trained without augmentation achieved F1-mean scores between 0.15 and 0.25, showing limited generalisation and high fold-to-fold variability.
+
+### Best Single Augmentation Methods
+
+Geometric transformations consistently delivered the strongest individual improvements.
+
+| Method | Best Parameters | F1 Mean |
+|---|---|---|
+| **Rotation** | ±30° | **0.365** |
+| Translation | (0.15, 0.15) | 0.350 |
+| Horizontal Flip | — | 0.350 |
+| Brightness Adjustment | (−0.35, 0.35) | 0.334 |
+| Smooth Field Contrast | (2, 0.5–4.5) | 0.315 |
+| Shift Intensity | (0.1, 0.4) | 0.311 |
+
+Random rotation within ±30° improved F1 from 0.249 → 0.365, a **~46% relative improvement** over the best baseline.
+
+### Combined Augmentation Pipelines
+
+The second stage evaluated multi-transform pipelines. The strongest pipeline combined (in mirrored order):
+
+1. Translation
+2. Brightness & Contrast Jitter
+3. Horizontal Reflection
+4. Contrast Multiplication
+5. Brightness Adjustment
+
+| Configuration | F1 Mean |
+|---|---|
+| Best baseline | 0.249 |
+| Best single augmentation | 0.365 |
+| **Best augmentation pipeline** | **0.486** |
+
+- **+95%** improvement over the best baseline
+- **+33%** improvement over the best individual augmentation
+
+### Key Findings
+
+- Geometric transformations (rotation, translation, reflection) were the most reliable single augmentations.
+- Aggressive noise-based augmentations often degraded performance — excessive distortion removes diagnostically relevant information.
+- Combining augmentations was substantially more effective than any individual transform.
+- **Augmentation order matters**: every mirrored pipeline outperformed its original counterpart, demonstrating that augmentation composition is not commutative.
+
+### Experimental Scale
+
+| Metric | Value |
+|---|---|
+| Augmentation configurations evaluated | 110 |
+| Cross-validation folds | 5 |
+| Total training runs | 575 |
+
+Full results and analysis notebooks are in `Practical/results/`.
+
+---
+
 ## Task & Dataset
 
 | Property | Detail |
@@ -193,29 +258,6 @@ python code_to_config.py
 ```
 
 This writes the corresponding YAML to `configs/`.
-
----
-
-## Key Results (Paper 11 Benchmark)
-
-Tested on the B-line classification task, 600×400 input, no cross-validation (single split):
-
-| Augmentation | Test F1 (mean) | Test Precision (mean) | Test Recall (mean) |
-|---|---|---|---|
-| No augmentation | 0.313 | 0.560 | 0.239 |
-| **Shear** | **0.398** | 0.468 | 0.410 |
-| Color shifting / sharpness / contrast | 0.312 | 0.472 | 0.393 |
-| Salt & Pepper + Shear | 0.304 | 0.320 | 0.473 |
-| Translate + Shear | 0.296 | 0.369 | 0.376 |
-| Rotate | 0.283 | 0.312 | 0.408 |
-| Rotate + Translate | 0.278 | 0.455 | 0.402 |
-| Translate + Shear + Rotate | 0.250 | 0.352 | 0.340 |
-| Gaussian Noise + Rotate | 0.197 | 0.327 | 0.274 |
-| Translate | 0.193 | 0.311 | 0.287 |
-| Gaussian Noise | 0.189 | 0.194 | 0.194 |
-| Salt & Pepper | 0.180 | 0.177 | 0.196 |
-
-Full results including cross-validation sweeps are in `Practical/results/`.
 
 ---
 

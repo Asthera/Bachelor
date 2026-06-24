@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ed4b346-8254-4985-b0b6-9f7596a861a7" name="Changes" comment="made a clear readme">
-      <change afterPath="$PROJECT_DIR$/Implementation_of_augmentation_methods_for_medical_ultrasound_data.pdf" afterDir="false" />
+    <list default="true" id="1ed4b346-8254-4985-b0b6-9f7596a861a7" name="Changes" comment="upd README.md with inf about pdf with thesis">
+      <change afterPath="$PROJECT_DIR$/results.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +23,7 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="232" />
+    <option name="cachedIndexableFilesCount" value="233" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -56,12 +58,12 @@
     &quot;assignee&quot;: &quot;Asthera&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Asthera/Bachelor.git",
-    "accountId": "3a999c3f-d082-4e7d-9c72-4869d08d42ad"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Asthera/Bachelor.git&quot;,
+    &quot;accountId&quot;: &quot;3a999c3f-d082-4e7d-9c72-4869d08d42ad&quot;
   }
-}]]></component>
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -71,61 +73,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0004861375799923" />
-      <entry key="MS500" value="1.3956337312157525" />
-      <entry key="S2" value="3.2657003896146595" />
-      <entry key="S5" value="4.590380509495388" />
-      <entry key="S10" value="5.3613687165047486" />
-      <entry key="S30" value="6.253199242865741" />
-      <entry key="S60" value="6.588359801704768" />
-      <entry key="M2" value="6.783174002833828" />
-      <entry key="M5" value="6.910416416858303" />
-      <entry key="M10" value="6.954713783054115" />
-      <entry key="M15" value="6.9696978696957945" />
-      <entry key="M30" value="6.984792909008579" />
-      <entry key="H1" value="6.992382378914586" />
-      <entry key="H2" value="6.9961876618797465" />
-      <entry key="H4" value="6.998092947958031" />
-      <entry key="D1" value="6.999682035264225" />
-      <entry key="W1" value="6.99995457345951" />
+      <entry key="MS100" value="1.0123532829473554" />
+      <entry key="MS500" value="1.5300399705552166" />
+      <entry key="S2" value="3.0996553721173727" />
+      <entry key="S5" value="5.401154977998852" />
+      <entry key="S10" value="7.91466719714957" />
+      <entry key="S30" value="11.81743326046358" />
+      <entry key="S60" value="14.134776353505393" />
+      <entry key="M2" value="16.727587414045402" />
+      <entry key="M5" value="20.722468294740946" />
+      <entry key="M10" value="23.498833628476145" />
+      <entry key="M15" value="24.755166515205044" />
+      <entry key="M30" value="26.238803779817076" />
+      <entry key="H1" value="27.081139277927285" />
+      <entry key="H2" value="27.53051616609866" />
+      <entry key="H4" value="27.76268090953754" />
+      <entry key="D1" value="27.960083324966522" />
+      <entry key="W1" value="27.994288642630725" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="0.0" />
-      <entry key="S30" value="0.0" />
-      <entry key="S60" value="0.0" />
-      <entry key="M2" value="0.0" />
-      <entry key="M5" value="0.0" />
-      <entry key="M10" value="0.0" />
-      <entry key="M15" value="0.0" />
-      <entry key="M30" value="0.0" />
-      <entry key="H1" value="0.0" />
-      <entry key="H2" value="0.0" />
-      <entry key="H4" value="0.0" />
-      <entry key="D1" value="0.0" />
-      <entry key="W1" value="0.0" />
+      <entry key="MS100" value="9.982570917185318E-36" />
+      <entry key="MS500" value="9.996511750709191E-8" />
+      <entry key="S2" value="0.01778124312701993" />
+      <entry key="S5" value="0.19951927043177606" />
+      <entry key="S10" value="0.4466758001411941" />
+      <entry key="S30" value="0.7644178293311328" />
+      <entry key="S60" value="0.8743099160658838" />
+      <entry key="M2" value="0.93504540855826" />
+      <entry key="M5" value="0.9734935553948506" />
+      <entry key="M10" value="0.986657770148723" />
+      <entry key="M15" value="0.9910852824330253" />
+      <entry key="M30" value="0.9955326626650807" />
+      <entry key="H1" value="0.9977638311068809" />
+      <entry key="H2" value="0.9988812897971813" />
+      <entry key="H4" value="0.9994404883719599" />
+      <entry key="D1" value="0.999906726314747" />
+      <entry key="W1" value="0.9999866746551386" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.2242258437947177" />
-      <entry key="MS500" value="1.1340277097937432" />
-      <entry key="S2" value="3.1892486624426577" />
-      <entry key="S5" value="4.558052245441213" />
-      <entry key="S10" value="5.344642443333371" />
-      <entry key="S30" value="6.247338073800012" />
-      <entry key="S60" value="6.5853672584239495" />
-      <entry key="M2" value="6.781658964582857" />
-      <entry key="M5" value="6.909805395367839" />
-      <entry key="M10" value="6.954407392111633" />
-      <entry key="M15" value="6.969493409920574" />
-      <entry key="M30" value="6.984690578645438" />
-      <entry key="H1" value="6.992331188443548" />
-      <entry key="H2" value="6.996162060300408" />
-      <entry key="H4" value="6.99808014557972" />
-      <entry key="D1" value="6.999679901313632" />
-      <entry key="W1" value="6.999954268604012" />
+      <entry key="MS100" value="0.9779516328172039" />
+      <entry key="MS500" value="1.519774291262222" />
+      <entry key="S2" value="3.1075600306987967" />
+      <entry key="S5" value="5.5735620019316565" />
+      <entry key="S10" value="8.329261673703053" />
+      <entry key="S30" value="12.561580234378471" />
+      <entry key="S60" value="14.997020073853012" />
+      <entry key="M2" value="17.655946090693096" />
+      <entry key="M5" value="21.692974411019577" />
+      <entry key="M10" value="24.48389082897602" />
+      <entry key="M15" value="25.74515220921747" />
+      <entry key="M30" value="27.2337673072586" />
+      <entry key="H1" value="28.07861302272028" />
+      <entry key="H2" value="28.529250936751286" />
+      <entry key="H4" value="28.762047756551805" />
+      <entry key="D1" value="28.95997772357377" />
+      <entry key="W1" value="28.99427355484382" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -142,48 +144,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Python.check.executor": "Run",
-    "Python.count_pos_neg.executor": "Run",
-    "Python.fd.executor": "Run",
-    "Python.group_csv.executor": "Run",
-    "Python.lists_to_conf.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.read_sweep.executor": "Run",
-    "Python.resize_a_b.executor": "Run",
-    "Python.show_dir_structure.executor": "Run",
-    "Python.test_gpu.executor": "Run",
-    "Python.test_model.executor": "Run",
-    "Python.test_mps.executor": "Run",
-    "Python.testing.executor": "Run",
-    "Python.testing_transforms.executor": "Run",
-    "Python.training.executor": "Run",
-    "Python.utilsweep.executor": "Run",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/daswoldemar/PycharmProjects/Bachelor",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Python.check.executor&quot;: &quot;Run&quot;,
+    &quot;Python.count_pos_neg.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fd.executor&quot;: &quot;Run&quot;,
+    &quot;Python.group_csv.executor&quot;: &quot;Run&quot;,
+    &quot;Python.lists_to_conf.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.read_sweep.executor&quot;: &quot;Run&quot;,
+    &quot;Python.resize_a_b.executor&quot;: &quot;Run&quot;,
+    &quot;Python.show_dir_structure.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_gpu.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_model.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_mps.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testing.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testing_transforms.executor&quot;: &quot;Run&quot;,
+    &quot;Python.training.executor&quot;: &quot;Run&quot;,
+    &quot;Python.utilsweep.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/daswoldemar/PycharmProjects/Bachelor&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/CrossValidation/testing" />
       <recent name="$PROJECT_DIR$/CrossValidation" />
     </key>
@@ -429,23 +432,8 @@
       <workItem from="1716193434632" duration="26738000" />
       <workItem from="1716462732410" duration="1971000" />
       <workItem from="1716901179822" duration="608000" />
-      <workItem from="1781961660199" duration="594000" />
-    </task>
-    <task id="LOCAL-00018" summary="checked that augs applied only for train (by adding function show_images), concreted values for augs (to include params)">
-      <option name="closed" value="true" />
-      <created>1711278383564</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1711278383564</updated>
-    </task>
-    <task id="LOCAL-00019" summary="added opp to save only best model (by val loss) of run, to minimize weights">
-      <option name="closed" value="true" />
-      <created>1711279180428</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1711279180428</updated>
+      <workItem from="1781961660199" duration="863000" />
+      <workItem from="1782300236932" duration="846000" />
     </task>
     <task id="LOCAL-00020" summary="added previous to sweep_gpu.yaml">
       <option name="closed" value="true" />
@@ -823,7 +811,23 @@
       <option name="project" value="LOCAL" />
       <updated>1781961884531</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="added pdf with thesis">
+      <option name="closed" value="true" />
+      <created>1781962278796</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1781962278796</updated>
+    </task>
+    <task id="LOCAL-00068" summary="upd README.md with inf about pdf with thesis">
+      <option name="closed" value="true" />
+      <created>1781962430996</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1781962430997</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -854,8 +858,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="changed type of writing augments, now from python" />
-    <MESSAGE value="added None to sweep_paper_11_gpu.yaml" />
     <MESSAGE value="was err in yaml, CT. in init-transform" />
     <MESSAGE value="fixes error in sweep" />
     <MESSAGE value="name in sweep_paper_11_600x400_gpu.yaml" />
@@ -879,7 +881,9 @@
     <MESSAGE value="added sweep for SINGLE speckle noise 0.5 prop" />
     <MESSAGE value="just update" />
     <MESSAGE value="made a clear readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="made a clear readme" />
+    <MESSAGE value="added pdf with thesis" />
+    <MESSAGE value="upd README.md with inf about pdf with thesis" />
+    <option name="LAST_COMMIT_MESSAGE" value="upd README.md with inf about pdf with thesis" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Bachelor$check.coverage" NAME="check Coverage Results" MODIFIED="1715504263991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CrossValidation" />
